@@ -26,16 +26,20 @@ https://fonts.google.com/specimen/Monoton
 
 ___
 + ## ___Referentes___
--[___Bigbox___] (https://www.bigbox.com.ar/)
+-[___Bigbox___](https://www.bigbox.com.ar/)
 
   ![Bigbox](https://user-images.githubusercontent.com/93610078/142037915-47161671-8f76-4797-9da2-eaeee332e4b7.png)
-  '''
+ 
  Boton Explicativo
 ___      
+ -[___Fanbag___](https://fanbag.com.ar/)
+ 
  ![Fanbag](https://user-images.githubusercontent.com/93610078/142046977-846508d1-1717-4fc9-997a-098c321cbc34.png)
  
  Clasificación y muestra de las distintas categorías de experiencias
 ___
+- [Fanbag](https://fanbag.com.ar/)
+
 ![Fanbag](https://user-images.githubusercontent.com/93610078/142048383-3b86adcd-e1ee-4576-95f0-9680aaceea5f.png)
 ___
  Regalos Destacados
