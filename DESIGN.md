@@ -31,11 +31,15 @@ ___
  
  Boton Explicativo
       
- ![Bigbox](https://user-images.githubusercontent.com/93610078/142041930-c016050f-06b1-46de-8f9e-6448d6a0a714.png)
+ ![Fanbag](https://user-images.githubusercontent.com/93610078/142046977-846508d1-1717-4fc9-997a-098c321cbc34.png)
  
  Clasificación y muestra de las distintas categorías de experiencias
 
- ![Bigbox](https://user-images.githubusercontent.com/93610078/142035916-6d04696b-0503-47d6-ba41-cfdb02614f56.png)    
+![Fanbag](https://user-images.githubusercontent.com/93610078/142048383-3b86adcd-e1ee-4576-95f0-9680aaceea5f.png)
+
+ Regalos Destacados
+
+![Bigbox](https://user-images.githubusercontent.com/93610078/142035916-6d04696b-0503-47d6-ba41-cfdb02614f56.png)    
  
  Home Page
 
@@ -45,7 +49,7 @@ Menu Desplegable
 
  ![Bigboxpng](https://user-images.githubusercontent.com/93610078/142042421-ab721a24-484b-40a1-ab3d-9e32fbc4299b.png)
    
- ![Bigbox](https://user-images.githubusercontent.com/93610078/142043093-1d8bd7d8-f71d-4b53-954a-2361df9156f5.png)
+ ![Smartbox](https://user-images.githubusercontent.com/93610078/142047682-6f2068e6-1b8b-468f-94ac-c79613d55629.png)
  
  Tipo de Clasificacion
 
