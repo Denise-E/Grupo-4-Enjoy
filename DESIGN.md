@@ -36,7 +36,7 @@ ___
  Clasificación y muestra de las distintas categorías de experiencias
 ___
 ![Fanbag](https://user-images.githubusercontent.com/93610078/142048383-3b86adcd-e1ee-4576-95f0-9680aaceea5f.png)
-
+___
  Regalos Destacados
 
 ![Bigbox](https://user-images.githubusercontent.com/93610078/142035916-6d04696b-0503-47d6-ba41-cfdb02614f56.png)    
