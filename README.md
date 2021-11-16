@@ -28,11 +28,6 @@ ___
   ___
   
   + ## __Referentes__
-    - [___Bigbox___](https://www.bigbox.com.ar/)
-    - [___Fanbag___](https://fanbag.com.ar/) 
-    - [___Smartbox___](https://www.smartbox.com/es/) 
-    - [___RegalaleYa___](https://www.regalaleya.com/)
-____
 - [Bigbox](https://www.bigbox.com.ar/)
 
   ![Bigbox](https://user-images.githubusercontent.com/93610078/142037915-47161671-8f76-4797-9da2-eaeee332e4b7.png)
@@ -83,9 +78,7 @@ Secciones destacadas
   ___
   
   + ## _Wireframes_
-  
-     
- 1. ***Home Page***
+   1. ***Home Page***
 <img width="266" alt="home-page" src="https://user-images.githubusercontent.com/93154485/142018261-0cf62986-8fca-4f48-96b0-0099760fbbac.png">
 
    2. ***Log in*** 
@@ -102,3 +95,17 @@ Secciones destacadas
 ___
   
  + ## _Bocetos_
+   1. ***Home Page***
+![Home](https://user-images.githubusercontent.com/93154485/142078488-b52d211b-ede1-46d7-99c6-038ec8d0db7b.png)
+
+   2. ***Log in***
+![Log in](https://user-images.githubusercontent.com/93154485/142078465-c6911d70-69dc-49c4-8e31-9c785ca35c96.png)
+
+   3. ***Registration Page***    
+![Crea tu cuenta](https://user-images.githubusercontent.com/93154485/142078450-72acc4d5-124f-4d33-a151-02f83f5ebc53.png)
+
+   4. ***Shopping cart***
+![Carrito](https://user-images.githubusercontent.com/93154485/142078391-39d2f398-97f8-445f-8031-e6e19db9d191.png)
+
+   5. ***Product details***
+![Producto](https://user-images.githubusercontent.com/93154485/142078429-3169d66c-463c-4fb4-8088-670b9c7ae772.png)
