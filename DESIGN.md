@@ -26,7 +26,7 @@ https://fonts.google.com/specimen/Monoton
 
 ___
 + ## ___Referentes___
--[____Bigbox___]   
+-[___Bigbox___]   
   ![Bigbox](https://user-images.githubusercontent.com/93610078/142037915-47161671-8f76-4797-9da2-eaeee332e4b7.png)
  
  Boton Explicativo
