@@ -109,9 +109,31 @@ ___
 
    3. ***Registration Page***    
 ![Crea tu cuenta](https://user-images.githubusercontent.com/93154485/142078450-72acc4d5-124f-4d33-a151-02f83f5ebc53.png)
-
-   4. ***Shopping cart***
-![Carrito](https://user-images.githubusercontent.com/93154485/142078391-39d2f398-97f8-445f-8031-e6e19db9d191.png)
-
-   5. ***Product details***
+  
+  4. ***Product details***
 ![Producto](https://user-images.githubusercontent.com/93154485/142078429-3169d66c-463c-4fb4-8088-670b9c7ae772.png)
+
+   5. ***Shopping cart***
+![Carrito](https://user-images.githubusercontent.com/93154485/142078391-39d2f398-97f8-445f-8031-e6e19db9d191.png)
+  
+   6. ***Shopping cart2***
+![Carrito2](https://user-images.githubusercontent.com/93396890/143057943-d86fec63-9951-48d5-a410-94bf9452b153.png)
+
+  7. ***Shopping cart3***
+![Carrito3](https://user-images.githubusercontent.com/93396890/143058085-d1ce286e-3587-424b-acd1-55fceca5b16f.png)
+
+  8. ***Shopping cart4***
+![Carrito4](https://user-images.githubusercontent.com/93396890/143058308-8f1200e8-89dd-4bb7-9d71-1c42037d7fb6.png)
+
+  9. ***Shopping cart5***
+![Carrito5](https://user-images.githubusercontent.com/93396890/143058462-10d2ba48-a373-4023-9679-a372038f3b20.png)
+
+   10. ***Mobile hompage***
+ ![Mobil Home (1)](https://user-images.githubusercontent.com/93396890/143058622-aa93c644-c6d1-40ad-9311-3086860b3b1f.png)
+
+
+
+
+
+
+
