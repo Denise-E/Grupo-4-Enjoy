@@ -1,0 +1,23 @@
+{
+  "name": "grupo-4-enjoy",
+  "version": "1.0.0",
+  "description": "___",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Denise-E/Grupo-4-Enjoy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Denise-E/Grupo-4-Enjoy/issues"
+  },
+  "homepage": "https://github.com/Denise-E/Grupo-4-Enjoy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
