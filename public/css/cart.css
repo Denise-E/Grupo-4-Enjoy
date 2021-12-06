@@ -1,0 +1,9 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer section h2{
+    border: solid 2px red;
+}
