@@ -6,80 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enjoy</title>
     <script src="https://kit.fontawesome.com/aa9ea7d08e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
 </head>
 <body>
     <header> Lugar del encabezado </header>
 
     <main> 
-        <section>
-            <h2><i class="fas fa-arrow-left"></i> Tu Carrito</h2>
-            <article>
-                <h2>Gastronomía</h2>
-                <picture>Acá va una imagen</picture>
-                <p>Gastronomía</p>
-                <section class="infromation">
-                    <p><i class="fas fa-user-friends"></i> Para dos personas</p>
-                    <p><i class="fas fa-calendar"></i> Válido hasta el 31/03/2022</p>
-                    <p><i class="fas fa-gift"></i> Contiene 60 opciones</p>
-                    <p><strong>$4.500</strong></p>
-                    <P><i class="fas fa-plus"></i> <input type="number" min="1"> <i class="fas fa-minus"></i></P>
-                </section>
-                <section>
-                    <h2>Resumen de compra</h2>
-                    <div>
-                        <p>Gastronomía</p>
-                        <p>$4.500</p>
-                    </div>
-                    <div>
-                        <p><strong>TOTAL</strong></p>
-                        <p><strong>$4.500</strong></p>
-                    </div>
-                    <input type="text" id="cupon" placeholder="Ingresá acá tu cupón de descuento">
-                    <section>
-                        <button type="button">Continuar</button>
-                    </section>
-                </section>
-            </article>
+        <section id="mainOne">
+            <h2><i class="fas fa-arrow-left"></i><strong>Tu Carrito</strong></h2>
         </section>
-       
+        <section class="dflex" id="mainTwo">
+            <h2>Gastronomía</h2>
+            <img src="/images/gastronomia.jpeg" alt="">
+            <h5>Gastronomía</h5>
+            <p><i class="fas fa-user-friends"></i> Para dos personas</p>
+            <p><i class="fas fa-calendar"></i> Válido hasta el 31/03/2022</p>
+            <p><i class="fas fa-gift"></i> Contiene 60 opciones</p>
+            <p><strong>$4.500</strong></p>
+            <P><i class="fas fa-plus"></i> <input type="number" min="1" placeholder="1"><i class="fas fa-minus"></i></P>
+        </section>
+        <section class="dflex" id="mainThree">
+            <h2><strong>Resumen de compra</strong></h2>
+            <p>Gastronomía</p>
+            <p>$4.500</p>
+            <p><strong>TOTAL</strong></p>
+            <P><strong>$4.500</strong></P>
+        </section>
+        <section id="mainFour">
+            <form action="GET">
+                <fieldset>
+                    <input type="text" placeholder="Ingresá acá tu cupón de descuento">
+                </fieldset>
+            </form>
+        </section>
+        <section id="mainFive">
+            <button type="button">Continuar</button>
+        </section>
     </main>
 
     <footer>
-        <section>
-            <h2>ENJOY</h2>
-            <a href="#" target="blank">¿Quienes somos?</a>
-            <a href="#" target="blank">Trabajá con nosotros</a>
-            <a href="#" target="blank">Puntos de venta</a>
-            <a href="#" target="blank">Uní tu experiencia</a>
-           
-        </section>
-
-        <section>
+       <section class="dflex" id="footerOne">
+           <h2>ENJOY</h2>
+           <nav>
+               <a href="#">¿Quiénes somos?</a>
+               <a href="#">Trabajá con nosotros</a>
+               <a href="#">Puntos de venta</a>
+               <a href="#">Uní tu experiencia</a>
+           </nav>
+       </section>
+       <section class="dflex" id="footerTwo">
             <h2>AYUDA</h2>
-            <a href="#" target="blank">¿Cómo comprar?</a>
-            <a href="#" target="blank">Contacto</a>
-            <a href="#" target="blank">Preguntas frecuentes</a>
-            <a href="#" target="blank">Devoluciones</a>
+            <nav>
+                <a href="#">¿Cómo comprar?</a>
+                <a href="#">Contacto</a>
+                <a href="#">Preguntas frecuentes</a>
+                <a href="#">Devoluciones</a>
+            </nav>
         </section>
-
-        <section>
-            <div>
+        <section class="dflex" id="footerThree">
+            <section class="newsletter">
                 <h2>SUSCRIBITE AL NEWSLETTER</h2>
-                <input type="email" placeholder="Tu correo electrónico">
-            </div>
-            <div>
-                <h2>NUESTRAS REDES SOCIALES</h2>
-                <ul>
-                    <li><i class="fab fa-instagram"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-facebook"></i></li>
-                    <li><i class="fas fa-at"></i></li>
-                </ul>
-            </div>
+                <form action="GET">
+                    <fieldset>
+                        <input type="email" placeholder="Tu correo electrónico">
+                    </fieldset>
+                </form>
+            </section>
+            
+            <h2>NUESTRAS REDES SOCIALES</h2>
+            <nav>
+                <a href="#"><i class="fab fa-instagram"></i></a></a>
+                <a href="#"><i class="fab fa-twitter"></i></a></a>
+                <a href="#"><i class="fab fa-facebook"></i></a></a>
+                <a href="#"><i class="fas fa-at"></i></a></a>
+            </nav>
+            </section>
         </section>
-        <section>
-            <p><a href="#">Políticas y garantías</a> | <a href="#">Términos y condiciones</a></p>
+        <section class="dflex" id="footerFour">
+            <nav>
+                <a href="#" class="footerFourLeft">Políticas y garantías</a>
+                <a href="#">Términos y condiciones</a>
+            </nav>
         </section>
     </footer>
 </body>
