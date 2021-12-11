@@ -9,6 +9,115 @@
     flex-wrap: wrap;
 }
 
+main{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mainOne{
+    color: #5A2083;
+    padding: 2rem;
+}
+
+#mainTwo{
+    border: solid 1.5px #5A2083;
+    margin-left: 2rem;
+    box-shadow: 0px 2px 2px #88888880;
+    width: 85%;
+    position: relative;
+}
+
+#mainTwo h2{
+    width: 100%;
+    background-color: #d9bbf9;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    font-family: 'Life Savers', cursive;
+    padding: 5px;
+}
+
+#mainTwo article{
+    max-width: 53%;
+}
+
+main img{
+    width: 40%;
+    height: 14rem;
+    margin: 0.5rem;
+}
+
+#mainTwo h5{
+    position: absolute;
+    left: 30px;
+    top: 130px;
+    font-family: 'Life Savers', cursive;
+    font-size: 1rem;
+    color: #5A2083;
+
+}
+
+#mainTwo input{
+    width: 25px;
+    border: solid 1px black
+}
+
+#mainTwo p{
+    display: block;
+    width: 100%;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+#mainThree{
+    border-radius: 10px;
+    background-color: #C4C4C4;
+    opacity: 90%;
+    width: 70%;
+    margin-left: 2rem;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#mainThree h2{
+    width: 100%;
+}
+
+.infoCompra{
+    flex-grow: 1;
+    margin: 1rem;
+    text-align: left;
+}
+
+
+#mainFour input{
+    border-radius: 5px;
+    background-color: #ebebebec;
+    opacity: 90%;
+    width: 70%;
+    padding: 10px;
+    margin-top: 0.05rem;
+    margin-left: 1.25rem;
+}
+
+#mainFive button{
+    border-radius: 10px;
+    background-color: #b47cde;
+    color: white;
+    opacity: 90%;
+    width: 35%;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 2rem;
+    font-size: 0.75rem; 
+
+}
+
+#mainFive{
+    justify-content: flex-end;
+}
+
 footer{
     background-color: #ebebebec;
     padding: 20px;
@@ -103,6 +212,37 @@ footer a{
 }
 
 @media screen and (min-width: 361px) {  
+    main{
+        margin-left: 10%;
+    }
+
+    #mainTwo{
+        width: 30rem;
+    }
+
+    #mainTwo article{
+        margin-top: 0.5rem;
+    }
+
+    main img{
+        max-width: 10rem;
+        margin-right: 3%;
+    }
+
+    
+#mainTwo h5{
+    left: 45px;
+    top: 150px;
+}
+
+    #mainThree{
+        max-width: 20rem;
+    }
+
+    #mainFour input{
+        max-width: 15rem;
+    }
+
     footer{
         display: flex;
         flex-wrap: wrap;
@@ -136,6 +276,11 @@ footer a{
         width: 100%;
     }
 
+    
+    #footerThree input{
+        width: 300px;
+    }
+
     #footerThree nav{
         justify-content: center;
         gap: 2rem;
@@ -144,4 +289,11 @@ footer a{
     #footerFour nav a{ 
         padding: 1rem;
     }
+}
+
+@media screen and (min-width: 769px){
+    #mainFive button{
+        width: 250px;
+        margin-right: 10%;
+    }    
 }
