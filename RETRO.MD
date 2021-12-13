@@ -1,6 +1,6 @@
 #  Retro - 1er Sprint
 ___
-Analizamos nuestro primer sprint  e hicimos la correspondiente retrospectiva para mejorar como equipo.
+✔Analizamos nuestro primer sprint e hicimos la correspondiente retrospectiva para mejorar como equipo. 
 ___
 
 ##  Dinamica estrella de mar
