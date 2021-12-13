@@ -5,7 +5,7 @@ ___
 
 ##  Dinamica estrella de mar
 
-- __Bien: __   
+- __Bien: __ 
 - Repartición de tareas entre las partes.
 -Comunicacion.
 -Ayuda mutua.
