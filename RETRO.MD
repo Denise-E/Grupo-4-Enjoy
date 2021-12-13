@@ -7,8 +7,8 @@ ___
 
 ### Bien:
 - Repartición de tareas entre las partes.
--Comunicacion.
--Ayuda mutua.
+- Comunicacion.
+- Ayuda mutua.
 
 ### Mal:
 - No establecernos tiempos o fechas límites para la realización de las diferentes tareas.
