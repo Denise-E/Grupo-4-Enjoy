@@ -79,6 +79,11 @@ body{
     .nPrincipal{
         display: flex;
         }
+    .navegacion{
+        margin-left: 1rem;
+        padding: 3rem;
+        font-size: 1.5rem;
+    }
 }
 
 /**footer**/
