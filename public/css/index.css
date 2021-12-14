@@ -4,6 +4,85 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+#titulo{
+    color:white;
+    align-items: center;
+}
+#titulo:hover { 
+    color: #371452
+    ; }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.tituloPortada{
+    position: relative;
+    margin-top: 40px;    
+    justify-content: center;
+    display: flex;
+}
+.titulo{
+    color:white;
+    background-color: rgb(180, 124, 222, 30);
+    opacity: 70%;
+    border-radius: 5px;
+    font-size: 1rem;
+    position: absolute;
+    padding: 1rem;
+    box-shadow: 1px 2px 2px 2px rgb(0 0 0 / 15%);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -2rem;
+    flex-wrap: wrap;
+}
+
+.navegacionPrincipal{
+    justify-content: space-around;
+		flex-wrap: wrap;
+		display: flex;
+        margin: 1rem;
+}
+#imagenNavegacion{
+    max-width: 3rem;
+}
+
+.navegacion{
+    margin-top: 1rem;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid  #371452;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(217, 187, 249, 35);
+    font-family: 'Life Savers', cursive;
+    height: 4rem;
+    width: 100%;
+}
+
+#tituloNavegacion{
+    color:black;
+}
+
+@media screen and (min-width: 769px) {  
+    .titulo{
+        font-size: 30px;
+        }
+    .nPrincipal{
+        display: flex;
+        }
+}
+
+/**footer**/
+
 .dflex{
     display: flex;
     flex-wrap: wrap;
@@ -103,6 +182,7 @@ footer a{
 }
 
 @media screen and (min-width: 361px) {  
+    
     footer{
         display: flex;
         flex-wrap: wrap;
