@@ -72,19 +72,8 @@ body{
     color:black;
 }
 
-@media screen and (min-width: 769px) {  
-    .titulo{
-        font-size: 30px;
-        }
-    .nPrincipal{
-        display: flex;
-        }
-    .navegacion{
-        margin-left: 1rem;
-        padding: 3rem;
-        font-size: 1.5rem;
-    }
-}
+
+
 
 /**Header**/
 
@@ -161,6 +150,84 @@ body{
 .barraSuperior img{
     margin: -40px;
     padding: 20px;
+}
+
+.banner{
+    background-color: rgb(90, 32, 131, 95);
+border-radius: 4px;
+height: 18rem;
+align-items: center;
+background-size: contain;
+padding: 3rem;
+margin: 3rem;
+display: flex;
+position: relative;
+    
+}
+.textoBanner{
+    
+    color:white;
+    font-size: 1.6rem;
+    max-width: 70%;
+    
+    
+}
+
+.botonBanner{
+    display: none;
+}
+
+.botonytexto{
+    display:flex;
+    position:absolute;
+}
+
+.fa-gift{
+    font-size: 15rem;
+    color:white;    
+    opacity: 25%;
+    margin: 0 2rem;
+}
+
+
+
+
+@media screen and (min-width: 769px) {  
+    .titulo{
+        font-size: 30px;
+        }
+    .nPrincipal{
+        display: flex;
+        }
+    .navegacion{
+        margin-left: 1rem;
+        padding: 3rem;
+        font-size: 1.5rem;
+    }
+    .botonBanner{
+        border: 1px solid #371452;
+        background-color: #ffffff;
+        border-radius: 4px;
+        position:absolute;
+        margin-left:75%;
+        margin-top:4.5rem;
+        padding: 1rem;
+        display: block;
+        transition: 2s;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+    }
+    
+
+    .botonBanner:hover{
+        background-color: #ffffff;
+        opacity: 70%;
+        
+    }
+
+    .textoBanner{
+        text-align: center;
+    }
+    
 }
 
 
