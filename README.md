@@ -80,7 +80,7 @@ ___
 
  ![Gift_Card](https://user-images.githubusercontent.com/93610078/142333153-3bbf5c95-a4c3-465e-9bff-abcd10c1c153.png)
  
- Tarjeta viretual 
+ Tarjeta virtual 
   ___
   
   + ## _Wireframes_
