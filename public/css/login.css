@@ -87,16 +87,114 @@ text-decoration: none;
     border: solid 2px  rgb(20, 40, 220);
     margin: 10px;
 }
-/** footer **/
-
-.flex{
-    display: flex;
-    flex-wrap: wrap;
-}
+<<<<<<< HEAD
+=======
 
 .burger-menu{
     display:none;
 }
+>>>>>>> 9c2fbfafbe1406492bff047245b45ef045eb855c
+/** footer **/
+
+.dflex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: #ebebebec;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+footer h2{
+    width: 100%;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+#footerOne{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#footerOne nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#footerOne nav a{
+    margin-top: 1.5rem;
+}
+
+#footerTwo{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#footerTwo nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#footerTwo nav a{
+    margin-top: 1.5rem;
+}
+
+#footerThree{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#footerThree nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+
+#footerThree h2{
+    margin-bottom: 1.5rem;
+}
+
+#footerThree input{
+    border-radius: 10px;
+    border: solid 1px black;
+    padding: 8px;
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+
+#footerFour{
+    width: 100%;
+    border-top: solid 1px #7A7777;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#footerFour nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.footerFourLeft{
+    border-right: solid 1px #7A7777;
+}
+
 @media screen and (min-width: 361px) {  
     footer{
         display: flex;
