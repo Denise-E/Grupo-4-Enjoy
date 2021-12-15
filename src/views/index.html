@@ -6,14 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enjoy, viví tu experiencia</title>
     <link rel="stylesheet" href="/css/index.css">
-    <script src="https://kit.fontawesome.com/8e7d396c1b.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e7d396c1b.js" crossorigin="anonymous"> </script>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
+    
+    
 </head>
 <body>
-    <header>
-      <p>barra</p>  
-    </header>
+    <header> 
+        <section class="barraSuperior">
+            <img src= "\images\ENJOY.png" alt="Logo" class="logo">
+            <nav class="barraBusqueda">
+                <i class="fas fa-search"></i>
+                <input type="text" class="barra" placeholder="Busca tu experiencia aqui">
+                <button type="button" class="botonBusqueda"> </button>
+            </nav>
+            <div class="encabezado">
+            <h2 class="header-right"> ¡Abri tu experiencia! </i> <i class="fas fa-gift"></i></h2>
+            </div>
+        </section>
+            <div class="burger-menu" > <i class="fas fa-bars"></i> </div>
+            <div>
+                <nav class="header-left">
+            <a id="login" href= "/login/"> <i class="far fa-user"></i>  Ingresa </a>
+                 <button type="submit"><a href="/login/"></i> </a></button>  
+                 <a id="crear-cuenta" href= "/register/">Crea tu cuenta</a> 
+                 <button type="submit"><a href="/register/"></i> </a></button>  
+                </nav>
+            </div>
+        </header>
 
     <main>
         <section class="tituloPortada">
@@ -48,17 +69,25 @@
                 <a href="#nuevo" id="tituloNavegacion">¿Necesitás ideas?</a>
                 </div>
             </nav>
+       
         </section>
+     
         <section class="navegacionSecundaria" id="vendidosNuevos">
-            <nav>
-                <a name="nuevo" id="nuevo">
+            <nav class="navSecundaria">
+            <a name="nuevo" id="nuevo">
+                <div class="masVendidos">
                 <a href="#"> Más vendidos</a>
-                <a href="#">Nuevos</a>
-             </a>
+                </div>
+                <div class="masNuevos">
+                <a href="#">¡Nuevos!</a>
+                </div>
+            </a>
             </nav>
         </section>
+        <section class="productos">
         <article class= "producto1">
-            <picture>
+        
+            <picture class= "imagenProducto">
             <img src="images/spa.png" alt="spa">
             </picture>
             <h3 class="tituloImagen">Spa</h3>
@@ -71,12 +100,14 @@
             </div>    
         </article>
         <article class= "producto2">
-            <picture>
+            <div class="imagenIconos">
+            <picture class= "imagenProducto">
             <img src="images/gastronomia.jpeg" alt="gastronomia">
             </picture>
             <h3 class="tituloImagen">Gastronomía</h3>
             <i class="far fa-heart"></i>
             <i class="far fa-user"></i>
+            </div>
             <div class="caracteristicas">
             <h4 class= "tituloProducto"> Gastronomía</h4>
             <p class="descripcion"> Los mejores restaurantes para dos personas</p>
@@ -85,21 +116,24 @@
         </article>
 
         <article class= "producto3">
-            <picture>
+            <div class="imagenIconos">
+            <picture class= "imagenProducto">
             <img src="/images/aventura.png" alt="aventura">
             </picture>
             <h3 class="tituloImagen">Aventura</h3>
             <i class="far fa-heart"></i>
             <i class="far fa-user"></i>
+            </div>
             <div class="caracteristicas">
             <h4 class= "tituloProducto"> Aventura</h4>
             <p class="descripcion"> Actividades emocionantes e innovadoras</p>
             <p class="precio"> $5500</p>
             </div>    
         </article>
+    </section>
     
     <section class="banner">
-        <i class="fas fa-gift"></i>
+        <i class="fas fa-gift regaloGrande"></i>
         <p class="textoBanner">¡Hacé un regalo empresarial! <br> Fidelizá clientes y colaboradores con ENJOY, hacer un regalo nunca fue tan fácil y original</p>
         <button type="submit"><a href="/">Mirá nuestras soluciones corporativas</a></button>
     </section>
