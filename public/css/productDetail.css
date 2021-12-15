@@ -9,10 +9,133 @@
     flex-wrap: wrap;
 }
 
+
+#mainOne{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+#mainOne h2{
+    color: #5A2083;
+    margin-right: 2px;
+}
+
+#mainOne h4{
+    margin-top: 6px;
+}
+
+#mainTwo{
+    border: solid 1.5px #5A2083;
+    box-shadow: 0px 2px 2px #88888880;
+    width: 95%;
+    margin: 0.5rem;
+}
+
+#mainTwo img{
+    width: 45%;
+}
+
+#mainTwo article{
+    width: 50%;
+    padding: 3px;
+}
+
+#mainTwo p{
+    display: block;
+    width: 100%;
+    margin: 0.5rem;
+}
+
+#mainTwo fieldset{
+    padding-left: 0;
+    margin-left: 0.5rem;
+}
+
+#mainTwo button{
+    width: 50%;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: rgb(241, 240, 240);
+    color: #5A2083;
+    transition: all 300ms;
+}
+
+#buttonRight{
+    position: relative;
+    right: 8px;
+}
+
+#mainTwo button:hover{
+    background-color: #5A2083;
+    color: white;
+}
+
+#mainTwo p{
+    width: 100%;
+}
+
+.format{
+    font-size: 10px;
+}
+
+#mainThree{
+    flex-direction: column;
+    margin-top: 8px;
+    padding-left: 40%;
+}
+
+#mainThree button{
+    border-radius: 3px;
+    background-color: #B47CDE;
+    color: white;
+    opacity: 90%;
+    width: fit-content;
+    padding: 7px;
+    font-size: 12px; 
+}
+
+#mainThree p{
+    font-size: 10px;
+    margin: 3px 3px 6px 3px;
+    color: #5A2083;
+}
+
+img{
+    width: 98%;
+}
+
+#mainFour{
+    background-color: #d9bbf9;
+    opacity: 0.75;
+    margin-bottom: 15px; 
+    padding: 1rem;
+    width: 100%;
+}
+
+#mainFour div{
+    width: 100%;
+    flex-wrap: nowrap;
+    height: fit-content;
+    gap: 1px;
+    margin: 3px 0 3px 3px;
+}
+
+.fa-star{
+    color: #371452;
+}
+
+#mainFour p strong{
+    color: #371452;
+    margin: 0 8px 0 6px;
+}
+
 footer{
     background-color: #ebebebec;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
 }
 
 footer h2{
@@ -103,9 +226,38 @@ footer a{
 }
 
 @media screen and (min-width: 361px) {  
+
+    #mainTwo{
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    #mainTwo article{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #mainThree{
+        padding-left: 50%;
+    }
+
+    #mainThree button{
+        padding: 9px;
+    }
+
+    #mainFour{
+        padding-left: 2.5rem;
+    }
+
+    #mainFour div{
+        margin-bottom: 1rem;
+    }
+
     footer{
         display: flex;
         flex-wrap: wrap;
+        padding-right: 0;
     }
 
     #footerOne{
@@ -143,5 +295,34 @@ footer a{
 
     #footerFour nav a{ 
         padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 769px){
+    #mainOne h2{
+        width: 18%;
+        text-align: right;
+    }
+
+    #mainOne h4{
+        width: 20%;
+        text-align: left;
+    }
+
+
+    #mainOne p{
+        width: 100%;
+        margin: 5px;
+    }
+
+    #mainTwo{
+        max-width: 60%;
+        max-height: 80%;
+        margin-left: 20%;
+    }
+
+    #mainThree button{
+        width: 40%;
+        padding: 12px;
     }
 }

@@ -101,6 +101,7 @@ right: 100px;
     footer{
         display: flex;
         flex-wrap: wrap;
+        padding-right: 0;
     }
 
     #footerOne{
