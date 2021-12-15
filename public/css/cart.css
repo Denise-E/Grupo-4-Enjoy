@@ -122,6 +122,7 @@ footer{
     background-color: #ebebebec;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
 }
 
 footer h2{
@@ -230,10 +231,10 @@ footer a{
     }
 
     
-#mainTwo h5{
-    left: 45px;
-    top: 150px;
-}
+    #mainTwo h5{
+        left: 45px;
+        top: 150px;
+    }
 
     #mainThree{
         max-width: 20rem;
@@ -275,11 +276,6 @@ footer a{
 
     .newsletter{
         width: 100%;
-    }
-
-    
-    #footerThree input{
-        width: 300px;
     }
 
     #footerThree nav{
