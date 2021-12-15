@@ -4,15 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
+    <link href= "https://fontawesome.com/v5.15/icons?d=gallery&p=2" rel="stylesheet">
+
 </head>
 <body>
     <header></header>
 
-    <main></main>
+    <main>
+        <h2 class="tituloLogin">Ingresa a tu cuenta</h2>
+        <section class="formularioInicio">
+        
+        <form action="/login" method="GET">            
+            <section class="form">
+                <div class="inicioSesion">
+                <label for=""></label>
+                <input type="text" placeholder="Correo electronico" name="userId" id="" required>
+                <span class="feedback"></span>
+                <label for=""></label>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <span class="feedback"></span>
+            </div>
+           <nav class="olvide-password">
+               <a href= "#">¿Olvidaste tu contraseña?</a>
+           </nav>
+                <button type="submit"><a href="/">Iniciar sesion</a></button>   
+        </section>
+     <section class="redes">
+         <h2>Continua con:</h2>
+         <button type="submit"><a href="/"><i class="fab fa-facebook"></i> </a></button>   
+         <button type="submit"><a href="/"><i class="fab fa-google"></i> </a></button>   
+        <nav>
+            <a href="https://www.facebook.com/"> </a>
+            <a href="https://www.google.com/"> </a>
+        </nav>
+    
+    </section>
+        </form>
+    </section> 
+    </main>
 
     <footer>
         <section class="dflex" id="footerOne">

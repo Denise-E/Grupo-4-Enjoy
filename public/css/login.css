@@ -4,104 +4,99 @@
     box-sizing: border-box;
 }
 
-.dflex{
+main{
+    text-align: center;
+}
+
+/** login **/
+
+.tituloLogin{
+    margin:30px;
+    font-weight: bolder;
+    font-size: 30px;
+    color:#5A2083;
+    }
+
+.inicioSesion {
+    text-align: center;
+    box-shadow: 0px 0px 5px #b47cde;
+    border-radius: 20px;
+        max-width: 50%;
+        margin: auto;
+        padding: 30px 30px;
+        justify-content: center;
+        align-items: center;
+        
+}
+.inicioSesion input{
+    align-items: center;
+        border: none;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        font-size: 20px;
+     background-color:#d9bbf9;
+    
+}
+.form{
+    margin: 15px 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+    padding-left: 10px;
+    justify-content: center;
+    border: thistle;
+}
+
+main button{
+    border: 5px;
+    background-color: #b47cde;
+    max-width: 25%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5%;
+    transition: background-color 200ms;
+}
+main button:hover{
+    background-color: #d9bbf9;
+}
+
+main button a{
+    border: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.olvide-password{
+right: 100px;
+}
+
+.redes{
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 300px;
+}
+.redes button{
+    margin-inline: 5px;
+   margin-block: 30px;
+}
+
+/** footer **/
+
+.flex{
     display: flex;
     flex-wrap: wrap;
 }
 
-footer{
-    background-color: #ebebebec;
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
+.burger-menu{
+    display:none;
 }
-
-footer h2{
-    width: 100%;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
-}
-
-#footerOne{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerOne nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#footerOne nav a{
-    margin-top: 1.5rem;
-}
-
-#footerTwo{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerTwo nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#footerTwo nav a{
-    margin-top: 1.5rem;
-}
-
-#footerThree{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerThree nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 2rem;
-}
-
-
-#footerThree h2{
-    margin-bottom: 1.5rem;
-}
-
-#footerThree input{
-    border-radius: 10px;
-    border: solid 1px black;
-    padding: 8px;
-    width: 90%;
-    margin-bottom: 1.5rem;
-}
-
-#footerFour{
-    width: 100%;
-    border-top: solid 1px #7A7777;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerFour nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.footerFourLeft{
-    border-right: solid 1px #7A7777;
-}
-
 @media screen and (min-width: 361px) {  
     footer{
         display: flex;
