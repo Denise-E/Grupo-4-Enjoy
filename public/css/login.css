@@ -75,6 +75,7 @@ main button a{
 
 .olvide-password{
 right: 100px;
+text-decoration: none;
 }
 
 .redes{
@@ -82,11 +83,10 @@ right: 100px;
     text-decoration: none;
     margin-right: 300px;
 }
-.redes button{
-    margin-inline: 5px;
-   margin-block: 30px;
+.redes a {
+    border: solid 2px  rgb(20, 40, 220);
+    margin: 10px;
 }
-
 /** footer **/
 
 .flex{

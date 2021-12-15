@@ -88,88 +88,33 @@ body{
 
 /**Header**/
 
-.logo{
-    margin: 0em;
-    padding: 0;
-    width: 300px;
-}
-
-.barra{
-    position:absolute;
-    right: 100px;
-    margin-top: 0%;
-   
-}
-
-
-.burger-menu{
-    display: block;
-    color: white;
-    background-color:#371452;
-    max-width: 30px;
-    padding: 15px 0;
-    border-radius: 5px;
-    font-size: 16px;
-    margin: 5px;
-    margin-top: 0%;
-    justify-content: left;
-    }
-
-#login{
-    padding: 10px;
-    margin: 0;
-    width: 120px;
-    color: #371452;
-    box-shadow: 1px 2px 2px 2px rgb(0 0 0 / 15%);
-    border-radius: 5px;
-    text-align: center;
-
-
-}
-
-#crear-cuenta{
-    padding: 8px;
-    margin: 0;
-    width: 120px;
-    background-color: #371452;
-    color: #ffffff;
-    box-shadow: 1px 2px 2px 2px rgb(0 0 0 / 15%);
-    border-radius: 5px;
-    text-align: center;
- 
-}
-.header-left{
-    color: #371452;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    justify-content: right;
-
-}
-
-.encabezado{
-    color: #371452;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    justify-content: right;
-    margin-top: 5px;
-
-}
-.barraSuperior img{
-    margin: -40px;
-    padding: 20px;
-}
-
-
-/**footer**/
-
 .dflex{
     display: flex;
     flex-wrap: wrap;
 }
+
+#barraSuperior{
+    border: solid 2px chocolate;
+}
+
+.fa-bars{
+}
+
+header img{
+    border: solid 2px  #371452;
+    width: 4rem;
+}
+
+#barraSuperior nav h5{
+display: none;
+}
+
+#barraSuperior nav{
+border:solid 2px #371452;
+width: 50%;
+}
+
+/**footer**/
 
 footer{
     background-color: #ebebebec;
