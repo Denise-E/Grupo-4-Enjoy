@@ -39,6 +39,7 @@
 
 #mainTwo article{
     width: 50%;
+    padding: 3px;
 }
 
 #mainTwo p{
@@ -55,10 +56,15 @@
 #mainTwo button{
     width: 50%;
     border-radius: 6px;
-    padding: 3px;
+    padding: 5px;
     background-color: rgb(241, 240, 240);
     color: #5A2083;
     transition: all 300ms;
+}
+
+#buttonRight{
+    position: relative;
+    right: 8px;
 }
 
 #mainTwo button:hover{
@@ -220,22 +226,32 @@ footer a{
 }
 
 @media screen and (min-width: 361px) {  
-    #mainOne p{
-        max-width: 80%;
-    }
 
     #mainTwo{
-        max-width: 80%;
-        align-items: center;
-        margin-left: 10%;
+        max-width: 90%;
+        margin-left: 5%;
     }
 
     #mainTwo article{
-        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    #mainTwo p{
-        margin-top: 6px;
+    #mainThree{
+        padding-left: 50%;
+    }
+
+    #mainThree button{
+        padding: 9px;
+    }
+
+    #mainFour{
+        padding-left: 2.5rem;
+    }
+
+    #mainFour div{
+        margin-bottom: 1rem;
     }
 
     footer{
@@ -284,7 +300,8 @@ footer a{
 
 @media screen and (min-width: 769px){
     #mainOne h2{
-        width: 12%;
+        width: 18%;
+        text-align: right;
     }
 
     #mainOne h4{
@@ -295,6 +312,17 @@ footer a{
 
     #mainOne p{
         width: 100%;
+        margin: 5px;
     }
 
+    #mainTwo{
+        max-width: 60%;
+        max-height: 80%;
+        margin-left: 20%;
+    }
+
+    #mainThree button{
+        width: 40%;
+        padding: 12px;
+    }
 }
