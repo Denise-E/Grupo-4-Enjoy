@@ -134,8 +134,15 @@ body{
 .nPrincipal{
     width: 100%;
 }
+.regala, .motivos, .ideas{
+    position: relative;
+}
+.lampara{
+    display: none;
+    
+}
 #imagenNavegacion{
-    max-width: 3rem;
+    max-width: 5.6rem;
 }
 
 .navegacion{
@@ -500,6 +507,14 @@ footer a{
         margin-left: 0.3rem;
         padding: 3rem;
         font-size: 1.5rem;
+    }
+    .lampara{
+        right: 1rem;
+    bottom: 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 10rem;
+    display: block;
     }
     .masNuevos{
         padding: 1rem 2.2rem;
