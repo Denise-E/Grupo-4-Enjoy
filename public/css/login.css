@@ -35,7 +35,8 @@ main{
         margin-bottom: 15px;
         border-radius: 10px;
         font-size: 20px;
-     background-color:#d9bbf9;
+          border: solid 1px #b47cde;
+    
     
 }
 .form{
@@ -89,97 +90,3 @@ text-decoration: none;
    font-size: 30px;
 }
 
-
-/** footer **/
-
-
-
-@media screen and (min-width: 361px) {  
-    .fa-bars{
-        width: 30px;
-        color: #5A2083;
-        margin: 5px;
-    }
-
-    header img{
-        width: 50%;
-        height: 30%;
-    }
-    
-    #barraSuperior{
-        margin-bottom: 0;
-    }
-
-    #barraSuperior nav{
-        width: 45%;
-        gap: 8px;
-    }
-
-    #barraSuperior nav p{
-        display: inline;
-    }
-    
-    #barraInferior{
-        margin-top: 0;
-    }
-
-    #barraInferior button{
-        max-width: 15%;
-    }
-
-    header i{
-        font-size: 20px;
-    }
-
-    footer{
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 0;
-    }
-
-    #footerOne{
-        max-width: 26%;
-        text-align: left;
-        flex-grow: 1;
-    }
-
-    #footerTwo{
-        max-width: 26%;
-        text-align: left;
-        flex-grow: 1;
-    }
-
-    #footerThree{
-        display: inline-flex;
-        max-width: 45%;
-        flex-grow: 1;
-        align-items: flex-start;
-        padding: 0;
-    }
-    
-    #footerThree h2{
-        margin-top: 1rem;
-    }
-
-    .newsletter{
-        width: 100%;
-    }
-
-    #footerThree nav{
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    #footerFour nav a{ 
-        padding: 1rem;
-    }
-}
-
-@media screen and (min-width: 769px){
-   
-    
-    #mainFive button{
-        width: 250px;
-        margin-right: 10%;
-    }    
-}
