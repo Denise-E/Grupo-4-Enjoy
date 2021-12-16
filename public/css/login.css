@@ -160,19 +160,11 @@ text-decoration: none;
     border: solid 2px  rgb(20, 40, 220);
     margin: 10px;
 }
-<<<<<<< HEAD
-=======
 
-.burger-menu{
-    display:none;
-}
->>>>>>> 9c2fbfafbe1406492bff047245b45ef045eb855c
 /** footer **/
 
-
-
 footer{
-    background-color: #ebebebec;
+    background-color: #ebebeb6b;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
