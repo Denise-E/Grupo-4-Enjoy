@@ -260,25 +260,7 @@ position: relative;
     .caracteristicas{
         max-height: 40vh;
     }
-    .botonBanner{
-        border: 1px solid #371452;
-        background-color: #ffffff;
-        border-radius: 4px;
-        position:absolute;
-        margin-left:75%;
-        margin-top:4.5rem;
-        padding: 1rem;
-        display: block;
-        transition: 2s;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
-    }
     
-
-    .botonBanner:hover{
-        background-color: #ffffff;
-        opacity: 70%;
-        
-    }
 
     .textoBanner{
         text-align: center;
@@ -299,5 +281,26 @@ position: relative;
     .nPrincipal{
        
         flex-direction: row;
+        }
+
+        .botonBanner{
+            border: 1px solid #371452;
+            background-color: #ffffff;
+            border-radius: 4px;
+            position:absolute;
+            left:50rem;
+            margin-top:4rem;
+            padding: 1rem;
+            display: block;
+            transition: 2s;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+            width: 50%;
+        }
+        
+    
+        .botonBanner:hover{
+            background-color: #ffffff;
+            opacity: 70%;
+            
         }
 }
