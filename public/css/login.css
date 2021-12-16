@@ -4,12 +4,80 @@
     box-sizing: border-box;
 }
 
-main{
+.dflex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#barraSuperior{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    padding: 2px;
+}
+
+#barraSuperior section{
+    align-items: center;
+}
+
+.fa-bars{
+    border: solid 1px #371452;
+    padding: 3px;
+    border-radius: 6px;
     text-align: center;
+    width: 25px;
+}
+
+header img{
+    width: 7rem;
+    margin-left: 4px;
+}
+
+#barraSuperior nav p{
+    display: none;
+}
+
+#barraSuperior nav{
+    width: 30%;
+    justify-content: right;
+    gap: 10px;
+}
+
+#barraSuperior nav a{
+    color: black;
+}
+
+#barraInferior{
+    justify-content: right;
+    align-items: center;
+    gap: 4px;
+    margin: 2%;
+}
+
+#barraInferior button{
+    padding: 8px;
+    border-radius: 8px;
+    width: 25%;
+}
+
+#headerButtonLeft{
+    border: solid 1px #371452;
+    background-color: white;
+}
+
+#headerButtonRight{
+    background-color: #371452;
+}
+
+#headerButtonRight a{
+    color: white;
 }
 
 /** login **/
-
+main{
+    text-align: center;
+}
 .tituloLogin{
     margin:30px;
     font-weight: bolder;
@@ -92,10 +160,7 @@ right: 100px;
 }
 /** footer **/
 
-.dflex{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 footer{
     background-color: #ebebebec;
@@ -192,6 +257,40 @@ footer a{
 }
 
 @media screen and (min-width: 361px) {  
+    .fa-bars{
+        width: 30px;
+    }
+
+    header img{
+        width: 50%;
+        height: 30%;
+    }
+    
+    #barraSuperior{
+        margin-bottom: 0;
+    }
+
+    #barraSuperior nav{
+        width: 60%;
+        gap: 15px;
+    }
+
+    #barraSuperior nav p{
+        display: inline;
+    }
+    
+    #barraInferior{
+        margin-top: 0;
+    }
+
+    #barraInferior button{
+        max-width: 15%;
+    }
+
+    header i{
+        font-size: 20px;
+    }
+
     footer{
         display: flex;
         flex-wrap: wrap;
@@ -234,4 +333,25 @@ footer a{
     #footerFour nav a{ 
         padding: 1rem;
     }
+}
+
+@media screen and (min-width: 769px){
+    header{
+        padding: 2px;
+        margin: 5px;
+    }
+
+    header img{
+        width: 60%;
+        height: 40%;
+    }
+
+    #barraSuperior nav{
+        width: 40%;
+    }
+    
+    #mainFive button{
+        width: 250px;
+        margin-right: 10%;
+    }    
 }

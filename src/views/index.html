@@ -14,27 +14,24 @@
 </head>
 <body>
     <header> 
-        <section class="barraSuperior">
-            <img src= "\images\ENJOY.png" alt="Logo" class="logo">
-            <nav class="barraBusqueda">
-                <i class="fas fa-search"></i>
-                <input type="text" class="barra" placeholder="Busca tu experiencia aqui">
-                <button type="button" class="botonBusqueda"> </button>
+        <section class="dflex" id="barraSuperior"> 
+            <section class="dflex">
+                <i class="fas fa-bars"></i>
+               <img src= "\images\ENJOY.png" alt="Logo"> 
+            </section>
+            <nav class="dflex">
+                <a href="#">  <i class="fas fa-search"></i></a>
+                <a href="#"> <i class="fas fa-gift"></i> <p>¡Abri tu experiencia!</p></a>
+                <a href="#"> <i class="fas fa-shopping-cart"></i> </a>
+                <a href="#">  <i class="far fa-heart"></i> </a>
             </nav>
-            <div class="encabezado">
-            <h2 class="header-right"> ¡Abri tu experiencia! </i> <i class="fas fa-gift"></i></h2>
-            </div>
         </section>
-            <div class="burger-menu" > <i class="fas fa-bars"></i> </div>
-            <div>
-                <nav class="header-left">
-            <a id="login" href= "/login/"> <i class="far fa-user"></i>  Ingresa </a>
-                 <button type="submit"><a href="/login/"></i> </a></button>  
-                 <a id="crear-cuenta" href= "/register/">Crea tu cuenta</a> 
-                 <button type="submit"><a href="/register/"></i> </a></button>  
-                </nav>
-            </div>
-        </header>
+        <section id="barraInferior" class="dflex">
+            <i class="far fa-user"></i>
+            <button type="submit" id="headerButtonLeft"><a href ="/login">Log in </a> </button>  
+            <button type="submit" id="headerButtonRight"><a href="/register">Registrate </a> </button>       
+        </section>        
+    </header>
 
     <main>
         <section class="tituloPortada">
