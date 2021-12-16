@@ -314,8 +314,8 @@ footer a{
     }
 
     #barraSuperior nav{
-        width: 60%;
-        gap: 15px;
+        width: 45%;
+        gap: 8px;
     }
 
     #barraSuperior nav p{
@@ -333,7 +333,6 @@ footer a{
     header i{
         font-size: 20px;
     }
-
 
     #mainTwo{
         max-width: 90%;
