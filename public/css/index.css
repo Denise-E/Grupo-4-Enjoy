@@ -3,10 +3,87 @@
     margin: 0;
     box-sizing: border-box;
 }
+/**Header**/
+.dflex{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+#barraSuperior{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    padding: 2px;
+}
+
+#barraSuperior section{
+    align-items: center;
+}
+
+.fa-bars{
+    border: solid 1px #371452;
+    padding: 3px;
+    border-radius: 6px;
+    text-align: center;
+    width: 25px;
+}
+
+header img{
+    width: 7rem;
+    margin-left: 4px;
+}
+
+#barraSuperior nav p{
+    display: none;
+}
+
+#barraSuperior nav{
+    width: 30%;
+    justify-content: right;
+    gap: 10px;
+}
+
+#barraSuperior nav a{
+    color: black;
+    text-decoration: none;
+}
+
+#barraInferior{
+    justify-content: right;
+    align-items: center;
+    gap: 4px;
+    margin: 2%;
+}
+
+#barraInferior button{
+    padding: 8px;
+    border-radius: 8px;
+    width: 25%;
+}
+
+#barraInferior button a{
+    text-decoration: none;
+}
+
+#headerButtonLeft{
+    border: solid 1px #371452;
+    background-color: white;
+}
+
+#headerButtonRight{
+    background-color: #371452;
+}
+
+#headerButtonRight a{
+    color: white;
+}
+
+/**Main**/
 img{
     max-width: 100%;
 }
+
 a:link, a:visited, a:active {
     text-decoration:none;
 }
@@ -72,80 +149,6 @@ body{
     color:black;
 }
 
-<<<<<<< HEAD
-
-/**Header**/
-.dflex{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#barraSuperior{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2%;
-    padding: 2px;
-}
-
-#barraSuperior section{
-    align-items: center;
-}
-
-.fa-bars{
-    border: solid 1px #371452;
-    padding: 3px;
-    border-radius: 6px;
-    text-align: center;
-    width: 25px;
-}
-
-header img{
-    width: 7rem;
-    margin-left: 4px;
-}
-
-#barraSuperior nav p{
-    display: none;
-}
-
-#barraSuperior nav{
-    width: 30%;
-    justify-content: right;
-    gap: 10px;
-}
-
-#barraSuperior nav a{
-    color: black;
-}
-
-#barraInferior{
-    justify-content: right;
-    align-items: center;
-    gap: 4px;
-    margin: 2%;
-}
-
-#barraInferior button{
-    padding: 8px;
-    border-radius: 8px;
-    width: 25%;
-}
-
-#headerButtonLeft{
-    border: solid 1px #371452;
-    background-color: white;
-}
-
-#headerButtonRight{
-    background-color: #371452;
-}
-
-#headerButtonRight a{
-    color: white;
-}
-
-=======
 .navSecundaria{
     display: flex;
     margin-bottom: 1rem;
@@ -241,33 +244,6 @@ header img{
 }
 
 
-/**Header**/
-
-.dflex{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#barraSuperior{
-    border: solid 2px chocolate;
-}
-
-
-
-header img{
-    border: solid 2px  #371452;
-    width: 4rem;
-}
-
-#barraSuperior nav h5{
-display: none;
-}
-
-#barraSuperior nav{
-border:solid 2px #371452;
-width: 50%;
-}
-
 
 .banner{
     background-color: rgb(90, 32, 131, 95);
@@ -308,156 +284,7 @@ position: relative;
 
 
 
-
-@media screen and (min-width: 769px) {  
-    .titulo{
-        font-size: 30px;
-        }
-    .nPrincipal{
-        display: flex;
-        }
-    .navegacion{
-        margin-left: 1rem;
-        padding: 3rem;
-        font-size: 1.5rem;
-    }
-    .masNuevos{
-        padding: 1rem 2.2rem;
-    }
-    .masVendidos{
-        padding: 1rem 2.2rem;
-    }
-    .botonBanner{
-        border: 1px solid #371452;
-        background-color: #ffffff;
-        border-radius: 4px;
-        position:absolute;
-        margin-left:75%;
-        margin-top:4.5rem;
-        padding: 1rem;
-        display: block;
-        transition: 2s;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
-    }
-    
-
-    .botonBanner:hover{
-        background-color: #ffffff;
-        opacity: 70%;
-        
-    }
-
-    .textoBanner{
-        text-align: center;
-    }
-
-    .tituloImagen{
-        font-size: 2.4rem;
-     }
-    
-}
-
-
-
->>>>>>> 0dff271a5b2806744aa19143ca69b07907155016
-/**footer**/
-
-footer{
-    background-color: #ebebebec;
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-}
-
-footer h2{
-    width: 100%;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
-}
-
-#footerOne{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerOne nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#footerOne nav a{
-    margin-top: 1.5rem;
-}
-
-#footerTwo{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerTwo nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#footerTwo nav a{
-    margin-top: 1.5rem;
-}
-
-#footerThree{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerThree nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 2rem;
-}
-
-
-#footerThree h2{
-    margin-bottom: 1.5rem;
-}
-
-#footerThree input{
-    border-radius: 10px;
-    border: solid 1px black;
-    padding: 8px;
-    width: 90%;
-    margin-bottom: 1.5rem;
-}
-
-#footerFour{
-    width: 100%;
-    border-top: solid 1px #7A7777;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerFour nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.footerFourLeft{
-    border-right: solid 1px #7A7777;
-}
-
 @media screen and (min-width: 361px) {  
-<<<<<<< HEAD
     .fa-bars{
         width: 30px;
     }
@@ -490,7 +317,7 @@ footer a{
 
     header i{
         font-size: 20px;
-=======
+    }
     .masVendidos{
         padding: 1rem 2.2rem;
     }
@@ -500,12 +327,7 @@ footer a{
     }
     .textoBanner{
     
-        
         font-size: 1.6rem;
-        
-        
-        
->>>>>>> 0dff271a5b2806744aa19143ca69b07907155016
     }
 
     footer{
@@ -552,7 +374,6 @@ footer a{
     }
 }
 
-
 @media screen and (min-width: 769px) {  
     header{
         padding: 2px;
@@ -567,7 +388,7 @@ footer a{
     #barraSuperior nav{
         width: 40%;
     }
-
+    
     .titulo{
         font-size: 30px;
         }
@@ -579,4 +400,130 @@ footer a{
         padding: 3rem;
         font-size: 1.5rem;
     }
-}
+    .masNuevos{
+        padding: 1rem 2.2rem;
+    }
+    .masVendidos{
+        padding: 1rem 2.2rem;
+    }
+    .botonBanner{
+        border: 1px solid #371452;
+        background-color: #ffffff;
+        border-radius: 4px;
+        position:absolute;
+        margin-left:75%;
+        margin-top:4.5rem;
+        padding: 1rem;
+        display: block;
+        transition: 2s;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+    }
+    
+
+    .botonBanner:hover{
+        background-color: #ffffff;
+        opacity: 70%;
+        
+    }
+
+    .textoBanner{
+        text-align: center;
+    }
+
+    .tituloImagen{
+        font-size: 2.4rem;
+     }
+
+    footer{
+        background-color: #ebebebec;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+    }
+
+    footer h2{
+        width: 100%;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #footerOne{
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    #footerOne nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #footerOne nav a{
+        margin-top: 1.5rem;
+    }
+
+    #footerTwo{
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    #footerTwo nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #footerTwo nav a{
+        margin-top: 1.5rem;
+    }
+
+    #footerThree{
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    #footerThree nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 2rem;
+    }
+
+
+    #footerThree h2{
+        margin-bottom: 1.5rem;
+    }
+
+    #footerThree input{
+        border-radius: 10px;
+        border: solid 1px black;
+        padding: 8px;
+        width: 90%;
+        margin-bottom: 1.5rem;
+    }
+
+    #footerFour{
+        width: 100%;
+        border-top: solid 1px #7A7777;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    #footerFour nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footerFourLeft{
+        border-right: solid 1px #7A7777;
+    }
