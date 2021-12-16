@@ -219,10 +219,10 @@ position: relative;
 }
 
 .regaloGrande{
-    font-size: 15rem;
+    font-size: 10rem;
     color:white;    
     opacity: 25%;
-    margin: 0 2rem;
+    
 }
 
 
@@ -287,6 +287,11 @@ position: relative;
     .tituloImagen{
         font-size: 2.4rem;
      }
+     .regaloGrande{
+        font-size: 15rem;
+        
+        margin: 0 2rem;
+    }
 
     
 }
