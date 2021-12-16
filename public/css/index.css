@@ -174,8 +174,7 @@ body{
     border: solid 2px chocolate;
 }
 
-.fa-bars{
-}
+
 
 header img{
     border: solid 2px  #371452;
@@ -191,8 +190,7 @@ border:solid 2px #371452;
 width: 50%;
 }
 
-<<<<<<< HEAD
-=======
+
 .banner{
     background-color: rgb(90, 32, 131, 95);
 border-radius: 4px;
@@ -282,7 +280,7 @@ position: relative;
 }
 
 
->>>>>>> 9c2fbfafbe1406492bff047245b45ef045eb855c
+
 /**footer**/
 
 footer{
