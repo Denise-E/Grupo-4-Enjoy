@@ -81,11 +81,14 @@ text-decoration: none;
     font-size: 12px;
     text-decoration: none;
     margin-right: 300px;
+    margin: 30px;
+    margin-top: -30px;
 }
 .redes a {
-    border: solid 2px  rgb(20, 40, 220);
     margin: 10px;
+   font-size: 30px;
 }
+
 
 /** footer **/
 
@@ -94,6 +97,8 @@ text-decoration: none;
 @media screen and (min-width: 361px) {  
     .fa-bars{
         width: 30px;
+        color: #5A2083;
+        margin: 5px;
     }
 
     header img{
