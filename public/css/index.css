@@ -72,7 +72,95 @@ body{
     color:black;
 }
 
+.navSecundaria{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.masVendidos, .masNuevos{
+    border: 1px solid #371452;
+    border-radius: 6px;
+    margin:1rem;
+    padding: 1rem 2rem;
+    
+}
 
+.masVendidos{
+    background-color: #5A2083;
+}
+.masVendidos a{
+    color:white;
+}
+
+.masNuevos{
+    padding: 1.5rem 2.2rem;
+}
+
+.masNuevos a{
+    color:black;
+}
+
+.productos{
+    display: flex;
+}
+.producto1, .producto2, .producto3{
+	padding: 1px;
+	margin: 10px 5px;
+	background-color: rgb(217, 187, 249, 55);
+    border: 1px solid #371452;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px rgb(100, 100, 100);
+	}
+
+.producto1 img, .producto2 img, .producto3 img{
+        width: 100%;
+    }
+
+
+.imagenIconos{
+    position: relative;
+}
+.fa-heart{
+    position: absolute;
+    color: #ffffff;
+    top: 2vh;
+    left: 25vw;
+    right: 0;
+    bottom: 0;
+    
+}
+.fa-user{
+    position: absolute;
+    color: #ffffff;
+    top: 100vh;
+    left: 25vw;
+    right: 0;
+    bottom: 0;
+    
+}
+.tituloImagen{
+    position:absolute;
+    color: #ffffff;
+    font-weight:bolder;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size:medium;
+    text-shadow: 2px 2px 2px black;
+}
+
+.caracteristicas{
+    border-top: 1px solid #ebebeb;
+    text-align: center;
+}
+
+.precio{
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+}
 
 
 /**Header**/
@@ -167,7 +255,7 @@ position: relative;
 .textoBanner{
     
     color:white;
-    font-size: 1.6rem;
+    font-size: 1rem;
     max-width: 70%;
     
     
@@ -204,6 +292,12 @@ position: relative;
         padding: 3rem;
         font-size: 1.5rem;
     }
+    .masNuevos{
+        padding: 1rem 2.2rem;
+    }
+    .masVendidos{
+        padding: 1rem 2.2rem;
+    }
     .botonBanner{
         border: 1px solid #371452;
         background-color: #ffffff;
@@ -227,6 +321,10 @@ position: relative;
     .textoBanner{
         text-align: center;
     }
+
+    .tituloImagen{
+        font-size: 2.4rem;
+     }
     
 }
 
@@ -333,7 +431,22 @@ footer a{
 }
 
 @media screen and (min-width: 361px) {  
+    .masVendidos{
+        padding: 1rem 2.2rem;
+    }
+
+    .masNuevos {
+        padding: 1rem 2.5rem;
+    }
+    .textoBanner{
     
+        
+        font-size: 1.6rem;
+        
+        
+        
+    }
+
     footer{
         display: flex;
         flex-wrap: wrap;
