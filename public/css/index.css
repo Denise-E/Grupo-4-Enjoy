@@ -131,6 +131,9 @@ body{
 		display: flex;
         margin: 1rem;
 }
+.nPrincipal{
+    width: 100%;
+}
 #imagenNavegacion{
     max-width: 3rem;
 }
@@ -239,6 +242,7 @@ body{
 .caracteristicas{
     border-top: 1px solid #ebebeb;
     text-align: center;
+    
 }
 
 .precio{
@@ -408,6 +412,9 @@ position: relative;
     }
     .masVendidos{
         padding: 1rem 2.2rem;
+    }
+    .caracteristicas{
+        height: 24vh;
     }
     .botonBanner{
         border: 1px solid #371452;
