@@ -258,7 +258,7 @@ position: relative;
     }
     
     .caracteristicas{
-        height: 40vh;
+        max-height: 40vh;
     }
     .botonBanner{
         border: 1px solid #371452;
