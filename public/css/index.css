@@ -72,6 +72,7 @@ body{
     color:black;
 }
 
+<<<<<<< HEAD
 
 /**Header**/
 .dflex{
@@ -144,6 +145,221 @@ header img{
     color: white;
 }
 
+=======
+.navSecundaria{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.masVendidos, .masNuevos{
+    border: 1px solid #371452;
+    border-radius: 6px;
+    margin:1rem;
+    padding: 1rem 2rem;
+    
+}
+
+.masVendidos{
+    background-color: #5A2083;
+}
+.masVendidos a{
+    color:white;
+}
+
+.masNuevos{
+    padding: 1.5rem 2.2rem;
+}
+
+.masNuevos a{
+    color:black;
+}
+
+.productos{
+    display: flex;
+}
+.producto1, .producto2, .producto3{
+	padding: 1px;
+	margin: 10px 5px;
+	background-color: rgb(217, 187, 249, 55);
+    border: 1px solid #371452;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px rgb(100, 100, 100);
+	}
+
+.producto1 img, .producto2 img, .producto3 img{
+        width: 100%;
+    }
+
+
+.imagenIconos{
+    position: relative;
+}
+.iconosImagen{
+    display:flex;
+    flex-direction: column;
+    float: right;
+}
+.corazon{
+    
+    color: #ffffff;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 30px;
+    
+}
+.usuario{
+    position: absolute;
+    color: #ffffff;
+    font-size: 30px;
+    bottom: 10px;
+    right: 10px;
+    
+}
+.tituloImagen{
+    position:absolute;
+    color: #ffffff;
+    font-weight:bolder;
+    top: 25vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    font-size:medium;
+    text-shadow: 2px 2px 2px black;
+}
+
+.caracteristicas{
+    border-top: 1px solid #ebebeb;
+    text-align: center;
+}
+
+.precio{
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+}
+
+
+/**Header**/
+
+.dflex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#barraSuperior{
+    border: solid 2px chocolate;
+}
+
+
+
+header img{
+    border: solid 2px  #371452;
+    width: 4rem;
+}
+
+#barraSuperior nav h5{
+display: none;
+}
+
+#barraSuperior nav{
+border:solid 2px #371452;
+width: 50%;
+}
+
+
+.banner{
+    background-color: rgb(90, 32, 131, 95);
+border-radius: 4px;
+height: 18rem;
+align-items: center;
+background-size: contain;
+padding: 3rem;
+margin: 3rem;
+display: flex;
+position: relative;
+    
+}
+.textoBanner{
+    
+    color:white;
+    font-size: 1rem;
+    max-width: 70%;
+    
+    
+}
+
+.botonBanner{
+    display: none;
+}
+
+.botonytexto{
+    display:flex;
+    position:absolute;
+}
+
+.fa-gift{
+    font-size: 15rem;
+    color:white;    
+    opacity: 25%;
+    margin: 0 2rem;
+}
+
+
+
+
+@media screen and (min-width: 769px) {  
+    .titulo{
+        font-size: 30px;
+        }
+    .nPrincipal{
+        display: flex;
+        }
+    .navegacion{
+        margin-left: 1rem;
+        padding: 3rem;
+        font-size: 1.5rem;
+    }
+    .masNuevos{
+        padding: 1rem 2.2rem;
+    }
+    .masVendidos{
+        padding: 1rem 2.2rem;
+    }
+    .botonBanner{
+        border: 1px solid #371452;
+        background-color: #ffffff;
+        border-radius: 4px;
+        position:absolute;
+        margin-left:75%;
+        margin-top:4.5rem;
+        padding: 1rem;
+        display: block;
+        transition: 2s;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+    }
+    
+
+    .botonBanner:hover{
+        background-color: #ffffff;
+        opacity: 70%;
+        
+    }
+
+    .textoBanner{
+        text-align: center;
+    }
+
+    .tituloImagen{
+        font-size: 2.4rem;
+     }
+    
+}
+
+
+
+>>>>>>> 0dff271a5b2806744aa19143ca69b07907155016
 /**footer**/
 
 footer{
@@ -241,6 +457,7 @@ footer a{
 }
 
 @media screen and (min-width: 361px) {  
+<<<<<<< HEAD
     .fa-bars{
         width: 30px;
     }
@@ -273,6 +490,22 @@ footer a{
 
     header i{
         font-size: 20px;
+=======
+    .masVendidos{
+        padding: 1rem 2.2rem;
+    }
+
+    .masNuevos {
+        padding: 1rem 2.5rem;
+    }
+    .textoBanner{
+    
+        
+        font-size: 1.6rem;
+        
+        
+        
+>>>>>>> 0dff271a5b2806744aa19143ca69b07907155016
     }
 
     footer{

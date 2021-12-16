@@ -7,7 +7,7 @@
     <title>Enjoy, viví tu experiencia</title>
     <link rel="stylesheet" href="/css/index.css">
     <script src="https://kit.fontawesome.com/8e7d396c1b.js" crossorigin="anonymous"> </script>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Life+Savers&display=swap" rel="stylesheet">
     
     
@@ -32,6 +32,28 @@
             <button type="submit" id="headerButtonRight"><a href="/register">Registrate </a> </button>       
         </section>        
     </header>
+        <section id="barraSuperior" class= "dFlex"> 
+            <i class="fas fa-bars"></i>
+            <img src= "\images\ENJOY.png" alt="Logo">
+            <nav>
+            <a>  <i class="fas fa-search"></i></a>
+            <a> <i class="fas fa-gift"></i> <h5>¡Abri tu experiencia!</h5></a>
+            <a> <i class="fas fa-shopping-cart"></i> </a>
+            <a>  <i class="far fa-heart"></i> </a>
+            </nav>
+        </section>
+        
+        <section id="barraInferior" class="dFlex">
+            <i class="far fa-user"></i>
+            <nav>
+                <button type="submit"><a href ="/login">Ingresa </a> </button>  
+                <button type="submit"><a href="/register">Crea tu cuenta </a> </button> 
+            </nav>
+            
+        </section>         
+        
+        </header>
+>>>>>>> 0dff271a5b2806744aa19143ca69b07907155016
 
     <main>
         <section class="tituloPortada">
@@ -82,28 +104,36 @@
             </nav>
         </section>
         <section class="productos">
+            <a href="/productdetail/">
         <article class= "producto1">
-        
+            <div class="imagenIconos">
             <picture class= "imagenProducto">
             <img src="images/spa.png" alt="spa">
             </picture>
             <h3 class="tituloImagen">Spa</h3>
-            <i class="far fa-heart"></i>
-            <i class="far fa-user"></i>
+            <div class="iconosImagen">
+            <i class="far fa-heart corazon"></i>
+            <i class="far fa-user usuario"></i>
+            </div>
+            </div>
             <div class="caracteristicas">
             <h4 class= "tituloProducto"> Spa</h4>
             <p class="descripcion"> Sesiones de masajes y tratamientos corporales y faciales exclusivos</p>
             <p class="precio"> $3200</p>
             </div>    
         </article>
+        </a>
+        <a href="/productdetail/">
         <article class= "producto2">
             <div class="imagenIconos">
             <picture class= "imagenProducto">
-            <img src="images/gastronomia.jpeg" alt="gastronomia">
+            <img src="images/gastronomia4.png" alt="gastronomia">
             </picture>
             <h3 class="tituloImagen">Gastronomía</h3>
-            <i class="far fa-heart"></i>
-            <i class="far fa-user"></i>
+            <div class="iconosImagen">
+                <i class="far fa-heart corazon"></i>
+                <i class="far fa-user usuario"></i>
+                </div>
             </div>
             <div class="caracteristicas">
             <h4 class= "tituloProducto"> Gastronomía</h4>
@@ -111,15 +141,18 @@
             <p class="precio"> $4500</p>
             </div>    
         </article>
-
+        </a>
+        <a href="/productdetail/">
         <article class= "producto3">
             <div class="imagenIconos">
             <picture class= "imagenProducto">
             <img src="/images/aventura.png" alt="aventura">
             </picture>
             <h3 class="tituloImagen">Aventura</h3>
-            <i class="far fa-heart"></i>
-            <i class="far fa-user"></i>
+            <div class="iconosImagen">
+                <i class="far fa-heart corazon"></i>
+                <i class="far fa-user usuario"></i>
+                </div>
             </div>
             <div class="caracteristicas">
             <h4 class= "tituloProducto"> Aventura</h4>
@@ -127,12 +160,15 @@
             <p class="precio"> $5500</p>
             </div>    
         </article>
+        </a>
     </section>
     
     <section class="banner">
         <i class="fas fa-gift regaloGrande"></i>
+        <div class="botonytexto">
         <p class="textoBanner">¡Hacé un regalo empresarial! <br> Fidelizá clientes y colaboradores con ENJOY, hacer un regalo nunca fue tan fácil y original</p>
-        <button type="submit"><a href="/">Mirá nuestras soluciones corporativas</a></button>
+        <button type="submit" class="botonBanner"><a href="/">Mirá nuestras soluciones corporativas</a></button>
+        </div>
     </section>
     </main>
 
