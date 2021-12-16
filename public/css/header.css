@@ -60,22 +60,6 @@ header img{
     text-decoration: none;
 }
 
-
-
-
-#headerButtonLeft{
-    border: solid 1px #371452;
-    background-color: white;
-}
-
-#headerButtonRight{
-    background-color: #371452;
-}
-
-#headerButtonRight a{
-    color: white;
-}
-
 #headerButtonLeft{
     border: solid 1px #371452;
     background-color: white;

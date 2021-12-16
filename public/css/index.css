@@ -234,18 +234,20 @@ position: relative;
         }
     .nPrincipal{
         display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
         }
     .navegacion{
         margin-left: 0.3rem;
         padding: 3rem;
         font-size: 1.5rem;
     }
+    .productos{
+        flex-direction: row;
+    }
     .lampara{
-        right: 1rem;
-    bottom: 1rem;
-    position: absolute;
-    top: 2rem;
-    left: 10rem;
+    
     display: block;
     }
     .masNuevos{
@@ -254,11 +256,9 @@ position: relative;
     .masVendidos{
         padding: 1rem 2.2rem;
     }
-    .productos{
-        flex-direction: row;
-    }
+    
     .caracteristicas{
-        height: 24vh;
+        height: 40vh;
     }
     .botonBanner{
         border: 1px solid #371452;
@@ -289,4 +289,10 @@ position: relative;
      }
 
     
+}
+@media screen and (min-width: 1200px)  { 
+    .nPrincipal{
+       
+        flex-direction: row;
+        }
 }
