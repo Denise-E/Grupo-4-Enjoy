@@ -32,46 +32,36 @@
     </header>
 
     <main>
-        <form action="/register" method="GET" class="dflex">
-    
-            <h1>Crear cuenta</h1>
-
-            <h3>Datos Personales</h3>
-            <label for>Nombre:</label>
-            <input type="text" name="name" id minlength="3" required>
-            <span class="feedback"></span>
-            <label for>Apellido:</label>
-            <input type="text" name="lastName" id required>
-            <label for>Correo electronico</label>
-            <input type="email" name="email" id>
-            <label for>Fecha de nacimiento:</label>
-            <input type="date" name="birthdayDate" id>
-            <label for>Domicilio:</label>
-            <input type="text" name="adress" id>
-
-            <h3>Perfil del Usuario</h3>
-            <label for>Nombre del usuario:</label>
-            <input type="text" name="userId" required>
-            <label for>Contraseña:</label>
-            <input type="password" name="password" minlength="8" placeholder="*****" required>
-            <label for>Confirmar contraseña:</label>
-            <input type="password" name="passwordConfirmation" minlength="8" placeholder="*****" required>
-            <button type="submit"> 
-                <a href="/">Enviar</a>
-            </button>      
-            <label>
-                <section class="terminos y condiciones"> 
-                    <label for="terminos y condiciones"><input type="checkbox" name="te condiciones" value="terminos y condiciones">He leido y acepto los terminos y condiciones del sitio </label>
-                </section> 
-            </label>
+        <section>
+           <h1>Crear cuenta</h1> 
+            <form action="/register" method="GET" class="dflex">
+                <h3>Datos Personales</h3>
+                <fieldset>
+                    <label for>Nombre:</label>
+                    <input type="text" name="name" id minlength="3" required>
+                    <span class="feedback"></span>
+                    <label for>Apellido:</label>
+                    <input type="text" name="lastName" id required>
+                    <label for>Correo electronico</label>
+                    <input type="email" name="email" id>
+                    <label for>Contraseña:</label>
+                    <input type="password" name="password" minlength="8" placeholder="*****" required>
+                    <label for>Fecha de nacimiento:</label>
+                    <input type="date" name="birthdayDate" id>  
+                </fieldset>
+            </form>
+        </section>
+          
+        <section> 
+            <label for="terminos y condiciones"><input type="checkbox" name="te condiciones" value="terminos y condiciones">He leido y acepto los terminos y condiciones del sitio </label>
             <button type="sublim">
-                <a href="registrarme">registrarme</a>
-            </button>     
-            <link rel="stylesheet" href="¿ya tenes una cuenta?">
+                <a href="registrarme">Registrarme</a>
+            </button>
+            <p>¿Ya tenés una cuenta?</p>   
             <button type="sublim">
                 <a href="login">Inicia Sesion</a>
             </button>  
-        </form>
+        </section> 
     </main>
 
     <footer>
