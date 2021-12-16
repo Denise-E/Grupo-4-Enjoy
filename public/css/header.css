@@ -1,0 +1,110 @@
+.dflex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#barraSuperior{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    padding: 2px;
+}
+
+#barraSuperior section{
+    align-items: center;
+}
+
+.fa-bars{
+    border: solid 1px #371452;
+    padding: 3px;
+    border-radius: 6px;
+    text-align: center;
+    width: 25px;
+}
+
+header img{
+    width: 7rem;
+    margin-left: 4px;
+}
+
+#barraSuperior nav p{
+    display: none;
+}
+
+#barraSuperior nav{
+    width: 30%;
+    justify-content: right;
+    gap: 10px;
+}
+
+#barraSuperior nav a{
+    color: black;
+    text-decoration: none;
+}
+
+#barraInferior{
+    justify-content: right;
+    align-items: center;
+    gap: 4px;
+    margin: 2%;
+}
+
+#barraInferior button{
+    padding: 8px;
+    border-radius: 8px;
+    width: 25%;
+}
+
+#barraInferior button a{
+    text-decoration: none;
+}
+
+
+
+
+#headerButtonLeft{
+    border: solid 1px #371452;
+    background-color: white;
+}
+
+#headerButtonRight{
+    background-color: #371452;
+}
+
+#headerButtonRight a{
+    color: white;
+}
+
+#headerButtonLeft{
+    border: solid 1px #371452;
+    background-color: white;
+}
+
+#headerButtonRight{
+    background-color: #371452;
+}
+
+#headerButtonRight a{
+    color: white;
+}
+
+@media screen and (min-width: 769px) {  
+    header{
+        padding: 2px;
+        margin: 5px;
+    }
+
+    header img{
+        width: 60%;
+        height: 40%;
+    }
+
+    #barraSuperior nav{
+        width: 40%;
+    }
+    #mainFive button{
+        width: 250px;
+        margin-right: 10%;
+    } 
+}

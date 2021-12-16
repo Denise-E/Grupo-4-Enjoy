@@ -4,80 +4,6 @@
     box-sizing: border-box;
 }
 
-.dflex{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#barraSuperior{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2%;
-    padding: 2px;
-}
-
-#barraSuperior section{
-    align-items: center;
-}
-
-.fa-bars{
-    border: solid 1px #371452;
-    padding: 3px;
-    border-radius: 6px;
-    text-align: center;
-    width: 25px;
-}
-
-header img{
-    width: 7rem;
-    margin-left: 4px;
-}
-
-#barraSuperior nav p{
-    display: none;
-}
-
-#barraSuperior nav{
-    width: 30%;
-    justify-content: right;
-    gap: 10px;
-}
-
-#barraSuperior nav a{
-    color: black;
-    text-decoration: none;
-}
-
-#barraInferior{
-    justify-content: right;
-    align-items: center;
-    gap: 4px;
-    margin: 2%;
-}
-
-#barraInferior button{
-    padding: 8px;
-    border-radius: 8px;
-    width: 25%;
-}
-
-#barraInferior button a{
-    text-decoration: none;
-}
-
-#headerButtonLeft{
-    border: solid 1px #371452;
-    background-color: white;
-}
-
-#headerButtonRight{
-    background-color: #371452;
-}
-
-#headerButtonRight a{
-    color: white;
-}
 
 /** login **/
 main{
@@ -163,99 +89,7 @@ text-decoration: none;
 
 /** footer **/
 
-footer{
-    background-color: #ebebeb6b;
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-}
 
-footer h2{
-    width: 100%;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
-}
-
-#footerOne{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerOne nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#footerOne nav a{
-    margin-top: 1.5rem;
-}
-
-#footerTwo{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerTwo nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#footerTwo nav a{
-    margin-top: 1.5rem;
-}
-
-#footerThree{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerThree nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 2rem;
-}
-
-
-#footerThree h2{
-    margin-bottom: 1.5rem;
-}
-
-#footerThree input{
-    border-radius: 10px;
-    border: solid 1px black;
-    padding: 8px;
-    width: 90%;
-    margin-bottom: 1.5rem;
-}
-
-#footerFour{
-    width: 100%;
-    border-top: solid 1px #7A7777;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerFour nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.footerFourLeft{
-    border-right: solid 1px #7A7777;
-}
 
 @media screen and (min-width: 361px) {  
     .fa-bars{
@@ -337,19 +171,7 @@ footer a{
 }
 
 @media screen and (min-width: 769px){
-    header{
-        padding: 2px;
-        margin: 5px;
-    }
-
-    header img{
-        width: 60%;
-        height: 40%;
-    }
-
-    #barraSuperior nav{
-        width: 40%;
-    }
+   
     
     #mainFive button{
         width: 250px;

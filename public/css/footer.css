@@ -1,0 +1,139 @@
+footer{
+    background-color: #ebebebec;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+footer h2{
+    width: 100%;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+#footerOne{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#footerOne nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#footerOne nav a{
+    margin-top: 1.5rem;
+}
+
+#footerTwo{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#footerTwo nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#footerTwo nav a{
+    margin-top: 1.5rem;
+}
+
+#footerThree{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#footerThree nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+
+#footerThree h2{
+    margin-bottom: 1.5rem;
+}
+
+#footerThree input{
+    border-radius: 10px;
+    border: solid 1px black;
+    padding: 8px;
+    width: 90%;
+    margin-bottom: 1.5rem;
+}
+
+#footerFour{
+    width: 100%;
+    border-top: solid 1px #7A7777;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#footerFour nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.footerFourLeft{
+    border-right: solid 1px #7A7777;
+}
+
+@media screen and (min-width: 361px) {  
+    
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+
+    #footerOne{
+        max-width: 26%;
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    #footerTwo{
+        max-width: 26%;
+        text-align: left;
+        flex-grow: 1;
+    }
+
+    #footerThree{
+        display: inline-flex;
+        max-width: 45%;
+        flex-grow: 1;
+        align-items: flex-start;
+        padding: 0;
+    }
+    
+    #footerThree h2{
+        margin-top: 1rem;
+    }
+
+    .newsletter{
+        width: 100%;
+    }
+
+    #footerThree nav{
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #footerFour nav a{ 
+        padding: 1rem;
+    }
+}
