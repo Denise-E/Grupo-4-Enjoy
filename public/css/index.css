@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /**Header**/
 .dflex{
     display: flex;
@@ -87,10 +88,12 @@ img{
 a:link, a:visited, a:active {
     text-decoration:none;
 }
+
 #titulo{
     color:white;
     align-items: center;
 }
+
 #titulo:hover { 
     color: #371452
     ; }
@@ -275,7 +278,7 @@ position: relative;
     position:absolute;
 }
 
-.fa-gift{
+.regaloGrande{
     font-size: 15rem;
     color:white;    
     opacity: 25%;
@@ -396,7 +399,7 @@ position: relative;
         display: flex;
         }
     .navegacion{
-        margin-left: 1rem;
+        margin-left: 0.3rem;
         padding: 3rem;
         font-size: 1.5rem;
     }
@@ -526,4 +529,5 @@ position: relative;
 
     .footerFourLeft{
         border-right: solid 1px #7A7777;
+    }
     }
