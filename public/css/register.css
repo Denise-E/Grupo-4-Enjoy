@@ -62,6 +62,15 @@ main button:hover{
     background-color: #d9bbf9;
 }
 
+main button a{
+    color: white;
+    transition: color 150ms;
+}
+
+main button a:hover{
+    color: #5A2083;
+}
+
 .terms{
     margin: 2px;
 }

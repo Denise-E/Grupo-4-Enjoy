@@ -60,6 +60,14 @@ footer a{
     font-size: 2rem;
 }
 
+#footerThree nav a{
+    color: #5A2083;
+    transition: color 200ms;
+}
+
+#footerThree nav a:hover{
+    color: #b47cde;
+}
 
 #footerThree h2{
     margin-bottom: 1.5rem;
@@ -85,8 +93,9 @@ footer a{
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: center; 
 }
+
 
 .footerFourLeft{
     border-right: solid 1px #7A7777;
