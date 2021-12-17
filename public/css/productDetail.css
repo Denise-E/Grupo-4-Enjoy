@@ -107,12 +107,13 @@ main{
 }
 
 #mainTwo img{
-    width: 45%;
+    display: none;
 }
 
 #mainTwo article{
     width: 50%;
-    padding: 3px;
+    padding: 3px; 
+    margin-left: 100px;
 }
 
 #mainTwo p{
@@ -334,15 +335,22 @@ footer a{
         font-size: 20px;
     }
 
-    #mainTwo{
-        max-width: 90%;
-        margin-left: 5%;
-    }
-
     #mainTwo article{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-left: 0;
+    }
+
+ #mainTwo{
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+
+    #mainTwo img{
+        width: 45%;
+        display: flex;
     }
 
     #mainThree{
