@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+#iconos{
+    font-size: 20px;
+}
+
 .fa-bars{
     border: solid 1px #371452;
     padding: 3px;
