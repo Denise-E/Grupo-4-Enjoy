@@ -10,7 +10,9 @@
     margin: 2%;
     padding: 2px;
 }
-
+#barraSuperior nav{
+    width: 40%;
+}
 #barraSuperior section{
     align-items: center;
 }
@@ -90,9 +92,7 @@ header img{
         height: 40%;
     }
 
-    #barraSuperior nav{
-        width: 40%;
-    }
+    
     #mainFive button{
         width: 250px;
         margin-right: 10%;
