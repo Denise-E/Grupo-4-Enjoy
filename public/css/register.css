@@ -33,15 +33,13 @@ a:link, a:visited, a:active {
 }
 
 .registro{
-    
-    
     box-shadow: 0px 0px 5px rgb(100, 100, 100);
     border-radius: 20px;
-        font-weight: bold;
-        margin: 15px;
-        padding: 10px;
-        justify-content: center;
-        align-items: center;
+    font-weight: bold;
+    margin: 15px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .formreg input{
     border: none;
@@ -50,47 +48,75 @@ a:link, a:visited, a:active {
     margin: 10px;
     border-radius: 10px;
     padding: 5px;
-        border: solid 1px #b47cde;
+    border: solid 1px #b47cde;
+}
+
+main button{
+    background-color: #b47cde;
+    color: white;
+    width: 40%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    border-radius: 5%;
+    transition: background-color 200ms;
+}
+main button:hover{
+    background-color: #d9bbf9;
+}
+
+.terms{
+    margin: 2px;
+}
+
+.ultimaSeccionMain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.ultimaSeccionMain button{
+    align-self: center;
 }
 
 @media screen and (min-width: 361px) {  
-    
+    #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main button{
+        max-width: 25%;
+    }
 
     .formReg{
         display: flex;
         flex-direction: column;
         max-width: 100%;
     }
-    
-   
 
- 
-    
-    
-    main button{
-        border-radius: 8px;
-        background-color: #b47cde;
-        width: 25%;
-        padding: 3px;
-        margin-top: 10px;
-        color: white;
-        transition: blackground-color 200ms;
+    main label{
+        display: block;
+        width: 100%;
     }
-    
-    
-    main button a{
-        color: white;
-        text-decoration: none;
-    }
-    .registro {
-        max-width: 40%;
-        margin:auto;
+
+    .registro{
+        width: 85%;
+        align-self: center;
     }
 
   
 }
 
 @media screen and (min-width: 769px){
-     
+    main button{
+        max-width: 20%;
+    }
+
+    .registro{
+        max-width: 55%;
+    }
     
 }
