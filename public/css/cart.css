@@ -24,6 +24,11 @@ main{
     box-shadow: 0px 2px 2px #88888880;
     width: 85%;
     position: relative;
+    transition: box-shadow 200ms;
+}
+
+#mainTwo:hover{
+    box-shadow: 0px 0px 10px #5A2083;
 }
 
 #mainTwo h2{
@@ -77,8 +82,12 @@ main img{
     margin-top: 20px;
     text-align: center;
     padding: 10px;
+    transition: box-shadow 200ms;
 }
 
+#mainThree:hover{
+    box-shadow: 0px 0px 10px #8d8b8b;
+}
 #mainThree h2{
     width: 100%;
 }
@@ -111,7 +120,11 @@ main img{
     margin-bottom: 30px;
     margin-right: 2rem;
     font-size: 0.75rem; 
+    transition: color 150ms;
+}
 
+#mainFive button:hover{
+    color: #5A2083;
 }
 
 #mainFive{
