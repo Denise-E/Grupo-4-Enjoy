@@ -25,6 +25,11 @@ main{
     padding: 30px 30px;
     justify-content: center;
     align-items: center;
+    transition: box-shadow 200ms;
+}
+
+.inicioSesion:hover{
+    box-shadow: 0px 0px 10px #5A2083;
 }
 .inicioSesion input{
          align-items: center;
@@ -60,9 +65,11 @@ main button{
     font-size: 20px;
     color: white;
     border-radius: 5%;
-    transition: background-color 200ms;
+    transition: all 200ms;
 }
-main button:hover{
+
+main button:hover{ 
+    color: #5A2083;
     background-color: #d9bbf9;
 }
 
@@ -91,8 +98,13 @@ a:link, a:visited, a:active{
 .redes a {
     margin: 10px;
    font-size: 30px;
+   color: #5A2083;
+   transition: color 200ms;
 }
 
+.redes a:hover{
+   color: #b47cde;
+}
 
 
 @media screen and (min-width: 361px) {  

@@ -1,14 +1,18 @@
 .dflex{
     display: flex;
     flex-wrap: wrap;
+
+
 }
 
 #barraSuperior{
     flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2%;
     padding: 2px;
+  
+
 }
 #barraSuperior nav{
     width: 40%;
@@ -19,8 +23,26 @@
 
 #iconos{
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
+header i{
+    color: #5A2083;;
+    transition: color 150ms;
+}
+
+header i:hover{
+    color: #b47cde;
+}
+
+nav.dflex{
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 10%;
+
+
+}
 .fa-bars{
     border: solid 1px #371452;
     padding: 3px;
@@ -32,18 +54,23 @@
 }
 
 header img{
-    width: 7rem;
-    margin-left: 4px;
+    width: 10%;
 }
 
 #barraSuperior nav p{
-    display: none;
+  display: none;
+  
 }
 
 #barraSuperior nav{
     width: 30%;
     justify-content: right;
     gap: 10px;
+    width: 10%;
+    display: flex;
+    flex-direction:row;
+    margin-right: 0;
+    
 }
 
 #barraSuperior nav a{
@@ -61,7 +88,7 @@ header img{
 #barraInferior button{
     padding: 8px;
     border-radius: 8px;
-    width: 25%;
+    width: 30%;
 }
 
 #barraInferior button a{
@@ -71,17 +98,19 @@ header img{
 #headerButtonLeft{
     border: solid 1px #371452;
     background-color: white;
+   
 }
 
 #headerButtonRight{
     background-color: #371452;
+   
 }
 
 #headerButtonRight a{
     color: white;
 }
 
-@media screen and (min-width: 769px) {  
+@media screen and (min-width: 361px) {  
     header{
         padding: 2px;
         margin: 5px;
@@ -92,9 +121,75 @@ header img{
         height: 40%;
     }
 
-    
+    #barraSuperior nav{
+        width: 45%;
+    }
+
+    #barraSuperior nav p{
+    display: flex;
+
+  }
     #mainFive button{
         width: 250px;
         margin-right: 10%;
     } 
+    
+
+@media screen and (min-width: 769px) {  
+    header{
+        padding: 2px;
+        margin: 5px;
+    }
+  
+    header img{
+        width: 60%;
+        height: 40%;
+    }
+
+    #barraSuperior nav{
+        max-width: 40%;
+    }
+    #barraSuperior nav p{
+        display: block;
+        display: contents;
+      }
+    #mainFive button{
+        width: 250px;
+        margin-right: 10%;
+    }  
+    #barraInferior button{
+    padding: 8px;
+    border-radius: 8px;
+    width: 10%;     
+    }
+
+
+
+@media screen and (min-width: 769px) {  
+    #barraSuperior nav{
+        margin-right: 0;
+        width: 40%;
+    }
+
+
+    header{
+        padding: 2px;
+        margin: 5px;
+    }
+  
+    header img{
+        width: 60%;
+        height: 40%;
+    }
+
+    #mainFive button{
+        width: 250px;
+        margin-right: 10%;
+    } 
+    #barraSuperior{
+        display: flex;
+        justify-content: right;
+    }
+} 
+}
 }
