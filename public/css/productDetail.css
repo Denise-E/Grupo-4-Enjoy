@@ -30,6 +30,10 @@ main{
     margin-top: 6px;
 }
 
+#mainOne p{
+    font-size: 12px;
+}
+
 #mainTwo{
     border: solid 1.5px #5A2083;
     box-shadow: 0px 2px 2px #88888880;
@@ -143,9 +147,14 @@ img{
     color: #371452;
 }
 
+#mainFour div p{
+    font-size: 10px;
+}
+
 #mainFour p strong{
     color: #371452;
     margin: 0 8px 0 6px;
+    font-size: 15px;
 }
 
 footer{
@@ -277,6 +286,10 @@ footer a{
         font-size: 20px;
     }
 
+    #mainOne p{
+        font-size: 1rem;
+    }
+
     #mainTwo article{
         display: flex;
         flex-direction: column;
@@ -309,6 +322,10 @@ footer a{
 
     #mainFour div{
         margin-bottom: 1rem;
+    }
+
+    #mainFour div p{
+    font-size: 13px;
     }
 
     footer{
@@ -379,11 +396,11 @@ footer a{
         width: 20%;
         text-align: left;
     }
-
-
+ 
     #mainOne p{
         width: 100%;
         margin: 5px;
+        font-size: 1.2rem;
     }
 
     #mainTwo{
