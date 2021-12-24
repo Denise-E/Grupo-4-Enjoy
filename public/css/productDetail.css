@@ -288,6 +288,7 @@ footer a{
 
     #mainOne p{
         font-size: 1rem;
+        margin-top: 5px;
     }
 
     #mainTwo article{
@@ -295,9 +296,10 @@ footer a{
         flex-direction: column;
         justify-content: space-between;
         margin-left: 0;
+        padding-left: 10%;
     }
 
- #mainTwo{
+    #mainTwo{
         max-width: 90%;
         margin-left: 5%;
     }
@@ -412,5 +414,6 @@ footer a{
     #mainThree button{
         width: 40%;
         padding: 12px;
+        margin-top: 5px;
     }
 }
