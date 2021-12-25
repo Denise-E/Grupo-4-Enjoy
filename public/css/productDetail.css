@@ -28,6 +28,7 @@ main{
 
 #mainOne h4{
     margin-top: 6px;
+    color: #5a2083;
 }
 
 #mainOne p{
@@ -47,20 +48,26 @@ main{
 }
 
 #mainTwo img{
-    display: none;
+    width: 45%;
 }
 
 #mainTwo article{
-    width: 50%;
+    width: 55%;
     padding: 3px; 
-    margin-left: 100px;
 }
 
 #mainTwo p{
-    display: block;
-    width: 100%;
+    font-size: 10px;
     margin: 0.5rem;
     font-weight: bold;
+}
+
+form legend{
+    font-size: 10px;
+}
+
+#mainTwo button input[type=checkbox]{ 
+    display: none; 
 }
 
 #mainTwo fieldset{
@@ -71,20 +78,25 @@ main{
 #mainTwo button{
     width: 50%;
     border-radius: 6px;
-    padding: 5px;
     background-color: rgb(241, 240, 240);
     color: #5A2083;
     transition: all 300ms;
+    padding: 3px;
 }
 
-#buttonRight{
-    position: relative;
-    right: 8px;
-}
 
 #mainTwo button:hover{
     background-color: #5A2083;
     color: white;
+}
+
+#buttonLeft{
+    position: relative;
+    left: 4px;
+}
+
+#mainTwo button p{
+    margin-left: 0;
 }
 
 #mainTwo p{
@@ -297,6 +309,7 @@ footer a{
         justify-content: space-between;
         margin-left: 0;
         padding-left: 10%;
+        width: 50%;
     }
 
     #mainTwo{
@@ -304,11 +317,17 @@ footer a{
         margin-left: 5%;
     }
 
-
-    #mainTwo img{
-        width: 45%;
-        display: flex;
+    #mainTwo p{
+        font-size: 15px;
     }
+    
+    form legend{
+        font-size: 15px;
+    }
+
+    #buttonLeft{
+        left: 8px;
+    }    
 
     #mainThree{
         padding-left: 50%;
@@ -388,17 +407,7 @@ footer a{
     #barraSuperior nav{
         width: 40%;
     }
-
-    #mainOne h2{
-        width: 18%;
-        text-align: right;
-    }
-
-    #mainOne h4{
-        width: 20%;
-        text-align: left;
-    }
- 
+    
     #mainOne p{
         width: 100%;
         margin: 5px;
