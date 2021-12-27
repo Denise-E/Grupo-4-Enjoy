@@ -90,26 +90,27 @@ body{
 
 .navSecundaria{
     display: flex;
-    margin-bottom: 1rem;
+    margin: 1.5rem;
     align-items: center;
 }
 .masVendidos, .masNuevos{
     border: 1px solid #371452;
     border-radius: 6px;
     margin:0.2rem;
-    padding: 1rem 2rem;
-    
+    padding: 1rem 1rem;
+    text-align: center;
 }
 
 .masVendidos{
     background-color: #5A2083;
+    width: 51%;
 }
 .masVendidos a{
     color:white;
 }
 
 .masNuevos{
-    padding: 1.5rem 2.2rem;
+    width:49%
 }
 
 .masNuevos a{
@@ -119,7 +120,7 @@ body{
 .productos{
     display: flex;
     flex-direction: column;
-    margin: 2px;
+    margin: 1.5rem;
 }
 
 .producto1, .producto2, .producto3{
@@ -171,7 +172,7 @@ body{
     bottom: 0;
     margin: auto;
     text-align: center;
-    font-size:medium;
+    font-size:2.5rem;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -193,9 +194,9 @@ body{
 border-radius: 4px;
 height: 18rem;
 align-items: center;
-background-size: contain;
-padding: 3rem;
-margin: 3rem;
+
+padding: 1.7rem;
+margin: 2rem 0.1rem;
 display: flex;
 position: relative;
     
@@ -203,10 +204,10 @@ position: relative;
 .textoBanner{
     
     color:white;
-    font-size: 1rem;
-    max-width: 70%;
-    
-    
+    font-size: 1.2rem;
+    max-width: 90%;
+    text-align: center;
+    font-weight: bold;
 }
 
 .botonBanner{
