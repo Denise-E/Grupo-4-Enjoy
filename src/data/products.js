@@ -1,3 +1,222 @@
 module.exports = [
-    
+    {
+        category: "Gastronomía",
+        name: "Experiencia Gourmet",
+        description: "Este Enjoy ofrece la posibilidad de disfrutar de una experiencia gastronómica única en los mejores restaurantes de Argentina.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 82,
+        price: 5.740,
+        fees: 12,
+        id: 1
+    },
+    {
+        category: "Gastronomía",
+        name: "Sabores del mundo",
+        description: "Regalá experiencias únicas. Este Enjoy ofrece la posibilidad de conocer el mundo a través de diversas experiencias gastronómicas.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 38,
+        price: 3.840,
+        fees: 12,
+        id: 2
+    },
+    {
+        category: "Gastronomía",
+        name: "Cocktail Night",
+        description: "Esta Bigbox, para dos personas, ofrece la posibilidad de disfrutar de los mejores tragos de autor en las barras más exclusivas de Argentina.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 25,
+        price: 2.690,
+        fees: 12,
+        id: 3
+    },
+    {
+        category: "Gastronomía",
+        name: "Meet & Eat",
+        description: "Este Enjoy ofrece la posibilidad de vivir un momento gastronómico innovador en la casa del cocinero.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 6,
+        price: 3.800,
+        fees: 12,
+        id: 4
+    },
+    {
+        category: "Gastronomía",
+        name: "Veggie",
+        description: "Este Enjoy ofrece la posibilidad de elegir entre los mejores platos veganos y vegetarianos de la ciudad.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 15,
+        price: 3.090,
+        fees: 12,
+        id: 5
+    },    
+    {
+        category: "Gastronomía",
+        name: "Bodegones",
+        description: "Este Enjoy ofrece la posibilidad de elegir entre los más destacados Bodegones de la Ciudad Porteña.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 8,
+        price: 3.590,
+        fees: 12,
+        id: 6
+    },
+    {
+        category: "Aventura",
+        name: "Acción",
+        description: "Este Enjoy ofrece la posibilidad de elegir una actividad emocionante e innovadora.",
+        persons: 5,
+        expirationDate: "31/05/2022",
+        options: 46,
+        price: 3.490,
+        fees: 12,
+        id: 7
+    },
+    {
+        category: "Aventura",
+        name: "Extreme",
+        description: "Este Enjoy ofrece la posibilidad de elegir una actividad original y desafiante.",
+        persons: 5,
+        expirationDate: "31/05/2022",
+        options: 80,
+        price: 7.500,
+        fees: 12,
+        id: 8
+    },
+    {
+        category: "Aventura",
+        name: "A volar",
+        description: "Este Enjoy ofrece la posibilidad de tirarse en paracaídas y sentir la verdadera adrenalina de la caída libre, viendo paisajes únicos.",
+        persons: 1,
+        expirationDate: "31/05/2022",
+        options: 15,
+        price: 28.500,
+        fees: 12,
+        id: 9
+    },
+    {
+        category: "Aventura",
+        name: "Paseo Naútico",
+        description: "Este Enjoy ofrece la posibilidad de vivir paseos únicos para que disfrutes una tarde a pura navegación.",
+        persons: 5,
+        expirationDate: "31/05/2022",
+        options: 8,
+        price: 21.000,
+        fees: 12,
+        id: 10
+    },
+    {
+        category: "Estar Bien",
+        name: "Relax",
+        description: "Este Enjoy ofrece sesiones de masajes y tratamientos corporales en una selección de los mejores spas de Argentina.",
+        persons: 1,
+        expirationDate: "31/05/2022",
+        options: 82,
+        price: 3.490,
+        fees: 12,
+        id: 11
+    },
+    {
+        category: "Estar Bien",
+        name: "(Des)Conectar",
+        description: "Este Enjoy ofrece la posibilidad de desconectar de la rutina con un momento de instrospección y relajación a través de actividades de yoga, meditación y otras prácticas. ",
+        persons: 1,
+        expirationDate: "31/05/2022",
+        options: 12,
+        price: 2.990,
+        fees: 12,
+        id: 12
+    },
+    {
+        category: "Estar Bien",
+        name: "Home Spa",
+        description: "Este Enjoyofrece la posibilidad de elegir entre diferentes kits de productos para recrear un spa o barbería en casa.",
+        persons: 1,
+        expirationDate: "31/05/2022",
+        options: 22,
+        price: 3.590,
+        fees: 12,
+        id: 13
+    },
+    {
+        category: "Entretenimiento",
+        name: "Musique & Cuisine",
+        description: "Este Enjoy ofrece la posibilidad de elegir entre los mejores shows en vivo en Buenos Aires, junto a una especial propuesta gastronómica.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 7,
+        price: 5.340,
+        fees: 12,
+        id: 14
+    },
+    {
+        category: "Entretenimiento",
+        name: "Noche de Teatro",
+        description: "Este Enjoy ofrece la posibilidad de disfrutar de los mejores espectáculos teatrales y de una experiencia gastronómica para dos personas.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 17,
+        price: 6.190,
+        fees: 12,
+        id: 15
+    },
+    {
+        category: "Entretenimiento",
+        name: "Show Time",
+        description: "Este Enjoy está pensada para que cinéfilos y amantes del teatro puedan disfrutar de una obra o película desde la comodidad de su casa.",
+        persons: 4,
+        expirationDate: "31/05/2022",
+        options: 8,
+        price: 1.990,
+        fees: 12,
+        id: 16
+    },
+    {
+        category: "Estadías",
+        name: "Glamping",
+        description: "Este Enjoy ofrece la posibilidad de disfrutar una experiencia inolvidable en los mejores glampings del país!",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 9,
+        price: 75.000,
+        fees: 12,
+        id: 17
+    },
+    {
+        category: "Estadías",
+        name: "Hoteles Urbanos",
+        description: "Este Enjoy ofrece la posibilidad de disfrutar una noche distinta en los hoteles urbanos más destacados del país.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 21,
+        price: 11.900,
+        fees: 12,
+        id: 18
+    },
+    {
+        category: "Estadías",
+        name: "Weekend",
+        description: "Este Enjoy ofrece la posibilidad de disfrutar de las mejores hosterías, estancias y hoteles más encantadores del país.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 132,
+        price: 28.900,
+        fees: 12,
+        id: 19
+    },
+    {
+        category: "Estadías",
+        name: "Noches Insólitas",
+        description: "Este Enjoy ofrece la posibilidad de vivir lujosas estadías de una o dos noches en los lugares más extraordinarios.",
+        persons: 2,
+        expirationDate: "31/05/2022",
+        options: 6,
+        price: 28.000,
+        fees: 12,
+        id: 20
+    }
 ]
