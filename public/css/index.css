@@ -308,6 +308,10 @@ position: relative;
     justify-content: space-between;
     
     }
+    .botonBanner a{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
 
     
 }
@@ -336,4 +340,6 @@ position: relative;
             background-color: rgb(90, 32, 131, 5);
             opacity: 70%;            
         }
+
+        
 }
