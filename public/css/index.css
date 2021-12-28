@@ -126,6 +126,7 @@ body{
 .producto1, .producto2, .producto3{
 	padding: 1px;
 	margin: 10px 5px;
+    height: 100%;
 	background-color: rgb(217, 187, 249, 55);
     border: 1px solid #371452;
     border-radius: 3px;
@@ -268,7 +269,7 @@ position: relative;
     }
 
     .tituloImagen{
-        font-size: 2.4rem;
+        font-size: 2rem;
      }
      .regaloGrande{
         font-size: 15rem;
