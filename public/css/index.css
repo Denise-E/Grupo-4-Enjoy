@@ -180,7 +180,15 @@ body{
 .caracteristicas{
     border-top: 1px solid #ebebeb;
     text-align: center;
+    line-height: 1.5rem;
     
+}
+.descripcion{
+    font-weight: bold;
+}
+.tituloProducto{
+    text-shadow: 1px 0 black;
+    font-size: 1.1rem;
 }
 
 .precio{
@@ -258,15 +266,22 @@ position: relative;
     .masVendidos{
         padding: 1rem 2.2rem;
     }
-    
-    .caracteristicas{
-        max-height: 40vh;
+      
+    .banner{
+        margin: 3rem 4.6rem;
+            align-items: center;
+            justify-content: center;
+
     }
-    
 
     .textoBanner{
         text-align: center;
+        max-width: 90%;
     }
+    .botonytexto{
+        align-items: center;
+    }
+
 
     .tituloImagen{
         font-size: 2rem;
@@ -277,6 +292,23 @@ position: relative;
         margin: 0 2rem;
     }
 
+    .botonBanner{
+        display: block;
+        border-radius: 4px;
+        margin: 1.5rem 10rem;
+        padding: 0.8rem;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+        border: 1px solid #371452;
+        background-color: rgba(255,255,255,0.85);
+    }
+
+    .botonytexto{
+        
+    flex-direction: column;
+    justify-content: space-between;
+    
+    }
+
     
 }
 @media screen and (min-width: 1200px)  { 
@@ -284,25 +316,24 @@ position: relative;
        
         flex-direction: row;
         }
+        
+        
+
+        .textoBanner{           
+            font-size: 1.5rem;
+        }
 
         .botonBanner{
-            border: 1px solid #371452;
-            background-color: #ffffff;
+            
             border-radius: 4px;
-            position:absolute;
-            left:50rem;
-            margin-top:4rem;
-            padding: 1rem;
-            display: block;
+            padding: 1rem 0;
             transition: 2s;
-            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
             width: 50%;
         }
         
     
         .botonBanner:hover{
-            background-color: #ffffff;
-            opacity: 70%;
-            
+            background-color: rgb(90, 32, 131, 5);
+            opacity: 70%;            
         }
 }
