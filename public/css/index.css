@@ -185,15 +185,18 @@ body{
 }
 .descripcion{
     font-weight: bold;
+    margin-top: 8px 0;
 }
 .tituloProducto{
     text-shadow: 1px 0 black;
     font-size: 1.1rem;
+
 }
 
 .precio{
     letter-spacing: 0.5rem;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 
