@@ -5,7 +5,18 @@
     <%- include('../../partials/header') %> 
 
     <main>
-        <h1>Hola</h1>
+        <h1>AVENTURA</h1>
+
+        <ul>
+            <% products.filter(element => element.category == "Aventura").forEach(element => { %>
+                <li>
+                    <h2> <%= element.name %> </h2>
+                    <p> <%= element.description %> </p>
+                    <p> Para <%= element.persons %> personas | $ <%= element.price %> </p>
+                    <p></p>
+                </li>
+            <% }) %>
+        </ul>
     </main>
     
     <%- include('../../partials/footer') %> 

@@ -6,7 +6,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 82,
-        price: 5.740,
+        price: 5740,
         fees: 12,
         id: 1
     },
@@ -17,7 +17,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 38,
-        price: 3.840,
+        price: 3840,
         fees: 12,
         id: 2
     },
@@ -28,7 +28,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 25,
-        price: 2.690,
+        price: 2690,
         fees: 12,
         id: 3
     },
@@ -39,7 +39,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 6,
-        price: 3.800,
+        price: 3800,
         fees: 12,
         id: 4
     },
@@ -50,7 +50,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 15,
-        price: 3.090,
+        price: 3090,
         fees: 12,
         id: 5
     },    
@@ -61,7 +61,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 8,
-        price: 3.590,
+        price: 3590,
         fees: 12,
         id: 6
     },
@@ -72,7 +72,7 @@ module.exports = [
         persons: 5,
         expirationDate: "31/05/2022",
         options: 46,
-        price: 3.490,
+        price: 3490,
         fees: 12,
         id: 7
     },
@@ -83,7 +83,7 @@ module.exports = [
         persons: 5,
         expirationDate: "31/05/2022",
         options: 80,
-        price: 7.500,
+        price: 7500,
         fees: 12,
         id: 8
     },
@@ -94,7 +94,7 @@ module.exports = [
         persons: 1,
         expirationDate: "31/05/2022",
         options: 15,
-        price: 28.500,
+        price: 28500,
         fees: 12,
         id: 9
     },
@@ -105,7 +105,7 @@ module.exports = [
         persons: 5,
         expirationDate: "31/05/2022",
         options: 8,
-        price: 21.000,
+        price: 21000,
         fees: 12,
         id: 10
     },
@@ -116,7 +116,7 @@ module.exports = [
         persons: 1,
         expirationDate: "31/05/2022",
         options: 82,
-        price: 3.490,
+        price: 3490,
         fees: 12,
         id: 11
     },
@@ -127,7 +127,7 @@ module.exports = [
         persons: 1,
         expirationDate: "31/05/2022",
         options: 12,
-        price: 2.990,
+        price: 2990,
         fees: 12,
         id: 12
     },
@@ -138,7 +138,7 @@ module.exports = [
         persons: 1,
         expirationDate: "31/05/2022",
         options: 22,
-        price: 3.590,
+        price: 3590,
         fees: 12,
         id: 13
     },
@@ -149,7 +149,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 7,
-        price: 5.340,
+        price: 5340,
         fees: 12,
         id: 14
     },
@@ -160,7 +160,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 17,
-        price: 6.190,
+        price: 6190,
         fees: 12,
         id: 15
     },
@@ -171,7 +171,7 @@ module.exports = [
         persons: 4,
         expirationDate: "31/05/2022",
         options: 8,
-        price: 1.990,
+        price: 1990,
         fees: 12,
         id: 16
     },
@@ -182,7 +182,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 9,
-        price: 75.000,
+        price: 75000,
         fees: 12,
         id: 17
     },
@@ -193,7 +193,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 21,
-        price: 11.900,
+        price: 11900,
         fees: 12,
         id: 18
     },
@@ -204,7 +204,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 132,
-        price: 28.900,
+        price: 28900,
         fees: 12,
         id: 19
     },
@@ -215,7 +215,7 @@ module.exports = [
         persons: 2,
         expirationDate: "31/05/2022",
         options: 6,
-        price: 28.000,
+        price: 28000,
         fees: 12,
         id: 20
     }

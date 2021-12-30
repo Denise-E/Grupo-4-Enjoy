@@ -7,7 +7,22 @@
     <main>
         <h1>GASTRONOMIA</h1>
 
+        <ul>
+            <% products.filter(element => element.category == "Gastronomía").forEach(element => { %>
+                <li>
+                    <h2> <%= element.name %> </h2>
+                    <p> <%= element.description %> </p>
+                    <p> Para <%= element.persons %> personas | $ <%= element.price %> </p>
+                    <p></p>
+                </li>
+            <% }) %>
+        </ul>
     </main>
+
+     
+
+
+
     
     <%- include('../../partials/footer') %> 
 
