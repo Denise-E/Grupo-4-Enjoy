@@ -100,6 +100,11 @@ footer a{
 .footerFourLeft{
     border-right: solid 1px #7A7777;
 }
+.dflex2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: none;
+}
 
 @media screen and (min-width: 361px) {  
     

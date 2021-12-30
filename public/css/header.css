@@ -1,5 +1,6 @@
 .dflex{
     display: flex;
+    flex-wrap: wrap;
     margin: none;
 }
 
