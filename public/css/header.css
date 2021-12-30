@@ -1,6 +1,7 @@
 .dflex{
     display: flex;
     flex-wrap: wrap;
+    margin: none;
 
 
 }
@@ -40,7 +41,17 @@ nav.dflex{
     flex-wrap: nowrap;
     margin: auto;
     width: 10%;
+}
+nav.dflex a{
+    display: flex;
+    flex-wrap: nowrap;
+}
 
+nav.dflex p{
+    flex-wrap: nowrap;
+    margin: auto;
+    color: #371452;
+    
 
 }
 .fa-bars{
@@ -54,7 +65,7 @@ nav.dflex{
 }
 
 header img{
-    width: 10%;
+    width: 50%;
 }
 
 #barraSuperior nav p{
@@ -101,6 +112,7 @@ header img{
    
 }
 
+
 #headerButtonRight{
     background-color: #371452;
    
@@ -109,6 +121,7 @@ header img{
 #headerButtonRight a{
     color: white;
 }
+
 
 @media screen and (min-width: 361px) {  
     header{
@@ -133,6 +146,7 @@ header img{
         width: 250px;
         margin-right: 10%;
     } 
+  
     
 
 @media screen and (min-width: 769px) {  
@@ -146,6 +160,7 @@ header img{
         height: 40%;
     }
 
+  
     #barraSuperior nav{
         max-width: 40%;
     }
@@ -153,24 +168,36 @@ header img{
         display: block;
         display: contents;
       }
+   
     #mainFive button{
         width: 250px;
         margin-right: 10%;
     }  
     #barraInferior button{
     padding: 8px;
-    border-radius: 8px;
-    width: 10%;     
+    border-radius: 10px;
+    width: 20%;     
     }
+    #barraInferior button{
+        padding: 8px;
+        border-radius: 8px;
+        width: 30%;
+    }
+    nav.dflex p{
+        font-size: 21px;
+       color: #371452;
+       font-style:oblique;
+       font-weight: bold;
+    
+    }
+    
 
 
-
-@media screen and (min-width: 769px) {  
+@media screen and (min-width: 1200px) {  
     #barraSuperior nav{
         margin-right: 0;
         width: 40%;
     }
-
 
     header{
         padding: 2px;
@@ -178,8 +205,7 @@ header img{
     }
   
     header img{
-        width: 60%;
-        height: 40%;
+   width: 80%;
     }
 
     #mainFive button{
@@ -190,6 +216,46 @@ header img{
         display: flex;
         justify-content: right;
     }
+    
+    #barraSuperior nav{
+        width: 45%;
+        
+    }
+
+    #barraSuperior nav p{
+    display: flex;
+  }
+  nav.dflex a{
+      font-size: 23px;
+      margin: 3px;
+  }
+  nav.dflex p{
+    font-size: 23px;
+   color: #371452;
+   font-style:oblique;
+   font-weight: bold;
+
+}
+    #barraInferior button{
+        font-size: 20px;
+        padding: 8px;
+        border-radius: 10px;
+        width: 25%;     
+        margin-top: -15px;
+        }
+.fa-user{
+    margin-top:-15px;
+    font-size: 25px;
+}
+.fa-bars{
+    border: solid 1px #371452;
+    padding: 6px;
+    border-radius: 6px;
+    text-align: center;
+    width: 30px;
+    color: #5A2083;
+    margin: 5px;
+}
 } 
 }
 }
