@@ -1,9 +1,6 @@
 .dflex{
     display: flex;
-    flex-wrap: wrap;
     margin: none;
-
-
 }
 
 #barraSuperior{
@@ -138,10 +135,7 @@ header img{
         width: 45%;
     }
 
-    #barraSuperior nav p{
-    display: flex;
-
-  }
+    
     #mainFive button{
         width: 250px;
         margin-right: 10%;
@@ -186,7 +180,6 @@ header img{
     nav.dflex p{
         font-size: 21px;
        color: #371452;
-       font-style:oblique;
        font-weight: bold;
     
     }
@@ -197,6 +190,10 @@ header img{
     #barraSuperior nav{
         margin-right: 0;
         width: 40%;
+    }
+    #barraSuperior nav a{
+        font-size: 2rem;
+        margin-right: 1rem;
     }
 
     header{
@@ -232,7 +229,6 @@ header img{
   nav.dflex p{
     font-size: 23px;
    color: #371452;
-   font-style:oblique;
    font-weight: bold;
 
 }
