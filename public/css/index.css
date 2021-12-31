@@ -329,6 +329,9 @@ position: relative;
         .textoBanner{           
             font-size: 1.5rem;
         }
+        .productos{
+            margin: 2rem 4rem;
+        }
 
         .botonBanner{
             
@@ -340,7 +343,7 @@ position: relative;
         
     
         .botonBanner:hover{
-            background-color: rgb(90, 32, 131, 5);
+            background-color: rgb(217, 187, 249, 55);
             opacity: 70%;            
         }
 

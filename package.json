@@ -2,7 +2,7 @@
   "name": "grupo-4-enjoy",
   "version": "1.0.0",
   "description": "___",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "clear && nodemon src/app.js -e js,mjs,json,html,css",
     "start": "node src/app.js"
@@ -22,6 +22,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "init": "^0.1.2",
+    "method-override": "^3.0.0",
     "nodemon": "^2.0.15"
   }
 }
