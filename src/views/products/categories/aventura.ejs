@@ -6,8 +6,8 @@
 
     <main>
         <h1>AVENTURA</h1>
-
-        <ul>
+        <p> Regalá un conjunto de experiencias, tu agasajado elige cuál vive</p>
+        <ul class= "listadoProductos">
             <% products.filter(element => element.category == "Aventura").forEach(element => { %>
                 <li>
                     <h2> <%= element.name %> </h2>
