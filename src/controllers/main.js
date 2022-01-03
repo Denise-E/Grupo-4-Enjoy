@@ -45,5 +45,9 @@ module.exports = {
     terminosCondiciones: (req,res) => res.render("footerLinks/terminosCondiciones",{
      
         style: "footerLinks/terminosCondiciones"
-    })   
+    }),
+    experienciaUser: (req,res) => res.render("abrirExperiencia",{
+     
+        style: "abrirExperiencia"
+    })
 }

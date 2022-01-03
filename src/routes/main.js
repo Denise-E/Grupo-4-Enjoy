@@ -13,6 +13,7 @@ router.get("/preguntasFrecuentes", main.preguntas);
 router.get("/devoluciones", main.devoluciones);
 router.get("/politicas&garantias", main.politicasGarantias);
 router.get("/terminos&condiciones", main.terminosCondiciones);
+router.get("/abriTuExperiencia", main.experienciaUser);
 
 
 module.exports = router;

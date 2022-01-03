@@ -10,5 +10,6 @@ router.get("/products/categories/aventura", products.aventura);
 router.get("/products/categories/estarBien", products.estarBien);
 router.get("/products/categories/entretenimeinto", products.entretenimiento);
 router.get("/products/categories/estadias", products.estadias);
+router.get("/crearComentario", products.crearComentario)
 
 module.exports = router;

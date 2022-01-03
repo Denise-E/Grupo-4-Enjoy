@@ -41,6 +41,8 @@ module.exports = {
         products: products,
         style: "estadias"
     }),
-
-
+    crearComentario: (req,res) => res.render("products/crearComentario",{
+        products: products,
+        style: "crearComentario"
+    })
 }
