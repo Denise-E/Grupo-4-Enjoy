@@ -24,7 +24,7 @@ h1{
     color:#5A2083;
 }
 
-#fieldsetMain{
+ main fieldset {
     display: block;
     width: 100%;
     padding: 0.6rem;
@@ -36,7 +36,7 @@ h1{
     justify-content: center;
 }
 
-#fieldsetMain:hover{
+main fieldset:hover{
     box-shadow: 0px 0px 10px #5A2083;
 }
 
@@ -82,7 +82,7 @@ main button:hover{
 }
 
 @media screen and (min-width: 361px){
-    #fieldsetMain{
+    main fieldset{
         max-width: 60%;
         margin-left: 21%;
     }
@@ -93,7 +93,7 @@ main button:hover{
 }
 
 @media screen and (min-width: 769px){
-    #fieldsetMain{
+    main fieldset{
         max-width: 50%;
         margin-left: 26%;
     }
