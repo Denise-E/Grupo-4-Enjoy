@@ -5,10 +5,69 @@
     <%- include('../partials/header') %> 
 
     <main>
-        <h1>HOLA</h1>
+        <article class="dflex">
+            <form action="POST" class="dflex">
+                <fieldset class="dflex">
+                    <h1>Dejános tu opinión !</h1>
+                    <label for="">Seleccioná la experiencia que realizaste :</label>
+                    <select name="" id="">
+                        <% products.forEach(element => { %>
+                         <option value=""> <%= element.name %> </option>
+                        <% }) %>
+                    </select>
+                    <label for="">Comentario :</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <label for="">Puntuá la experiencia :</label>
+                    <section>
+                        <label for=""><input type="radio" name="stars" value="1star">
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </label>
+                        <label for=""><input type="radio" name="stars" value="2stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </label>
+                        <label for=""><input type="radio" name="stars" value="3stars" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </label>
+                        <label for=""><input type="radio" name="stars" value="4stars" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </label>
+                        <label for=""><input type="radio" name="stars" value="5stars" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </label>
+                    </section>   
+                    <!--
+                        <input type="hidden" name="nombreUsusario" value= "user.name con etiqueta de ejs">
+                        Terminar de setearlo cuando hayamos creado listado usuarios
+                    -->
+                </fieldset>
+                <button type="submit">Publicar</button>
+            </form>
+        </article>
     </main>
     
 
     <%- include('../partials/footer') %> 
 </body>
 </html>
+
+
