@@ -1,9 +1,12 @@
 
 const products = require("../data/products");
+const coments = require("../data/coments");
+
 
 module.exports = {
     productDetail: (req,res) => res.render("products/productDetail",{
         products: products,
+        coments: coments,
         style: "productDetail"
     }),
 
