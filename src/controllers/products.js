@@ -7,6 +7,7 @@ module.exports = {
     productDetail: (req,res) => res.render("products/productDetail",{
         products: products,
         coments: coments,
+        product: products.find(product => product.id == req.params.id),
         style: "productDetail"
     }),
 
