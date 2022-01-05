@@ -7,18 +7,20 @@
 
     <main>
         <section class="dflex" id="mainOne">
-            <h2>Gastronomía <h4><i class="far fa-star"></i><strong>4.3</strong></h4></h2> 
+            <!--Tema estrellas dinámicas-->
+            <h2> <%= product.name %>  <h4><i class="far fa-star"></i><strong>4.3</strong></h4></h2> 
             
-            <p>Este ENJOY, para dos personas, ofrece la posibilidad de disfrutar de una experiencia gastronómica única en los mejores restaurantes de Argentina.</p>
+            <p> <%= product.description %> </p>
         </section>
         <section class="dflex" id="mainTwo">
             <img src="/images/gastronomia2.png" alt="">
             <article class="dflex">
-                <p><i class="fas fa-user-friends"></i> Para dos personas</p>
-                <p><i class="fas fa-calendar"></i> Válido hasta el 31/03/2022</p>
-                <p><i class="fas fa-gift"></i> Contiene 60 opciones</p>
+                <p><i class="fas fa-user-friends"></i> Para <%= product.persons %>  personas</p>
+                <p><i class="fas fa-calendar"></i> Válido hasta el <%= product.expirationDate %> </p>
+                <p><i class="fas fa-gift"></i> Contiene <%= product.options %>  opciones</p>
+                <!--Agregar en data products y ver como se completa según data coments-->
                 <p><i class="far fa-smile-beam"></i> MUY BUENO (10 opiniones)</p>
-                <p><strong>$4.500</strong></p> 
+                <p><strong>$<%= product.price %></strong></p> 
                 <form action="GET">
                     <fieldset class="dflex">
                         <legend><strong>Formatos de regalo:</strong></legend>
@@ -40,6 +42,7 @@
             <P>¿Te hicieron este regalo?</P>
         </section>
         <section>
+            <!--Agregar imágen por producto-->
             <img src="/images/metodosDePago.png" alt="">
         </section>
         <section class="dflex" id="mainFour">
@@ -49,6 +52,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
+                <!--Cuando agrege lo mencionado antes de comentarios al listado de productos-->
                 <p> (Promedio entre 10 opiniones)</p>
             </div>
             <section class="dflex" id="coments">
@@ -56,10 +60,18 @@
                 <i class="fas fa-arrow-down"></i>
             </section>
         </section>
-
         <section class="dflex" id="comentarios">
-            <!--Terminar cuando lo haga dinámico al doc - filtro por categoria del producto uscado x id y 
-                desp que cada uno de ellos se muestre con un for each-->
+            <% if (coments.experiencia == product.name) { %>
+                <ul>
+                   <% coments.forEach(element => { %>
+                        <li>
+                            <h1><%= element.autor %> </h1> 
+                            <h3><%= element.experiencia %> </h3><span><%= element.estrellas %><i class="far fa-star"></i> </span>
+                            <p><%= element.comentario %> </p>
+                        </li>
+                    <% }) %> 
+                </ul>
+            <% } %>
         </section>
     </main>
     <%- include('../partials/footer') %> 
