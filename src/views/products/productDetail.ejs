@@ -7,13 +7,12 @@
 
     <main>
         <section class="dflex" id="mainOne">
-            <!--Tema estrellas dinámicas-->
             <h2> <%= product.name %>  <h4><i class="far fa-star"></i><strong>4.3</strong></h4></h2> 
             
             <p> <%= product.description %> </p>
         </section>
         <section class="dflex" id="mainTwo">
-            <img src="/images/gastronomia2.png" alt="">
+            <picture><%= product.image %> </picture>>
             <article class="dflex">
                 <p><i class="fas fa-user-friends"></i> Para <%= product.persons %>  personas</p>
                 <p><i class="fas fa-calendar"></i> Válido hasta el <%= product.expirationDate %> </p>
@@ -42,7 +41,6 @@
             <P>¿Te hicieron este regalo?</P>
         </section>
         <section>
-            <!--Agregar imágen por producto-->
             <img src="/images/metodosDePago.png" alt="">
         </section>
         <section class="dflex" id="mainFour">
