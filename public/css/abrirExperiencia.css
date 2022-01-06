@@ -33,7 +33,7 @@ h4{
     transition: all 200ms;
     margin: 1rem;
     margin-left: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     text-align: center;
     justify-content: center;
 }
@@ -54,14 +54,16 @@ main input{
     font-size: 2rem;
 }
 
-form p{
+form a{
+    text-decoration: none;
+    color: #5A2083;
     font-size: 12px;
     margin-left: 1rem;
 }
 
-form p i{
+form i{
     margin: 1px;
-
+    color: #5A2083;
 }
 
 main button{
@@ -85,15 +87,18 @@ main button:hover{
 
 @media screen and (min-width: 361px){
     .fieldsetMain{
-        max-width: 80%;
-        margin-left: 10%;
+        max-width: 90%;
+        margin-left: 6%;
+    }
+    main input{
+        margin-bottom: 2rem;
     }
     main button{
-        max-width: 30%;
-        margin-left: 30%;
+        max-width: 40%;
+        margin-left: 25%;
     }
-    form p{
-        margin-left: 13%;
+    form a{
+        margin-left: 10%;
     }
 }
 
@@ -106,8 +111,8 @@ main button:hover{
         max-width: 40%;
         margin-left: 25%;
     }
-    form p{
-        margin-left: 4%;
+    form a{
+        margin-left: 4.5%;
     }
    
 }
