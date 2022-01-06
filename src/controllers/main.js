@@ -49,5 +49,9 @@ module.exports = {
     experienciaUser: (req,res) => res.render("abrirExperiencia",{
      
         style: "abrirExperiencia"
+    }),
+    comofunciona: (req,res) => res.render("comofunciona",{
+     
+        style: "comofunciona"
     })
 }

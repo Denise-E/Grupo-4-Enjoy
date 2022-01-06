@@ -14,6 +14,7 @@ router.get("/devoluciones", main.devoluciones);
 router.get("/politicas&garantias", main.politicasGarantias);
 router.get("/terminos&condiciones", main.terminosCondiciones);
 router.get("/abriTuExperiencia", main.experienciaUser);
+router.get("/comofunciona", main.comofunciona);
 
 
 module.exports = router;
