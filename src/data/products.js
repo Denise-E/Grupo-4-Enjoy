@@ -2,6 +2,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Experiencia Gourmet",
+        image: "/images/Categorias/gastronomiaExperienciaGourmet.jpg",
         description: "Este Enjoy ofrece la posibilidad de disfrutar de una experiencia gastronómica única en los mejores restaurantes de Argentina.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -13,6 +14,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Sabores del mundo",
+        image: "/images/Categorias/gastronomiaSaboresdelMundo.jpg" ,
         description: "Regalá experiencias únicas. Este Enjoy ofrece la posibilidad de conocer el mundo a través de diversas experiencias gastronómicas.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -24,6 +26,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Cocktail Night",
+        image: "/images/Categorias/gastronomiaCocktailNight.jpg",
         description: "Esta Bigbox, para dos personas, ofrece la posibilidad de disfrutar de los mejores tragos de autor en las barras más exclusivas de Argentina.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -35,6 +38,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Meet & Eat",
+        image: "/images/Categorias/gastronomiaMeet.jpg",
         description: "Este Enjoy ofrece la posibilidad de vivir un momento gastronómico innovador en la casa del cocinero.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -46,6 +50,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Veggie",
+        image: "/images/Categorias/gastronomiaVeggie.jpg",
         description: "Este Enjoy ofrece la posibilidad de elegir entre los mejores platos veganos y vegetarianos de la ciudad.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -57,6 +62,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Bodegones",
+        image: "/images/Categorias/gastronomiaBodegones.jpg",
         description: "Este Enjoy ofrece la posibilidad de elegir entre los más destacados Bodegones de la Ciudad Porteña.",
         persons: 2,
         expirationDate: "31/05/2022",
