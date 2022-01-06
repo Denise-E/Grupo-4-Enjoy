@@ -37,7 +37,7 @@ module.exports = [
     {
         autor: "Fede",
         experiencia: "Experiencia Gourmet",
-        comentario: "Muy linda experiencia !!",
+        comentario: "Muy rica toda la comida y el lugar. Un muy lindo momento !",
         estrellas: 4,
         id: 6,
     },
