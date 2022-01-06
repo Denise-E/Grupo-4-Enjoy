@@ -61,17 +61,18 @@
             </section>
         </section>
         <section class="dflex" id="comentarios">
-            <% if (coments.experiencia == product.name) { %>
-                <ul>
-                   <% coments.forEach(element => { %>
-                        <li>
-                            <h1><%= element.autor %> </h1> 
-                            <h3><%= element.experiencia %> </h3><span><%= element.estrellas %><i class="far fa-star"></i> </span>
-                            <p><%= element.comentario %> </p>
-                        </li>
-                    <% }) %> 
-                </ul>
-            <% } %>
+            <% if (coment != null) { %>
+                <% coment.forEach(element => { %>
+                    <article>
+                        <h1><%= element.autor %> :</h1>
+                        <p><%= element.estrellas %> <i class="far fa-star"></i></p>
+                        <p><%= element.comentarios %> </p>
+                    </article>
+                <% }) %>
+                <% }  else  { %>
+                    <p>No hay comentarios</p>
+                <% } %>
+           
         </section>
     </main>
     <%- include('../partials/footer') %> 

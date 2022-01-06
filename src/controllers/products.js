@@ -1,4 +1,3 @@
-
 const products = require("../data/products");
 const coments = require("../data/coments");
 
@@ -8,6 +7,7 @@ module.exports = {
         products: products,
         coments: coments,
         product: products.find(product => product.id == req.params.id),
+        coment: coments.filter(coment => coment.experiencia === products.find(product => product.id == req.params.id).name),
         style: "productDetail"
     }),
 
