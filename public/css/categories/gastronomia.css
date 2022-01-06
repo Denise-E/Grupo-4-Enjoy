@@ -21,3 +21,8 @@ p{
 ul, li {
     list-style: none;
 }
+
+li img{
+    width:15rem;
+    height: 20rem;
+}
