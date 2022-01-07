@@ -1,12 +1,12 @@
 module.exports = {
 crearProducto: (req,res) => res.render("admin/crearProducto",{
-        style: "crearProducto"
+        style: "admin/crearProducto"
 
  }),
 
  editarProducto: (req,res) => res.render("admin/editarProducto",{
         
-    style: "editarProducto"
+    style: "admin/editarProducto"
 })
 }
 
