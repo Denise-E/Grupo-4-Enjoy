@@ -32,11 +32,32 @@ li img{
     width:18rem;
     height: 22rem;
 }
+.subtitulo{
+    margin-left: 5px;
+}
+
+.listadoProductos{
+    padding: 0;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .imagenDescripcion{
     background-color: rgb(217, 187, 249, 10);
     border: 1px solid #371452;
     border-radius: 3px;
     box-shadow: 0px 0px 8px rgb(100, 100, 100);
-    margin:2rem 0;
-    width:18rem;   
+    margin:1.5rem 0;
+    width:18.1rem;   
+}
+
+@media screen and (min-width: 769px) {
+    .listadoProductos{
+    flex-direction:row ;
+    flex-wrap: wrap;    
+}
+.imagenDescripcion{
+    margin: 1.5rem 1rem;
+}
 }

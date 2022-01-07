@@ -27,7 +27,7 @@ module.exports = [
         category: "Gastronomía",
         name: "Cocktail Night",
         image: "gastronomiaCocktailNight.jpg",
-        description: "Esta Bigbox, para dos personas, ofrece la posibilidad de disfrutar de los mejores tragos de autor en las barras más exclusivas de Argentina.",
+        description: "Este Enjoy, para dos personas, ofrece la posibilidad de disfrutar de los mejores tragos de autor en las barras más exclusivas de Argentina.",
         persons: 2,
         expirationDate: "31/05/2022",
         options: 25,
