@@ -8,23 +8,26 @@
     <main>
 
     <section class="agregarProd">
-        <form action="/crearProducto" method="GET">            
-            <section class="form">
-                <div class="nuevoProducto">
+        <form action="/crearProducto" method="GET">  
+
+            <fieldset class="form">
+            <div class="nuevoProducto">
                     <h2 class="tituloPrincipal">Crear producto</h2>
 
-                <p class="titulo">Nombre: </p>
-            
+                <label for=""> Nombre: </label>
                 <input type="text" placeholder="Nombre del producto" name="userId" id="nombre" required>
                 <span class="feedback"></span>
-                <label for=""></label>
 
-                <p class="titulo">Descripcion:</p>
+                <label for="">Descripcion:</label>
                 <input type="text" placeholder="Describe el producto" name="userId" id="" required>
                 <span class="feedback"></span>
                 <label for=""></label>
 
-                <p class="titulo"> Categoria:</p> 
+                <label for="">Precio: </label> 
+                <input type="number" placeholder="Precio del producto" name="userId" id="" required>
+                <span class="feedback"></span>
+                
+                <label for="">Categoria:</label> 
                     <select name="categoria">
                 
                       <option>Gastronomia</option>
@@ -34,21 +37,10 @@
                       <option>Estadias</option>
 
                     </select>
-                 </p>
-
-                 <p class="titulo">Precio: </p>
-                 <input type="number" placeholder="Precio del producto" name="userId" id="" required>
-                 <span class="feedback"></span>
-                 <label for=""></label> 
-                
-                  
-         <p><input type="submit" value="Agregar Producto"></p>
-
-
-      </div>
-    
-        </section>
-        </form>
+              <button type="submit"><a href="/"> Agregar Producto</a></button>   
+       </div>
+       </fieldset>
+      </form>
   </section>         
    
 </main>
