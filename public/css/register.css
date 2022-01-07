@@ -50,17 +50,20 @@ a:link, a:visited, a:active {
 }
 
 main button{
+    border:5px;
     background-color: #b47cde;
-    color: white;
     width: 40%;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 50px;
     font-size: 20px;
+    color: white;
     border-radius: 5%;
-    transition: background-color 200ms;
+    transition: all 200ms;
 }
-main button:hover{
+
+main button:hover{ 
+    color: #5A2083;
     background-color: #d9bbf9;
 }
 
@@ -99,7 +102,9 @@ main button a:hover{
     }
 
     main button{
-        max-width: 25%;
+        border-radius: 8px;
+        width: 25%;
+        padding: 0.75rem;
     }
 
     .formReg{
@@ -117,17 +122,14 @@ main button a:hover{
         width: 85%;
         align-self: center;
     }
-
-  
 }
 
 @media screen and (min-width: 769px){
     main button{
-        max-width: 20%;
+        width: 20%;
     }
 
     .registro{
         max-width: 55%;
     }
-    
 }
