@@ -10,7 +10,7 @@
 
         <ul>
             <% products.filter(element => element.category == "Entretenimiento").forEach(element => { %>
-                <li>
+                <li class= "imagenDescripcion">
                     <picture class= "imagenProducto">
                         <img src= "/images/categorias/<%= element.image %>" class="imagenProducto">
                     </picture>

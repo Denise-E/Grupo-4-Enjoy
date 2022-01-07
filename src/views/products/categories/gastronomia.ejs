@@ -9,7 +9,7 @@
         <p> Regalá un conjunto de experiencias, tu agasajado elige cuál vive</p>
         <ul>
             <% products.filter(element => element.category == "Gastronomía").forEach(element => { %>
-                <li>
+                <li class= "imagenDescripcion">
                     <picture class= "imagenProducto">
                         <img src= "/images/categorias/<%= element.image %>" class="imagenProducto">
                     </picture>
