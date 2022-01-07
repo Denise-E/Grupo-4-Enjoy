@@ -9,13 +9,15 @@
 main{
     text-align: center;
     margin: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .tituloLogin{
     margin-bottom:25px;
     font-size: 30px;
-    color:#5A2083;
-    }
+    color:#5A2083;  
+}
 
 .inicioSesion {
     text-align: center;
@@ -57,6 +59,10 @@ main{
     border: thistle;
 }
 
+.form input{
+    margin-top: 0.5rem;
+}
+
 main button{
     border:5px;
     background-color: #b47cde;
@@ -82,8 +88,12 @@ main button a{
 }
 
 .olvide-password{
-right: 100px;
-text-decoration:none;
+    right: 100px;
+}
+
+.olvide-password a{
+    text-decoration: none;
+    color: #5A2083;
 }
 
 a:link, a:visited, a:active{
