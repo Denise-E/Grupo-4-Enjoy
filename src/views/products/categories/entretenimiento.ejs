@@ -6,7 +6,7 @@
 
     <main>
         <h1>ENTRETENIMIENTO</h1>
-        <p> Regalá un conjunto de experiencias, tu agasajado elige cuál vive</p>
+        <p class= "subtitulo"> Regalá un conjunto de experiencias, tu agasajado elige cuál vive</p>
 
         <ul class= "listadoProductos">
             <% products.filter(element => element.category == "Entretenimiento").forEach(element => { %>
@@ -14,7 +14,7 @@
                     <picture class= "imagenProducto">
                         <img src= "/images/categorias/<%= element.image %>" class="imagenProducto">
                     </picture>
-                    <h2> <%= element.name %> </h2>
+                    <h2 class= "tituloImagen"> <%= element.name %> </h2>
                     <p> <%= element.description %> </p>
                     <p> Para <%= element.persons %> personas | $ <%= element.price %> </p>
                     <p></p>

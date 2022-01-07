@@ -35,6 +35,7 @@ li img{
 .subtitulo{
     margin-left: 5px;
 }
+
 .listadoProductos{
     padding: 0;    
     display: flex;
@@ -43,12 +44,18 @@ li img{
     align-items: center;
 }
 .imagenDescripcion{
+    text-align: center;
     background-color: rgb(217, 187, 249, 10);
     border: 1px solid #371452;
     border-radius: 3px;
     box-shadow: 0px 0px 8px rgb(100, 100, 100);
     margin:1.5rem 0;
-    width:18.1rem;   
+    width:18.1rem;
+    height: 35rem;
+    max-height: 36rem;   
+}
+.tituloImagen{
+    margin: 1rem 0;
 }
 
 @media screen and (min-width: 769px) {
@@ -58,5 +65,9 @@ li img{
 }
 .imagenDescripcion{
     margin: 1.5rem 1rem;
+}
+.imagenDescripcion:hover{
+    box-shadow: 0px 0px 10px #5A2083;
+
 }
 }
