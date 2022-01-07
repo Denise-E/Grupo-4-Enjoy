@@ -56,6 +56,13 @@ li img{
 }
 .tituloImagen{
     margin: 1rem 0;
+    color: white;
+    text-shadow: 0 2px 2px black;
+}
+.personaPrecio{
+    margin-top: 0.7rem;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 black;
 }
 
 @media screen and (min-width: 769px) {

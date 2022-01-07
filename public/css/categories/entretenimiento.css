@@ -44,15 +44,25 @@ li img{
     align-items: center;
 }
 .imagenDescripcion{
+    text-align: center;
     background-color: rgb(217, 187, 249, 10);
     border: 1px solid #371452;
     border-radius: 3px;
     box-shadow: 0px 0px 8px rgb(100, 100, 100);
     margin:1.5rem 0;
-    width:18.1rem;   
+    width:18.1rem;
+    height: 35rem;
+    max-height: 36rem;   
 }
 .tituloImagen{
     margin: 1rem 0;
+    color: white;
+    text-shadow: 0 2px 2px black;
+}
+.personaPrecio{
+    margin-top: 0.7rem;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 black;
 }
 
 @media screen and (min-width: 769px) {
