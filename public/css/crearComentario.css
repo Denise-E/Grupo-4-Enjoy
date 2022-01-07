@@ -9,8 +9,11 @@
     flex-wrap: wrap;
 }
 
-main{
+body{
     font-family: 'Montserrat', sans-serif;
+}
+
+main{
     margin: 0.25rem;
     font-weight: bold;
     display: flex;
