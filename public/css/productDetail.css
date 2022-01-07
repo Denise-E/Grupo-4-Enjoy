@@ -306,7 +306,6 @@ footer a{
     #mainTwo article{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         margin-left: 0;
         padding-left: 10%;
         width: 50%;
@@ -319,6 +318,8 @@ footer a{
 
     #mainTwo p{
         font-size: 15px;
+        margin-bottom: 12%;
+        margin-top: 12%;
     }
     
     form legend{
