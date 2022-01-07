@@ -1,0 +1,55 @@
+<%- include('../partials/head') %> 
+<link rel="stylesheet" href="/css/<%=style%>.css">
+
+<body>
+    <%- include('../partials/header') %> 
+    
+
+    <main>
+
+    <section class="modificarProd">
+        <form action="/editarProducto" method="GET">            
+            <section class="form">
+                <div class="editarProducto">
+                <h2 class="tituloPrincipal">Editar producto</h2>
+
+                <p class="titulo"> Nombre:</p>
+                <label for=""></label>
+                <input type="text" placeholder="Nombre del producto" name="userId" id="nombre" required>
+                <span class="feedback"></span>
+                <label for=""></label>
+                <p class="titulo"> Descripcion:</p>
+                <input type="text" placeholder="Describe el producto" name="userId" id="" required>
+                <span class="feedback"></span>
+                <label for=""></label>
+                <p class="titulo"> Categoria:</p>
+                    <select name="categoria">
+                
+                      <option>Gastronomia</option>
+                      <option>Aventura</option>
+                      <option>Estar Bien</option>
+                      <option>Entretenimiento</option>
+                      <option>Estadias</option>
+
+                    </select>
+                 </p>
+
+                 <p class="titulo"> Precio:</p>
+                 <input type="number" placeholder="Precio del producto" name="userId" id="" required>
+                 <span class="feedback"></span>
+                 <label for=""></label> 
+                
+                  
+         <p><input type="submit" value=" Editar Producto"></p>
+
+
+      </div>
+    
+        </section>
+        </form>
+  </section>         
+   
+</main>
+<%- include('../partials/footer') %> 
+</body>
+</html> 

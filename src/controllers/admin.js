@@ -1,10 +1,10 @@
 module.exports = {
-crearProducto: (req,res) => res.render("crearProducto",{
-        style: "crearProducto",
+crearProducto: (req,res) => res.render("admin/crearProducto",{
+        style: "crearProducto"
 
  }),
 
- editarProducto: (req,res) => res.render("editarProducto",{
+ editarProducto: (req,res) => res.render("admin/editarProducto",{
         
     style: "editarProducto"
 })

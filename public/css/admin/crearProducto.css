@@ -10,8 +10,13 @@ main{
 
 }
 
-.titulo{
+.tituloPrincipal{
     margin-bottom:25px;
     font-size: 30px;
     color:#5A2083;
     }
+
+    
+.agregarProd{
+    background-color: #5A2083;
+}
