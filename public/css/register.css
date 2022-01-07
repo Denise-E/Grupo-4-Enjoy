@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
-main{
+body{
     font-family: 'Montserrat', sans-serif;
+}
+
+main{
     text-align: center;
     font-weight: bold;
 }
