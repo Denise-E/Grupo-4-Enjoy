@@ -11,6 +11,9 @@
         <ul>
             <% products.filter(element => element.category == "Estadías").forEach(element => { %>
                 <li>
+                    <picture class= "imagenProducto">
+                        <img src= "/images/categorias/<%= element.image %>" class="imagenProducto">
+                    </picture>
                     <h2> <%= element.name %> </h2>
                     <p> <%= element.description %> </p>
                     <p> Para <%= element.persons %> personas | $ <%= element.price %> </p>

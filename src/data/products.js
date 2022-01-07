@@ -2,7 +2,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Experiencia Gourmet",
-        image: "/images/Categorias/gastronomiaExperienciaGourmet.jpg",
+        image: "gastronomiaExperienciaGourmet.jpg",
         description: "Este Enjoy ofrece la posibilidad de disfrutar de una experiencia gastronómica única en los mejores restaurantes de Argentina.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -14,7 +14,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Sabores del mundo",
-        image: "/images/Categorias/gastronomiaSaboresdelMundo.jpg" ,
+        image: "gastronomiaSaboresdelMundo.jpg" ,
         description: "Regalá experiencias únicas. Este Enjoy ofrece la posibilidad de conocer el mundo a través de diversas experiencias gastronómicas.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -26,7 +26,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Cocktail Night",
-        image: "/images/Categorias/gastronomiaCocktailNight.jpg",
+        image: "gastronomiaCocktailNight.jpg",
         description: "Esta Bigbox, para dos personas, ofrece la posibilidad de disfrutar de los mejores tragos de autor en las barras más exclusivas de Argentina.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -38,7 +38,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Meet & Eat",
-        image: "/images/Categorias/gastronomiaMeet.jpg",
+        image: "gastronomiaMeet.jpg",
         description: "Este Enjoy ofrece la posibilidad de vivir un momento gastronómico innovador en la casa del cocinero.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -50,7 +50,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Veggie",
-        image: "/images/Categorias/gastronomiaVeggie.jpg",
+        image: "gastronomiaVeggie.jpg",
         description: "Este Enjoy ofrece la posibilidad de elegir entre los mejores platos veganos y vegetarianos de la ciudad.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -62,7 +62,7 @@ module.exports = [
     {
         category: "Gastronomía",
         name: "Bodegones",
-        image: "/images/Categorias/gastronomiaBodegones.jpg",
+        image: "gastronomiaBodegones.jpg",
         description: "Este Enjoy ofrece la posibilidad de elegir entre los más destacados Bodegones de la Ciudad Porteña.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -74,6 +74,7 @@ module.exports = [
     {
         category: "Aventura",
         name: "Acción",
+        image: "aventuraAccion.jpg",
         description: "Este Enjoy ofrece la posibilidad de elegir una actividad emocionante e innovadora.",
         persons: 5,
         expirationDate: "31/05/2022",
@@ -85,6 +86,7 @@ module.exports = [
     {
         category: "Aventura",
         name: "Extreme",
+        image: "aventuraExtreme.jpg",
         description: "Este Enjoy ofrece la posibilidad de elegir una actividad original y desafiante.",
         persons: 5,
         expirationDate: "31/05/2022",
@@ -96,6 +98,7 @@ module.exports = [
     {
         category: "Aventura",
         name: "A volar",
+        image: "aventuraAvolar.jpg",
         description: "Este Enjoy ofrece la posibilidad de tirarse en paracaídas y sentir la verdadera adrenalina de la caída libre, viendo paisajes únicos.",
         persons: 1,
         expirationDate: "31/05/2022",
@@ -107,6 +110,7 @@ module.exports = [
     {
         category: "Aventura",
         name: "Paseo Naútico",
+        image: "aventuraPaseonautico.jpg",
         description: "Este Enjoy ofrece la posibilidad de vivir paseos únicos para que disfrutes una tarde a pura navegación.",
         persons: 5,
         expirationDate: "31/05/2022",
@@ -118,6 +122,7 @@ module.exports = [
     {
         category: "Estar Bien",
         name: "Relax",
+        image: "estarbienRelax.jpg",
         description: "Este Enjoy ofrece sesiones de masajes y tratamientos corporales en una selección de los mejores spas de Argentina.",
         persons: 1,
         expirationDate: "31/05/2022",
@@ -129,6 +134,7 @@ module.exports = [
     {
         category: "Estar Bien",
         name: "(Des)Conectar",
+        image: "estarbienDesconectar.jpg",
         description: "Este Enjoy ofrece la posibilidad de desconectar de la rutina con un momento de instrospección y relajación a través de actividades de yoga, meditación y otras prácticas. ",
         persons: 1,
         expirationDate: "31/05/2022",
@@ -140,6 +146,7 @@ module.exports = [
     {
         category: "Estar Bien",
         name: "Home Spa",
+        image: "estarbienHomespa.jpg",
         description: "Este Enjoyofrece la posibilidad de elegir entre diferentes kits de productos para recrear un spa o barbería en casa.",
         persons: 1,
         expirationDate: "31/05/2022",
@@ -151,6 +158,7 @@ module.exports = [
     {
         category: "Entretenimiento",
         name: "Musique & Cuisine",
+        image: "entretenimientoMusic.jpg",
         description: "Este Enjoy ofrece la posibilidad de elegir entre los mejores shows en vivo en Buenos Aires, junto a una especial propuesta gastronómica.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -162,6 +170,7 @@ module.exports = [
     {
         category: "Entretenimiento",
         name: "Noche de Teatro",
+        image: "entretenimientoNochedeteatro.jpg",
         description: "Este Enjoy ofrece la posibilidad de disfrutar de los mejores espectáculos teatrales y de una experiencia gastronómica para dos personas.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -173,6 +182,7 @@ module.exports = [
     {
         category: "Entretenimiento",
         name: "Show Time",
+        image: "entretenimientoShowtime.jpg",
         description: "Este Enjoy está pensada para que cinéfilos y amantes del teatro puedan disfrutar de una obra o película desde la comodidad de su casa.",
         persons: 4,
         expirationDate: "31/05/2022",
@@ -184,6 +194,7 @@ module.exports = [
     {
         category: "Estadías",
         name: "Glamping",
+        image: "estadiasGlamping.jpg",
         description: "Este Enjoy ofrece la posibilidad de disfrutar una experiencia inolvidable en los mejores glampings del país!",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -195,6 +206,7 @@ module.exports = [
     {
         category: "Estadías",
         name: "Hoteles Urbanos",
+        image: "estadiasHotelesurbanos.jpg",
         description: "Este Enjoy ofrece la posibilidad de disfrutar una noche distinta en los hoteles urbanos más destacados del país.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -206,6 +218,7 @@ module.exports = [
     {
         category: "Estadías",
         name: "Weekend",
+        image: "estadiasWeekend.jpg",
         description: "Este Enjoy ofrece la posibilidad de disfrutar de las mejores hosterías, estancias y hoteles más encantadores del país.",
         persons: 2,
         expirationDate: "31/05/2022",
@@ -217,6 +230,7 @@ module.exports = [
     {
         category: "Estadías",
         name: "Noches Insólitas",
+        image: "estadiasNochesinsolitas.jpg",
         description: "Este Enjoy ofrece la posibilidad de vivir lujosas estadías de una o dos noches en los lugares más extraordinarios.",
         persons: 2,
         expirationDate: "31/05/2022",

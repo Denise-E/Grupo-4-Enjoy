@@ -90,7 +90,11 @@ h5 a{
  }
  li img{
      width: 20rem;
-     height: 22rem;
+     height: 25rem;
+ }
+ .categorias{
+     max-width: 80%;
+     margin: auto;
  }
  }
 

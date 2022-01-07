@@ -11,7 +11,7 @@
             <% products.filter(element => element.category == "Gastronomía").forEach(element => { %>
                 <li>
                     <picture class= "imagenProducto">
-                        <img src= <%= element.image %> class="imagenProducto">
+                        <img src= "/images/categorias/<%= element.image %>" class="imagenProducto">
                     </picture>
                     <h2> <%= element.name %> </h2>
                     <p> <%= element.description %> </p>

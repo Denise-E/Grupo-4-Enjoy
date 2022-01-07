@@ -25,3 +25,7 @@ ul, li {
 img{
     max-width: 51%;
 }
+li img{
+    width:15rem;
+    height: 20rem;
+}
