@@ -132,6 +132,7 @@ form legend{
     font-size: 10px;
     margin: 3px 3px 6px 3px;
     color: #5A2083;
+    font-weight: bold;
 }
 
 
@@ -169,135 +170,29 @@ img{
     font-size: 15px;
 }
 
-footer{
-    background-color: #ebebebec;
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-}
-
-footer h2{
-    width: 100%;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
-}
-
-#footerOne{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerOne nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#footerOne nav a{
-    margin-top: 1.5rem;
-}
-
-#footerTwo{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerTwo nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#footerTwo nav a{
-    margin-top: 1.5rem;
-}
-
-#footerThree{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerThree nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 2rem;
-}
-
-
-#footerThree h2{
-    margin-bottom: 1.5rem;
-}
-
-#footerThree input{
-    border-radius: 10px;
-    border: solid 1px black;
-    padding: 8px;
+#mainFive article{
     width: 90%;
-    margin-bottom: 1.5rem;
-}
-
-#footerFour{
-    width: 100%;
-    border-top: solid 1px #7A7777;
-    text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
+    margin-left: 1rem;
+    border-bottom: solid 1px #9e9d9d;
 }
 
-#footerFour nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
+#mainFive article h1{
+    margin-bottom: 0.25rem;
 }
 
-.footerFourLeft{
-    border-right: solid 1px #7A7777;
+.comentario{
+    margin: 1rem;
+    font-weight: bold;
+}
+
+.sinComentarios{
+    margin: 1rem;
+    font-weight: bold;
+    margin-left: 1.25rem;
 }
 
 @media screen and (min-width: 361px) {  
-    .fa-bars{
-        width: 30px;
-    }
-
-    header img{
-        width: 50%;
-        height: 30%;
-    }
-    
-    #barraSuperior{
-        margin-bottom: 0;
-    }
-
-    #barraSuperior nav{
-        width: 45%;
-        gap: 8px;
-    }
-
-    #barraSuperior nav p{
-        display: inline;
-    }
-    
-    #barraInferior{
-        margin-top: 0;
-    }
-
-    #barraInferior button{
-        max-width: 15%;
-    }
-
-    header i{
-        font-size: 20px;
-    }
-
     #mainOne p{
         font-size: 1rem;
         margin-top: 5px;
@@ -384,13 +279,12 @@ footer a{
         width: 100%;
     }
 
-    #footerThree nav{
-        justify-content: center;
-        gap: 2rem;
+    #mainFive article{
+        margin-left: 2rem;
     }
-
-    #footerFour nav a{ 
+    .sinComentarios{
         padding: 1rem;
+        margin-left: 2rem;
     }
 }
 

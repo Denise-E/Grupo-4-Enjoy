@@ -57,17 +57,17 @@
                 <i class="fas fa-arrow-down"></i>
             </section>
         </section>
-        <section class="dflex" id="comentarios">
+        <section class="dflex" id="mainFive">
             <% if (coment.length != 0 ) { %>
                 <% coment.forEach(element => { %>
                     <article>
                         <h1><%= element.autor %> :</h1>
                         <p><%= element.estrellas %> <i class="far fa-star"></i></p>
-                        <p><%= element.comentario %> </p>
+                        <p class="comentario"><%= element.comentario %> </p>
                     </article>
                 <% }) %>
                 <% } else { %>  
-                    <p>No hay comentarios por el momento.</p>
+                    <p class="sinComentarios">No hay comentarios por el momento.</p>
                  <% } %>
         </section>
     </main>
