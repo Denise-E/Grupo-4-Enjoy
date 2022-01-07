@@ -13,4 +13,4 @@ app.use(require("./routes/main"));
 app.use(require("./routes/products"));
 app.use(require("./routes/users"));
 
-
+app.use(require("./routes/admin"));
