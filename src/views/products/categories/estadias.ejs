@@ -11,12 +11,14 @@
         <ul class= "listadoProductos">
             <% products.filter(element => element.category == "Estadías").forEach(element => { %>
                 <li class= "imagenDescripcion">
+                    <a href="/productDetail/<%= element.id %>">
                     <picture class= "imagenProducto">
                         <img src= "/images/categorias/<%= element.image %>" class="imagenProducto">
                     </picture>
                     <h2 class= "tituloImagen"> <%= element.name %> </h2>
                     <p> <%= element.description %> </p>
                     <p class= "personaPrecio"> Para <%= element.persons %> personas | $ <%= element.price %> </p>
+                </a>
                     <p></p>
                 </li>
             <% }) %>
