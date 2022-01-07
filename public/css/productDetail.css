@@ -213,7 +213,6 @@ img{
 
     #mainTwo p{
         font-size: 15px;
-        margin-bottom: 12%;
         margin-top: 12%;
     }
     
@@ -311,8 +310,12 @@ img{
 
     #mainTwo{
         max-width: 60%;
-        max-height: 80%;
+        max-height: 50%;
         margin-left: 20%;
+    }
+
+    #mainTwo p{
+        margin-bottom: 10%;
     }
 
     #mainThree button{
