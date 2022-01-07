@@ -10,6 +10,46 @@
             <div>
                 <input name="searchQuery" placeholder="Ej: no me llego el nuevo codigo" type="text" class="bb-input bb-search searchInput">
             </div>
+
+        <section class="popularTopicsSection sectionPadding">
+            <h3 class="secondaryTitle">Peguntas frecuentes</h3>
+        </section>
+        <section class="contactSection sectionPadding">
+             <div class="bb-mb-10 full-width">
+                 <h3 class="secondaryTitle">Contáctanos</h3>
+                 <p>Completa con los datos pedidos y asi podremos ayudarte</p>
+
+             </div>
+             <div class="bb-row-to-column mediumContainer">
+               <div class="contactFormContainer bb-column bb-mb-3">
+                   <form class="BbForm bb-column" novalidate>
+                       <div class="bb-new-control --iconLeft --gray-1 bb-mb-6">
+                           <span class="User-icon bb-control__icon"></span>
+                           <input type="text" name="fullname" placeholder="Nombre completo" required="required" class="BbField bb-input full-width">
+                       </div>
+                      <div class="bb-new-control --iconLeft --gray-1 bb-mb-7">
+                           <span class="Mail-icon bb-control__icon"></span>
+                           <input type="email" name="email" placeholder="Email" required="required" class="BbField bb-input full-width">
+                      </div>
+                      <h3 class="secondaryTitle">Mensaje</h3>
+                      <div class="bb-select">
+                          <select type="select" class="BbField full-width">
+                              <option value class="bb-bold">Asunto</option>
+                              <option>Comprar un regalo</option>
+                              <option>Estado de mi envío</option>
+                              <option>Abrir mi regalo</option>
+                              <option>Cambio</option>
+                              <option>Extension de regalo</option>
+                              <option>Reserva</option>
+                              <option>Perdi mi regalo</option>
+                              <option>Devolver mi compra</option>
+                              <option>Otro</option>
+                          </select>
+                      </div>
+                   </form>
+               </div>
+             </div>
+        </section>
         </main>
 
     <%- include('../partials/footer') %> 
