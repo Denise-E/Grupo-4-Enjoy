@@ -31,6 +31,7 @@ main{
         justify-content: center;
         align-items: center;
         transition: box-shadow 200ms;
+       
     }
 
     .editarProducto input{ 
@@ -43,8 +44,6 @@ main{
         font-size: 16px;
         border: solid 1px #b47cde;
         transition: box-shadow 200ms;
-        
-    
 }
 .editarProducto:hover{
     box-shadow: 0px 0px 10px #5A2083;
@@ -56,10 +55,10 @@ main{
 }
 
 main button{
-    margin-left: 33%;
+    margin-left: 35%;
     background-color: #b47cde;
-    width: 35%;
-    padding: 5px;
+    width: 33%;
+    padding: 10px;
     font-size: 19px;
     color: white;
     border-radius: 5%;
