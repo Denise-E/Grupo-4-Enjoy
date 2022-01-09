@@ -9,15 +9,16 @@
         <section class="dflex" id="mainOne">
             <h2> <%= product.name %>  <h4><i class="far fa-star"></i><strong>4.3</strong></h4></h2> 
             
-            <p> <%= product.description %> </p>
+            <p> <%= product.resume %> </p>
         </section>
         <section class="dflex" id="mainTwo">
                                         
             <img src= "/images/categorias/<%= product.image %>"> 
             <article class="dflex">
+                <h2> <%= product.title %> </h2>
+                <p><i class="fas fa-map-marker-alt"></i> <%= product.location %> </p>
                 <p><i class="fas fa-user-friends"></i> Para <%= product.persons %>  personas</p>
                 <p><i class="fas fa-calendar"></i> Válido hasta el <%= product.expirationDate %> </p>
-                <p><i class="fas fa-gift"></i> Contiene <%= product.options %>  opciones</p>
                 <p><strong><i class="fas fa-dollar-sign"> </i> <%= product.price %></strong></p> 
                 <form action="GET">
                     <fieldset class="dflex">
