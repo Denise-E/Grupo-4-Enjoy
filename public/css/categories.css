@@ -63,8 +63,9 @@ li img{
 .abs{
     position: absolute;
     z-index: 2;
-    top:20vh;
-    margin-left: 5px;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
     
 }
 
@@ -92,7 +93,7 @@ h5 a{
     }
 
  h5 a{
-     font-size: 2.4rem;
+     font-size: 2rem;
  }
  img{
      max-height: 50rem;
@@ -112,3 +113,15 @@ li img:hover{
  }
  }
 
+ @media screen and (min-width: 1200px)  { 
+    ul{
+        flex-wrap: nowrap;
+        }
+    .rel{
+        margin: 1rem 0.2rem;
+    }
+    h5 a{
+       font-size: 1.5rem
+    }
+
+}
