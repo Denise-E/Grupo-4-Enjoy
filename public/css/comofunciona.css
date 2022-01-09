@@ -38,7 +38,7 @@ h4{
    
 }
 
-p{
+.subtitulo{
   font-weight: bold;
   max-width: 85%;
   margin: auto;
@@ -68,7 +68,7 @@ p{
   margin: 1.5rem 0;
   font-size: 1.3rem;
 }
-.icono{
+.iconos1{
   font-weight: 900;
   color: #5A2083;
   font-size: 3rem;
