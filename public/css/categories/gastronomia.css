@@ -1,18 +1,3 @@
-* {
-    border: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-a:link, a:visited,  a:hover, a:active
-{
-    color: #000000;
-    text-decoration: none;
-}
-
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-
 main{
     margin: 2rem 1rem;
 }
@@ -39,7 +24,10 @@ li img{
 }
 .subtitulo{
     text-align: center;
-    margin: 1.5rem 0;
+    margin: 1.9rem 0;
+    color: #371452;
+   
+
 }
 
 .listadoProductos{
