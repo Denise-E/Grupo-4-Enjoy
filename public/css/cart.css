@@ -25,6 +25,7 @@ body{
     width: 85%;
     position: relative;
     transition: box-shadow 200ms;
+    border-radius: 5px;
 }
 
 #mainTwo:hover{
@@ -33,12 +34,13 @@ body{
 
 #mainTwo h2{
     width: 100%;
-    background-color: #d9bbf9;
+    background-color: rgb(180, 124, 222, 30);
     opacity: 0.5;
     color: white;
     text-align: center;
     font-family: 'Life Savers', cursive;
     padding: 5px;
+    
 }
 
 #mainTwo article{
@@ -51,11 +53,12 @@ main img{
 
 #mainTwo h5{
     position: absolute;
-    left: 30px;
+    left: 1rem;
     top: 130px;
     font-family: 'Life Savers', cursive;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #5A2083;
+    text-shadow: 1px 1px #ffffff;
 
 }
 
@@ -75,9 +78,8 @@ main img{
     border-radius: 10px;
     background-color: #C4C4C4;
     opacity: 90%;
-    width: 70%;
-    margin-left: 2rem;
-    margin-top: 20px;
+    width: 80%;
+    margin: 2rem 2rem;
     text-align: center;
     padding: 10px;
     transition: box-shadow 200ms;
@@ -119,6 +121,7 @@ main img{
     margin-right: 2rem;
     font-size: 0.75rem; 
     transition: color 150ms;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #mainFive button:hover{
@@ -129,131 +132,9 @@ main img{
     justify-content: flex-end;
 }
 
-footer{
-    background-color: #ebebebec;
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-}
-
-footer h2{
-    width: 100%;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
-}
-
-#footerOne{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerOne nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#footerOne nav a{
-    margin-top: 1.5rem;
-}
-
-#footerTwo{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerTwo nav{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#footerTwo nav a{
-    margin-top: 1.5rem;
-}
-
-#footerThree{
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerThree nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    font-size: 2rem;
-}
-
-
-#footerThree h2{
-    margin-bottom: 1.5rem;
-}
-
-#footerThree input{
-    border-radius: 10px;
-    border: solid 1px black;
-    padding: 8px;
-    width: 90%;
-    margin-bottom: 1.5rem;
-}
-
-#footerFour{
-    width: 100%;
-    border-top: solid 1px #7A7777;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-#footerFour nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.footerFourLeft{
-    border-right: solid 1px #7A7777;
-}
 
 @media screen and (min-width: 361px) {  
-    .fa-bars{
-        width: 30px;
-    }
-
-    header img{
-        width: 50%;
-        height: 30%;
-    }
     
-    #barraSuperior{
-        margin-bottom: 0;
-    }
-
-    #barraSuperior nav{
-        width: 45%;
-        gap: 8px;
-    }
-
-    #barraSuperior nav p{
-        display: inline;
-    }
-    
-    #barraInferior{
-        margin-top: 0;
-    }
-
-    #barraInferior button{
-        max-width: 15%;
-    }
-
     header i{
         font-size: 20px;
     }
@@ -263,11 +144,12 @@ footer a{
     }
 
     #mainTwo{
-        width: 30rem;
+        width: 80%;
     }
 
     #mainTwo article{
         margin-top: 0.5rem;
+        max-width: 49%;
     }
 
     main img{
@@ -276,9 +158,8 @@ footer a{
     }
 
     
-    #mainTwo h5{
-        left: 45px;
-        top: 150px;
+    strong{
+        margin-left: 1rem;
     }
 
     #mainThree{
@@ -289,48 +170,7 @@ footer a{
         max-width: 15rem;
     }
 
-    footer{
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 0;
-    }
-
-    #footerOne{
-        max-width: 26%;
-        text-align: left;
-        flex-grow: 1;
-    }
-
-    #footerTwo{
-        max-width: 26%;
-        text-align: left;
-        flex-grow: 1;
-    }
-
-    #footerThree{
-        display: inline-flex;
-        max-width: 45%;
-        flex-grow: 1;
-        align-items: flex-start;
-        padding: 0;
-    }
     
-    #footerThree h2{
-        margin-top: 1rem;
-    }
-
-    .newsletter{
-        width: 100%;
-    }
-
-    #footerThree nav{
-        justify-content: center;
-        gap: 2rem;
-    }
-
-    #footerFour nav a{ 
-        padding: 1rem;
-    }
 }
 
 @media screen and (min-width: 769px){
@@ -342,6 +182,23 @@ footer a{
     header img{
         width: 60%;
         height: 40%;
+    }
+    #mainTwo{
+        max-width: 60%;
+    }
+    main img {
+        max-width: 15rem;
+         }
+         
+
+    #mainTwo h5 {
+        font-size: 1.8rem;
+        color:white;
+        text-shadow: 1px 1px #000000;
+        
+         }
+    #mainTwo article{
+        font-size: 1.4rem;
     }
 
     #barraSuperior nav{
