@@ -127,6 +127,9 @@ form legend{
 #mainThree button:hover{
     color: #5A2083;
 }
+#mainThree button input[type=checkbox]{ 
+    display: none; 
+}
 
 #mainThree p{
     font-size: 10px;
