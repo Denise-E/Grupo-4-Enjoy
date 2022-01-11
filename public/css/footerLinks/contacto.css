@@ -37,19 +37,23 @@ margin-bottom: 10px;
 
   }
 
-  .enviar{
+.enviar{
     border:5px;
     background-color: #b47cde;
     width: 40%;
-    padding: 5px;
+    padding: 10px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 20px;
     color: white;
-    border-radius: 5%;
+    border-radius: 5px;
     transition: all 200ms;
-  
-  }
+}
+
+.enviar:hover{ 
+    color: #5A2083;
+    background-color: #d9bbf9;
+}
 
   .texto{
       font-weight: bold;
@@ -95,6 +99,10 @@ margin-bottom: 10px;
         border: solid 1px #b47cde;
         transition: box-shadow 200ms;
   
+}
+
+.mensaje{
+  margin-bottom: 10px;
 }
 
 
