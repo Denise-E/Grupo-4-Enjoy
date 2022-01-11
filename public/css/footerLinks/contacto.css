@@ -101,7 +101,7 @@ margin-bottom: 10px;
 @media screen and (min-width: 769px){
   .cuadroFormulario{
     margin: auto;
-   width: 30%;
+   width: 60%;
    margin-top: 10px;
    margin-bottom: 15px;
    
@@ -115,5 +115,7 @@ input .ejemplo{
   justify-content: center;
 }
 
-
+h1 {
+  max-width: 60%;
+}
 }
