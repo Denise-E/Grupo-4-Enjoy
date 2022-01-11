@@ -29,7 +29,7 @@ color: #b47cde;
     align-items: center;
     transition: box-shadow 200ms;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     
 }
 
@@ -61,13 +61,13 @@ form label{
 main button{
     border:5px;
     background-color: #b47cde;
-    width: 20%;
-    padding: 5px;
+    width: 40%;
+    padding: 10px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 20px;
     color: white;
-    border-radius: 5%;
+    border-radius: 5px;
     transition: all 200ms;
 }
 
@@ -75,4 +75,5 @@ main button:hover{
     color: #5A2083;
     background-color: #d9bbf9;
 }
+
 
