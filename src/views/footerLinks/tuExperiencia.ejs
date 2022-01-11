@@ -3,9 +3,43 @@
 
 <body>
     <%- include('../partials/header') %> 
-    
-    <main>Hola</main>
+    <main>
+        <section class= "unir">
+         <h1>¿Queres unir tu experiencia a ENJOY?</h1>
 
+            <h2>¡Sumate!</h2>
+
+       </section>
+       <section class="formulario">
+        <form action="/unituexperiencia" method="GET">            
+            <section class="form">
+                <div class="sumate">
+                <h1 class="titulo">Unite completando este formulario:</h1>
+                <label for="">Nombre de la experiencia:</label>
+                <input type="text"  name="userId" id="" required>
+                <span class="feedback"></span>
+                <label for=""> Categoria:</label>
+                <input type="password" name="password" required>
+                <span class="feedback"></span>
+
+                <label for=""> Cantidad de personas:</label>
+                <input type="password" name="password" required>
+                <span class="feedback"></span>
+
+                <label for=""> Breve descripcion:</label>
+                <input type="password" name="password" required>
+                <span class="feedback"></span>
+
+                <label for=""> Fecha de caducidad:</label>
+                <input type="password" name="password" required>
+                <span class="feedback"></span>
+            </div>
+         
+                <button type="submit"><a href="/">Enviar</a></button>   
+        </section>
+        </form>
+       
+    </main>
     <%- include('../partials/footer') %> 
 </body>
 </html>

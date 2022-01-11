@@ -7,3 +7,72 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+h1{
+    margin-bottom: 10px;
+}
+
+.unir{
+display: flex;
+justify-content: center;
+margin-bottom: 15px;
+color: #b47cde;
+}
+
+.formulario {
+    text-align: center;
+    box-shadow: 0px 0px 5px #b47cde;
+    border-radius: 20px;
+    width: 60%;
+    padding: 35px 35px;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 200ms;
+    margin: auto;
+    margin-bottom: 15px;
+    
+}
+
+.formulario:hover{
+    box-shadow: 0px 0px 10px #5A2083;
+}
+
+.formulario input{
+        align-items: center;
+        border: none;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        font-size:15px;
+        border: solid 1px #b47cde;
+        transition: box-shadow 200ms;
+    
+}
+.form button a {
+    text-decoration: none;
+}
+
+form label{
+    font-weight: bold;
+
+}
+
+main button{
+    border:5px;
+    background-color: #b47cde;
+    width: 20%;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5%;
+    transition: all 200ms;
+}
+
+main button:hover{ 
+    color: #5A2083;
+    background-color: #d9bbf9;
+}
+
