@@ -5,6 +5,35 @@
 }
 
 body{
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
+
+.bienvenida{
+        font-weight: bold;
+        max-width: 85%;
+        margin: auto;
+}
+
+.enviar{
+    border-color: #c7ade4;
+}
+
+.compra{
+    border-color: #c7ade4;
+}
+
+.servicio{
+    border-color: #c7ade4;
+}
+
+.regalos{
+    border-color: #c7ade4;
+}
+
+.cambio{
+    border-color: #c7ade4;
+}
+
 

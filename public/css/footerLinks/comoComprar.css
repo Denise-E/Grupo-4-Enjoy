@@ -44,3 +44,55 @@ h1 {
     max-width: 85%;
     margin: auto;
   }
+
+  .texto{
+    font-weight: bold;
+    max-width: 85%;
+    margin: auto;
+  }
+  .aTexto{
+    font-weight: bold;
+    max-width: 85%;
+    margin: auto;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }
+  .bTexto{
+    font-weight: bold;
+    max-width: 85%;
+    margin: auto;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }
+  .cTexto{
+    font-weight: bold;
+    max-width: 85%;
+    margin: auto;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+   
+  }
+  .dTexto{
+    font-weight: bold;
+    max-width: 85%;
+    margin: auto;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }
+  .eTexto{
+    font-weight: bold;
+    max-width: 85%;
+    margin: auto;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }
+
+ .items{
+  font-weight: bold;
+  max-width: 50%;
+  margin: auto;
+  font-size: 1.5rem;
+  margin: 1.0rem auto 0.0rem auto;
+  font-weight: bold;
+  color:#030005a9;;
+ }

@@ -24,3 +24,38 @@ h1 {
     font-size: 1.5rem;
     margin: 2.5rem auto;
   }
+
+
+  .nombrecompleto{
+    outline-style: solid;
+    outline-color: #c7ade4;
+  
+  }
+
+  .email{
+    outline-style: solid;
+    outline-color: #c7adea;
+    
+  }
+
+  .ejemplo{
+    outline-style: solid;
+    outline-color: #c7adea;
+  }
+
+  .button-enviar{
+    background-color: #b8b0c2;
+  }
+
+  .texto{
+      font-weight: bold;
+      max-width: 85%;
+      margin: auto;
+  }
+
+    .cuadroFormulario{
+      height: auto;
+      border: 1px black solid;
+      grid-auto-rows: 50px;
+    
+    }
