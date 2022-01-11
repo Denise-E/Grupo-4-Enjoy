@@ -7,10 +7,8 @@
 body{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    background-image: url(/pin/4362930879518092/);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+ 
+ 
 }
 
 h1 {
@@ -19,80 +17,38 @@ h1 {
     font-weight: bolder;
     background-color: #D9BBF9 ;
     border-radius: 0.5rem;
-    margin: 2.5rem auto;
-    max-width: 90%;
+    margin: 2rem auto;
+    max-width: 70%;
   }
-
-  h2{
-    font-size: 1.5rem;
-    margin: 2.5rem auto;
-  }
-
   h3{
-    font-weight: bold;
-    max-width: 85%;
-    margin: auto;
-    font-size: 1.5rem;
-    margin: 2.5rem auto 0.2rem auto;
-    font-weight: bold;
-    color:#8b4abd;
-    text-shadow: 1px 1px #371452;
-    }
-
-  .subtitulo{
-    font-weight: bold;
-    max-width: 85%;
-    margin: auto;
+    margin: 1.5rem;
   }
 
-  .texto{
-    font-weight: bold;
-    max-width: 85%;
-    margin: auto;
-  }
-  .aTexto{
-    font-weight: bold;
-    max-width: 85%;
-    margin: auto;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-  }
-  .bTexto{
-    font-weight: bold;
-    max-width: 85%;
-    margin: auto;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-  }
-  .cTexto{
-    font-weight: bold;
-    max-width: 85%;
-    margin: auto;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
+ .subtitulo{
+   font-weight: bold;
    
-  }
-  .dTexto{
-    font-weight: bold;
-    max-width: 85%;
-    margin: auto;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-  }
-  .eTexto{
-    font-weight: bold;
-    max-width: 85%;
-    margin: auto;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
+   margin: 2rem auto ;
+  
+ }
+
+ .linea{
+  width: 60px;
+    height: 5px;
+    background-color: #a0a0a0;
+    margin: 1rem auto;
+    border-radius: 50px;
+
   }
 
- .items{
-  font-weight: bold;
-  max-width: 50%;
-  margin: auto;
-  font-size: 1.5rem;
-  margin: 1.0rem auto 0.0rem auto;
-  font-weight: bold;
-  color:#030005a9;;
- }
+  .mainTwo{
+    font-weight: bold;
+    margin: 2rem 2rem;
+  }
+
+  .pasos{
+    text-transform: uppercase;
+  }
+.numero{
+  color:#D9BBF9;
+  font-size: 2rem;
+}
