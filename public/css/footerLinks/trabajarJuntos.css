@@ -5,5 +5,43 @@
 }
 
 body{
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #D9BBF9 ;
+    border-radius: 0.5rem;
+    margin: 2.5rem auto;
+    max-width: 90%;
+  }
+
+  h2{
+    font-size: 1.5rem;
+    margin: 2.5rem auto;
+  }
+
+  .texto{
+    font-weight: bold;
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .button1{
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      background-color: #4CAF50;
+  }
+
+ 
