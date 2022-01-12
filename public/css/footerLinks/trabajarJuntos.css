@@ -47,7 +47,7 @@ h1 {
  .manifesto{
     border:5px;
     background-color: #b47cde;
-    width: 40%;
+    width: 60%;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -61,4 +61,10 @@ h1 {
 .manifesto:hover{ 
     color: #5A2083;
     background-color: #d9bbf9;
+}
+
+@media screen and (min-width: 517px) {
+  .manifesto{
+    width: 17rem;
+  }
 }

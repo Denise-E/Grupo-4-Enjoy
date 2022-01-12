@@ -32,3 +32,8 @@ h1 {
     margin: auto;
     margin-bottom: 20px;
   }
+
+  .items li{
+    text-align: left;
+    margin: 1rem;
+  }

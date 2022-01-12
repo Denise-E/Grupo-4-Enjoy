@@ -9,6 +9,11 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
+article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 h1 {
     font-size: 2.5rem;
@@ -28,21 +33,28 @@ h1 {
   .subtitulo{
     font-weight: bold;
     max-width: 85%;
-    margin: auto;
+    margin-bottom: 40px;
   }
 
   .items{
     font-weight: bold;
     max-width: 85%;
-    margin: auto;
+    margin: 1rem;
+    text-align: left;
   }
 
   .texto{
     font-weight: bold;
     max-width: 85%;
-    margin: auto;
+    margin: 1rem;
   }
 
 #ultimoTexto{
   margin-bottom: 20px;
+}
+
+.politica{
+  font-weight: bold;
+  max-width: 85%;
+   margin-top: 3rem;
 }
