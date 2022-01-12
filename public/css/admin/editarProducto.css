@@ -33,6 +33,9 @@ main{
         text-align: center;
     }
 
+    h3{
+        margin-bottom: 0.5rem;
+    }
     .editarProducto input{ 
         border: none;
         width: 100%;
@@ -87,12 +90,10 @@ main button a:hover{
     color: #5A2083;
 }
 
-.categoria{
-    display:block;
-    margin-top: 10px;
-    margin-bottom: 10px;
- }
- 
+
+#file{
+    border: none;
+}
 
 @media screen and (min-width: 361px){
     main button{
@@ -110,7 +111,6 @@ main button a:hover{
     }
      
 }
-
 
 @media screen and (min-width: 769px){
     .editarProducto {

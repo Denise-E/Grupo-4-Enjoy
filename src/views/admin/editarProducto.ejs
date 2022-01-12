@@ -6,35 +6,70 @@
     
 
     <main>
-
     <section class="modificarProd">
         <form action="/editarProducto" method="GET">            
             <fieldset class="form">
                 <div class="editarProducto">
                 <h2 class="tituloPrincipal">Editar producto</h2>
 
-              
-                <label for="">Nombre:</label>
-                <input type="text" placeholder="" name="userId" id="nombre" required>
+                <h3>Nombre: </h3>
+                <p><%= product.name %> </p>
+                <label for=""></label>
+                <input type="text" placeholder="Escribí acá el nuevo nombre" name="userId" id="nombre" required>
                 <span class="feedback"></span>
 
-                <label for="">Descripcion:</label>
-                <input type="text" placeholder="" name="userId" id="" required>
+                <h3>Descripcion: </h3>
+                <p><%= product.description %> </p>
+                <label for=""></label>
+                <input type="text" placeholder="Escribí acá la nueva decripción" name="userId" id="" required>
                 <span class="feedback"></span>
 
-                 <label for="">Precio:</label> 
-                 <input type="number" placeholder="" name="userId" id="" required>
+                <h3>Precio: </h3>
+                  <p>$ <%= product.price %> </p>
+                 <label for=""></label> 
+                 <input type="number" placeholder="Escribí acá el nuevo precio" name="userId" id="" required>
                  <span class="feedback"></span>
                  <label for=""></label> 
-                
-                  
-                <label for="" class= categoria >Categoria:</label>
-                <select name="categoria">
-                  <option>Gastronomia</option>
-                  <option>Aventura</option>
-                  <option>Estar Bien</option>
-                  <option>Entretenimiento</option>
-                  <option>Estadias</option>
+
+                 <h3>Resumen del producto:</h3>
+                 <p> <%= product.resume %> </p>
+                 <label for=""></label> 
+                 <input type="text" placeholder="Escribí acá el resumen de tu producto" name="resume" id="resume" required>
+                 <span class="feedback"></span>
+                 <label for=""></label> 
+
+                 <h3>Título: </h3>
+                 <p><%= product.title %> </p>
+                 <label for=""></label> 
+                 <input type="text" placeholder="Escribí acá el título de tu producto" name="title" id="title" required>
+                 <span class="feedback"></span>
+                 <label for=""></label> 
+
+                 <h3>Ubicación: </h3>
+                 <p><%= product.location %> </p>
+                 <label for=""></label> 
+                 <input type="text" placeholder="Escribí acá la ubicación de tu experiencia name"location" id="location" required>
+                 <span class="feedback"></span>
+                 <label for=""></label> 
+
+                 <h3>Cantidad de personas:</h3>
+                 <p> <%= product.persons %> </p>
+                 <label for=""></label> 
+                 <input type="number" placeholder="Escribí acá la cantidad de personas máximas a participar" name="persons" id="persons" required>
+                 <span class="feedback"></span>
+                 <label for=""></label> 
+
+                 <h3>Título: </h3>
+                 <p><%= product.title %> </p>
+                 <label for=""></label> 
+                 <input type="text" placeholder="Escribí acá el título del producto" name="title" id="title" required>
+                 <span class="feedback"></span>
+                 <label for=""></label>  
+
+                <label for="" ></label>
+                <input type="file" name="file" id="file" required>
+                <span class="feedback"></span>
+                <p>Categoria: <%= product.category %> </p>
 
                 </select>
              </p>
