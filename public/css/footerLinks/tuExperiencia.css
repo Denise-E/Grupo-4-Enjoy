@@ -8,7 +8,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-h1{
+.titleOne{
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -16,7 +16,7 @@ h1{
     text-align: center;
 }
 
-h2{
+.titleTwo{
     display: block;
     width: 100%;
     margin-bottom: 15px;
