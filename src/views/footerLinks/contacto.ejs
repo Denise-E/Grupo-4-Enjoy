@@ -5,16 +5,10 @@
     <%- include('../partials/header') %> 
     
     <main>
-       
-
-        <section class="mainSection"> 
+        <fieldset class="fieldsetMain">
             <h1>¿En qué podemos ayudarte?</h1>
-            <section class="preguntasF">
-                <h3 class="secondaryTitle"> Preguntas frecuentes:</h3>
-            </section>
-            <div>
-                <input  class="ejemplo" name="searchQuery" placeholder="Ej: no me llego el nuevo codigo" type="text" class="">
-            </div>
+
+            <h3 >Primero accedé a nuestras <a href="/preguntasFrecuentes" Class="frecuentes">PREGUNTAS FRECUENTES</a></h3>
              <div class="cuadroFormulario">
                  <h2 class="contactanos">Contáctanos</h2>
                  <p class="texto">Completa con los datos pedidos y asi podremos ayudarte</p>
@@ -26,7 +20,6 @@
                     </form>
                     </fieldset>
                       <h3 class="mensaje">Mensaje</h3>
-                      <div>
                           <select type="select">
                               <option value class="">Asunto</option>
                               <option>Comprar un regalo</option>
@@ -39,11 +32,11 @@
                               <option>Devolver mi compra</option>
                               <option>Otro</option>
                           </select>
-                      </div>
                       <button class="enviar" type="submit">Enviar</button>
                    </form>
              </div>
-        </section>
+        </fieldset>
+            
         </main>
 
     <%- include('../partials/footer') %> 
