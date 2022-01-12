@@ -9,14 +9,19 @@ body{
 }
 
 h1{
+    display: block;
+    width: 100%;
     margin-bottom: 10px;
+    color: #b47cde;
+    text-align: center;
 }
 
-.unir{
-display: flex;
-justify-content: center;
-margin-bottom: 15px;
-color: #b47cde;
+h2{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #b47cde;
+    text-align: center;
 }
 
 .formulario {
@@ -49,9 +54,6 @@ color: #b47cde;
         transition: box-shadow 200ms;
     
 }
-.form button a {
-    text-decoration: none;
-}
 
 form label{
     font-weight: bold;
@@ -61,7 +63,7 @@ form label{
 main button{
     border:5px;
     background-color: #b47cde;
-    width: 40%;
+    width: 60%;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -77,3 +79,8 @@ main button:hover{
 }
 
 
+@media screen and (min-width: 558px) {
+    main button{
+        width: 10rem;
+    }
+}
