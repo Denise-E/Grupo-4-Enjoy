@@ -1,13 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/<%=style%>.css">
-</head>
+<%- include('../partials/head') %> 
+<link rel="stylesheet" href="/css/categories/<%=style%>.css">
+
 <body>
-    <h1>HOLAAA</h1>
+    <%- include('../partials/header') %> 
+    
+    <main>
+        <h1>NUESTAS EXPERIENCIAS</h1>
+            <% products.forEach(element => { %>
+                <ul class= "listadoProductos">
+                        <li class= "imagenDescripcion">
+                            <picture class= "imagenProducto">
+                            <img src= "/images/categorias/<%= element.image %>" class="imagenProducto">
+                            </picture>
+                            <h2 class= "tituloImagen"> <%= element.name %> </h2>
+                            <p> <%= element.description %> </p>
+                            <p class= "personaPrecio"> Para <%= element.persons %> personas | $ <%= element.price %> </p>
+                            </a>
+                            <p></p>
+                        </li>
+                </ul>
+            <% }) %>
+    </main>
+    
+    <%- include('../partials/footer') %> 
+
 </body>
 </html>
