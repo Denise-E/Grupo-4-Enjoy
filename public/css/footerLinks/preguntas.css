@@ -36,7 +36,14 @@ div button{
     align-items: center;
     transition: box-shadow 200ms;
     font-size: 25px;
+    background-color: white;
 }
+
+div button:hover{ 
+    color: #5A2083;
+    background-color: #d9bbf9;
+}
+
 div button a{
     text-decoration: none;
 }
