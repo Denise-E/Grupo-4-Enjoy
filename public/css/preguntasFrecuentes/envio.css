@@ -6,4 +6,15 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: aqua;
 }
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #D9BBF9 ;
+    border-radius: 0.5rem;
+    margin: 2.5rem auto;
+    max-width: 90%;
+  }
