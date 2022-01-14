@@ -9,6 +9,6 @@ module.exports ={
     categories:(req,res) => res.render("categories/categories",{
         products: products,
         category: categories.find(category => category.id == req.params.id),
-        style: "categories/categories"
+        style: "categories"
     }),
 }

@@ -57,5 +57,17 @@ module.exports = {
     corporativas: (req,res) => res.render("corporativas",{
      
         style: "corporativas"
-    })  
+    }),
+    envio: (req,res) => res.render("preguntasFrecuentes/envio",{
+     
+        style: "preguntasFrecuentes/envio"
+    }),
+    compra: (req,res) => res.render("preguntasFrecuentes/compra",{
+     
+        style: "preguntasFrecuentes/compra"
+    }),
+    uso: (req,res) => res.render("preguntasFrecuentes/uso",{
+     
+        style: "preguntasFrecuentes/uso"
+    }) 
 }

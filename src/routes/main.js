@@ -17,5 +17,9 @@ router.get("/abriTuExperiencia", main.experienciaUser);
 router.get("/comofunciona", main.comofunciona);
 router.get("/corporativas", main.corporativas);
 
+router.get("/envio", main.envio);
+router.get("/compra", main.compra);
+router.get("/uso", main.uso);
+
 
 module.exports = router;
