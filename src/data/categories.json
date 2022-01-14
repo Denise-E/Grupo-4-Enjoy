@@ -1,0 +1,23 @@
+[
+  {
+      "category" : "Gastronomia",
+      "id": 1
+  },
+  {
+    "category" : "Aventura",
+    "id": 2
+  },
+  {
+    "category" : "Estar Bien",
+    "id": 3
+  },
+  {
+    "category" : "Entretenimiento",
+    "id": 4
+  },
+  {
+    "category" : "Estadías",
+    "id": 5
+  }
+
+]

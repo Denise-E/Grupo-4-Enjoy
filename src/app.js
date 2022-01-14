@@ -17,5 +17,5 @@ app.use(express.urlencoded({extended:true}));
 app.use(require("./routes/main"));
 app.use("/products", require("./routes/products"));
 app.use(require("./routes/users"));
-
 app.use("/admins", require("./routes/admin"));
+app.use("/categories", require("./routes/categories"));
