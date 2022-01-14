@@ -10,6 +10,7 @@ a:link, a:visited,  a:hover, a:active{
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: aqua;
 }
 
 main{

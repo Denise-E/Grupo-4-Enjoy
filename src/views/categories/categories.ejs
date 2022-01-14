@@ -1,16 +1,15 @@
-<!--
-    <%- include('../../partials/head') %> 
+<%- include('../partials/head') %> 
     <link rel="stylesheet" href="/css/categories/<%=style%>.css">
     
     <body>
-        <%- include('../../partials/header') %> 
+        <%- include('../partials/header') %> 
         
         <main>
-            <h1>AVENTURA</h1>
+            <h1><%= category.category %> </h1>
             <p class= "subtitulo"> Regalá un conjunto de experiencias, tu agasajado elige cuál vive</p>
             <ul class= "listadoProductos">
                 
-                <% products.filter(element => element.category == "Aventura").forEach(element => { %>
+                <% products.filter(element => element.category == category.category).forEach(element => { %>
                     <li class= "imagenDescripcion">
                         <a href="/products/<%= element.id %>">
                         <picture class= "imagenProducto">
@@ -27,10 +26,7 @@
             </ul>
         </main>
         
-        <%- include('../../partials/footer') %> 
+        <%- include('../partials/footer') %> 
     
     </body>
     </html>
-
-
--->
