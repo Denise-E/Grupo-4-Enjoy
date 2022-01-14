@@ -53,5 +53,10 @@ module.exports = {
     comofunciona: (req,res) => res.render("comofunciona",{
      
         style: "comofunciona"
+    }),
+
+    experienciasCorporativas: (req,res) => res.render("experienciasCorporativas",{
+        
+        style: "experienciasCorporativas"
     })
 }

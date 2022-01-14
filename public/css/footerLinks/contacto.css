@@ -85,6 +85,17 @@ h1 {
  border: none;
   
   }
+
+  .nombreCompleto{
+    margin-bottom: 1rem;
+    margin-top: 10px;
+  }
+
+.Email{
+  margin-bottom: 1rem;
+  margin-top: 10px;
+}
+
   .cuadroFormulario{
     text-align: center;
     border-radius: 20px;
@@ -111,7 +122,6 @@ h1 {
 }
 
 .mensaje{
-  margin-bottom: 10px;
   margin-bottom: 1rem;
 }
 
