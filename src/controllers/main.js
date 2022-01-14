@@ -54,9 +54,8 @@ module.exports = {
      
         style: "comofunciona"
     }),
-
-    experienciasCorporativas: (req,res) => res.render("experienciasCorporativas",{
-        
-        style: "experienciasCorporativas"
-    })
+    experienciasCorporativas: (req,res) => res.render("corporativas",{
+     
+        style: "corporativas"
+    })  
 }
