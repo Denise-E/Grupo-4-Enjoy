@@ -3,6 +3,7 @@ const coments = require("../data/coments");
 const models = require("../models/products");
 
 
+
 module.exports = {
     index:(req,res) => res.render("products/index",{
         products: models.all(),
