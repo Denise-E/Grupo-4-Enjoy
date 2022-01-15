@@ -22,7 +22,7 @@ h1{
     font-weight: bolder;
     background-color: #D9BBF9 ;
     border-radius: 0.5rem;
-    position: absolute;
+    margin: auto;
 }
 
 p{
