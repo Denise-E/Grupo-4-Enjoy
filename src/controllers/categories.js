@@ -6,7 +6,7 @@ module.exports ={
     index:(req,res) => res.render("categories/index",{
         style: "categories/index"
     }),
-    categories:(req,res) => res.render("categories/categories",{
+    categories:(req,res) =>res.render("categories/categories",{
         products: products,
         product: model.search,
         category: categories.find(category => category.id == req.params.id),
