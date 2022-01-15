@@ -18,17 +18,20 @@ main{
     flex-wrap: wrap;
 }
 h1{
-    text-align: center;
     font-weight: bolder;
     background-color: #D9BBF9 ;
     border-radius: 0.5rem;
-    margin: auto;
+    font-size: 2.3rem;
 }
 
 p{
     font-weight: 700;
 }
-
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
 ul, li {
     list-style: none;
 }

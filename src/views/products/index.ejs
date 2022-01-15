@@ -5,7 +5,10 @@
     <%- include('../partials/header') %> 
     
     <main>
+     <section>
         <h1>NUESTRAS EXPERIENCIAS</h1>
+    </section>
+    <section class=lista>
             <% products.forEach(element => { %>
                 <ul class= "listadoProductos">
                         <li class= "imagenDescripcion">
@@ -20,6 +23,7 @@
                         </li>
                 </ul>
             <% }) %>
+        </section>
     </main>
     
     <%- include('../partials/footer') %> 
