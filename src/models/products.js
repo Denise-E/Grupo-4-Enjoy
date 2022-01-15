@@ -20,7 +20,11 @@ const model = {
         model.write(all);
         return newProduct;
     },
-    search: (field, value) => model.all().find(element => element[field] == value)
+    search: (field, value) => model.all().find(element => element[field] == value),
+    delete: id => {
+        let deleted = model.all().filter(e => e.id != id)
+        model.write(deleted)
+    }
 }
 
 module.exports = model;

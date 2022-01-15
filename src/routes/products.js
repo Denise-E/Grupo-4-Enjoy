@@ -8,4 +8,6 @@ router.get("/cart", products.cart);
 router.get("/crearComentario", products.crearComentario);
 router.get("/:id", products.productDetail);
 
+
+
 module.exports = router;

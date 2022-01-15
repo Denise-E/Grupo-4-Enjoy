@@ -20,10 +20,15 @@
                         <p> <%= element.description %> </p>
                         <p class= "personaPrecio"> Para <%= element.persons %> personas | $ <%= element.price %> </p>
                         <a href="/admins/editarProducto/<%= element.id %>"><i class="fas fa-pen"></i></a>
-                        </a>
-                        <p></p>
+                          <form action="/categories/?m=DELETE" method="POST">
+                            <input type="hidden" name="id" id="" value="<%= product.id %>">
+                            <button type="submit"><i class="fas fa-trash"></i></button>
+                        </form>
+                    </a>
                     </li>
                 <% }) %>
+
+              
             
             </ul>
         </main>
