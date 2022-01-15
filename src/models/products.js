@@ -19,7 +19,8 @@ const model = {
         all.push(newProduct);
         model.write(all);
         return newProduct;
-    }
+    },
+    search: (field, value) => model.all().find(element => element[field] == value)
 }
 
 module.exports = model;
