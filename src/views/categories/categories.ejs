@@ -16,8 +16,10 @@
                             <img src= "/images/categorias/<%= element.image %>" class="imagenProducto">
                         </picture>
                         <h2 class= "tituloImagen"> <%= element.name %> </h2>
+                        
                         <p> <%= element.description %> </p>
                         <p class= "personaPrecio"> Para <%= element.persons %> personas | $ <%= element.price %> </p>
+                        <a href="/admins/editarProducto/<%= element.id %>"><i class="fas fa-pen"></i></a>
                         </a>
                         <p></p>
                     </li>
