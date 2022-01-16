@@ -29,9 +29,10 @@ main{
 
   }
 
-  .datos{
+  .trabajemosJuntos{
+    text-indent: center;
     font-weight: bold;
-    margin: 10px;
+    margin:10px;
   }
 
   .promedioRespuesta{
@@ -60,6 +61,7 @@ main{
 }
 
 .consulta{
+  
     margin-bottom: 1rem;
     margin-top: 10px;
 }
@@ -90,25 +92,25 @@ main{
 }
 
 .fieldsetMain{
-    display: block;
-    width: 90%;
-    height: 60%;
-    padding: 0.6rem;
-    box-shadow: 0px 0px 5px #b47cde;
-    border-radius: 20px;
-    transition: all 200ms;
-    margin: 1rem;
-    margin-right: 0;
-    margin-left: 0;
-    margin-bottom: 0.25rem;
-    justify-content: center;
-  }
+  display: block;
+  width: 90%;
+  height: 60%;
+  padding: 0.6rem;
+  box-shadow: 0px 0px 5px #b47cde;
+  border-radius: 20px;
+  transition: all 200ms;
+  margin: 1rem;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0.25rem;
+  justify-content: center;
+}
 
   .fieldsetMain:hover{
     box-shadow: 0px 0px 10px #5A2083;
   }
 
-  .contactanos{
+  .Contactanos{
     text-align: center;
     border-radius: 20px;
     padding: 5px 5px;
@@ -116,15 +118,51 @@ main{
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 15px;
+    background-color: #c089e7;
+    
   }
 
-.tituloEmail{
-    
-}
+  .formContactanos{
+    text-align: center;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    background-color: #d2b8e4;
+  }
+
+ .formContactanos h1{
+  font-weight: bold;
+  margin: 10px;
+ }
+
+ .tituloEmail{
+  font-weight: bold;
+  margin:5px;
+ }
+
+ .telefonoCelular{
+  font-weight: bold;
+  margin:5px;
+ }
+
+ .ventasCorporativas{
+  font-weight: bold;
+  margin:5px
+ }
+
+ .horarios{
+  font-weight: bold;
+  margin:5px
+ }
+
+
 
   @media screen and (min-width: 558px) {
-    .datos{
+    .trabajemosJuntos{
         width: 10rem;
     }
   }
@@ -136,6 +174,12 @@ main{
      margin-top: 10px;
      margin-bottom: 15px;
      
+  }
+
+  @media screen and (min-width: 558px) {
+    .Contactanos{
+        width: 8rem;
+    }
   }
 
   .fieldsetMain{
