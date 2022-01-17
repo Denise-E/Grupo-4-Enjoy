@@ -28,5 +28,9 @@ module.exports = {
         products: products,
         style: "crearComentario"
     }),
+    delete: (req,res)=> {
+        model.delete(req.body.id)
+        return res.redirect("/products/")
+    }
 
 }

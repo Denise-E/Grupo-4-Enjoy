@@ -32,8 +32,16 @@
                             <label><p><strong> Regalo Físico </strong></p></label>
                         </button>
                         <p class="format">Envío por email o whatsapp</p>
+                
                     </fieldset>
-                </form>              
+                </form> 
+                <section class="adminsIcons"> 
+                    <a href="/admins/editarProducto/<%= product.id %>"><i class="fas fa-pen"></i></a>
+                    <form action="/products/?m=DELETE" method="post">
+                      <input type="hidden" name="id" id="" value="<%= product.id %>">
+                      <button type="submit" class="trash"><i class="fas fa-trash"></i></button>
+                  </form>
+                </section>             
             </article>  
         </section>
         <section class="dflex" id="mainThree">

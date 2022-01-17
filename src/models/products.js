@@ -24,7 +24,7 @@ const model = {
     delete: id => {
         let deleted = model.all().filter(e => e.id != id)
         model.write(deleted)
-    }
+    },
 }
 
 module.exports = model;
