@@ -13,4 +13,5 @@ router.get("/editarProducto/:id", admin.editarProducto);
 router.put("/", admin.edit);
 router.delete("/", admin.delete);
 
+
 module.exports = router;

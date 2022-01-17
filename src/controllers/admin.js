@@ -4,9 +4,7 @@ const model = require("../models/products");
 module.exports = {
 create: (req,res) => res.render("admin/crearProducto",{
         style: "admin/crearProducto",
-        products: model.all(),
-        product: model.search("id", req.params.id),
-
+        
  }),
 
  editarProducto: (req,res) => res.render("admin/editarProducto",{
