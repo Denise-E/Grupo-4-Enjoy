@@ -195,6 +195,23 @@ img{
     margin-left: 1.25rem;
 }
 
+.adminsIcons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.deleteButton{
+    background-color: white;
+    width: 40px;   
+}
+
+.fa-trash, .fa-pen{
+    font-size: 1.5rem;
+    color: #5A2083;
+    margin: 2px;
+}
+
 @media screen and (min-width: 361px) {  
     #mainOne p{
         font-size: 1rem;

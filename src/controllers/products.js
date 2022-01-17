@@ -14,7 +14,7 @@ module.exports = {
         return result ? res.render("products/productDetail", {
             product: model.search,
             coment: coments.filter(coment => coment.experiencia === products.find(product => product.id == req.params.id).name),
-            style: "productDetail",
+            style: "products/productDetail",
             product: result,
         }) : res.render ("error", {
             msg:"Producto no encontrado"
