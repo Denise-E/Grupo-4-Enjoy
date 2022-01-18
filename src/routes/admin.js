@@ -4,7 +4,7 @@ const admin = require("../controllers/admin");
 
 router.get("/crearProducto", admin.create);
 
-router.post("/", admin.save);
+router.post("/guardar", admin.save);
 router.post("/", admin.create);
 
 
