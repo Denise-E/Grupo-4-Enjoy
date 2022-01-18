@@ -8,6 +8,7 @@ body{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+    
 }
 
 main{
@@ -17,6 +18,8 @@ main{
     flex-wrap: wrap;
     justify-content: center;
   }
+
+ 
 
   h1 {
     font-size: 1.5rem;
@@ -156,6 +159,10 @@ main{
   margin:5px
  }
 
+ .fondoCorporativas{
+  background-image: url(/images/fondoCorporativas.jpg);
+  background-position: center bottom;
+}
 
 
 

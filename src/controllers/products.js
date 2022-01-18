@@ -16,7 +16,7 @@ module.exports = {
             coment: coments.filter(coment => coment.experiencia === products.find(product => product.id == req.params.id).name),
             style: "products/productDetail",
             product: result,
-        }) : res.render ("error", {
+        }) : res.render("error", {
             msg:"Producto no encontrado"
         })
     },
