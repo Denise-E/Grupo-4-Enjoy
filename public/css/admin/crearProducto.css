@@ -134,6 +134,13 @@ main button a:hover{
         padding: 40px;
         margin-bottom: 5px;
     }
+    .nuevoProducto input#price {
+        max-width: 30%;
+    }
+    .nuevoProducto  input#persons {
+        max-width: 30%;
+    }
+   
    
 }
 }

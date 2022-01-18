@@ -14,11 +14,10 @@ create: (req,res) => res.render("admin/crearProducto", {
 }),
     save: (req,res) => {
         let result = model.store(req.body);
-        return res.redirect("/products/" + result.id)
+        return res.redirect("/products/")
         //res.send(result);
     },
-    edit:(req,res) => res.send("Hola"),
-    delete:(req,res) => res.send("Hola"),
+
 
 }
 
