@@ -1,14 +1,17 @@
 const products = require("../data/products");
-const model = require("../models/products");
+const {all} = require("../models/products");
 
 module.exports = {
-create: (req,res) => res.render("admin/crearProducto",{
-        style: "admin/crearProducto",
+    // create: (req,res) => res.render("admin/crearProducto",{
+    //     products: all(),
+    //     title:"Productos",
+    //     style: "admin/crearProducto"
+create: (req,res) => res.send({products: all(),
         
- }),
+}),
 
  editarProducto: (req,res) => res.render("admin/editarProducto",{
-    products: model.all(),
+    products: mode.all(),
     product: model.search("id", req.params.id),
     style: "admin/editarProducto"
 }),
@@ -20,7 +23,4 @@ create: (req,res) => res.render("admin/crearProducto",{
     delete:(req,res) => res.send("Hola"),
 
 }
-
-
-
 
