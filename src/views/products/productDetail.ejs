@@ -38,7 +38,7 @@
                 </section>             
             </article>  
             <section class="adminsIcons"> 
-                <a href="/admins/editarProducto/<%= product.id %>"><i class="fas fa-pen"></i></a>
+                <a href="/products/editarProducto/<%= product.id %>"><i class="fas fa-pen"></i></a>
                 <form action="/products/?m=DELETE" method="post">
                   <input type="hidden" name="id" value="<%= product.id %>">
                   <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>

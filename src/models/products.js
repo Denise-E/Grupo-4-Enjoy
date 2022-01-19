@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+const file = require ("./file");
 
 const model = {
     file: path.resolve(__dirname, "../data/products.json"),
@@ -12,6 +13,7 @@ const model = {
         name: data.name,
         price: parseInt(data.price),
         offert: data.offert ? true : false,
+        image: data.file.map(f => file.create(f).id),
     }),    
     create: data => {
         let newProduct = model.generate(data);
@@ -32,7 +34,28 @@ const model = {
         all.push(product)
         fs.writeFileSync(path.resolve(__dirname, "../data/products.json"), JSON.stringify(all,null,2))
         return product
+    },
+    editarProducto: (id,data) =>{
+        let all = model.all();
+        let updated = all.map (e =>{
+            if(e.id == id){
+                e.name = data.name;
+                e.description = data.description;
+                e.price = data.price;
+                e.resume = data.resume;
+                e.title = data.title;
+                e.location = data.location;
+                e.persons = data.persons;
+                e.category = data.category;
+                return e
+            }
+            return e
+        })
+        model.write(updated);
+        let products = model.search ("id", id);
+        return products
     }
+    
 }
 
 module.exports = model;

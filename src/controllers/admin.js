@@ -7,17 +7,14 @@ create: (req,res) => res.render("admin/crearProducto", {
     products: model.all(),
     title:"Productos",
 }),
- editarProducto: (req,res) => res.render("admin/editarProducto",{
-    products: model.all(),
-    product: model.search("id", req.params.id),
-    style: "admin/editarProducto"
-}),
+
     save: (req,res) => {
+        req.body.file = req.files;
         let result = model.store(req.body);
-        return res.redirect("/products/")
+        return res.redirect("/products/" )
         //res.send(result);
     },
-
+  
 
 }
 

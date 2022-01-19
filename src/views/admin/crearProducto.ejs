@@ -8,7 +8,7 @@
     <main>
 
     <section class="agregarProd">
-        <form action="/admins/guardar" method="post">  
+        <form action="/admins/guardar" enctype="mulipart/form-data" method="post">  
 
             <fieldset class="form">
             <div class="nuevoProducto">
@@ -46,6 +46,10 @@
                 <label for="">Cantidad de personas: </label> <br>
                 <input type="number" placeholder="" name="persons" id="persons" required>
                 <span class="feedback"></span> <br>
+                <label for="">Imagen:</label>
+                <input type="file"  name="file" id="file" multiple>
+                <span class="feedback"></span>
+                <label for=""></label>
                 
                 
                 <label for="user">Categoría:</label> 

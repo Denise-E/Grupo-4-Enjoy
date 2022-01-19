@@ -1,6 +1,6 @@
 const express = require("express");
+const file = require("../controllers/files");
 const router = express.Router();
-const admin = require("../controllers/admin");
 const path = require ("path");
 const multer = require ("multer");
 const upload = multer ({storage: multer.diskStorage({
@@ -8,14 +8,8 @@ const upload = multer ({storage: multer.diskStorage({
       filename: (req, file, cb) => cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname)),
 })})
 
-router.get("/crearProducto", admin.create);
+router.get("/", file.upload);
 
-router.post("/guardar",[upload.any()], admin.save);
-router.post("/", admin.create);
-
-
-
-
-
+router.post("/", [upload.any()],file.store);
 
 module.exports = router;

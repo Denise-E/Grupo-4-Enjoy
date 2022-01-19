@@ -28,9 +28,22 @@ module.exports = {
         products: products,
         style: "crearComentario"
     }),
+
+   
+    
     delete: (req,res)=> {
         model.delete(req.body.id)
         return res.redirect("/products/")
-    }
-
+    },
+    editarProducto: (req,res) => res.render("admin/editarProducto",{
+        products: model.all(),
+        product: model.search("id", req.params.id),
+        style: "admin/editarProducto"
+    }),
+    modify: (req,res) => {
+        let updated = model.editarProducto (req.params.id,req.body)
+        return res.redirect(updated)
+        //res.send(result);
+    },
+    
 }

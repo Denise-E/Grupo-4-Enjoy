@@ -1,0 +1,33 @@
+<%- include('../partials/head') %> 
+<link rel="stylesheet" href="css/<%=style%>.css">
+
+<body>
+    <%- include('../partials/header') %> 
+    
+
+    <main>
+        <h1>File</h1>
+
+    
+        <form action="/files/" enctype="mulipart/form-data" method="post">  
+
+            <fieldset class="form">
+           
+
+                <label for=""> </label>
+                <input type="file"  name="file" id="file" >
+                <span class="feedback"></span>
+
+                <fieldset>
+                    <button type="submit"> Guardar</button>
+                </fieldset>
+
+                
+       </fieldset>
+      </form>
+       
+   
+</main>
+<%- include('../partials/footer') %> 
+</body>
+</html> 
