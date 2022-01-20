@@ -14,20 +14,6 @@
   },
   {
     "category": "Gastronomía",
-    "name": "Cocktail Night",
-    "image": "gastronomiaCocktailNight.jpg",
-    "description": "Este Enjoy, para dos personas, ofrece la posibilidad de disfrutar de los mejores tragos de autor en las barras más exclusivas de Argentina.",
-    "resume": "Uno de los bares más reconocidos de Buenos Aires te espera en la tradicional esquina de Lavalle y Callao para que seas parte de su historia.",
-    "title": "Los Galgos",
-    "location": "Balvanera - Av. Callao 501",
-    "persons": 2,
-    "expirationDate": "31/05/2022",
-    "price": 2690,
-    "fees": 12,
-    "id": 3
-  },
-  {
-    "category": "Gastronomía",
     "name": "Meet & Eat",
     "image": "gastronomiaMeet.jpg",
     "description": "Este Enjoy ofrece la posibilidad de vivir un momento gastronómico innovador en la casa del cocinero que vos elijas entre los mejores Chef.",
