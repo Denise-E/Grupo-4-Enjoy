@@ -6,6 +6,7 @@ const model = {
     read: () => fs.readFileSync(model.file),
     write: data => fs.writeFileSync(model.file, JSON.stringify(data,null,2)),
     all: () => JSON.parse(model.read()),
+    search: (field, value) => model.all().find(element => element[field] == value),
     // Para linkear base de datos con form de creación de productos :
     generate: data => Object({
         id: model.all().length == 0 ? 1 : model.all().pop().id + 1,

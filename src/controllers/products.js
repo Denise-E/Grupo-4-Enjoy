@@ -1,12 +1,13 @@
 const products = require("../data/products");
 const coments = require("../data/coments");
 const model = require("../models/products");
+const fileModel = require("../models/file");
 
 
 
 module.exports = {
     index:(req,res) => res.render("products/index",{
-        products: model.all(),
+        products: model.all().map(p => Object({...p, image: fileModel.search("id",p.image)})),
         style: "products/index"
     }),
     productDetail: (req,res) => {

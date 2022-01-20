@@ -19,6 +19,4 @@ app.use("/products", require("./routes/products"));
 app.use(require("./routes/users"));
 app.use("/admins", require("./routes/admin"));
 app.use("/categories", require("./routes/categories"));
-
-const filesRouters = require("./routes/files");
-app.use ("/files", filesRouters);
+app.use ("/files", require("./routes/files"));
