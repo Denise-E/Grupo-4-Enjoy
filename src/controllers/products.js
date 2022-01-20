@@ -13,6 +13,7 @@ module.exports = {
         let result = model.search("id", req.params.id);
         return result ? res.render("products/productDetail", {
             product: model.search,
+            coments: coments,
             coment: coments.filter(coment => coment.experiencia === products.find(product => product.id == req.params.id).name),
             style: "products/productDetail",
             product: result,
