@@ -42,7 +42,7 @@ module.exports = {
     }),
     modify: (req,res) => {
         let updated = model.editarProducto (req.params.id,req.body)
-        return res.redirect(updated)
+        return res.redirect("/products/")
         //res.send(result);
     },
     
