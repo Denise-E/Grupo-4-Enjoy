@@ -1,4 +1,4 @@
-#  Retro - 1er Sprint
+#  Retro   - Sprint 2
 ___
 ✔Analizamos nuestro primer sprint e hicimos la correspondiente retrospectiva para mejorar como equipo. 
 ___
