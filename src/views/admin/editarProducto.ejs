@@ -7,7 +7,7 @@
 
     <main>
     <section class="modificarProd">
-        <form action="/products/editarProducto/<%= product.id %>?m=PUT" method="GET">            
+        <form action="/products/<%= product.id %>?m=PUT" method="post">            
             <fieldset class="form">
                 <div class="editarProducto">
                 <h2 class="tituloPrincipal">Editar producto</h2>
@@ -15,19 +15,19 @@
                 <h3>Nombre: </h3>
                 <p><%= product.name %> </p>
                 <label for=""></label>
-                <input type="text" placeholder="Escribí acá el nuevo nombre" name="userId" id="nombre" required value:" <%= product.name %> " >
+                <input type="text" placeholder="Escribí acá el nuevo nombre" name="name" id="nombre" required value:" <%= product.name %> " >
                 <span class="feedback"></span>
 
                 <h3>Descripcion: </h3>
                 <p><%= product.description %> </p>
                 <label for=""></label>
-                <input type="text" placeholder="Escribí acá la nueva decripción" name="userId" id="" required value:" <%= product.description %> ">
+                <input type="text" placeholder="Escribí acá la nueva decripción" name="description" id="" required value:" <%= product.description %> ">
                 <span class="feedback"></span>
 
                 <h3>Precio: </h3>
                   <p>$ <%= product.price %> </p>
                  <label for=""></label> 
-                 <input type="number" placeholder="Escribí acá el nuevo precio" name="userId" id="" required value:" <%= product.price %> ">
+                 <input type="number" placeholder="Escribí acá el nuevo precio" name="price" id="" required value:" <%= product.price %> ">
                  <span class="feedback"></span>
                  <label for=""></label> 
 
@@ -48,7 +48,7 @@
                  <h3>Ubicación: </h3>
                  <p><%= product.location %> </p>
                  <label for=""></label> 
-                 <input type="text" placeholder="Escribí acá la ubicación de tu experiencia name"location" id="location" required value:" <%= product.location %> ">
+                 <input type="text" placeholder="Escribí acá la ubicación de tu experiencia" name="location" id="location" required value:" <%= product.location %> ">
                  <span class="feedback"></span>
                  <label for=""></label> 
 
@@ -60,7 +60,7 @@
                  <label for=""></label> 
 
                  <label for="">Imagen:</label>
-                 <input type="file"  name="file" id="file" multiple>
+                 <input type="file"  name="image" id="file" multiple>
                  <span class="feedback"></span>
                  <label for=""></label>
 
@@ -70,10 +70,10 @@
                 </select>
              </p>
 
-         <button type="submit"><a href="/"> Editar Producto</a></button>   
+         <button type="submit" href="/">Editar Producto</button>   
 
 
-      </div>
+      </div> 
     
   </fieldset>
         </form>

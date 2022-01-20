@@ -52,8 +52,8 @@ const model = {
             return e
         })
         model.write(updated);
-        let products = model.search ("id", id);
-        return products
+        let product = model.search ("id", id);
+        return product
     }
     
 }

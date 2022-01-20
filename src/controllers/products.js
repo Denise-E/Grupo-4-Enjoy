@@ -42,8 +42,8 @@ module.exports = {
     }),
     modify: (req,res) => {
         let updated = model.editarProducto (req.params.id,req.body)
-        return res.redirect("/products/")
-        //res.send(result);
+        return res.redirect("/products/"+updated.id)
+        
     },
     
 }

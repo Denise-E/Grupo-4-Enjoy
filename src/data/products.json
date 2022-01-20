@@ -1,17 +1,16 @@
 [
   {
-    "category": "Gastronomía",
-    "name": "Experiencia Gourmet",
     "image": "gastronomiaExperienciaGourmet.jpg",
-    "description": "Este Enjoy ofrece la posibilidad de disfrutar de una experiencia gastronómica única en los mejores restaurantes de Argentina.",
     "resume": "Esta experiencia ofrece una cena con los mejores productos de estación y orgánicos. ¡Te va a encantar!",
     "title": "Sucre Restaurant Bar Grill",
-    "location": "Belgrano - Mariscal Antonio José de Sucre 676",
-    "persons": 2,
+    "persons": "2",
     "expirationDate": "31/05/2022",
-    "price": 5740,
     "fees": 12,
-    "id": 1
+    "id": 1,
+    "name": "Experiencia Gourmet",
+    "description": "Este Enjoy ofrece la posibilidad de disfrutar de una experiencia gastronómica única en los mejores restaurantes de Argentina.",
+    "price": "5740",
+    "location": "Belgrano - Mariscal Antonio José de Sucre 676\","
   },
   {
     "category": "Gastronomía",
