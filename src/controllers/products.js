@@ -6,10 +6,13 @@ const fileModel = require("../models/file");
 
 
 module.exports = {
-    index:(req,res) => res.render("products/index",{
-        products: model.all().map(p => Object({...p, image: fileModel.search("id",p.image)})),
-        style: "products/index"
-    }),
+    index:(req,res) =>{ 
+        let products= model.all()
+        //return res.send (products);
+        res.render("products/index",{
+        
+        products, style: "products/index"
+    }) }, 
     productDetail: (req,res) => {
         let result = model.search("id", req.params.id);
         return result ? res.render("products/productDetail", {
@@ -37,10 +40,13 @@ module.exports = {
         model.delete(req.body.id)
         return res.redirect("/products/")
     },
-    editarProducto: (req,res) => res.render("admin/editarProducto",{
-        products: model.all(),
-        product: model.search("id", req.params.id),
-        style: "admin/editarProducto"
+    editarProducto: (req,res) => 
+    //res.send (model.search("id", req.params.id)),
+
+    res.render("admin/editarProducto",{
+       products: model.all(),
+     product: model.search("id", req.params.id),
+      style: "admin/editarProducto"
     }),
     modify: (req,res) => {
         let updated = model.editarProducto (req.params.id,req.body)

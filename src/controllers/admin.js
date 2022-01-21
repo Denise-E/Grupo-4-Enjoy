@@ -9,8 +9,9 @@ module.exports = {
     }),
 
     save: (req,res) => {
-        req.body.file = req.files;
-        let result = model.store(req.body);
+        req.body.file = req.files && req.files.length > 0 ? req.files[0].filename:null;
+       //return res.send (req.body)
+        let result = model.create(req.body);
         return res.redirect("/products/" )
         //res.send(result);
     },

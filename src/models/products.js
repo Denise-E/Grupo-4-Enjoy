@@ -12,8 +12,16 @@ const model = {
         id: model.all().length == 0 ? 1 : model.all().pop().id + 1,
         name: data.name,
         price: parseInt(data.price),
-        offert: data.offert ? true : false,
-        image: data.file.map(f => file.create(f).id),
+        image: data.file  ? data.file:null,
+        persons: data.persons,
+        location: data.location,
+        title: data.title,
+        resume: data.resume,
+        description: data.description,
+        category: data.category,
+
+   
+
     }),    
     create: data => {
         let newProduct = model.generate(data);
@@ -27,14 +35,7 @@ const model = {
         let deleted = model.all().filter(e => e.id != id)
         model.write(deleted)
     },
-    store: data => {
-        let all = model.all()
-        let id = all.length > 0 ? all[all.length - 1].id + 1 : 1
-        let product = {id:id, ...data}
-        all.push(product)
-        fs.writeFileSync(path.resolve(__dirname, "../data/products.json"), JSON.stringify(all,null,2))
-        return product
-    },
+
     editarProducto: (id,data) =>{
         let all = model.all();
         let updated = all.map (e =>{
