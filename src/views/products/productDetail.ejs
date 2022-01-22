@@ -7,7 +7,7 @@
 
     <main>
         <section class="dflex" id="mainOne">
-            <h2> <%= product.name %>  <h4><i class="far fa-star"></i><strong>4.3</strong></h4></h2> 
+            <h2> <%= product.name %>  <h4><i class="far fa-star"></i><strong><%= product.starsAvg %> </strong></h4></h2> 
             
             <p> <%= product.resume %> </p>
         </section>
@@ -42,6 +42,7 @@
                 <form action="/products/?m=DELETE" method="post">
                   <input type="hidden" name="id" value="<%= product.id %>">
                   <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
+                  <a href="/favoritos"> <i class="fas fa-heart"></i> </a>
               </form>
         </section>
         <section class="dflex" id="mainThree">

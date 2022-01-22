@@ -6,9 +6,26 @@
 
     <main>
         <h1>Tus favoritos</h1>
-        <h3>Guardá en esta sección tlas experiencias que más te gustaron !</h3>
+        <h3 class="subtitulo">Guardá en esta sección las experiencias que más te gustaron !</h3>
 
-        // Me faltaría ver bien la lógica de como unirlo al botón.
+        <ul class= "listadoProductos">
+                
+            <% products.forEach(element => { %>
+                <li class= "imagenDescripcion">
+                    <a href="/products/<%= element.id %>">
+                    <picture class= "imagenProducto">
+                        <img src= "/uploads/<%= element.image %>" class="imagenProducto">
+                    </picture>
+                    <h2 class= "tituloImagen"> <%= element.name %> </h2>
+                    
+                    <p> <%= element.description %> </p>
+                    <p class= "personaPrecio"> Para <%= element.persons %> personas | $ <%= element.price %> </p>
+                    <p><i class="far fa-star"></i><strong><%= element.starsAvg %> </strong></p>
+                </a>
+                </li>
+            <% }) %>
+
+        </ul>
     </main>
 
     <%- include('./partials/footer') %> 

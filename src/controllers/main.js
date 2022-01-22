@@ -23,7 +23,7 @@ module.exports = {
         style: "footerLinks/tuExperiencia"
     }),
     favoritos:  (req,res) => res.render("favoritos" ,{
-        products: products,
+        products: productos,
         style: "favoritos"
     }),
 

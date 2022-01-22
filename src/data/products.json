@@ -10,7 +10,8 @@
     "name": "Experiencia Gourmet",
     "description": "Este Enjoy ofrece la posibilidad de disfrutar de una experiencia gastronómica única en los mejores restaurantes de Argentina.",
     "price": "5740",
-    "location": "Belgrano - Mariscal Antonio José de Sucre 676"
+    "location": "Belgrano - Mariscal Antonio José de Sucre 676",
+    "starsAvg": 4.5
   },
   {
     "category": "Gastronomía",
@@ -24,7 +25,8 @@
     "expirationDate": "31/05/2022",
     "price": 3800,
     "fees": 12,
-    "id": 4
+    "id": 4,
+    "starsAvg": 4.0
   },
   {
     "category": "Gastronomía",
@@ -38,7 +40,8 @@
     "expirationDate": "31/05/2022",
     "price": 3590,
     "fees": 12,
-    "id": 6
+    "id": 6,
+    "starsAvg": 4.9
   },
   {
     "category": "Aventura",
@@ -52,7 +55,8 @@
     "expirationDate": "31/05/2022",
     "price": 3490,
     "fees": 12,
-    "id": 7
+    "id": 7,
+    "starsAvg": 3.8
   },
   {
     "category": "Aventura",
@@ -66,7 +70,8 @@
     "expirationDate": "31/05/2022",
     "price": 7500,
     "fees": 12,
-    "id": 8
+    "id": 8,
+    "starsAvg": 4
   },
   {
     "category": "Aventura",
@@ -80,7 +85,8 @@
     "expirationDate": "31/05/2022",
     "price": 28500,
     "fees": 12,
-    "id": 9
+    "id": 9,
+    "starsAvg": 4.2
   },
   {
     "category": "Aventura",
@@ -94,7 +100,8 @@
     "expirationDate": "31/05/2022",
     "price": 21000,
     "fees": 12,
-    "id": 10
+    "id": 10,
+    "starsAvg": 4.5
   },
   {
     "category": "Estar Bien",
@@ -122,7 +129,8 @@
     "expirationDate": "31/05/2022",
     "price": 2990,
     "fees": 12,
-    "id": 12
+    "id": 12,
+    "starsAvg": 3
   },
   {
     "category": "Estar Bien",
@@ -136,7 +144,8 @@
     "expirationDate": "31/05/2022",
     "price": 3590,
     "fees": 12,
-    "id": 13
+    "id": 13,
+    "starsAvg": 3.1
   },
   {
     "category": "Entretenimiento",
@@ -150,7 +159,8 @@
     "expirationDate": "31/05/2022",
     "price": 5340,
     "fees": 12,
-    "id": 14
+    "id": 14,
+    "starsAvg": 4.1
   },
   {
     "category": "Entretenimiento",
@@ -164,7 +174,8 @@
     "expirationDate": "31/05/2022",
     "price": 1990,
     "fees": 12,
-    "id": 15
+    "id": 15,
+    "starsAvg": 4.6
   },
   {
     "category": "Estadías",
@@ -178,7 +189,8 @@
     "expirationDate": "31/05/2022",
     "price": 75000,
     "fees": 12,
-    "id": 16
+    "id": 16,
+    "starsAvg": 4.4
   },
   {
     "category": "Estadías",
@@ -192,7 +204,8 @@
     "expirationDate": "31/05/2022",
     "price": 11900,
     "fees": 12,
-    "id": 17
+    "id": 17,
+    "starsAvg": 4.8
   },
   {
     "category": "Estadías",
@@ -206,7 +219,8 @@
     "expirationDate": "31/05/2022",
     "price": 28900,
     "fees": 12,
-    "id": 18
+    "id": 18,
+    "starsAvg": 3.3
   },
   {
     "category": "Estadías",
@@ -220,6 +234,7 @@
     "expirationDate": "31/05/2022",
     "price": 28000,
     "fees": 12,
-    "id": 19
+    "id": 19,
+    "starsAvg": 4.0
   }
 ]
