@@ -8,11 +8,11 @@
     <main>
         <section id="main">
            <section class="registro">
-            <form action="/register" method="GET" class="formularioRegistro">      
+            <form action="/users/" method="post" enctype="multipart/form-data"  class="formularioRegistro">      
                 <fieldset class="formreg">
                     <h1 class="crearCuenta">Crear cuenta</h1> 
                     <label for>Nombre :</label>
-                    <input type="text" name="name" id minlength="3" required>
+                    <input type="text" name="firstName" minlength="3" required>
                     <span class="feedback"></span>
                     <label for>Apellido :</label>
                     <input type="text" name="lastName" id required>
@@ -22,22 +22,26 @@
                     <label for>Contraseña :</label>
                     <input type="password" name="password" minlength="8" placeholder="*****" required>
                     
-                    <label for>Fecha de nacimiento :</label>
-                    <input type="date" name="birthdayDate" id>  
+                    <label for="">Foto de usuario :</label> 
+                    <input type="file" id="file" name="image">
                 </fieldset>
+                <div class="ultimaSeccionMain">
+                <label for="terminos y condiciones" class="terms"><input type="checkbox" name="te condiciones" value="terminos y condiciones" required> He leido y acepto los terminos y condiciones del sitio </label>
+                <button type="submit">Registrarme</button> 
+            </div>
             </form>
             </section>
+            <% if (locals.errors && errors.email) { %>
+              <p><%= errors.email.msg %> </p>
+            <% } %>
+            <% if (locals.errors && errors.password) { %>
+                <p><%= errors.password.msg %> </p>
+              <% } %>
+
         </section>
-          
         <section> 
-            <div class="ultimaSeccionMain">
-                <label for="terminos y condiciones" class="terms"><input type="checkbox" name="te condiciones" value="terminos y condiciones"> He leido y acepto los terminos y condiciones del sitio </label>
-                <button type="sublim">
-                    <a href="/">Registrarme</a>
-                </button> 
-            </div>
             <p>¿Ya tenés una cuenta? </p>
-            <button type="sublim">
+            <button type="submit">
                 <a href="/login">Iniciá Sesion</a>
             </button>
         </section> 

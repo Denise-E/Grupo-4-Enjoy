@@ -1,82 +1,113 @@
-[{
+[
+  {
     "id": 1,
     "firstName": "Billy",
     "lastLame": "Churchyard",
     "email": "bchurchyard0@timesonline.co.uk",
     "password": "5Hq46ob",
-    "category": "user",
-    "image": "default.png"
-  }, {
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
+  },
+  {
     "id": 2,
     "firstName": "Sheila-kathryn",
     "lastLame": "Oag",
     "email": "soag1@gnu.org",
     "password": "By495ex",
-    "category": "user",
-    "image": "default.png"
-  }, {
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
+  },
+  {
     "id": 3,
     "firstName": "Flossy",
     "lastLame": "Winterbourne",
     "email": "fwinterbourne2@npr.org",
     "password": "pe6pon",
-    "category": "user",
-    "image": "default.png"
-  }, {
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
+  },
+  {
     "id": 4,
     "firstName": "Meaghan",
     "lastLame": "Livard",
     "email": "mlivard3@yelp.com",
     "password": "WSXFsvaA",
-    "category": "user",
-    "image": "default.png"
-  }, {
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
+  },
+  {
     "id": 5,
     "firstName": "Deane",
     "lastLame": "McPhail",
     "email": "dmcphail4@sun.com",
     "password": "hRhJGr",
-    "category": "user",
-    "image": "default.png"
-  }, {
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
+  },
+  {
     "id": 6,
     "firstName": "Selma",
     "lastLame": "Handlin",
     "email": "shandlin5@hexun.com",
     "password": "Tda03GAoJ",
     "category": "user",
-    "image": "default.png"
-  }, {
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
+  },
+  {
     "id": 7,
     "firstName": "Diane-marie",
     "lastLame": "Constantine",
     "email": "dconstantine6@tripod.com",
     "password": "25cpTv",
-    "category": "user",
-    "image": "default.png"
-  }, {
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
+  },
+  {
     "id": 8,
     "firstName": "Dell",
     "lastLame": "Gray",
     "email": "dgray7@virginia.edu",
     "password": "AboDVd0K6cl",
-    "category": "user",
-    "image": "default.png"
-  }, {
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
+  },
+  {
     "id": 9,
     "firstName": "Lorna",
     "lastLame": "Westfield",
     "email": "lwestfield8@ucsd.edu",
     "password": "Of99TG",
-    "category": "user",
-    "image": "default.png"
-  }, {
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
+  },
+  {
     "id": 10,
     "firstName": "Elenore",
     "lastLame": "Gillis",
     "email": "egillis9@people.com.cn",
     "password": "HxwzyGa2",
-    "category": "user",
-    "image": "default.png"
-  }]
-  
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
+  },
+  {
+    "id": 11,
+    "firstName": "Denise",
+    "lastName": "Eichenblat",
+    "email": "denise@enjoy.com",
+    "password": "$2b$10$bOdfIPGdNq5gY9aVdQ2zLeeBOV6k3Y.9jkGXTQ7LGHJl3qVwjx7xO",
+    "image": "female-2022387_960_720.png",
+    "isAdmin": true,
+    "isActive": true
+  }
+]

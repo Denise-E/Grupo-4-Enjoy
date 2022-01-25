@@ -97,6 +97,10 @@ main button a:hover{
     accent-color: #b47cde;
 }
 
+#file{
+    border: none;
+}
+
 @media screen and (min-width: 361px) {  
     #main{
         display: flex;
