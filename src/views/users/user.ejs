@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head")  %> 
+<body>
+    <%- include("../partials/header")  %>
+    <h2>Usuario: <%= user.name %> </h2>
+    <form action="/users/update/password" method="post">
+        <input type="password" name="old" id="old" placeholder="Old">
+        <input type="password" name="password" id="password">
+        <button type="submit">Actualiza Contrasena</button>
+    </form>
+    <section>
+        <% if (user.avatar != null) { %>
+            <figure>
+                <img>
+            </figure>
+        <% } else { %>
+            <figure>
+                <>
+            </figure>
+        <% } %>
+        <form action="/user" enctype="multipart/form-data" method="post">
+            <input type="file" name="avatar" id="avatar">
+            <button type="submit">Actualiza Avatar</button>
+        </form>
+    </section>
+</body>
+</html>

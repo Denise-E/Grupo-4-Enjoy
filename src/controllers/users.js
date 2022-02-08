@@ -2,6 +2,11 @@ const validator = require('express-validator');
 const model = require("../models/user")
 
 module.exports = {
+    index: (req,res) =>  res.render('users/list',{
+        styles:['users/list'],
+        title: 'Usuarios',
+        users: all()
+    }), 
     
     login: (req,res) => res.render("users/login",{
         
@@ -36,5 +41,12 @@ module.exports = {
 
         return res.redirect("/users/login")
 
-    }
+        let created = created(req.body)
+        return res.send(created)
+    },
+ 
+    logout: (req,res) => res.send({
+        data: req.session,
+        msg: "llego del profile"
+    })
 }
