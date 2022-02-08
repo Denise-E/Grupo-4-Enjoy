@@ -1,0 +1,21 @@
+<%- include("../partials/head")  %> 
+
+<body>
+    <%- include("../partials/header")  %>
+    <h2>Usuariorios</h2>
+    
+    <% users.forEach(element => { %>
+    <article>
+        <h3><%= users.fistName %> <%= users.lastName %></h3>
+        <p> <%= users.email %> </p>
+        
+        <!-- AGREGAR EL RESTO DE LOS DATOS  --->
+   
+    </article>
+     <% }) %>
+
+    </section>
+    <%- include("../partials/footer")  %>
+
+</body>
+</html>

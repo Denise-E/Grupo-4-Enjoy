@@ -5,7 +5,7 @@ module.exports = {
     index: (req,res) =>  res.render('users/list',{
         styles:['users/list'],
         title: 'Usuarios',
-        users: all()
+        users: model.all()
     }), 
     
     login: (req,res) => res.render("users/login",{
@@ -48,5 +48,15 @@ module.exports = {
     logout: (req,res) => res.send({
         data: req.session,
         msg: "llego del profile"
+    }),
+    list: (req,res) => res.render("/users/userlist", { 
+        // chequear que no se ve la vista
+        styles:[],
+        users: model.all()
+    }),
+    show: (req,res) => res.render("/users/users", { 
+        // chequear que no se ve la vista
+        styles:[],
+        user: model.search("id", req.params.id)
     })
 }
