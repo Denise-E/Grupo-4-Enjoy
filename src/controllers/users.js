@@ -49,14 +49,14 @@ module.exports = {
         data: req.session,
         msg: "llego del profile"
     }),
-    list: (req,res) => res.render("/users/userlist", { 
+    list: (req,res) => res.render("userlist", { 
         // chequear que no se ve la vista
-        styles:[],
+        style:[],
         users: model.all()
     }),
-    show: (req,res) => res.render("/users/users", { 
+    show: (req,res) => res.render("users", { 
         // chequear que no se ve la vista
-        styles:[],
+        style:[],
         user: model.search("id", req.params.id)
     })
 }
