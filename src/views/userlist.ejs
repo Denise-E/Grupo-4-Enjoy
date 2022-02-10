@@ -2,7 +2,9 @@
 
 <body>
     <%- include("./partials/header")  %>
-    <h2>Usuario:</h2> 
+
+    <main>
+    <h2>Usuarios:</h2> 
     <% users.forEach(element => { %>
         <article>
         <h3><%= element.firstName %> <%= element.lastName %></h3>
@@ -11,13 +13,16 @@
         <% if (element.isAdmin == true) { %>
             <p>este usuario es administrador</p>
            <% } %> 
-           <% if (element.isActive == true) { %>
+
+        <% if (element.isActive == true) { %>
             <p>este usuario esta activo</p>
            <% } %>
-    </article>
-     
+        </article>
+    <% }) %>
 
- 
+    
+</main>
+
     <%- include("./partials/footer")  %>
 
 </body>
