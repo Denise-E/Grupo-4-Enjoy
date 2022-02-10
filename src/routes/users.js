@@ -15,7 +15,7 @@ router.get("/login",[validate, upload.single()], users.login);
 router.get("/register", users.register);
 router.get("/list", users.list); //Listado de TODOS los ususarios
 
-router.get("/:id", users.show);
+router.get("/:id", users.show); //ruta dinamica
 
 
 router.post("/", users.save);

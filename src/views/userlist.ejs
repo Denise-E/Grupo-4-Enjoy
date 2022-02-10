@@ -2,19 +2,22 @@
 
 <body>
     <%- include("./partials/header")  %>
-    <h2>Usuariorios</h2>
-    
+    <h2>Usuario:</h2> 
     <% users.forEach(element => { %>
-    <article>
-        <h3><%= users.fistName %> <%= users.lastName %></h3>
-        <p> <%= users.email %> </p>
-        
-        <!-- AGREGAR EL RESTO DE LOS DATOS  --->
-   
+        <article>
+        <h3><%= element.firstName %> <%= element.lastName %></h3>
+        <p> <%= element.email %> </p>
+        <p> <%= element.image %> </p>
+        <% if (element.isAdmin == true) { %>
+            <p>este usuario es administrador</p>
+           <% } %> 
+           <% if (element.isActive == true) { %>
+            <p>este usuario esta activo</p>
+           <% } %>
     </article>
-     <% }) %>
+     
 
-    </section>
+ 
     <%- include("./partials/footer")  %>
 
 </body>

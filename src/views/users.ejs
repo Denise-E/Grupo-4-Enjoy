@@ -2,12 +2,19 @@
 <%- include("./partials/head")  %> 
 <body>
     <%- include("./partials/header")  %>
-    <h2>Usuario: <%= user.fisrtName %> <%= user.lastName %> </h2>
+    <h2>Usuarios:</h2>
+    
     <article>
+      <%= user.firstName %> <%= user.lastName %> 
         <p><%= user.email %> </p>
+        <p> <%= user.image %> </p>
         
-        <!-- Poner esto de los datos -->
-
+      <% if (user.isAdmin == true) { %>
+       <p>este usuario es administrador</p>
+      <% } %>     
+      <% if (element.isActive == true) { %>
+        <p>este usuario esta activo</p>
+       <% } %> 
     </article>
 
     <%- include("./partials/footer")  %>
