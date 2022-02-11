@@ -17,6 +17,13 @@
         <p>este usuario esta activo</p>
        <% } %> 
     </article>
+
+    <form action="/users/?m=DELETE" method="post">
+        <input type="hidden" name="id" value="<%= user.id %>">
+        <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
+        <a href="/favoritos"> <i class="fas fa-heart"></i> </a>
+    </form>
+
 </main>
 
     <%- include("../partials/footer")  %>

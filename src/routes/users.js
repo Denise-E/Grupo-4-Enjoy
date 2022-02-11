@@ -19,5 +19,6 @@ router.get("/:id", users.show); //ruta dinamica
 
 
 router.post("/", users.save);
+router.delete("/delete", users.delete);
 
 module.exports = router;

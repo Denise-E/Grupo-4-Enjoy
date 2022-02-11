@@ -1,15 +1,5 @@
 [
   {
-    "id": 1,
-    "firstName": "Billy",
-    "lastLame": "Churchyard",
-    "email": "bchurchyard0@timesonline.co.uk",
-    "password": "5Hq46ob",
-    "image": "default.png",
-    "isAdmin": false,
-    "isActive": true
-  },
-  {
     "id": 2,
     "firstName": "Sheila-kathryn",
     "lastLame": "Oag",

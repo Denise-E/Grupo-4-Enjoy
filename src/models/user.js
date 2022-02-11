@@ -26,6 +26,10 @@ const model = {
         model.write(all);
         return newUser;
     },
+    delete: id => {
+        let deleted = model.all().filter(e => e.id != id)
+        model.write(deleted)
+    },
     validate: [
         validator.body("email").isEmail().withMessage("El email es inválido"),
         validator.body("password").isLength({min:8}).withMessage("Mínimo 8 caracteres")

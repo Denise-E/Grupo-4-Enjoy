@@ -58,5 +58,9 @@ module.exports = {
         // chequear que no se ve la vista
         style:[],
         user: model.search("id", req.params.id)
-    })
+    }),
+    delete: (req,res)=> {
+        model.delete(req.body.id)
+        return res.redirect("/users/delete")
+    },
 }
