@@ -57,7 +57,7 @@ module.exports = {
     }),
     show: (req,res) => res.render("users/show", { 
         // chequear que no se ve la vista
-        return res.send (list),
+       
         user: model.search("id", req.params.id),
         style:[],
     }),
