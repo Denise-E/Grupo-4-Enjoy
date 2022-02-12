@@ -31,13 +31,14 @@
   },
   {
     "id": 5,
-    "firstName": "Deane",
     "lastLame": "McPhail",
-    "email": "dmcphail4@sun.com",
-    "password": "hRhJGr",
-    "image": "default.png",
+    "email": "pepita@mail.com",
+    "password": "1234567",
+    "image": "",
     "isAdmin": false,
-    "isActive": true
+    "isActive": true,
+    "lastName": "pepa",
+    "firstName": "mari"
   },
   {
     "id": 6,

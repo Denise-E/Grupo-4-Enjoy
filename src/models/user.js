@@ -41,7 +41,7 @@ const model = {
                 e.firstName = data.firstName;
                 e.lastName = data.lastName;
                 e.email = data.email;
-                e.password = data.password;
+                e.password = bcrypt.hashSync(data.password, 10);
                 e.image = data.image;
                 
                 return e
