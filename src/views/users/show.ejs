@@ -7,7 +7,7 @@
     <article>
         <h1><%= user.firstName %> <%= user.lastName %> </h1>
         <p><%= user.email %> </p>
-        <p> <%= user.image %> </p>
+        <img src= "/uploads/<%=user.image %>">
         
       <% if (user.isAdmin == true) { %>
        <p>este usuario es administrador</p>

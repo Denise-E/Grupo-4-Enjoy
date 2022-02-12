@@ -51,11 +51,13 @@ module.exports = {
     }),
     list: (req,res) => res.render("users/list", { 
         // chequear que no se ve la vista
+        
         style:["users/list"],
         users: model.all()
     }),
     show: (req,res) => res.render("users/show", { 
         // chequear que no se ve la vista
+        return res.send (list),
         user: model.search("id", req.params.id),
         style:[],
     }),
