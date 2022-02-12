@@ -96,7 +96,7 @@ module.exports = {
     res.render("users/editarusuario",{
        users: model.all(),
      user: model.search("id", req.params.id),
-      style: ""
+      style: ["users/editarUsuario"]
     }),
     modify: (req,res) => {
         let updated = model.editarusuario (req.params.id,req.body)
