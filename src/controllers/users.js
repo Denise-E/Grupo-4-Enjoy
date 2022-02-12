@@ -17,6 +17,31 @@ module.exports = {
         
         style: "register"
     }),
+    access: (req,res)=> {
+        let errors = validator.validationResult(req).mapped()
+ 
+        if (!errors.length >0) {
+            return res.render("users/login",{
+                errors
+            })
+        }
+        let exist = model.search("email", req.body.email)
+        if (!exist) {
+            return res.render("users/login",{
+                errors:{
+                    email:{
+                        msg: "El email no existe"
+                    },
+                }
+            })
+        }
+        if(req.body.remember){
+            res.cookie("email",req.body.email,{maxAge:1000*60*60*24*30})
+        }
+ 
+    req.session.user= exist
+    return res.redirect("/")
+},
     save: (req,res) => {
         let errors = validator.validationResult(req)
 
