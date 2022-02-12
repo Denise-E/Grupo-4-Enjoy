@@ -94,8 +94,8 @@ module.exports = {
     //res.send (model.search("id", req.params.id)),
 
     res.render("users/editarusuario",{
-       products: model.all(),
-     product: model.search("id", req.params.id),
+       users: model.all(),
+     user: model.search("id", req.params.id),
       style: ""
     }),
     modify: (req,res) => {
