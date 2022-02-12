@@ -93,13 +93,13 @@ module.exports = {
     editarUsuario: (req,res) => 
     //res.send (model.search("id", req.params.id)),
 
-    res.render("users/editarusuario",{
+    res.render("users/editarUsuario",{
        users: model.all(),
      user: model.search("id", req.params.id),
       style: ["users/editarUsuario"]
     }),
     modify: (req,res) => {
-        let updated = model.editarusuario (req.params.id,req.body)
+        let updated = model.editarUsuario (req.params.id,req.body)
         return res.redirect("/users/"+updated.id)
         
     },
