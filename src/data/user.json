@@ -32,13 +32,13 @@
   {
     "id": 5,
     "lastLame": "McPhail",
-    "email": "pepita@mail.com",
-    "password": "1234567",
+    "email": "pepita2@mail.com",
+    "password": "$2b$10$2xsP8pDvHQbRFp2Y0uTbO.LCZuVIoBIYk.GskzEwHj4y750SZhSG2",
     "image": "",
     "isAdmin": false,
     "isActive": true,
-    "lastName": "pepa",
-    "firstName": "mari"
+    "lastName": "martina",
+    "firstName": "maria"
   },
   {
     "id": 6,
