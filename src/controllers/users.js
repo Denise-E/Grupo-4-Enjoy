@@ -51,16 +51,16 @@ module.exports = {
     }),
     list: (req,res) => res.render("users/list", { 
         // chequear que no se ve la vista
-        style:[],
+        style:["users/list"],
         users: model.all()
     }),
     show: (req,res) => res.render("users/show", { 
         // chequear que no se ve la vista
+        user: model.search("id", req.params.id),
         style:[],
-        user: model.search("id", req.params.id)
     }),
     delete: (req,res)=> {
         model.delete(req.body.id)
-        return res.redirect("/users/delete")
+        return res.redirect("/users/list")
     },
 }

@@ -7,7 +7,7 @@
     "password": "By495ex",
     "image": "default.png",
     "isAdmin": false,
-    "isActive": true
+     "isActive": true
   },
   {
     "id": 3,
