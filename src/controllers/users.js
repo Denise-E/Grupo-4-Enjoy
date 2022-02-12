@@ -90,4 +90,17 @@ module.exports = {
         model.delete(req.body.id)
         return res.redirect("/users/list")
     },
+    editarUsuario: (req,res) => 
+    //res.send (model.search("id", req.params.id)),
+
+    res.render("users/editarusuario",{
+       products: model.all(),
+     product: model.search("id", req.params.id),
+      style: ""
+    }),
+    modify: (req,res) => {
+        let updated = model.editarusuario (req.params.id,req.body)
+        return res.redirect("/users/"+updated.id)
+        
+    },
 }

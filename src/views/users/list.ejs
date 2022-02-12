@@ -18,6 +18,7 @@
             <p>este usuario esta activo</p>
            <% } %>
         </article>
+        
         <form action="/users/delete/?m=DELETE" method="post">
             <input type="hidden" name="id" value="<%= element.id %>">
             <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>

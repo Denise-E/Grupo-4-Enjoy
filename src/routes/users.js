@@ -12,14 +12,16 @@ const upload = multer ({storage: multer.diskStorage({
 
 
 router.get("/login",[validate, upload.single()], users.login);
+
 router.get("/register", users.register);
 router.get("/list", users.list); //Listado de TODOS los ususarios
-
+router.get("/editarUsuario/:id", users.editarUsuario);
 router.get("/:id", users.show); //ruta dinamica
 
 
 router.post("/", users.save);
 router.post("/access", users.access);
+router.put("/:id", users.modify);
 router.delete("/delete", users.delete);
 
 module.exports = router;

@@ -33,7 +33,25 @@ const model = {
     validate: [
         validator.body("email").isEmail().withMessage("El email es inválido"),
         validator.body("password").isLength({min:8}).withMessage("Mínimo 8 caracteres")
-    ]
+    ],
+    editarUsuario: (id,data) =>{
+        let all = model.all();
+        let updated = all.map (e =>{
+            if(e.id == id){
+                e.firstName = data.firstName;
+                e.lastName = data.lastName;
+                e.email = data.email;
+                e.password = data.password;
+                e.image = data.image;
+                
+                return e
+            }
+            return e
+        })
+        model.write(updated);
+        let user = model.search ("id", id);
+        return user
+    }
 }
 
 module.exports = model;
