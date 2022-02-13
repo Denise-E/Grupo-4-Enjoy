@@ -6,11 +6,58 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #f5b887;
+}
+div{
+    border: 2.5px black solid;
+    border-collapse: separate;
+    border-spacing: 20px; 
+    border-color: #843db6;
+}
+
+.nombres{
+    
+    border: 2.5px solid #b07bd6;
+    text-align: center;
+}
+.email{
+    text-align: center;
 }
 
 
+.actividad{
+    text-align: center;
+}
+.administrador{
+    text-align: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bolder;
+    color: #9847ee ;
+    border-radius: 0.5rem;
+    margin: 2.5rem auto;
+    max-width: 90%;
+}
+h2{
+    border: 2.5px solid #5A2083;
+}
+
+h3{
+    font-size: 1.5rem;
+     margin: 2.5rem auto;
+     background-color: #ff86d3;
+     margin-top: 20px;
+     padding: 10px;
+}
+ p{font-weight: bold;
+max-width: 85%;
+margin: auto;
+}
 .deleteButton{
-    background-color: white;
+    background-color:#f5b887;
     width: 40px;   
 }
 
