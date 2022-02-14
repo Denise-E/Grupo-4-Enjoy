@@ -20,17 +20,16 @@ module.exports = {
     access: (req,res)=> {
         let errors = validator.validationResult(req).mapped()
 
-        
-        
- 
         if(errors.length >0) {
             return res.render("users/login",{
+                style: "login",
                 errors
             })
         }
         let exist = model.search("email", req.body.email)
         if (!exist) {
            return res.render("users/login",{
+            style: "login",
                errors:{
                     email:{
                         msg: "El email no existe",
@@ -50,6 +49,7 @@ module.exports = {
 
         if (!errors.isEmpty()) {
             return res.render("users/register",{
+                style: "register",
                 errors: errors.mapped()
             })
         }

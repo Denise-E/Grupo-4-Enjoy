@@ -100,14 +100,6 @@
     "image": "female-2022387_960_720.png",
     "isAdmin": true,
     "isActive": true
-  },
-  {
-    "id": 12,
-    "email": "undefined",
-    "password": "$2b$10$l0Mnh4U558g2yaWDEhBIoevybw1m9bmS4CeZkBn.rhyM98.Ova6VK",
-    "image": "default.png",
-    "isAdmin": false,
-    "isActive": true
   }
   
  
