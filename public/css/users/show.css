@@ -6,16 +6,56 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    
 }
-main h1{
-    background-color: #804515;
+div{
+   
+    border-radius: 50px;
+    border: 2.5px black solid;
+    border-collapse: separate;
+    border-spacing: 20px; 
+    border-color: #9a26ec;
+    background-color: #c397dd;
+  
+}
+.nombres{
+    border-radius: 100px;
+    border: 2.5px solid #9a26ec;
+    text-align: center;
+}
+.email{
+    text-align: center;
+}
+div img{
+    width: 18rem;
+}
+.actividad{
+    text-align: center;
 }
 h1{
     font-size: 2.5rem;
     text-align: center;
-    font-weight: bolder;
+ 
     color: #9847ee ;
     border-radius: 0.5rem;
     margin: 2.5rem auto;
     max-width: 90%;
 }
+h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+     margin: 2.5rem auto;
+     background-color: #f0a3ec;
+     margin-top: 20px;
+     padding: 10px;
+}
+p{
+    font-weight: bold;
+    max-width: 85%;
+    margin: auto;
+    }
+ .fas fa-pen{
+    font-size: 1.5rem;
+    color: #5A2083;
+    margin: 2px;
+ }   
