@@ -1,9 +1,7 @@
-<%- include('../partials/head') %> 
-<link rel="stylesheet" href="/css/<%=style%>.css">
 
+<%- include("../partials/head")  %> 
 <body>
-    <%- include('../partials/header') %> 
-    
+    <%- include("../partials/header")  %>
 
     <main>
         <section id="main">
@@ -17,8 +15,7 @@
                     <label for>Apellido :</label>
                     <input type="text" name="lastName" id required>
                     <label for>Correo electronico :</label>
-                    
-                    <input type="email" name="email" id>
+                    <input type="email" name="email" id required>
                     <label for>Contraseña :</label>
                     <input type="password" name="password" minlength="8" placeholder="*****" required>
                     

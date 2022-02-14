@@ -19,19 +19,21 @@ module.exports = {
     }),
     access: (req,res)=> {
         let errors = validator.validationResult(req).mapped()
- 
-        if (!errors.length >0) {
+
+        if(errors.length >0) {
             return res.render("users/login",{
+                style: "login",
                 errors
             })
         }
         let exist = model.search("email", req.body.email)
         if (!exist) {
-            return res.render("users/login",{
-                errors:{
+           return res.render("users/login",{
+            style: "login",
+               errors:{
                     email:{
-                        msg: "El email no existe"
-                    },
+                        msg: "El email no existe",
+                    }
                 }
             })
         }
@@ -40,13 +42,14 @@ module.exports = {
         }
  
     req.session.user= exist
-    return res.redirect("/")
+    return res.redirect ("/")
 },
     save: (req,res) => {
         let errors = validator.validationResult(req)
 
-        if (!errors.isEmpty()) {
+       if (!errors.isEmpty()) {
             return res.render("users/register",{
+                style: "register",
                 errors: errors.mapped()
             })
         }
@@ -64,10 +67,9 @@ module.exports = {
 
         let userRegistred = model.create(req.body)
 
-        return res.redirect("users/login")
+        return res.redirect("/users/login")
 
-        let created = created(req.body)
-        return res.send(created)
+      
     },
  
     logout: (req,res) => res.send({

@@ -11,16 +11,18 @@ const upload = multer ({storage: multer.diskStorage({
 
 
 
-router.get("/login",[validate, upload.single()], users.login);
 
+router.get("/login", users.login);
 router.get("/register", users.register);
 router.get("/list", users.list); //Listado de TODOS los ususarios
 router.get("/editarUsuario/:id", users.editarUsuario);
 router.get("/:id", users.show); //ruta dinamica
 
 
-router.post("/", users.save);
-router.post("/access", users.access);
+router.post("/",[validate, upload.single()], users.save);
+
+router.post("/access", [validate, upload.single()],users.access);
+router.post ("/logout", users.logout);
 router.put("/:id", users.modify);
 router.delete("/delete", users.delete);
 
