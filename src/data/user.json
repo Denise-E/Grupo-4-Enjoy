@@ -34,7 +34,7 @@
     "lastLame": "McPhail",
     "email": "pepita2@mail.com",
     "password": "$2b$10$2xsP8pDvHQbRFp2Y0uTbO.LCZuVIoBIYk.GskzEwHj4y750SZhSG2",
-    "image": "",
+    "image": "default.png",
     "isAdmin": false,
     "isActive": true,
     "lastName": "martina",
@@ -97,7 +97,7 @@
     "lastName": "Eichenblat",
     "email": "denise@enjoy.com",
     "password": "$2b$10$bOdfIPGdNq5gY9aVdQ2zLeeBOV6k3Y.9jkGXTQ7LGHJl3qVwjx7xO",
-    "image": "female-2022387_960_720.png",
+    "image": "default.png",
     "isAdmin": true,
     "isActive": true
   },

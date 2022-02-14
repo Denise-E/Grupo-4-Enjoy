@@ -75,16 +75,12 @@ module.exports = {
         msg: "llego del profile"
     }),
     list: (req,res) => res.render("users/list", { 
-        // chequear que no se ve la vista
-        
         style:["users/list"],
         users: model.all()
     }),
     show: (req,res) => res.render("users/show", { 
-        // chequear que no se ve la vista
-       
-        user: model.search("id", req.params.id),
-        style:[],
+        style:["users/show"],
+        user: model.search("id", req.params.id)
     }),
     delete: (req,res)=> {
         model.delete(req.body.id)

@@ -5,10 +5,10 @@
 
     <main>
     <h1>Usuarios:</h1> 
-    <div>
+    <article class="articulo">
+    <div class="cadaUsuario">
     <% users.forEach(element => { %>
-        <article>
-        <h3 class="nombres"><%= element.firstName %> <%= element.lastName %></h3>
+        <h3 class="nombres"><%= element.firstName %> <%= element.lastName  %></h3>
         <p class="email"> <%= element.email %> </p>
         <img src= "/uploads/<%=element.image %>">
         <% if (element.isAdmin == true) { %>
@@ -18,7 +18,7 @@
         <% if (element.isActive == true) { %>
             <p class="actividad">este usuario esta activo</p>
            <% } %>
-        </article>
+        
         
         <form action="/users/delete/?m=DELETE" method="post">
             <input type="hidden" name="id" value="<%= element.id %>">
@@ -27,6 +27,7 @@
 
     <% }) %>
 </div>  
+</article>
 </main>
 
     <%- include("../partials/footer")  %>

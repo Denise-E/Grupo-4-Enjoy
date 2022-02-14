@@ -6,18 +6,30 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #f5b887;
+    
 }
+
 div{
+   
+    border-radius: 50px;
     border: 2.5px black solid;
     border-collapse: separate;
     border-spacing: 20px; 
-    border-color: #843db6;
+    border-color: #9a26ec;
+    background-color: #c397dd;
+  
 }
+.articulo{
+    margin: 50px;
+}
+ div img{
+     width: 18rem;
+ }
+
 
 .nombres{
-    
-    border: 2.5px solid #b07bd6;
+    border-radius: 100px;
+    border: 2.5px solid #9a26ec;
     text-align: center;
 }
 .email{
@@ -35,7 +47,7 @@ div{
 h1{
     font-size: 2.5rem;
     text-align: center;
-    font-weight: bolder;
+ 
     color: #9847ee ;
     border-radius: 0.5rem;
     margin: 2.5rem auto;
@@ -46,19 +58,23 @@ h2{
 }
 
 h3{
+    font-weight: bold;
     font-size: 1.5rem;
      margin: 2.5rem auto;
-     background-color: #ff86d3;
+     background-color: #f0a3ec;
      margin-top: 20px;
      padding: 10px;
 }
- p{font-weight: bold;
+
+p{
+font-weight: bold;
 max-width: 85%;
 margin: auto;
 }
 .deleteButton{
-    background-color:#f5b887;
+    background-color: #c397dd;
     width: 40px;   
+    cursor: no-drop;
 }
 
 .fa-trash{
