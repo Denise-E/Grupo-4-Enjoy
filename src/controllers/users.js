@@ -47,7 +47,7 @@ module.exports = {
     save: (req,res) => {
         let errors = validator.validationResult(req)
 
-        if (!errors.isEmpty()) {
+       if (!errors.isEmpty()) {
             return res.render("users/register",{
                 style: "register",
                 errors: errors.mapped()
@@ -67,7 +67,7 @@ module.exports = {
 
         let userRegistred = model.create(req.body)
 
-        return res.redirect("users/login")
+        return res.redirect("/users/login")
 
       
     },
