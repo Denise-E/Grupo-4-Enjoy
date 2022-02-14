@@ -5,12 +5,15 @@
 
     <main>
     <h1>Usuarios:</h1> 
-    <article class="articulo">
-    <div class="cadaUsuario">
+    <article class="users">
+    
     <% users.forEach(element => { %>
+        <div class="cadaUsuario">
         <h3 class="nombres"><%= element.firstName %> <%= element.lastName  %></h3>
         <p class="email"> <%= element.email %> </p>
+        <picture class= "imagenUsuario">
         <img src= "/uploads/<%=element.image %>">
+    </picture>
         <% if (element.isAdmin == true) { %>
             <p class="administrador">este usuario es administrador</p>
            <% } %> 
@@ -24,9 +27,9 @@
             <input type="hidden" name="id" value="<%= element.id %>">
             <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
         </form>
-
+    </div> 
     <% }) %>
-</div>  
+ 
 </article>
 </main>
 
