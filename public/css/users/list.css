@@ -9,28 +9,36 @@ body{
     
 }
 
-div{
+.cadaUsuario{
+   margin: 3rem 0.5rem;
+   text-align: center;
+   box-shadow: 0px 0px 5px #b47cde;
+   border-radius: 20px;
+   width: 98%;
+   margin-bottom: 5px;
+   padding: 35px 35px;
+   justify-content: center;
+   align-items: center;
+   transition: box-shadow 200ms;
    
-    border-radius: 50px;
-    border: 2.5px black solid;
-    border-collapse: separate;
-    border-spacing: 20px; 
-    border-color: #9a26ec;
-    background-color: #c397dd;
+   
+    
   
 }
-.articulo{
-    margin: 50px;
+
+img{
+    max-width: 50%;
 }
- div img{
-     width: 18rem;
- }
+.users{
+    display:flex;
+    flex-direction:column;
+}
 
 
 .nombres{
-    border-radius: 100px;
-    border: 2.5px solid #9a26ec;
-    text-align: center;
+    margin-bottom:25px;
+    font-size: 30px;
+    color:#5A2083; 
 }
 .email{
     text-align: center;
@@ -72,7 +80,7 @@ max-width: 85%;
 margin: auto;
 }
 .deleteButton{
-    background-color: #c397dd;
+    
     width: 40px;   
     cursor: no-drop;
 }
@@ -81,4 +89,17 @@ margin: auto;
     font-size: 1.5rem;
     color: #5A2083;
     margin: 2px;
+}
+
+@media screen and (min-width: 1200px)  { 
+    .users{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        
+
+    } 
+    .cadaUsuario{
+        max-width: 25rem;
+    }
 }
