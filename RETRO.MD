@@ -51,5 +51,9 @@ ___
 
 Los integrantes a quienes no se les debe atribuir los puntos anteriores continuar trabajando como hasta ahora, cumpliendo con sus partes como corresponde y a tiempo, cumpliendo con los objetivos grupales.
 
+# Retro - Sprint 5to
+___
 
-
+✔ La restrospectiva del 5to Sprint la realizamos igual que el Sprint 4
+___
+En el cuarto sprint pudimos incorporar todas aquellas mejoras planteadas en retrospectivas anteriores, comunicandonos, trebajando de una mejor manera y cumpliendo en tiempo y forma incluso con los pendientes de sprint anteriores. 
