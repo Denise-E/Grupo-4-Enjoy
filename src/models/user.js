@@ -5,9 +5,8 @@ const validator = require('express-validator');
 
 const model = {
     file: path.resolve(__dirname, '../data/user.json'),
-    
-    write: data => fs.writeFileSync(model.file, JSON.stringify(data,null,2)),
     read: data => fs.readFileSync(model.file),
+    write: data => fs.writeFileSync(model.file, JSON.stringify(data,null,2)),
     all: () => JSON.parse(model.read()),
     search: (prop,value) => model.all().find(element => element[prop] == value),
     generated: data => Object({

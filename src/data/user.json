@@ -100,7 +100,15 @@
     "image": "default.png",
     "isAdmin": true,
     "isActive": true
+  },
+  {
+    "id": 12,
+    "firstName": "Federico",
+    "lastName": "Rojas",
+    "email": "federico@gmail.com",
+    "password": "$2b$10$UQi//Zitts4IxRjC3RAVSOoCaFOW1IEvR/nWz0I/ufkyiuCk4KcZq",
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
   }
-  
- 
 ]

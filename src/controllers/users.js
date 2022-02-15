@@ -65,7 +65,7 @@ module.exports = {
                 errors: errors.mapped()
             })
         }
-
+        /** 
         let exist = model.search("email", req.body)
         if (exist) {
             return res.render("users/register",{
@@ -75,7 +75,7 @@ module.exports = {
                     }
                 }
             })
-        }
+        }*/
 
         let userRegistred = model.create(req.body)
 

@@ -21,7 +21,7 @@ router.get("/editarUsuario/:id",[access], users.editarUsuario);
 router.get("/:id",[access], users.show); //ruta dinamica
 
 
-router.post("/",[validate, upload.single()], users.save);
+router.post("/",[upload.single()], users.save);
 
 router.post("/access", [validate, upload.single()],users.access);
 router.post ("/logout", users.logout);
