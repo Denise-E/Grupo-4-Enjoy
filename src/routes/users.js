@@ -9,13 +9,14 @@ const upload = multer ({storage: multer.diskStorage({
       filename: (req, file, cb) => cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname)),
 })});
 const access = require ("../middlewares/access");
+const auth = require ("../middlewares/auth");
 
 
 
 
 router.get("/login", users.login);
 router.get("/register", users.register);
-router.get("/list",[access], users.list); //Listado de TODOS los ususarios
+router.get("/list",[auth], users.list); //Listado de TODOS los ususarios
 router.get("/editarUsuario/:id",[access], users.editarUsuario);
 router.get("/:id",[access], users.show); //ruta dinamica
 
