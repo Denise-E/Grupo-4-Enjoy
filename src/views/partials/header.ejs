@@ -13,8 +13,19 @@
         </nav>
     </section>
     <section id="barraInferior" class="dflex">
-        <i class="far fa-user"></i>
+        <% if (!user){ %>
+            <i class="far fa-user"></i>
         <button type="submit" id="headerButtonLeft"><a href ="/users/login">Log in </a> </button>  
-        <button type="submit" id="headerButtonRight"><a href="/users/register">Registrate </a> </button>       
+        <button type="submit" id="headerButtonRight"><a href="/users/register">Registrate </a> </button> 
+        <% } else if (user && user.isAdmin){ %>
+            <button type="submit" id="headerButtonLeft"><a href ="/users/list"> Todos los Usuarios </a> </button>
+           <form action="/users/logout"  method="post"><button type="submit" id="botonlogout" >Logout</button> </form>
+            
+        <% } else { %>
+                <button type="submit" id="headerButtonLeft"><a href="/users/<%= user.id %>">Perfil </a> </button>
+                <form action="/users/logout"  method="post"><button id="botonlogout" type="submit">Logout</button> </form>
+        <% } %>
+        
+              
     </section>                    
 </header>

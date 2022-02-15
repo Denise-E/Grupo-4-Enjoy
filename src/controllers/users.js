@@ -84,10 +84,11 @@ module.exports = {
       
     },
  
-    logout: (req,res) => res.send({
-        data: req.session,
-        msg: "llego del profile"
-    }),
+    logout: (req,res) => {
+        delete req.session.user
+        res.cookie("email",null,{maxAge:-1})
+        return res.redirect("/")
+    },
     list: (req,res) => res.render("users/list", { 
         style:["users/list"],
         users: model.all()
