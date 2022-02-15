@@ -116,7 +116,12 @@ header img{
 #headerButtonRight a{
     color: white;
 }
-
+#botonlogout{
+    background-color: #371452;
+    color: white;
+    width:6rem !important;
+  
+}
 
 @media screen and (min-width: 361px) {  
     header{
@@ -165,17 +170,8 @@ header img{
         width: 250px;
         margin-right: 10%;
     }  
-    #barraInferior button{
-    padding: 8px;
-    border-radius: 10px;
-    width: 20%;     
-    }
-    #barraInferior button{
-        padding: 8px;
-        border-radius: 8px;
-        width: 30%;
-    }
-    nav.dflex p{
+   
+        nav.dflex p{
         font-size: 21px;
        color: #371452;
        font-weight: bold;
@@ -251,6 +247,7 @@ header img{
     color: #5A2083;
     margin: 5px;
 }
+
 } 
 }
 }
