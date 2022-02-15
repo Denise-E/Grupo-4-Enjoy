@@ -59,3 +59,27 @@ p{
     color: #5A2083;
     margin: 2px;
  }   
+
+  @media screen and (min-width: 361x) { /* movil */
+    
+
+    .div{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    
+    div img{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+    }
+}
+@media screen and (min-width: 769px){
+    
+ 
+}
+@media screen and (min-width: 1200px){
+    
+    
+}
