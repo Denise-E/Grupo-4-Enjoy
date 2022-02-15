@@ -9,7 +9,9 @@
     
     <% users.forEach(element => { %>
         <div class="cadaUsuario">
-        <h3 class="nombres"><%= element.firstName %> <%= element.lastName  %></h3>
+        <a href="/users/<%= element.id %> ">
+            <h3 class="nombres"><%= element.firstName %> <%= element.lastName  %></h3>
+        </a>
         <p class="email"> <%= element.email %> </p>
         <picture class= "imagenUsuario">
         <img src= "/uploads/<%=element.image %>">
