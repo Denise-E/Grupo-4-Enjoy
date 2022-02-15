@@ -110,5 +110,15 @@
     "image": "default.png",
     "isAdmin": false,
     "isActive": true
+  },
+  {
+    "id": 13,
+    "firstName": "maria",
+    "lastName": "perez",
+    "email": "ma@pe.com",
+    "password": "$2b$10$aSOSiiIl9OIq//k4zXoKPeqTYgkK7mKwM4ZRuvL/kvpZW9jtcIToy",
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
   }
 ]

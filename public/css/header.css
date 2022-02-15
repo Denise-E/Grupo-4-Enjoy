@@ -122,6 +122,9 @@ header img{
     width:6rem !important;
   
 }
+#headerButtonLeft a{
+    color: #371452
+}
 
 @media screen and (min-width: 361px) {  
     header{
