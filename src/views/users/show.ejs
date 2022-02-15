@@ -1,12 +1,12 @@
 <%- include("../partials/head")  %> 
 
-<body>
+<body class="body">
     <%- include("../partials/header")  %>
 
     <main>
-        <h1>Usuarios:</h1> 
+        <h1 class="titulo">Usuarios:</h1> 
     <article>
-        <div>
+        <div class="div">
         <h2 class="nombres"><%= user.firstName %> <%= user.lastName %> </h2>
         <p class="email"><%= user.email %> </p>
         <img src= "/uploads/<%=user.image %>">
@@ -19,7 +19,7 @@
         <p class="actividad"> este usuario esta activo </p>
        <% } %> 
     
-    <p>Actualizá tus datos:</p>
+    <p class="datos">Actualizá tus datos:</p>
     <a href="/users/editarusuario/<%= user.id %>"><i class="fas fa-pen"></i></a>
     </div>
    </article>

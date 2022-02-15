@@ -4,24 +4,32 @@
     box-sizing: border-box;
 }
 
-body{
+.body{
     font-family: 'Montserrat', sans-serif;
     
 }
-div{
+ .div{
    
     border-radius: 50px;
     border: 2.5px black solid;
     border-collapse: separate;
     border-spacing: 20px; 
-    border-color: #9a26ec;
-    background-color: #c397dd;
+    border-color: #B47CDE; /*color forde tarjeta*/
+    background-color: #ffffff; /*color fondo del nombre*/
   
-}
+} 
+
 .nombres{
     border-radius: 100px;
-    border: 2.5px solid #9a26ec;
+    border: 2.5px solid #B47CDE; /*color del nombre*/
     text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+     margin: 2.5rem auto;
+     background-color: #D9BBF9; /*color fondo del nombre*/
+     margin-top: 20px;
+     padding: 10px;
+     border-radius: 3.5rem;
 }
 .email{
     text-align: center;
@@ -30,25 +38,18 @@ div img{
     width: 18rem;
 }
 .actividad{
-    text-align: center;
+   justify-content: center;
 }
-h1{
+.titulo{
     font-size: 2.5rem;
     text-align: center;
- 
-    color: #9847ee ;
+    color: #9847ee ; /* color del titulo*/
     border-radius: 0.5rem;
     margin: 2.5rem auto;
     max-width: 90%;
 }
-h2{
-    font-weight: bold;
-    font-size: 1.5rem;
-     margin: 2.5rem auto;
-     background-color: #f0a3ec;
-     margin-top: 20px;
-     padding: 10px;
-}
+
+
 p{
     font-weight: bold;
     max-width: 85%;
@@ -60,19 +61,32 @@ p{
     margin: 2px;
  }   
 
-  @media screen and (min-width: 361x) { /* movil */
-    
+  @media screen and (min-width: 361px) { /* movil */
+   
+      div{
+        justify-content: center;
+        border-radius: 20px;
+       
+      }
+      h1{
+        font-size: 30px;
+      }
+      div img{
+         width: 80px;
+        
+      }
 
-    .div{
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-    }
     
-    div img{
-        display: flex;
-        flex-direction: column;
-        max-width: 90%;
+    .actividad{
+        justify-content: center;
+    }
+    .datos{
+        justify-content: center;
+    }
+    .fas fa-pen{
+        font-size: 1.5rem;
+        color: #5A2083;
+        margin: 2px;
     }
 }
 @media screen and (min-width: 769px){
