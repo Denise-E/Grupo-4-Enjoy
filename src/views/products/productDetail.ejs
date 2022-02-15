@@ -37,14 +37,22 @@
                 </form> 
                 </section>             
             </article>  
+            
             <section class="adminsIcons"> 
+                <% if (user && user.isAdmin){ %>
                 <a href="/products/editarProducto/<%= product.id %>"><i class="fas fa-pen"></i></a>
                 <form action="/products/?m=DELETE" method="post">
                   <input type="hidden" name="id" value="<%= product.id %>">
                   <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
-                  <a href="/favoritos"> <i class="fas fa-heart"></i> </a>
+                  
               </form>
-        </section>
+        
+        <% } else { %>   
+
+        <a href="/favoritos"> <i class="fas fa-heart"></i> </a>
+
+        <% }%>
+    </section>
         <section class="dflex" id="mainThree">
             <button type="submit">
                 <input type="checkbox">
