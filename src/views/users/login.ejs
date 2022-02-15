@@ -3,15 +3,21 @@
 
 <body>
     <%- include('../partials/header') %> 
-    
+    <% if (user) { %>
+        <p>User: <%= user.email %> </p>
+        <% } else { %>
+            <h2>Ingresá</h2>
+    <% } %>    
 
     <main>
+        
 
     <section class="formularioInicio">
         <form action="/users/access" method="post">            
             <section class="form">
                 <div class="inicioSesion">
                 <h1 class="tituloLogin">Ingresa a tu cuenta</h1>
+                
                 <label for="">Correo electronico :</label>
                 <input type="text"  name="email" id="" required>
                 <span class="feedback"></span>
