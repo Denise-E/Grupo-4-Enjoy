@@ -15,6 +15,12 @@
                 <label for="">Correo electronico :</label>
                 <input type="text"  name="email" id="" required>
                 <span class="feedback"></span>
+                <% if (locals.errors && errors.email) { %>
+                    <p><%= errors.email.msg %> </p>
+                  <% } %>
+                  <% if (locals.errors && errors.password) { %>
+                      <p><%= errors.password.msg %> </p>
+                    <% } %>
                 <label for="">Contraseña :</label>
                 <input type="password" name="password" required>
                 <span class="feedback"></span>
@@ -35,12 +41,7 @@
         </nav>
         </section>
         <section class= "crear-cuenta">
-            <% if (locals.errors && errors.email) { %>
-                <p><%= errors.email.msg %> </p>
-              <% } %>
-              <% if (locals.errors && errors.password) { %>
-                  <p><%= errors.password.msg %> </p>
-                <% } %>
+            
             <nav>
                 <p>¿Todavía no tenes cuenta? <a href="/register"> Crear cuenta</a>  </p>
             </nav>
