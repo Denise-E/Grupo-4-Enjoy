@@ -10,19 +10,17 @@ body{
 }
 
 .cadaUsuario{
-   margin: 3rem 0.5rem;
+   margin: 2rem 0.5rem;
    text-align: center;
    box-shadow: 0px 0px 5px #b47cde;
    border-radius: 20px;
    width: 98%;
-   margin-bottom: 5px;
+   
    padding: 35px 35px;
    justify-content: center;
    align-items: center;
    transition: box-shadow 200ms;
-   
-   
-    
+      
   
 }
 
@@ -61,18 +59,13 @@ h1{
     margin: 2.5rem auto;
     max-width: 90%;
 }
-h2{
-    border: 2.5px solid #5A2083;
-}
+
 
 h3{
     font-weight: bold;
     font-size: 1.5rem;
-     margin: 2.5rem auto;
-     background-color: #f0a3ec;
-     margin-top: 20px;
-     padding: 10px;
 }
+     
 
 p{
 font-weight: bold;
