@@ -12,7 +12,7 @@ app.set ("view engine", "ejs");
 app.listen(app.get("port"), ()=> console.log("Listening on port http://localhost:" + app.get("port")));
 
 app.use(express.static(path.resolve(__dirname, "../public")));
-app.use("/uploads",express.static(path.resolve(__dirname, "../uploads")));
+app.use(express.static(path.resolve(__dirname, "../uploads")));
 app.use(method("m"));
 app.use(express.urlencoded({extended:true}));
 app.use(cookie());
