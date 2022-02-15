@@ -18,12 +18,13 @@
                 <% if (locals.errors && errors.email) { %>
                     <p><%= errors.email.msg %> </p>
                   <% } %>
-                  <% if (locals.errors && errors.password) { %>
-                      <p><%= errors.password.msg %> </p>
-                    <% } %>
+                  
                 <label for="">Contraseña :</label>
                 <input type="password" name="password" required>
                 <span class="feedback"></span>
+                <% if (locals.errors && errors.password) { %>
+                    <p><%= errors.password.msg %> </p>
+                  <% } %>
             </div>
             <label for="remember" class="remember"><input type="checkbox" name="remember" value="remember" > Recordar mis datos </label>
            <nav class="olvide-password">

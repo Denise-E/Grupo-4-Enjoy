@@ -1,5 +1,7 @@
 const validator = require('express-validator');
-const model = require("../models/user")
+const bcrypt = require('bcrypt');
+const model = require("../models/user");
+
 
 module.exports = {
     /*index: (req,res) =>  res.render('users/list',{
@@ -37,6 +39,16 @@ module.exports = {
                 }
             })
         }
+        if (!bcrypt.compareSync(req.body.password, exist.password)) {
+            return res.render("users/login",{
+             style: "login",
+                errors:{
+                     password:{
+                         msg: "La contraseña es incorrecta",
+                     }
+                 }
+             })
+         }
         if(req.body.remember){
             res.cookie("email",req.body.email,{maxAge:1000*60*60*24*30})
         }
