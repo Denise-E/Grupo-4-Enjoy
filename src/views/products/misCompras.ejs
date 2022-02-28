@@ -1,0 +1,28 @@
+<%- include('../partials/head') %> 
+
+<body>
+    <%- include('../partials/header') %> 
+    
+    <main>
+    <h2>Productos:</h2>
+
+    <article class="products">
+        <% products.forEach(element => { %>
+               
+    <picture class= "imagenProducto"></picture>
+        <img src= "/uploads/<%=element.file %>">
+    </picture>
+    <h3 class="name"> <%= products.name%> </h3>
+    <p clas="descripcion"> <%= products.description%> </p>
+    <h3 class="personas"> <%= products.persons%> </h3>
+    <h3 class="precio"> <%= products.price%> </h3>
+    <% }) %>
+
+</article>
+</main>
+    
+
+     <%- include('../partials/footer') %> 
+
+</body>
+</html>

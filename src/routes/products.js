@@ -14,10 +14,14 @@ router.get("/cart", products.cart);
 router.get("/crearComentario", products.crearComentario);
 router.get("/editarProducto/:id", products.editarProducto);
 router.get("/:id", products.productDetail);
+router.get("/:misCompras", products.misCompras) 
+ 
 
 
 router.put("/:id", products.modify);
 router.delete("/", products.delete);
+
+
 
 
 module.exports = router;
