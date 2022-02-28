@@ -8,6 +8,7 @@
     "fees": 12,
     "id": 1,
     "name": "Experiencia Gourmet",
+    "category": "Gastronomía",
     "description": "Este Enjoy ofrece la posibilidad de disfrutar de una experiencia gastronómica única en los mejores restaurantes de Argentina.",
     "price": "5740",
     "location": "Belgrano - Mariscal Antonio José de Sucre 676",
@@ -26,7 +27,7 @@
     "price": 3800,
     "fees": 12,
     "id": 4,
-    "starsAvg": 4.0
+    "starsAvg": 4
   },
   {
     "category": "Gastronomía",
@@ -235,6 +236,6 @@
     "price": 28000,
     "fees": 12,
     "id": 19,
-    "starsAvg": 4.0
+    "starsAvg": 4
   }
 ]
