@@ -14,7 +14,7 @@ router.get("/cart", products.cart);
 router.get("/crearComentario", products.crearComentario);
 router.get("/editarProducto/:id", products.editarProducto);
 router.get("/:id", products.productDetail);
-router.get("/compras/:misCompras", products.misCompras);
+router.get("/compras/:id", products.compras);
  
 
 

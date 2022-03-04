@@ -53,9 +53,9 @@ module.exports = {
         return res.redirect("/products/"+updated.id)
         
     },
-    misCompras: (req, res) => res.render("/products/misCompras", {  
-        style: [],
-        products: model.search("id", req.params.misCompras)
+     compras: (req, res) => res.render("/products/compras", {  
+         style: ["products/compras"],
+         products: model.search("id", req.params.compras)
         
     }),
     
