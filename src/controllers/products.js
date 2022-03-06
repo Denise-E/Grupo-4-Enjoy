@@ -53,8 +53,8 @@ module.exports = {
         return res.redirect("/products/"+updated.id)
         
     },
-     compras: (req, res) => res.render("/products/compras", {  
-        products: ("/products", req.params.compras),
+     compras: (req, res) => res.render("products/compras", {  
+         products: model.all(),
         style: ["products/compras"],
         
     }),
