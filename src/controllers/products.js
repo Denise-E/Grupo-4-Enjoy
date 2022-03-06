@@ -54,10 +54,9 @@ module.exports = {
         
     },
      compras: (req, res) => res.render("/products/compras", {  
-         style: ["products/compras"],
-         products: model.search("id", req.params.compras)
+        products: ("/products", req.params.compras),
+        style: ["products/compras"],
         
     }),
-    
     
 }
