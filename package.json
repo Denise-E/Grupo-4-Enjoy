@@ -5,8 +5,10 @@
   "main": "src/app.js",
   "scripts": {
     "init": "sequelize init",
-    "test": "nodemon src/app.js -e mjs,ejs,js,css"
-  },
+    "test": "nodemon src/app.js -e mjs,ejs,js,css",
+    "db:create":"sequelize db:create",
+    "md:create": "sequelize model:create --name File --attributes type:string,url:string" 
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Denise-E/Grupo-4-Enjoy.git"
