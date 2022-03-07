@@ -1,0 +1,81 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ 
+ 
+ 
+img {
+    max-width: 80%;
+}
+ 
+.cuadrado{
+    display: inline-block;
+    border: 1px solid #b47cde;
+    border-radius: 50px;
+    background-color: #d9bbf9;
+   margin: 1rem 1rem;
+   max-width: 80%;
+}
+ 
+ 
+ 
+.page-title{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+ 
+@media screen and (min-width: 361px) {  
+ 
+.products{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 100px;
+ 
+}
+img {
+    margin: 2rem 0.5rem;
+   
+    width: 98%;
+    }
+.name {
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
+ .cuadrado{
+     text-align: center;
+ 
+    border-radius: 25px;
+ }
+ 
+ 
+}
+ 
+@media screen and (min-width: 769px){
+   article{
+       text-align: center;
+   }
+ 
+   .cuadrado{
+      width: 95%;
+      box-sizing: border-box;
+     
+   }
+ 
+    img{
+        width: 100%;
+        border-radius: 15px;
+       
+    }
+ 
+}
