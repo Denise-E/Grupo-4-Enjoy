@@ -3,79 +3,110 @@
     margin: 0;
     box-sizing: border-box;
 }
- 
 body{
     font-family: 'Montserrat', sans-serif;
 }
- 
- 
- 
-img {
-    max-width: 80%;
+img{
+    width: 30%;
+    height: 40%;
+    margin: 10px;
 }
- 
 .cuadrado{
-    display: inline-block;
-    border: 1px solid #b47cde;
-    border-radius: 50px;
+     margin-top: 20px; /*para separa cada uno */
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #d9bbf9;
-   margin: 1rem 1rem;
-   max-width: 80%;
+    border: 2px solid #b47cde;
+
 }
- 
- 
- 
-.page-title{
+.divUno{
+    display: flex;
+}
+.mainOne{
     width: 100%;
     justify-content: center;
     text-align: center;
     padding: 1rem;
 }
- 
-@media screen and (min-width: 361px) {  
- 
-.products{
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-    margin: 100px;
- 
+
+.boton{
+   border: 3px solid  #b47cde;
+   font-family: 'Montserrat', sans-serif;
+   background-color: #d9bbf9;
 }
-img {
-    margin: 2rem 0.5rem;
-   
-    width: 98%;
-    }
-.name {
-    color: black;
-    justify-content: center;
-    text-align: center;
-}
- .cuadrado{
-     text-align: center;
- 
-    border-radius: 25px;
- }
- 
- 
-}
- 
-@media screen and (min-width: 769px){
-   article{
-       text-align: center;
-   }
- 
-   .cuadrado{
-      width: 95%;
-      box-sizing: border-box;
-     
-   }
- 
+
+@media screen and (min-width: 361px) { 
     img{
-        width: 100%;
-        border-radius: 15px;
+        font-size: 15px;
+        width: 200px;
+        height: 400px;
+        object-fit: cover;
+        width: 60%;
+        height: 40%;
+        margin: 10px;
+        
        
     }
- 
+    .cuadrado{
+        margin-top: 20px;
+    }
+    .datos{
+        width: 10rem;
+        text-align: center;
+        justify-content: center;
+        margin-top: 190px;
+        
+    }
+    .boton{
+        margin: 25px;
+        background-color: #d9bbf9;
+        margin-right: 20px;
+        color: black;
+    }
 }
+
+@media screen and (min-width: 769px) {
+    .titulo{
+        text-align: center;
+    }
+    .datos{
+        width: 250px;
+        justify-content: center;
+        margin-left: 55px;
+        margin-top: 350px;
+        justify-content: center;
+    }
+    img{
+        width: 50%;
+        height: 50%;
+    }
+    .boton{
+        margin-left: 300px;
+    }
+    .cuadrado{
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
