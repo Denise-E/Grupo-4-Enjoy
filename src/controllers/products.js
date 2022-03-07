@@ -11,7 +11,9 @@ module.exports = {
         //return res.send (products);
         res.render("products/index",{
         
-        products, style: "products/index"
+        products, style: "products/index",
+        include: [{association:"category"
+        }]
     }) }, 
     productDetail: (req,res) => {
         let result = model.search("id", req.params.id);

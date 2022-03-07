@@ -26,5 +26,13 @@ module.exports= (Sequelize,Datatypes) => {
   
    
   const File = Sequelize.define(alias,cols,config)
+
+  File.associate=function(models){
+    File.belongsTo(models.Producto, {
+        as:"producto",
+        foreignKey:"idFiles"
+    }
+      )
+  }
   return File
   }

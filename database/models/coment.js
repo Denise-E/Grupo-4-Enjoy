@@ -30,5 +30,21 @@ module.exports= (Sequelize,Datatypes) => {
   
    
   const coment = Sequelize.define(alias,cols,config)
+
+  coment.associate=function(models){
+    coment.BelongsTo(models.User, {
+        as:"User",
+        foreignKey:"idUsers"
+    }
+      )
+  }
+
+  coment.associate=function(models){
+    coment.BelongsTo(models.Producto, {
+        as:"Producto",
+        foreignKey:"idProducts"
+    }
+      )
+  } 
   return coment
   }

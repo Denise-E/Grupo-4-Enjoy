@@ -17,6 +17,7 @@ module.exports= (Sequelize,Datatypes) => {
   email:{
       notNull:false,
       type: Datatypes.STRING,
+      unique:true,
   },
   password:{
       notNull:false,
@@ -37,5 +38,24 @@ module.exports= (Sequelize,Datatypes) => {
   
    
   const User = Sequelize.define(alias,cols,config)
+
+  
+  User.associate=function(models){
+    User.belongsTo(models.Producto, {
+        as:"producto",
+        foreignKey:"idFiles"
+    }
+      )
+  }
+
+  
+  User.associate=function(models){
+    User.hasMany(models.coment, {
+        as:"coment",
+        foreignKey:"idUsers"
+    }
+      )
+  }
+
   return User
   }

@@ -1,5 +1,5 @@
 module.exports= (Sequelize,Datatypes) => {
-  const alias = "Producto" //sirve para consultar o pedir datos sobre una tabla.
+  const alias = "Producto" 
   const cols = {
   id:{
       primaryKey:true,
@@ -56,6 +56,37 @@ module.exports= (Sequelize,Datatypes) => {
   
    
   const Producto = Sequelize.define(alias,cols,config)
+  Producto.associate=function(models){
+    Producto.hasMany(models.category, {
+        as:"category",
+        foreignKey:"idCategories"
+    }
+      )
+}
+
+Producto.associate=function(models){
+  Producto.hasMany(models.File, {
+      as:"file",
+      foreignKey:"idFiles"
+  }
+    )
+}
+
+Producto.associate=function(models){
+    Producto.belongsTo(models.File, {
+        as:"File",
+        foreignKey:"idFiles"
+    }
+      )
+  }
+
+  Producto.associate=function(models){
+    Producto.hasMany(models.coment, {
+        as:"coment",
+        foreignKey:"idProducts"
+    }
+      )
+  }
+
   return Producto
   }
-  
