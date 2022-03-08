@@ -8,7 +8,7 @@ module.exports= (Sequelize,Datatypes) => {
   },
   category:{
       notNull:false,
-      type: Datatypes.VARCHAR,
+      type: Datatypes.STRING,
   },
 
   

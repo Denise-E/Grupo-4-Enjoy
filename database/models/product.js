@@ -62,31 +62,19 @@ module.exports= (Sequelize,Datatypes) => {
         foreignKey:"idCategories"
     }
       )
-}
-
-Producto.associate=function(models){
-  Producto.hasMany(models.File, {
-      as:"file",
-      foreignKey:"idFiles"
-  }
-    )
-}
-
-Producto.associate=function(models){
     Producto.belongsTo(models.File, {
         as:"File",
         foreignKey:"idFiles"
     }
       )
-  }
-
-  Producto.associate=function(models){
-    Producto.hasMany(models.coment, {
+      Producto.hasMany(models.Coment, {
         as:"coment",
         foreignKey:"idProducts"
     }
       )
-  }
+}
+
+
 
   return Producto
   }
