@@ -2,7 +2,7 @@ const products = require("../data/products");
 const coments = require("../data/coments");
 const model = require("../models/products");
 const fileModel = require("../models/file");
-//const db = require('../../database/models');
+
 
 
 

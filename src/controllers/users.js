@@ -77,7 +77,14 @@ module.exports = {
             })
         }*/
 
-        let userRegistred = model.create(req.body)
+        // let userRegistred = model.create(req.body) Se cambia por la base de datos
+        db.User.create({
+            name: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.email,
+            password: req.body.password,
+            image: req.body.image
+        })
 
         return res.redirect("/users/login")
 
