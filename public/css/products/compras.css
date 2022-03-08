@@ -6,12 +6,37 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+main{
+    display: flex;
+    padding: 3px;
+    overflow-x: scroll;
+    
+}
+.titulo{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #371452;
+}
+.datos{
+    
+    white-space: nowrap;
+    font-size: 30px;
+    animation: mymove 5s infinite;
+    width: 50%;
+}
+
 img{
-    width: 30%;
+  
     height: 40%;
     margin: 10px;
+    background-clip: content-box;
+    background-size: 300px 100px;
+}
+div img{
+    width: 12rem;
 }
 .cuadrado{
+    border-radius: 15px;
      margin-top: 20px; /*para separa cada uno */
     margin-left: 50px;
     margin-right: 50px;
@@ -25,13 +50,14 @@ img{
     display: flex;
 }
 .mainOne{
-    width: 100%;
+    width: 80%;
     justify-content: center;
     text-align: center;
     padding: 1rem;
 }
 
 .boton{
+    color: #000000;
    border: 3px solid  #b47cde;
    font-family: 'Montserrat', sans-serif;
    background-color: #d9bbf9;
@@ -68,9 +94,7 @@ img{
 }
 
 @media screen and (min-width: 769px) {
-    .titulo{
-        text-align: center;
-    }
+    
     .datos{
         width: 250px;
         justify-content: center;
