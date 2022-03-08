@@ -1,14 +1,14 @@
 const validator = require('express-validator');
 const bcrypt = require('bcrypt');
 const model = require("../models/user");
-
+//const db = require('../../database/models');
 
 module.exports = {
     /*index: (req,res) =>  res.render('users/list',{
         styles:['users/list'],
         title: 'Usuarios',
         users: model.all()
-    }), */
+    }), */ 
     
     login: (req,res) => res.render("users/login",{
         

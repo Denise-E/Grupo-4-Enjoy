@@ -41,7 +41,7 @@ module.exports= (Sequelize,Datatypes) => {
 
   
   User.associate=function(models){
-    User.belongsTo(models.Producto, {
+    User.belongsTo(models.Product, {
         as:"producto",
         foreignKey:"idFiles"
     }
@@ -50,7 +50,7 @@ module.exports= (Sequelize,Datatypes) => {
 
   
   User.associate=function(models){
-    User.hasMany(models.coment, {
+    User.hasMany(models.Coment, {
         as:"coment",
         foreignKey:"idUsers"
     }

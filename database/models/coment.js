@@ -1,5 +1,5 @@
 module.exports= (Sequelize,Datatypes) => {
-  const alias = "coment" //sirve para consultar o pedir datos sobre una tabla.
+  const alias = "Coment" //sirve para consultar o pedir datos sobre una tabla.
   const cols = {
   id:{
       primaryKey:true,
@@ -40,7 +40,7 @@ module.exports= (Sequelize,Datatypes) => {
   }
 
   coment.associate=function(models){
-    coment.BelongsTo(models.Producto, {
+    coment.BelongsTo(models.Product, {
         as:"Producto",
         foreignKey:"idProducts"
     }
