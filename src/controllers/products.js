@@ -2,7 +2,9 @@ const products = require("../data/products");
 const coments = require("../data/coments");
 const model = require("../models/products");
 const fileModel = require("../models/file");
-
+const db = require("../../database/models");
+const sequelize = require("sequelize");
+const op = sequelize.Op;
 
 
 
@@ -36,11 +38,17 @@ module.exports = {
         style: "crearComentario"
     }),
 
-   
     
+   
     delete: (req,res)=> {
-        model.delete(req.body.id)
-        return res.redirect("/products/")
+        db.Product.destroy({
+            where:{id: req.params.id}
+        })
+        .then(() => res.redirect("/products"))
+        .catch(err => res.send(err.original.sqlMessage))
+    //cambia por el de base de datos
+    //    model.delete(req.body.id)
+    //    return res.redirect("/products/")
     },
     editarProducto: (req,res) => 
     //res.send (model.search("id", req.params.id)),

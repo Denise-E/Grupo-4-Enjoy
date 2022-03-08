@@ -88,7 +88,7 @@ module.exports = {
 
         return res.redirect("/users/login")
 
-      
+        .catch(err => res.send(err.original.sqlMessage))
     },
  
     logout: (req,res) => {
@@ -105,8 +105,13 @@ module.exports = {
         user: model.search("id", req.params.id)
     }),
     delete: (req,res)=> {
-        model.delete(req.body.id)
-        return res.redirect("/users/list")
+        //model.delete(req.body.id)
+        //return res.redirect("/users/list")
+        db.User.destroy({
+            where:{id: req.params.id}
+        })
+        .then(() => res.redirect("/users/list"))
+        .catch(err => res.send(err.original.sqlMessage))
     },
     editarUsuario: (req,res) => 
     //res.send (model.search("id", req.params.id)),
