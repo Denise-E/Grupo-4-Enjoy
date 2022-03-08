@@ -57,3 +57,8 @@ ___
 ✔ La restrospectiva del 5to Sprint la realizamos igual que el Sprint 4
 ___
 En el cuarto sprint pudimos incorporar todas aquellas mejoras planteadas en retrospectivas anteriores, comunicandonos, trebajando de una mejor manera y cumpliendo en tiempo y forma incluso con los pendientes de sprint anteriores. 
+
+# Retro - Sprint 6to
+___
+✔ En el quinto sprint nos faltó mejor organización en cuanto a los tiempos establecidos para el sprint y mejor comunicación. Estos temas ya fueron charlados y este sexto sprint se inició con otra organización, adaptándonos a las nuevas condiciones externas. 
+
