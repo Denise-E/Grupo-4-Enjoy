@@ -59,8 +59,14 @@ module.exports = {
       style: "admin/editarProducto"
     }),
     modify: (req,res) => {
-        let updated = model.editarProducto (req.params.id,req.body)
-        return res.redirect("/products/"+updated.id)
+        //let updated = model.editarProducto (req.params.id,req.body)
+        //return res.redirect("/products/"+updated.id)
+        db.Product.update({
+            ...req.body,
+        }, {where: {id: req.params.id}})
+   
+        .then(() => res.redirect("/products/"))
+        .catch(err => res.send(err.original.sqlMessage))
         
     },
      compras: (req, res) => res.render("products/compras", {  

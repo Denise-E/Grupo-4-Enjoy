@@ -122,8 +122,14 @@ module.exports = {
       style: ["users/editarUsuario"]
     }),
     modify: (req,res) => {
-        let updated = model.editarUsuario (req.params.id,req.body)
-        return res.redirect("/users/"+updated.id)
+        //let updated = model.editarUsuario (req.params.id,req.body)
+        //return res.redirect("/users/"+updated.id)
         
+        db.User.update({
+            ...req.body,
+        }, {where: {id: req.params.id}})
+   
+        .then(() => res.redirect("/users/"))
+        .catch(err => res.send(err.original.sqlMessage))
     },
 }
