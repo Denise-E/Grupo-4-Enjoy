@@ -1,12 +1,16 @@
 const products = require("../data/products");
 const model = require("../models/products");
 const db = require("../../database/models");
+const sequelize = require("sequelize");
+const op = sequelize.Op;
 
 module.exports = {
     create: (req,res) => res.render("admin/crearProducto", {
         style: "admin/crearProducto", 
-        products: model.all(),
+        products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send("No se pude crear el producto")),
+
         title:"Productos",
+
     }),
 
     save: (req,res) => {

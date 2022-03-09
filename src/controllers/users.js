@@ -2,6 +2,8 @@ const validator = require('express-validator');
 const bcrypt = require('bcrypt');
 const model = require("../models/user");
 const db = require('../../database/models');
+const sequelize = require("sequelize");
+const op = sequelize.Op;
 
 module.exports = {
     /*index: (req,res) =>  res.render('users/list',{
@@ -28,33 +30,36 @@ module.exports = {
                 errors
             })
         }
-        let exist = model.search("email", req.body.email)
-        if (!exist) {
-           return res.render("users/login",{
-            style: "login",
-               errors:{
-                    email:{
-                        msg: "El email no existe",
-                    }
-                }
-            })
-        }
-        if (!bcrypt.compareSync(req.body.password, exist.password)) {
-            return res.render("users/login",{
-             style: "login",
-                errors:{
-                     password:{
-                         msg: "La contraseña es incorrecta",
+        db.User.findOne({where: {email:req.body.email}}).then(exist => {
+            if (!exist) {
+                return res.render("users/login",{
+                 style: "login",
+                    errors:{
+                         email:{
+                             msg: "El email no existe",
+                         }
                      }
-                 }
-             })
-         }
-        if(req.body.remember){
-            res.cookie("email",req.body.email,{maxAge:1000*60*60*24*30})
-        }
- 
-    req.session.user= exist
-    return res.redirect ("/")
+                 })
+             }
+             if (!bcrypt.compareSync(req.body.password, exist.password)) {
+                 return res.render("users/login",{
+                  style: "login",
+                     errors:{
+                          password:{
+                              msg: "La contraseña es incorrecta",
+                          }
+                      }
+                  })
+              }
+             if(req.body.remember){
+                 res.cookie("email",req.body.email,{maxAge:1000*60*60*24*30})
+             }
+      
+         req.session.user= exist
+         return res.redirect ("/")
+        } ).catch(err => res.send(err.original.sqlMessage))
+        //model.search("email", req.body.email)
+        
 },
     save: (req,res) => {
         let errors = validator.validationResult(req)
@@ -65,28 +70,18 @@ module.exports = {
                 errors: errors.mapped()
             })
         }
-        /** 
-        let exist = model.search("email", req.body)
-        if (exist) {
-            return res.render("users/register",{
-                errors:{
-                    email:{
-                        msg: "El email ya se encuentra registrado"
-                    }
-                }
-            })
-        }*/
+    
 
         // let userRegistred = model.create(req.body) Se cambia por la base de datos
         db.User.create({
-            name: req.body.firstName,
+            firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
-            password: req.body.password,
+            password: bcrypt.hashSync(req.body.password, 10),
             image: req.body.image
         })
 
-        return res.redirect("/users/login")
+        .then(() => res.redirect("/users/login"))
 
         .catch(err => res.send(err.original.sqlMessage))
     },
@@ -98,11 +93,11 @@ module.exports = {
     },
     list: (req,res) => res.render("users/list", { 
         style:["users/list"],
-        users: model.all()
+        users: db.User.findAll().then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage))
     }),
     show: (req,res) => res.render("users/show", { 
         style:["users/show"],
-        user: model.search("id", req.params.id)
+        user: db.User.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage))
     }),
     delete: (req,res)=> {
         //model.delete(req.body.id)
@@ -117,8 +112,8 @@ module.exports = {
     //res.send (model.search("id", req.params.id)),
 
     res.render("users/editarUsuario",{
-       users: model.all(),
-     user: model.search("id", req.params.id),
+       users: db.User.findAll().then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage)),
+     user: db.User.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage)),
       style: ["users/editarUsuario"]
     }),
     modify: (req,res) => {

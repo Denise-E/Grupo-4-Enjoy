@@ -1,5 +1,8 @@
 
 const productos = require("../data/products");
+const sequelize = require("sequelize");
+const db = require("../../database/models");
+const op = sequelize.Op;
 
 module.exports = {
     index: (req,res) => res.render("index",{

@@ -24,7 +24,7 @@ module.exports= (Sequelize,Datatypes) => {
       type: Datatypes.STRING,
   },
   idFiles :{
-      notNull:false,
+      
       type: Datatypes.INTEGER,
   },
   
