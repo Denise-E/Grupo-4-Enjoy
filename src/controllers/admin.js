@@ -31,7 +31,7 @@ module.exports = {
         })
 
         return res.redirect("/products/" )
-        .catch(err => res.send(err.original.sqlMessage))
+        .catch(err => res.send("Error"))
     },
   
 

@@ -11,7 +11,7 @@ module.exports ={
         style: "categories/index"
     }),
     categories:(req,res) => {
-        let result = db.Category.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage))
+        let result = db.Category.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send("Error"))
 
 
         return result ? res.render("categories/categories", {

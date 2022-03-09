@@ -57,7 +57,7 @@ module.exports = {
       
          req.session.user= exist
          return res.redirect ("/")
-        } ).catch(err => res.send(err.original.sqlMessage))
+        } ).catch(err => res.send("Error"))
         //model.search("email", req.body.email)
         
 },
@@ -83,7 +83,7 @@ module.exports = {
 
         .then(() => res.redirect("/users/login"))
 
-        .catch(err => res.send(err.original.sqlMessage))
+        .catch(err => res.send("Error"))
     },
  
     logout: (req,res) => {
@@ -93,11 +93,11 @@ module.exports = {
     },
     list: (req,res) => res.render("users/list", { 
         style:["users/list"],
-        users: db.User.findAll().then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage))
+        users: db.User.findAll().then(result => res.send(result)).catch(err => res.send("Error"))
     }),
     show: (req,res) => res.render("users/show", { 
         style:["users/show"],
-        user: db.User.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage))
+        user: db.User.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send("Error"))
     }),
     delete: (req,res)=> {
         //model.delete(req.body.id)
@@ -106,14 +106,14 @@ module.exports = {
             where:{id: req.params.id}
         })
         .then(() => res.redirect("/users/list"))
-        .catch(err => res.send(err.original.sqlMessage))
+        .catch(err => res.send("Error"))
     },
     editarUsuario: (req,res) => 
     //res.send (model.search("id", req.params.id)),
 
     res.render("users/editarUsuario",{
-       users: db.User.findAll().then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage)),
-     user: db.User.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage)),
+       users: db.User.findAll().then(result => res.send(result)).catch(err => res.send("Error")),
+     user: db.User.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send("Error")),
       style: ["users/editarUsuario"]
     }),
     modify: (req,res) => {
@@ -125,6 +125,6 @@ module.exports = {
         }, {where: {id: req.params.id}})
    
         .then(() => res.redirect("/users/"))
-        .catch(err => res.send(err.original.sqlMessage))
+        .catch(err => res.send("Error"))
     },
 }
