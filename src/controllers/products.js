@@ -10,7 +10,7 @@ const op = sequelize.Op;
 
 module.exports = {
     index:(req,res) =>{ 
-        let products= db.Product.findAll().then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage))
+        let products= db.Product.findAll().then(result => res.send(result)).catch(err => res.send('Error'))
         //return res.send (products);
         res.render("products/index",{
         
@@ -18,13 +18,12 @@ module.exports = {
         
     }) }, 
     productDetail: (req,res) => {
-        let result = db.Product.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage))
+        let result = db.Product.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send('Error'))
         return result ? res.render("products/productDetail", {
+            style: "products/productDetail",
             product: result,
             coments: coments,
             coment: coments.filter(coment => coment.experiencia === products.find(product => product.id == req.params.id).name),
-            style: "products/productDetail",
-            product: result,
         }) : res.send ("Producto no encontrado")
     },
     cart: (req,res) => res.render("products/cart",{
@@ -32,7 +31,7 @@ module.exports = {
         style: "cart"
     }),
     crearComentario: (req,res) => res.render("products/crearComentario",{
-        products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage)),
+        products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send('Error')),
         style: "crearComentario"
     }),
 
@@ -43,7 +42,7 @@ module.exports = {
             where:{id: req.params.id}
         })
         .then(() => res.redirect("/products"))
-        .catch(err => res.send(err.original.sqlMessage))
+        .catch(err => res.send('Error'))
     //cambia por el de base de datos
     //    model.delete(req.body.id)
     //    return res.redirect("/products/")
@@ -52,8 +51,8 @@ module.exports = {
     //res.send (model.search("id", req.params.id)),
 
     res.render("admin/editarProducto",{
-       products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage)),
-     product: db.Product.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage)),
+       products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send('Error')),
+     product: db.Product.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send('Error')),
       style: "admin/editarProducto"
     }),
     modify: (req,res) => {
