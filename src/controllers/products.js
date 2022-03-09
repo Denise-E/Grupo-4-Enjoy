@@ -23,7 +23,8 @@ module.exports = {
             style: "products/productDetail",
             product: result,
             coments: coments,
-            coment: coments.filter(coment => coment.experiencia === products.find(product => product.id == req.params.id).name),
+            coment: coments.filter(coment => coment.experiencia === products.find(product => product.id == req.params.id)/**.name */), 
+            // SAQUÉ EL .NAME PARA QUE NOS DEJE VER LA VISTA - IGUAL NO NOS TRAE TODOS LOS DATOS
         }) : res.send ("Producto no encontrado")
     },
     cart: (req,res) => res.render("products/cart",{
@@ -63,11 +64,11 @@ module.exports = {
         }, {where: {id: req.params.id}})
    
         .then(() => res.redirect("/products/"+req.params.id))
-        .catch(err => res.send(err.original.sqlMessage))
+        .catch(err => res.send("No se puede encontrar el producto"))
         
     },
      compras: (req, res) => res.render("products/compras", {  
-         products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send(err.original.sqlMessage)),
+         products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send("No se puede encontrar el producto")),
         style: ["products/compras"],
         
     }),
