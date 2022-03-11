@@ -28,7 +28,7 @@ module.exports= (Sequelize,Datatypes) => {
   const File = Sequelize.define(alias,cols,config)
 
   File.associate=function(models){
-    File.belongsTo(models.Product, {
+    File.hasMany(models.Product, {
         as:"producto",
         foreignKey:"idFiles"
     }

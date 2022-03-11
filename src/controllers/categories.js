@@ -11,15 +11,14 @@ module.exports ={
         style: "categories/index"
     }),
     categories:(req,res) => {
-        let result = db.Category.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send("Error"))
-
-
-        return result ? res.render("categories/categories", {
+       db.Category.findByPk(req.params.id, {include:[{as:"productos", model:db.Product, include:["File"]}]}).then(result => 
+        result ? res.render("categories/categories", {
             category: result,
-            products: products,
+            products: result.productos, //devuelve la asosiación
             style: "categories",
             //product:  productsModel.search,
-            product: result,
         }) : res.send ("Categoria no encontrada")
+        ).catch(err => res.send(err));
+
     },
 }

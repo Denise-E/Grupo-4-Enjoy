@@ -9,11 +9,11 @@
             <p class= "subtitulo"> Regalá un conjunto de experiencias, tu agasajado elige cuál vive</p>
             <ul class= "listadoProductos">
                 
-                <% products.filter(element => element.category == category.category).forEach(element => { %>
+                <% products.forEach(element => { %>
                     <li class= "imagenDescripcion">
                         <a href="/products/<%= element.id %>">
                         <picture class= "imagenProducto">
-                            <img src= "/uploads/<%= element.image %>" class="imagenProducto">
+                            <img src= "/uploads/<%= element.File.url %>" class="imagenProducto">
                         </picture>
                         <h2 class= "tituloImagen"> <%= element.name %> </h2>
                         
