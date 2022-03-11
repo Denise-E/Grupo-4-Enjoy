@@ -10,13 +10,13 @@ const op = sequelize.Op;
 
 module.exports = {
     index:(req,res) =>{ 
-        db.Product.findAll().then(result =>res.render("products/index",{
+        db.Product.findAll({include:["File"]}).then(result =>res.render("products/index",{
         products: result, 
         style: "products/index", }))
         .catch(err => res.send(err))
         }, 
     productDetail: (req,res) => {
-        db.Product.findByPk(req.params.id)
+        db.Product.findByPk(req.params.id, {include:["File"]})
         .then(result => (
             result ? res.render("products/productDetail", {
             style: "products/productDetail",
@@ -59,7 +59,7 @@ module.exports = {
         
     },
      compras: (req, res) =>{
-        db.Product.findAll().then(result => res.render("products/compras", {  
+        db.Product.findAll({include:["File"]}).then(result => res.render("products/compras", {  
             product: result,
             style: ["products/compras"],
         }))

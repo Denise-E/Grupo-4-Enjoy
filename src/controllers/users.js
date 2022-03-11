@@ -83,7 +83,7 @@ module.exports = {
         return res.redirect("/")
     },
     list: (req,res) => {
-        db.User.findAll().then(result =>res.render("users/list", { 
+        db.User.findAll({include:["File"]}).then(result =>res.render("users/list", { 
             users: result,
             style:["users/list"] })).catch(err => res.send("Error"))
     },
