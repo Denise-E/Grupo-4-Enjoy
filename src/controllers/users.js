@@ -6,12 +6,6 @@ const sequelize = require("sequelize");
 const op = sequelize.Op;
 
 module.exports = {
-    /*index: (req,res) =>  res.render('users/list',{
-        styles:['users/list'],
-        title: 'Usuarios',
-        users: model.all()
-    }), */ 
-    
     login: (req,res) => res.render("users/login",{
         
         style: "login"
@@ -57,8 +51,7 @@ module.exports = {
       
          req.session.user= exist
          return res.redirect ("/")
-        } ).catch(err => res.send("Error"))
-        //model.search("email", req.body.email)
+        } ).catch(err => res.send(err))
         
 },
     save: (req,res) => {
@@ -70,10 +63,8 @@ module.exports = {
                 errors: errors.mapped()
             })
         }
-    
 
-        // let userRegistred = model.create(req.body) Se cambia por la base de datos
-        db.User.create({ include:[{as:"File"}]},{
+        db.User.create({ include:[{as:"File"}]},{ 
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
@@ -83,7 +74,7 @@ module.exports = {
 
         .then(() => res.redirect("/users/login"))
 
-        .catch(err => res.send("Error"))
+        .catch(err => res.send(err))
     },
  
     logout: (req,res) => {
@@ -95,10 +86,12 @@ module.exports = {
         style:["users/list"],
         users: db.User.findAll().then(result => res.send(result)).catch(err => res.send("Error"))
     }),
-    show: (req,res) => res.render("users/show", { 
-        style:["users/show"],
-        user: db.User.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send("Error"))
-    }),
+    show: (req,res) => {
+        db.User.findByPk(req.params.id).then(result =>res.render("users/show", { 
+        user: result,
+        style:["users/show"]
+    })).catch(err => res.send(err))
+    },
     delete: (req,res)=> {
         //model.delete(req.body.id)
         //return res.redirect("/users/list")
@@ -106,25 +99,22 @@ module.exports = {
             where:{id: req.params.id}
         })
         .then(() => res.redirect("/users/list"))
-        .catch(err => res.send("Error"))
+        .catch(err => res.send(err))
     },
-    editarUsuario: (req,res) => 
-    //res.send (model.search("id", req.params.id)),
-
-    res.render("users/editarUsuario",{
-       users: db.User.findAll().then(result => res.send(result)).catch(err => res.send("Error")),
-     user: db.User.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send("Error")),
-      style: ["users/editarUsuario"]
-    }),
+    editarUsuario: (req,res) => {
+     db.User.findByPk(req.params.id).then(result => res.render("users/editarUsuario",{  
+         user: result,
+         style: ["users/editarUsuario"]
+    })).catch(err => res.send(err))
+    },
     modify: (req,res) => {
         //let updated = model.editarUsuario (req.params.id,req.body)
         //return res.redirect("/users/"+updated.id)
-        
         db.User.update({
             ...req.body,
         }, {where: {id: req.params.id}})
    
         .then(() => res.redirect("/users/"))
-        .catch(err => res.send("Error"))
+        .catch(err => res.send(err))
     },
 }

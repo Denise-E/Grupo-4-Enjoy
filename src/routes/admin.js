@@ -8,8 +8,8 @@ const upload = multer ({storage: multer.diskStorage({
     destination: (req, file, cb) => cb(null, path.resolve (__dirname, "../../uploads")),
     filename: (req, file, cb) => cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname)),
 })})
-
-router.get("/crearProducto",[auth], admin.create);
+//[auth]
+router.get("/crearProducto", admin.create);
 
 router.post("/guardar",[upload.any()], admin.save);
 router.post("/", admin.create);

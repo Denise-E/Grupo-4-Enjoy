@@ -7,10 +7,6 @@ const op = sequelize.Op;
 module.exports = {
     create: (req,res) => res.render("admin/crearProducto", {
         style: "admin/crearProducto", 
-        products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send("No se pude crear el producto")),
-
-        title:"Productos",
-
     }),
 
     save: (req,res) => {
@@ -29,11 +25,9 @@ module.exports = {
             description: req.body.description,
             category: req.body.category,
         })
-
-        return res.redirect("/products/" )
-        .catch(err => res.send("Error"))
-    },
-  
+        .then(() => res.redirect("/products/" ))
+        .catch(err => res.send(err))
+    }
 
 }
 

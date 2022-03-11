@@ -10,22 +10,21 @@ const op = sequelize.Op;
 
 module.exports = {
     index:(req,res) =>{ 
-        let products= db.Product.findAll().then(result => res.send(result)).catch(err => res.send('Error'))
-        //return res.send (products);
-        res.render("products/index",{
-        
-        products, style: "products/index",
-        
-    }) }, 
+        db.Product.findAll().then(result =>res.render("products/index",{
+        products: result, 
+        style: "products/index", }))
+        .catch(err => res.send(err))
+        }, 
     productDetail: (req,res) => {
-        let result = db.Product.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send('Error'))
-        return result ? res.render("products/productDetail", {
+        db.Product.findByPk(req.params.id)
+        .then(result => (
+            result ? res.render("products/productDetail", {
             style: "products/productDetail",
             product: result,
             coments: coments,
-            coment: coments.filter(coment => coment.experiencia === products.find(product => product.id == req.params.id)/**.name */), 
-            // SAQUÉ EL .NAME PARA QUE NOS DEJE VER LA VISTA - IGUAL NO NOS TRAE TODOS LOS DATOS
-        }) : res.send ("Producto no encontrado")
+            coment: coments.filter(coment => coment.experiencia === products.find(product => product.id == req.params.id))})
+        : res.send ("Producto no encontrado")))
+        .catch(err => res.send(err))
     },
     cart: (req,res) => res.render("products/cart",{
      
@@ -35,7 +34,7 @@ module.exports = {
     db.Product.findAll().then(result => res.render("admin/products/crearComentario",{
         products: result,
         style: "crearComentario"
-    })).catch(err => res.send('Error')),
+    })).catch(err => res.send(err)),
 
    
     delete: (req,res)=> {
@@ -43,34 +42,28 @@ module.exports = {
             where:{id: req.params.id}
         })
         .then(() => res.redirect("/products"))
-        .catch(err => res.send('Error'))
-    //cambia por el de base de datos
-    //    model.delete(req.body.id)
-    //    return res.redirect("/products/")
+        .catch(err => res.send(err))
     },
-    editarProducto: (req,res) => 
-    //res.send (model.search("id", req.params.id)),
-
-    res.render("admin/editarProducto",{
-       products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send('Error')),
-     product: db.Product.findByPk(req.params.id).then(result => res.send(result)).catch(err => res.send('Error')),
-      style: "admin/editarProducto"
-    }),
+    editarProducto: (req,res) =>{
+     db.Product.findByPk(req.params.id).then(result => res.render("admin/editarProducto",{  
+         product: result,
+         style: "admin/editarProducto"
+    })).catch(err => res.send(err))
+ },
     modify: (req,res) => {
-        //let updated = model.editarProducto (req.params.id,req.body)
-        //return res.redirect("/products/"+updated.id)
         db.Product.update({
             ...req.body,
         }, {where: {id: req.params.id}})
-   
         .then(() => res.redirect("/products/"+req.params.id))
-        .catch(err => res.send("No se puede encontrar el producto"))
+        .catch(err => res.send(err))
         
     },
-     compras: (req, res) => res.render("products/compras", {  
-         products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send("No se puede encontrar el producto")),
-        style: ["products/compras"],
-        
-    }),
+     compras: (req, res) =>{
+        db.Product.findAll().then(result => res.render("products/compras", {  
+            products: result,
+            style: ["products/compras"],
+        }))
+        .catch(err => res.send(err))
+    }
     
 }
