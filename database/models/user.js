@@ -50,6 +50,10 @@ module.exports= (Sequelize,Datatypes) => {
         as:"coment",
         foreignKey:"idUsers"
     })
+    User.belongsTo(models.File, {
+        as:"File",
+        foreignKey:"idFiles"
+    })
   }
 
 

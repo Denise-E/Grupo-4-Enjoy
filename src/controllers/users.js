@@ -73,7 +73,7 @@ module.exports = {
     
 
         // let userRegistred = model.create(req.body) Se cambia por la base de datos
-        db.User.create({
+        db.User.create({ include:[{as:"File"}]},{
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
