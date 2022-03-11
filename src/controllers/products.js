@@ -60,7 +60,7 @@ module.exports = {
     },
      compras: (req, res) =>{
         db.Product.findAll().then(result => res.render("products/compras", {  
-            products: result,
+            product: result,
             style: ["products/compras"],
         }))
         .catch(err => res.send(err))

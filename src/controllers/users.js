@@ -82,10 +82,11 @@ module.exports = {
         res.cookie("email",null,{maxAge:-1})
         return res.redirect("/")
     },
-    list: (req,res) => res.render("users/list", { 
-        style:["users/list"],
-        users: db.User.findAll().then(result => res.send(result)).catch(err => res.send("Error"))
-    }),
+    list: (req,res) => {
+        db.User.findAll().then(result =>res.render("users/list", { 
+            users: result,
+            style:["users/list"] })).catch(err => res.send("Error"))
+    },
     show: (req,res) => {
         db.User.findByPk(req.params.id).then(result =>res.render("users/show", { 
         user: result,
