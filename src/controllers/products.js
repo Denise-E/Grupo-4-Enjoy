@@ -31,12 +31,12 @@ module.exports = {
      
         style: "cart"
     }),
-    crearComentario: (req,res) => res.render("products/crearComentario",{
-        products: db.Product.findAll().then(result => res.send(result)).catch(err => res.send('Error')),
+    crearComentario: (req,res) => 
+    db.Product.findAll().then(result => res.render("admin/products/crearComentario",{
+        products: result,
         style: "crearComentario"
-    }),
+    })).catch(err => res.send('Error')),
 
-    
    
     delete: (req,res)=> {
         db.Product.destroy({

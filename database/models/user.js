@@ -41,21 +41,17 @@ module.exports= (Sequelize,Datatypes) => {
 
   
   User.associate=function(models){
+      /** 
     User.belongsTo(models.Product, {
         as:"producto",
         foreignKey:"idFiles"
-    }
-      )
-  }
-
-  
-  User.associate=function(models){
+    }) */
     User.hasMany(models.Coment, {
         as:"coment",
         foreignKey:"idUsers"
-    }
-      )
+    })
   }
+
 
   return User
   }
