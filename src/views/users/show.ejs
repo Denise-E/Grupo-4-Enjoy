@@ -8,18 +8,18 @@
     <article>
         <div class="div">
         <h2 class="nombres"><%= user.firstName %> <%= user.lastName %> </h2>
-        <p class="email"><%= user.email %> </p>
-        <img src= "/uploads/<%=user.image %>">
+        <p class="email" id="paragrah"><%= user.email %> </p>
+        <img src= "/uploads/<%=user.image%>"> 
         
       <% if (user.isAdmin == true) { %>
-       <p>este usuario es administrador</p>
+       <p id="paragrah">este usuario es administrador</p>
       <% } %>  
 
       <% if (user.isActive == true) { %>
-        <p class="actividad"> este usuario esta activo </p>
+        <p class="actividad" id="paragrah"> este usuario esta activo </p>
        <% } %> 
     
-    <p class="datos">Actualizá tus datos:</p>
+    <p class="datos" id="paragrah">Actualizá tus datos:</p>
     <a href="/users/editarusuario/<%= user.id %>"><i class="fas fa-pen"></i></a>
     </div>
    </article>

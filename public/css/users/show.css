@@ -50,16 +50,17 @@ div img{
 }
 
 
-p{
+#paragrah{
     font-weight: bold;
     max-width: 85%;
     margin: auto;
-    }
- .fas fa-pen{
+}
+
+ .fa-pen{
     font-size: 1.5rem;
     color: #5A2083;
-    margin: 2px;
- }   
+    margin: 2px;    transition: color 150ms;
+}
 
   @media screen and (min-width: 361px) { /* movil */
    

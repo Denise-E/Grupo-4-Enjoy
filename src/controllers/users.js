@@ -88,7 +88,7 @@ module.exports = {
             style:["users/list"] })).catch(err => res.send("Error"))
     },
     show: (req,res) => {
-        db.User.findByPk(req.params.id).then(result =>res.render("users/show", { 
+        db.User.findByPk(req.params.id, {include:["File"]}).then(result =>res.render("users/show", { 
         user: result,
         style:["users/show"]
     })).catch(err => res.send(err))
