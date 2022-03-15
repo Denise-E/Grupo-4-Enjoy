@@ -23,10 +23,19 @@ module.exports= (Sequelize,Datatypes) => {
       notNull:false,
       type: Datatypes.STRING,
   },
+  isAdmin:{
+    notNull:false,
+    type: Datatypes.INTEGER,
+  },
+  isActive:{
+    notNull:false,
+    type: Datatypes.INTEGER,
+  },
   idFiles :{
       
       type: Datatypes.INTEGER,
   },
+
   
   }
   

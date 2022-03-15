@@ -10,7 +10,7 @@ const upload = multer ({storage: multer.diskStorage({
 })})
 
 //[auth]
-router.get("/crearProducto", admin.create);
+router.get("/crearProducto",[auth], admin.create);
 
 router.post("/guardar",[upload.any()], admin.save);
 router.post("/", admin.create);
