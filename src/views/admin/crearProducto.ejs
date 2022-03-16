@@ -8,7 +8,7 @@
     <main>
 
     <section class="agregarProd">
-        <form action="/admins/guardar" enctype="multipart/form-data" method="post">  
+        <form action="/admins/guardar" enctype="multipart/form-data" method="post" id="editProductForm">  
 
             <fieldset class="form">
             <div class="nuevoProducto">
@@ -16,6 +16,7 @@
  
                 <label for=""> Nombre: </label>
                 <input type="text" placeholder="" name="name" id="name" >
+                <p class="nameFeed"></p>
                 <% if (locals.errors && errors.name) { %>
                         <p><%= errors.name.msg %> </p>
                 <% } %>
@@ -23,7 +24,8 @@
 
                 <label for="">Descripción:</label>
                 <input type="text" placeholder="" name="description" id="description" >
-                 <% if (locals.errors && errors.description) { %>
+                <p class="descriptionFeed"></p> 
+                <% if (locals.errors && errors.description) { %>
                   <p><%= errors.description.msg %> </p>
                 <% } %>
                 <br>
@@ -81,12 +83,12 @@
                       <option>Estadias</option>
 
                     </select>
-              <button type="submit"> Agregar Producto</button>   
+              <button type="submit" id="createProductButton"> Agregar Producto</button>   
        </div>
        </fieldset>
       </form>
   </section>         
-   <script src="../../../public/js/productsValidatation.js"></script>
+   <script src="/js/productsValidation.js"></script>
 </main>
 <%- include('../partials/footer') %> 
 </body>
