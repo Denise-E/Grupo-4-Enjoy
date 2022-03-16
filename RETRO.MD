@@ -62,3 +62,8 @@ En el cuarto sprint pudimos incorporar todas aquellas mejoras planteadas en retr
 ___
 ✔ En el quinto sprint nos faltó mejor organización en cuanto a los tiempos establecidos para el sprint y mejor comunicación. Estos temas ya fueron charlados y este sexto sprint se inició con otra organización, adaptándonos a las nuevas condiciones externas. 
 
+# Retro - Sprint 7mo
+___
+✔Los integrantes del grupo no hicieron su trabajo en el plazo indicado, lo cual llevó a retrasar todo el trabajo del grupo y no pudimos terminar a tiempo.
+
+Hubo buena predisposición del equipo para ayudarse entre sí, pero faltó comunicación con conciencia de que otros compañeros dependían de una parte finalizada para poder comenzar y finalizar todo el sprint a tiempo.
