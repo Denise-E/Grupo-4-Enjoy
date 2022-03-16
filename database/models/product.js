@@ -46,6 +46,14 @@ module.exports= (Sequelize,Datatypes) => {
       notNull:false,
       type: Datatypes.INTEGER,
   },
+  idCategories:{
+    notNull:false,
+    type: Datatypes.INTEGER,
+},
+idFiles:{
+    notNull:false,
+    type: Datatypes.INTEGER,
+},
       }
   
    const config = {

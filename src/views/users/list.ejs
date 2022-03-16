@@ -21,10 +21,16 @@
         <% if (element.isActive == true) { %>
             <p class="actividad">este usuario esta activo</p>
            <% } %>
-      
+           <% if (element.File != null) { %>
            <picture class= "imagenUsuario"></picture>
                <img src= "/uploads/<%=element.File.url %>">
            </picture>
+           <% } else { %> 
+            <picture class= "imagenUsuario"></picture>
+            <img src= "/uploads/default.png">
+        </picture>
+        <% } %>
+
 
         <form action="/users/delete/?m=DELETE" method="post">
             <input type="hidden" name="id" value="<%= element.id %>">

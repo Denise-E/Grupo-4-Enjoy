@@ -83,9 +83,11 @@ module.exports = {
         return res.redirect("/")
     },
     list: (req,res) => {
-        db.User.findAll({include:["File"]}).then(result =>res.render("users/list", { 
-            user: result,
-            style:["users/list"] })).catch(err => res.send(err))
+        db.User.findAll({include:["File"]}).then(result => //res.send (result)
+            res.render("users/list", { 
+            users: result,
+            style:["users/list"] })
+            ).catch(err => res.send(err))
     },
     show: (req,res) => {
         db.User.findByPk(req.params.id, {include:["File"]}).then(result =>res.render("users/show", { 
