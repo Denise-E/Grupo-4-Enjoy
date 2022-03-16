@@ -54,15 +54,20 @@ module.exports = {
  },
     modify: (req,res) => {
         let errors = validator.validationResult(req).mapped();
+        
+        let product = db.Product.findByPk(req.params.id)
+        Promise.all([product]).then((product) => {
         if (errors){
             return res.render("admin/editarProducto",{errors,
+                product: product,
                 style: "admin/editarProducto"})
         }
         db.Product.update({
             ...req.body,
-        }, {where: {id: req.params.id}})
+        }, {where: {id: req.params.id}}) 
         .then(() => res.redirect("/products/"+req.params.id))
         .catch(err => res.send(err))
+    }).catch(err => res.send(err))
         
     },
      compras: (req, res) =>{
