@@ -8,7 +8,7 @@
     <main>
 
     <section class="agregarProd">
-        <form action="/admins/guardar" enctype="multipart/form-data" method="post" id="editProductForm">  
+        <form action="/admins/guardar" enctype="multipart/form-data" method="post" id="createProductForm">  
 
             <fieldset class="form">
             <div class="nuevoProducto">
@@ -68,6 +68,7 @@
                 
                 <label for="">Imagen:</label>
                 <input type="file"  name="file" id="file" multiple>
+                <p class="fileFeed"></p>
                 <% if (locals.errors && errors.file) { %>
                   <p><%= errors.file.msg %> </p>
                 <% } %>
@@ -88,7 +89,7 @@
        </fieldset>
       </form>
   </section>         
-   <script src="/js/productsValidation.js"></script>
+   <script src="/js/productsCreate.js"></script>
 </main>
 <%- include('../partials/footer') %> 
 </body>

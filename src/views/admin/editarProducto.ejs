@@ -7,7 +7,7 @@
 
     <main>
     <section class="modificarProd">
-        <form action="/products/<%= product.id %>?m=PUT" method="post">            
+        <form action="/products/<%= product.id %>?m=PUT" method="post" id="editProductForm">            
             <fieldset class="form">
                 <div class="editarProducto">
                 <h2 class="tituloPrincipal">Editar producto</h2>
@@ -15,54 +15,75 @@
                 <h3>Nombre: </h3>
                 <p><%= product.name %> </p>
                 <label for=""></label>
-                <input type="text" placeholder="Escribí acá el nuevo nombre" name="name" id="nombre" value:" <%= product.name %> " >
-                <span class="feedback"></span>
+                <input type="text" placeholder="Escribí acá el nuevo nombre" name="name" id="name" value:" <%= product.name %> " >
+                <p class="nameFeed"></p>
+                <% if (locals.errors && errors.name) { %>
+                  <p><%= errors.name.msg %> </p>
+                <% } %>
+                <br>
 
                 <h3>Descripcion: </h3>
                 <p><%= product.description %> </p>
                 <label for=""></label>
-                <input type="text" placeholder="Escribí acá la nueva decripción" name="description" id=""  value:" <%= product.description %> ">
-                <span class="feedback"></span>
+                <input type="text" placeholder="Escribí acá la nueva decripción" name="description" id="description"  value:" <%= product.description %> ">
+                <p class="descriptionFeed"></p>
+                <% if (locals.errors && errors.description) { %>
+                  <p><%= errors.description.msg %> </p>
+                <% } %>
+                <br>
 
                 <h3>Precio: </h3>
                   <p>$ <%= product.price %> </p>
                  <label for=""></label> 
                  <input type="number" placeholder="Escribí acá el nuevo precio" name="price" id=""  value:" <%= product.price %> ">
-                 <span class="feedback"></span>
-                 <label for=""></label> 
+                 <% if (locals.errors && errors.price) { %>
+                  <p><%= errors.price.msg %> </p>
+                <% } %> 
+                <br>
 
                  <h3>Resumen del producto:</h3>
                  <p> <%= product.resume %> </p>
                  <label for=""></label> 
                  <input type="text" placeholder="Escribí acá el resumen de tu producto" name="resume" id="resume"  value:" <%= product.resume %> ">
-                 <span class="feedback"></span>
-                 <label for=""></label> 
+                 <% if (locals.errors && errors.resume) { %>
+                  <p><%= errors.resume.msg %> </p>
+                <% } %>
+                <br>
 
                  <h3>Título: </h3>
                  <p><%= product.title %> </p>
                  <label for=""></label> 
                  <input type="text" placeholder="Escribí acá el título de tu producto" name="title" id="title"  value:" <%= product.title %> ">
-                 <span class="feedback"></span>
-                 <label for=""></label> 
+                 <% if (locals.errors && errors.title) { %>
+                  <p><%= errors.title.msg %> </p>
+                <% } %>
+                <br>
 
                  <h3>Ubicación: </h3>
                  <p><%= product.location %> </p>
                  <label for=""></label> 
                  <input type="text" placeholder="Escribí acá la ubicación de tu experiencia" name="location" id="location" value:" <%= product.location %> ">
-                 <span class="feedback"></span>
-                 <label for=""></label> 
+                 <% if (locals.errors && errors.location) { %>
+                  <p><%= errors.location.msg %> </p>
+                <% } %>
+                <br>
 
                  <h3>Cantidad de personas:</h3>
                  <p> <%= product.persons %> </p>
                  <label for=""></label> 
                  <input type="number" placeholder="Escribí acá la cantidad de personas máximas a participar" name="persons" id="persons"  value:" <%= product.persons %> ">
-                 <span class="feedback"></span>
-                 <label for=""></label> 
+                 <% if (locals.errors && errors.persons) { %>
+                  <p><%= errors.persons.msg %> </p>
+                <% } %>
+                <br>
 
                  <label for="">Imagen:</label>
                  <input type="file"  name="image" id="file" multiple>
-                 <span class="feedback"></span>
-                 <label for=""></label>
+                 <p class="fileFeed"></p>
+                 <% if (locals.errors && errors.file) { %>
+                  <p><%= errors.file.msg %> </p>
+                <% } %>
+                <br>
 
                
                 <p>Categoria: <%= product.category %> </p>
@@ -77,32 +98,8 @@
     
   </fieldset>
         </form>
-        <% if (locals.errors && errors.name) { %>
-            <p><%= errors.name.msg %> </p>
-          <% } %>
-          <% if (locals.errors && errors.description) { %>
-            <p><%= errors.description.msg %> </p>
-          <% } %>
-          <% if (locals.errors && errors.file) { %>
-            <p><%= errors.file.msg %> </p>
-          <% } %>
-          <% if (locals.errors && errors.resume) { %>
-            <p><%= errors.resume.msg %> </p>
-          <% } %>
-          <% if (locals.errors && errors.title) { %>
-            <p><%= errors.title.msg %> </p>
-          <% } %>
-          <% if (locals.errors && errors.location) { %>
-            <p><%= errors.location.msg %> </p>
-          <% } %>
-          <% if (locals.errors && errors.price) { %>
-            <p><%= errors.price.msg %> </p>
-          <% } %>
-          <% if (locals.errors && errors.persons) { %>
-            <p><%= errors.persons.msg %> </p>
-          <% } %>
   </section>         
-   
+  <script src="/js/productsEdit.js"></script>
 </main>
 <%- include('../partials/footer') %> 
 </body>

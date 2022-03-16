@@ -1,18 +1,14 @@
 const editForm = document.querySelector('#editProductForm');
 
-// CAMBIARLOS A EDITFORM.NAME XQ SINO ME VA A CHOCAR CON 
-// LOS DEL PROXIMO FORMULARIO o solso declarar nuevo form y listo.
-
 const fieldName = document.querySelector('#name');
 const fieldDescription = document.querySelector('#description');
-// formato jpg, jpeg,png o gif / con regex ? exprecion regular 22:35
 const fieldFile = document.querySelector('#file'); 
 
-//NO FUNCIONAAAAAA
-fieldName.addEventListener('keyup', (e) => { 
+fieldName.addEventListener('blur', (e) => { 
     let feedback = document.querySelector('.nameFeed');
     let value = e.target.value
-    if(value == 0){
+    console.log(value);
+    if(value.length == 0){
         feedback.innerHTML = 'El nombre es obligatorio'
     }
 
@@ -43,4 +39,15 @@ fieldName.addEventListener('keyup', (e) => {
  })
 
 
+fieldFile.addEventListener('blur', (e) => {
+    let feedback = document.querySelector('.fileFeed');
+    let value = e.target.value
+    let regex = /^.*\.(jpg|JPG|gif|GIF|doc|DOC|pdf|PDF|jpeg|JPEG|png|PNG)$/
+    if(!regex.test(value)){
+        feedback.innerHTML = 'El fromato de la imagen debe ser jpg, jpeg, png o gif '
+    }
+    if(regex.test(value)){
+        feedback.innerHTML = ''
+    }
 
+})

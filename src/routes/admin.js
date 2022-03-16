@@ -10,8 +10,7 @@ const upload = multer ({storage: multer.diskStorage({
 })})
 const validate = require("../validations/product.js")
 
-//,[auth]
-router.get("/crearProducto", admin.create);
+router.get("/crearProducto",[auth], admin.create);
 
 router.post("/guardar",[upload.any(), validate], admin.save);
 //router.post("/", admin.create);
