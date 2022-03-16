@@ -11,8 +11,8 @@ module.exports = {
 
     save: (req,res) => {
         req.body.file = req.files && req.files.length > 0 ? req.files[0].filename:"default.png";
-        let category = db.Category.findOne ({where:{name:req.body.category}})
-        let file = db.File.create({url:req.body.file,type:req.files[0].type})
+        let category = db.Category.findOne ({where:{category:req.body.category}})
+        let file = db.File.create({url:req.body.file,type:"products"})
         //let result = model.create(req.body); //Se cambia por la base de datos 
         Promise.all([category,file]).then(([category,file])=>{
             db.Product.create({ 
