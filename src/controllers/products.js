@@ -6,6 +6,8 @@ const db = require("../../database/models");
 const sequelize = require("sequelize");
 const op = sequelize.Op;
 
+const validator = require('express-validator');
+const validate = require('../validations/product.js')
 
 
 module.exports = {
@@ -51,6 +53,11 @@ module.exports = {
     })).catch(err => res.send(err))
  },
     modify: (req,res) => {
+        let errors = validator.validationResult(req).mapped();
+        if (errors){
+            return res.render("admin/editarProducto",{errors,
+                style: "admin/editarProducto"})
+        }
         db.Product.update({
             ...req.body,
         }, {where: {id: req.params.id}})

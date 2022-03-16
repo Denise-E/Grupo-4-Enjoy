@@ -13,44 +13,63 @@
             <fieldset class="form">
             <div class="nuevoProducto">
                     <h2 class="tituloPrincipal">Crear producto</h2>
-
+ 
                 <label for=""> Nombre: </label>
-                <input type="text" placeholder="" name="name" id="name" required>
-                <span class="feedback"></span>
+                <input type="text" placeholder="" name="name" id="name" >
+                <% if (locals.errors && errors.name) { %>
+                        <p><%= errors.name.msg %> </p>
+                <% } %>
+                <br>
 
                 <label for="">Descripción:</label>
-                <input type="text" placeholder="" name="description" id="description" required>
-                <span class="feedback"></span>
-                <label for=""></label>
+                <input type="text" placeholder="" name="description" id="description" >
+                 <% if (locals.errors && errors.description) { %>
+                  <p><%= errors.description.msg %> </p>
+                <% } %>
+                <br>
 
                 <label for="">Resumen del producto:</label>
-                <input type="text" placeholder="" name="resume" id="resume" required>
-                <span class="feedback"></span>
-                <label for=""></label>
+                <input type="text" placeholder="" name="resume" id="resume" >
+                <% if (locals.errors && errors.resume) { %>
+                  <p><%= errors.resume.msg %> </p>
+                <% } %>
+                <br>
 
                 <label for="">Título:</label>
-                <input type="text" placeholder="" name="title" id="title" required>
-                <span class="feedback"></span>
-                <label for=""></label>
+                <input type="text" placeholder="" name="title" id="title" >
+                <% if (locals.errors && errors.title) { %>
+                  <p><%= errors.title.msg %> </p>
+                <% } %>
+                <br>
 
                 <label for="">Ubicación:</label>
-                <input type="text" placeholder="" name="location" id="location" required>
-                <span class="feedback"></span>
-                <label for=""></label>
+                <input type="text" placeholder="" name="location" id="location" >
+                <% if (locals.errors && errors.location) { %>
+                  <p><%= errors.location.msg %> </p>
+                <% } %>
+                <br>
 
-                
+
                 <label for="">Precio: </label> <br>
-                <input type="number" placeholder="" name="price" id="price" required>
-                <span class="feedback"></span> <br>
+                <input type="number" placeholder="" name="price" id="price" >
+                <% if (locals.errors && errors.price) { %>
+                  <p><%= errors.price.msg %> </p>
+                <% } %>
+                <br>
 
-                <label for="">Cantidad de personas: </label> <br>
-                <input type="number" placeholder="" name="persons" id="persons" required>
-                <span class="feedback"></span> <br>
+                <label for="">Cantidad de personas: </label>
+                <input type="number" placeholder="" name="persons" id="persons" >
+                <% if (locals.errors && errors.persons) { %>
+                  <p><%= errors.persons.msg %> </p>
+                <% } %>
+                <br>
+                
                 <label for="">Imagen:</label>
                 <input type="file"  name="file" id="file" multiple>
-                <span class="feedback"></span>
-                <label for=""></label>
-                
+                <% if (locals.errors && errors.file) { %>
+                  <p><%= errors.file.msg %> </p>
+                <% } %>
+                <br>
                 
                 <label for="user">Categoría:</label> 
                     <select value= "category" name="category" id="category">

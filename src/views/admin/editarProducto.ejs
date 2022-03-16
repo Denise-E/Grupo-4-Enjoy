@@ -77,6 +77,30 @@
     
   </fieldset>
         </form>
+        <% if (locals.errors && errors.name) { %>
+            <p><%= errors.name.msg %> </p>
+          <% } %>
+          <% if (locals.errors && errors.description) { %>
+            <p><%= errors.description.msg %> </p>
+          <% } %>
+          <% if (locals.errors && errors.file) { %>
+            <p><%= errors.file.msg %> </p>
+          <% } %>
+          <% if (locals.errors && errors.resume) { %>
+            <p><%= errors.resume.msg %> </p>
+          <% } %>
+          <% if (locals.errors && errors.title) { %>
+            <p><%= errors.title.msg %> </p>
+          <% } %>
+          <% if (locals.errors && errors.location) { %>
+            <p><%= errors.location.msg %> </p>
+          <% } %>
+          <% if (locals.errors && errors.price) { %>
+            <p><%= errors.price.msg %> </p>
+          <% } %>
+          <% if (locals.errors && errors.persons) { %>
+            <p><%= errors.persons.msg %> </p>
+          <% } %>
   </section>         
    
 </main>
