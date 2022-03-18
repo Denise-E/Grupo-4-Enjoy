@@ -86,7 +86,12 @@
                 <br>
 
                
-                <p>Categoria:  </p>
+                <label for="products">Categoría:</label> 
+                    <select value= "category" name="category" id="category">
+                     <% categories.forEach(element => { %>
+                         <option value="<%= element.id %>"><%= element.category %> </option>
+                     <% }) %>
+                    </select>
 
                 </select>
              </p>

@@ -47,10 +47,14 @@ module.exports = {
         .catch(err => res.send(err))
     },
     editarProducto: (req,res) =>{
-     db.Product.findByPk(req.params.id).then(result => res.render("admin/editarProducto",{  
+    let categories = db.Category.findAll();
+    Promise.all(categories).then((categories) =>{
+     db.Product.findByPk(req.params.id).then((result, categories) => res.render("admin/editarProducto",{  
          product: result,
+         categories: categories,
          style: "admin/editarProducto"
     })).catch(err => res.send(err))
+}).catch(err => res.send(err))
  },
     modify: (req,res) => {
         let errors = validator.validationResult(req).mapped();
