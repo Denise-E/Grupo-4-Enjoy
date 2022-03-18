@@ -45,6 +45,10 @@ main{
         transition: box-shadow 200ms;
     
 }
+
+#personsLabel{
+    display: block;
+}
 .nuevoProducto:hover{
     box-shadow: 0px 0px 10px #5A2083;
 }

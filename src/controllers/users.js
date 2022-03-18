@@ -64,17 +64,19 @@ module.exports = {
             })
         }
 
-        db.User.create({ include:[{as:"File"}]},{ 
+       
+        db.File.create({url:req.file.filename,type:"users"})
+        .then((archivo)=>{ 
+        db.User.create({ 
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
-            image: req.body.image
+            idFiles: archivo.id
         })
-
         .then(() => res.redirect("/users/login"))
-
         .catch(err => res.send(err))
+    }).catch(err => res.send(err))
     },
  
     logout: (req,res) => {

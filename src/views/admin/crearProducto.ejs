@@ -59,7 +59,7 @@
                 <% } %>
                 <br>
 
-                <label for="">Cantidad de personas: </label>
+                <label for="" id="personsLabel">Cantidad de personas: </label>
                 <input type="number" placeholder="" name="persons" id="persons" >
                 <% if (locals.errors && errors.persons) { %>
                   <p><%= errors.persons.msg %> </p>
@@ -76,13 +76,9 @@
                 
                 <label for="user">Categoría:</label> 
                     <select value= "category" name="category" id="category">
-                
-                      <option>Gastronomia</option>
-                      <option>Aventura</option>
-                      <option>Estar Bien</option>
-                      <option>Entretenimiento</option>
-                      <option>Estadias</option>
-
+                     <% categories.forEach(element => { %>
+                         <option value="<%= element.id %>"><%= element.category %> </option>
+                     <% }) %>
                     </select>
               <button type="submit" id="createProductButton"> Agregar Producto</button>   
        </div>

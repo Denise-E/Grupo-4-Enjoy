@@ -7,9 +7,12 @@ const validator = require('express-validator');
 const validate = require('../validations/product.js')
 
 module.exports = {
-    create: (req,res) => res.render("admin/crearProducto", {
+    create: (req,res) =>{ 
+    db.Category.findAll().then((result) =>res.render("admin/crearProducto", {
+        categories : result,
         style: "admin/crearProducto", 
-    }),
+    })).catch(err => res.send(err))
+},
 
     save: (req,res) => {
         let errors = validator.validationResult(req).mapped();
