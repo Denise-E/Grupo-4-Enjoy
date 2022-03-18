@@ -9,8 +9,8 @@ const upload = multer ({storage: multer.diskStorage({
     filename: (req, file, cb) => cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname)),
 })})
 const validate = require("../validations/product.js")
-//[auth],
-router.get("/crearProducto", admin.create);
+
+router.get("/crearProducto",[auth], admin.create);
 
 router.post("/guardar",[upload.any(), validate], admin.save);
 //router.post("/", admin.create);
