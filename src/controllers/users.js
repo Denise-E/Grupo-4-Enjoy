@@ -63,6 +63,32 @@ module.exports = {
                 errors: errors.mapped()
             })
         }
+        db.User.findOne({where: {email:req.body.email}}).then(exist => {
+            if (exist) {
+                return res.render("users/register",{
+                 style: "register",
+                    errors:{
+                         email:{
+                             msg: "Este correo ya está registrado",
+                         }
+                     }
+                 })
+             }
+             if (!bcrypt.compareSync(req.body.password, exist.password)) {
+                 return res.render("users/register",{
+                  style: "register",
+                     errors:{
+                          password:{
+                              msg: "La contraseña Deberá tener al menos 8 caracteres",
+                          }
+                      }
+                  })
+              }
+             
+      
+         req.session.user= exist
+         return res.redirect ("/")
+        } ).catch(err => res.send(err)),
 
        
         db.File.create({url:req.file.filename,type:"users"})

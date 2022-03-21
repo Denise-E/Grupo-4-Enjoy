@@ -12,13 +12,24 @@
                     <label for>Nombre :</label>
                     <input type="text" name="firstName" minlength="3" required>
                     <span class="feedback"></span>
+                    <% if (locals.errors && errors.name) { %>
+                        <p><%= errors.name.msg %> </p>
+                      <% } %>
                     <label for>Apellido :</label>
-                    <input type="text" name="lastName" id required>
+                    <input type="text" name="lastName" minlength="3" id required>
+                    <% if (locals.errors && errors.name) { %>
+                        <p><%= errors.name.msg %> </p>
+                      <% } %>
                     <label for>Correo electronico :</label>
                     <input type="email" name="email" id required>
+                    <% if (locals.errors && errors.email) { %>
+                        <p><%= errors.email.msg %> </p>
+                      <% } %>
                     <label for>Contraseña :</label>
                     <input type="password" name="password" minlength="8" placeholder="*****" required>
-                    
+                    <% if (locals.errors && errors.password) { %>
+                        <p><%= errors.password.msg %> </p>
+                      <% } %>
                     <label for="">Foto de usuario :</label> 
                     <input type="file" id="file" name="image">
                 </fieldset>
@@ -28,12 +39,7 @@
             </div>
             </form>
             </section>
-            <% if (locals.errors && errors.email) { %>
-              <p><%= errors.email.msg %> </p>
-            <% } %>
-            <% if (locals.errors && errors.password) { %>
-                <p><%= errors.password.msg %> </p>
-              <% } %>
+            
 
         </section>
         <section> 
