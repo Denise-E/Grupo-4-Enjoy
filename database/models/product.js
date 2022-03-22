@@ -30,10 +30,7 @@ module.exports= (Sequelize,Datatypes) => {
       notNull:false,
       type: Datatypes.INTEGER,
   },
-  expirationDate:{
-      notNull:false,
-      type: Datatypes.DATE,
-  },
+
   price:{
       notNull:false,
       type: Datatypes.INTEGER,
