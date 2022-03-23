@@ -20,20 +20,22 @@ body{
     margin: 0px auto;
    background-color: #d9bbf9;
    border-radius: 5px;
+
 }
 
 img{
-    max-width: 20%;
+    /* max-width: 20%; */
     margin: 10px;
-   
+  width: 50px;
+  
 }
 .datos{
     float: right;
-    
+   
 }
 
 .name{
-    
+   
     font-weight: bold;
    margin-bottom: 10px;    
   
@@ -51,7 +53,10 @@ img{
         float: right;
         
     }
-   
+    .img{
+        width: 100px;
+    }
+    
     .cuadrado{
         margin-bottom: 8px;
     }
@@ -59,6 +64,7 @@ img{
        
         margin: 10px;
         right: 10%;
+        margin-left: 120px;
         /* position: absolute;  */
     }
     
@@ -68,6 +74,21 @@ img{
     }
 }
 
+@media screen and (min-width: 769px) {
+    .name{
+        width: 100%;
+        clear: both;
+       
+    }
+    img{
+        max-width: 20%;
+        margin: 10px;
+       
+    }
+    .boton{
+        margin-left: 300px;
+    }
+}
 
 
 
