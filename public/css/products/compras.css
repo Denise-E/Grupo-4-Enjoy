@@ -1,121 +1,48 @@
-* {
-    border: 0;
+*{
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
     font-family: 'Montserrat', sans-serif;
 }
-main{
-    display: flex;
-    padding: 3px;
-    overflow-x: scroll;
-    
-}
+
 .titulo{
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: #371452;
-}
-.datos{
-    
-    white-space: nowrap;
-    font-size: 30px;
-    animation: mymove 5s infinite;
-    width: 50%;
 }
 
-img{
-  
-    height: 40%;
-    margin: 10px;
-    background-clip: content-box;
-    background-size: 300px 100px;
-}
-div img{
-    width: 12rem;
-}
+
 .cuadrado{
-    border-radius: 15px;
-     margin-top: 20px; /*para separa cada uno */
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #d9bbf9;
-    border: 2px solid #b47cde;
-
-}
-.divUno{
-    display: flex;
-}
-.mainOne{
+    border: 1px solid #b47cde;
     width: 80%;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-}
-
-.boton{
-    color: #000000;
-   border: 3px solid  #b47cde;
-   font-family: 'Montserrat', sans-serif;
+    margin: 0px auto;
    background-color: #d9bbf9;
 }
 
-@media screen and (min-width: 361px) { 
-    img{
-        font-size: 15px;
-        width: 200px;
-        height: 400px;
-        object-fit: cover;
-        width: 60%;
-        height: 40%;
-        margin: 10px;
-        
-       
-    }
-    .cuadrado{
-        margin-top: 20px;
-    }
-    .datos{
-        width: 10rem;
-        text-align: center;
-        justify-content: center;
-        margin-top: 190px;
-        
-    }
-    .boton{
-        margin: 25px;
-        background-color: #d9bbf9;
-        margin-right: 20px;
-        color: black;
-    }
+img{
+    max-width: 50%;
+    margin: 10px;
 }
-
-@media screen and (min-width: 769px) {
+.datos{
+    float: right;
     
-    .datos{
-        width: 250px;
-        justify-content: center;
-        margin-left: 55px;
-        margin-top: 350px;
-        justify-content: center;
-    }
-    img{
-        width: 50%;
-        height: 50%;
-    }
-    .boton{
-        margin-left: 300px;
-    }
-    .cuadrado{
-        margin-top: 20px;
-    }
+}
+
+.name{
+    font-weight: bold;
+    width: 200px;
+    
 }
 
 
-
+@media screen and (min-width: 361px) {
+    .datos{
+        
+    }
+    .cuadrado{
+        margin-bottom: 8px;
+    }
+}
 
 
 
