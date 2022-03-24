@@ -6,90 +6,76 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
+   
 .titulo{
     text-align: center;
     margin-bottom: 10px;
 }
-
-
+  
 .cuadrado{
-    border: 1px solid #b47cde;
-    height: auto;
-    width: 80%;
-    margin: 0px auto;
-   background-color: #d9bbf9;
-   border-radius: 5px;
-
+    
+    background-color: #d9bbf9 ;
+    border: 1px solid #b47cde ;
+    margin-bottom: 10px;
+     margin: 20px; 
+    border-radius: 5px;
 }
 
-img{
-    /* max-width: 20%; */
-    margin: 10px;
-  width: 50px;
-  
+.img{
+    /* width: 300px;  */
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #5A2083; 
 }
-.datos{
-    float: right;
-   
-}
-
 .name{
-   
-    font-weight: bold;
-   margin-bottom: 10px;    
-  
-}
-.boton{
-    text-align: center;
-    /* position: absolute;  */
+    margin-bottom: 10px;
+    margin-left: 50%;
+    display: flex;
     
 }
 
 
 @media screen and (min-width: 361px) {
-    .datos{
-        width: 55%;
-        float: right;
+
+    .cuadrado{
+        height: 130px ;
+
+    }
+    .img{
+        width: 20%;
+    }
+    .name{
+        width: 10px;
         
+    }
+
+    .boton{
+        margin-left: 50%;
+        
+    }
+}
+
+@media screen and (min-width: 769px){
+    .cuadrado{
+        height: 130px ;
+       margin-right: 100px;
+       
     }
     .img{
         width: 100px;
-    }
-    
-    .cuadrado{
-        margin-bottom: 8px;
-    }
-    .boton{
-       
-        margin: 10px;
-        right: 10%;
-        margin-left: 120px;
-        /* position: absolute;  */
-    }
-    
-    .parteBoton{
-        width: 30%;
-       /* padding: auto; */
+        margin-bottom: 10px;
     }
 }
 
-@media screen and (min-width: 769px) {
-    .name{
-        width: 100%;
-        clear: both;
-       
-    }
-    img{
-        max-width: 20%;
-        margin: 10px;
-       
-    }
-    .boton{
-        margin-left: 300px;
+
+@media screen and (min-width: 1200px) {
+
+    #mainOne{
+        border: 2px solid #b47cde ;
+       width: 30%;
+       margin-left:35% ;
     }
 }
-
 
 
 
