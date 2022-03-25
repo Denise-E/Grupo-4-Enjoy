@@ -1,5 +1,7 @@
 const express = require("express");
+
 const main = require("../controllers/main");
+const products = require("../controllers/products");
 const router = express.Router();
 
 router.get("/", main.index);

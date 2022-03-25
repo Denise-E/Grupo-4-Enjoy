@@ -1,5 +1,18 @@
 <%- include('./partials/head') %> 
 <link rel="stylesheet" href="/css/<%=style%>.css">
+<script>
+   function mostrar(id)
+      {
+         var objeto=document.getElementById(id)
+            objeto.style.display="block";
+      }
+      function ocultar(id)
+      {
+         var objeto=document.getElementById(id)
+            objeto.style.display="none";
+      }
+</script>
+
 
 <body>
     <%- include('./partials/header') %> 
@@ -43,76 +56,74 @@
         </section>
      
         <section class="navegacionSecundaria" id="vendidosNuevos">
-            <a name="nuevo" id="nuevo">
+            
             <nav class="navSecundaria">
             
                 <div class="masVendidos">
-                <a href="#"> Más vendidos</a>
+                <input type="button"  onclick="mostrar('contenido1') & ocultar('contenido2')" value="Más vendidos"> 
                 </div>
                 <div class="masNuevos">
-                <a href="#">¡Nuevos!</a>
+                <input type="button" onclick="mostrar('contenido2') & ocultar('contenido1')"  value="¡Nuevos!">
                 </div>
             </a>
             </nav>
         </section>
-        <section class="productos">
-            <a href="/categories/3">
-        <article class= "producto1">
+        <section class="productos" id="contenido1">
+            
+            <% products.forEach(element => { %>
+                <%if (element.id <4 ) { %>
+                 
+            <a href="/products/<%= element.id %>"></a>
+            <article class= "producto1">
             <div class="imagenIconos">
             <picture class= "imagenProducto">
-            <img src="/images/spa.png" alt="spa">
+            <img src="/uploads/<%= element.File.url %>" alt="spa">
             </picture>
-            <h3 class="tituloImagen">Spa</h3>
+            <h3 class="tituloImagen"><%= element.name %></h3>
             <div class="iconosImagen">
             <i class="far fa-heart corazon"></i>
             <i class="far fa-user usuario"></i>
             </div>
             </div>
             <div class="caracteristicas">
-            <h4 class= "tituloProducto"> Spa</h4>
-            <p class="descripcion"> Sesiones de masajes y tratamientos corporales y faciales exclusivos</p>
-            <p class="precio"> $3.200</p>
+            <h4 class= "tituloProducto"> <%= element.name %></h4>
+            <p class="descripcion"> <%= element.description %></p>
+            <p class="precio"> <%= element.price %></p>
             </div>    
-        </article>
-        </a>
-        <a href="/categories/1">
-        <article class= "producto2">
+          
+            </article>
+            </a>
+            <% } %>
+            <% }) %>
+        </section>
+        <section class="productos oculto" id="contenido2">
+            
+            <% products.forEach(element => { %>
+                <%if (element.id == 10 ) { %>
+                 
+            <a href="/products/<%= element.id %>"></a>
+            <article class= "producto1">
             <div class="imagenIconos">
             <picture class= "imagenProducto">
-            <img src="/images/gastronomia4.png" alt="gastronomia">
+            <img src="/uploads/<%= element.File.url %>" alt="spa">
             </picture>
-            <h3 class="tituloImagen">Gastronomía</h3>
+            <h3 class="tituloImagen"><%= element.name %></h3>
             <div class="iconosImagen">
-                <i class="far fa-heart corazon"></i>
-                <i class="far fa-user usuario"></i>
-                </div>
+            <i class="far fa-heart corazon"></i>
+            <i class="far fa-user usuario"></i>
+            </div>
             </div>
             <div class="caracteristicas">
-            <h4 class= "tituloProducto"> Gastronomía</h4>
-            <p class="descripcion"> Comer en los mejores y exclusivos restaurantes del país para dos personas</p>
-            <p class="precio"> $4.500</p>
+            <h4 class= "tituloProducto"> <%= element.name %></h4>
+            <p class="descripcion"> <%= element.description %></p>
+            <p class="precio"> <%= element.price %></p>
             </div>    
-        </article>
-        </a>
-        <a href="/categories/2">
-        <article class= "producto3">
-            <div class="imagenIconos">
-            <picture class= "imagenProducto">
-            <img src="/images/aventura.png" alt="aventura">
-            </picture>
-            <h3 class="tituloImagen">Aventura</h3>
-            <div class="iconosImagen">
-                <i class="far fa-heart corazon"></i>
-                <i class="far fa-user usuario"></i>
-                </div>
-            </div>
-            <div class="caracteristicas">
-            <h4 class= "tituloProducto"> Aventura</h4>
-            <p class="descripcion"> Animate a disfrutar de actividades emocionantes, divertidas e innovadoras</p>
-            <p class="precio"> $5.500</p>
-            </div>    
-        </article>
-        </a>
+          
+            </article>
+            </a>
+            <% } %>
+            <% }) %>
+        </section>
     </section>
     
     <section class="banner">

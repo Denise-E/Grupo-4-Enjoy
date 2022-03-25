@@ -1,14 +1,24 @@
-
 const productos = require("../data/products");
+const coments = require("../data/coments");
+const model = require("../models/products");
+
+
+
 const sequelize = require("sequelize");
 const db = require("../../database/models");
 const op = sequelize.Op;
 
+const validator = require('express-validator');
+const validate = require('../validations/product.js')
+
 module.exports = {
-    index: (req,res) => res.render("index",{
-     
+    index: (req,res) => {
+        db.Product.findAll({include:["File"]}).then(result =>res.render("index",{
+            products: result, 
+            style: "index", }))
+            .catch(err => res.send(err))
         style: "index"
-    }),
+    },
     quienesSomos: (req,res) => res.render("footerLinks/quienesSomos",{
      
         style: "footerLinks/quienesSomos"
