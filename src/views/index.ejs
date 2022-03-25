@@ -4,7 +4,7 @@
    function mostrar(id)
       {
          var objeto=document.getElementById(id)
-            objeto.style.display="block";
+            objeto.style.display="flex";
       }
       function ocultar(id)
       {
@@ -73,7 +73,7 @@
             <% products.forEach(element => { %>
                 <%if (element.id <4 ) { %>
             <section class="prod" >     
-            <a href="/products/<%= element.id %>"></a>
+            <a href="/products/<%= element.id %>">
             <article class= "producto1">
             <div class="imagenIconos">
             <picture class= "imagenProducto">
@@ -101,8 +101,8 @@
             
             <% products.forEach(element => { %>
                 <%if (element.id == 10 || element.id == 8 || element.id == 4) { %>
-            <section class="prod" id="contenido2">    
-            <a href="/products/<%= element.id %>"></a>
+            <section class="prod" >    
+            <a href="/products/<%= element.id %>">
             <article class= "producto1">
             <div class="imagenIconos">
             <picture class= "imagenProducto">

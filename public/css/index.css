@@ -13,6 +13,7 @@ img{
 
 a:link, a:visited, a:active {
     text-decoration:none;
+    color: #000000;
 }
 
 #titulo{
@@ -261,13 +262,14 @@ position: relative;
     .productos{
         flex-direction: row;
         flex-wrap: nowrap;
+        max-height: 40rem;
         
       
     }
-    .producto1{
-        max-width: 80%;
-        
+    .prod{
+        max-height: 35rem;
     }
+    
     #contenido1 #contenido2{
         display:flex;
         flex-direction: row;
@@ -344,6 +346,9 @@ position: relative;
         }
         .productos{
             margin: 2rem 4rem;
+        }
+        .producto1 img{
+            max-height: 25rem;
         }
 
         .botonBanner{
