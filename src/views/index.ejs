@@ -68,11 +68,11 @@
             </a>
             </nav>
         </section>
-        <section class="productos" id="contenido1">
-            
+        
+        <section class="productos oculto" id="contenido1">
             <% products.forEach(element => { %>
                 <%if (element.id <4 ) { %>
-                 
+            <section class="prod" >     
             <a href="/products/<%= element.id %>"></a>
             <article class= "producto1">
             <div class="imagenIconos">
@@ -93,14 +93,15 @@
           
             </article>
             </a>
+            </section>
             <% } %>
             <% }) %>
         </section>
-        <section class="productos oculto" id="contenido2">
+        <section class="productos oculto" id="contenido2" >
             
             <% products.forEach(element => { %>
-                <%if (element.id == 10 || element.id == 15 || element.id == 4) { %>
-                 
+                <%if (element.id == 10 || element.id == 8 || element.id == 4) { %>
+            <section class="prod" id="contenido2">    
             <a href="/products/<%= element.id %>"></a>
             <article class= "producto1">
             <div class="imagenIconos">
@@ -121,6 +122,7 @@
           
             </article>
             </a>
+            </section>
             <% } %>
             <% }) %>
         </section>
