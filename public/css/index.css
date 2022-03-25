@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-.oculto {display:none;}
+.oculto {
+    display:none;
+}
 
 /**Main**/
 img{
@@ -106,16 +108,18 @@ body{
     background-color: #5A2083;
     width: 51%;
 }
-.masVendidos a{
+.masVendidos input{
     color:white;
+    background-color: #5A2083;
 }
 
 .masNuevos{
     width:49%
 }
 
-.masNuevos a{
+.masNuevos input{
     color:black;
+    background-color: white;;
 }
 
 .productos{
@@ -273,6 +277,9 @@ position: relative;
     #contenido1 #contenido2{
         display:flex;
         flex-direction: row;
+    }
+    #contenido2{
+        margin: 2.5rem;
     }
     .lampara{
     
