@@ -55,7 +55,6 @@ a:link, a:visited, a:active {
 main button{
     border:5px;
     background-color: #b47cde;
-    width: 40%;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -108,11 +107,6 @@ main button a:hover{
         justify-content: center;
     }
 
-    main button{
-        border-radius: 8px;
-        width: 25%;
-        padding: 0.75rem;
-    }
 
     .formReg{
         display: flex;
@@ -132,11 +126,8 @@ main button a:hover{
 }
 
 @media screen and (min-width: 769px){
-    main button{
-        width: 20%;
-    }
 
     .registro{
-        max-width: 55%;
+        max-width: 85%;
     }
 }
