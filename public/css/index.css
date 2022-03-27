@@ -66,6 +66,10 @@ body{
 .regala, .motivos, .ideas{
     position: relative;
 }
+.imagenRegalo{
+    position:absolute;
+    z-index: 1;
+}
 .lampara{
     display: none;
     
@@ -89,6 +93,12 @@ body{
 
 #tituloNavegacion{
     color:black;
+}
+#vendidosNuevos{
+    display:block;
+}
+#vendidosNuevos, #paraRegalo{
+    flex-direction: column;
 }
 
 .navSecundaria{
@@ -116,7 +126,7 @@ body{
     font-weight: bold;
 }
 
-.masVendidos:focus, .masVendidos:hover{
+.masNuevos:focus, .masNuevos:hover, .masVendidos:focus, .masVendidos:hover, .regala:focus, .regala:hover, .recomendados:hover, .recomendados:focus, .motivos:hover, .ideas:hover{
     
     box-shadow: 0px 0px 8px rgb(100, 100, 100);
     
@@ -130,11 +140,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-.masNuevos:focus, .masNuevos:hover{
-    
-    box-shadow: 0px 0px 8px rgb(100, 100, 100);
-    
-}
+
 
 .productos{
     display: flex;
@@ -224,7 +230,7 @@ body{
    
     flex-direction: column;
 }
-#contenido2{
+#contenido2, #contenido3, #contenido4{
    
     flex-direction: column;
     margin: 1rem 1.5rem;
@@ -281,11 +287,14 @@ position: relative;
         flex-direction: column;
         width: 90%;
         margin: auto;
+        position: relative;
         }
     .navegacion{
         margin-left: 0.3rem;
-        padding: 3rem;
         font-size: 1.5rem;
+    }
+    .imagenRegalo{
+        left:12rem;
     }
     .productos{
         
@@ -301,7 +310,7 @@ position: relative;
         flex-direction: row;
         margin: 2.5rem;
     }
-   #contenido2{
+   #contenido2, #contenido3, #contenido4{
         
         flex-direction: row;
         margin: 2.5rem;
@@ -378,11 +387,18 @@ position: relative;
         flex-direction: row;
         }
         
-        #vendidosNuevos{
+        #vendidosNuevos, #paraRegalo{
             max-width: 90%;
             align-items: center;
             margin: auto;
             
+        }
+        .navSecundaria{
+            width: 90%;
+            margin: auto;
+        }
+        .navegacion{
+            height: 6rem;
         }
 
         .textoBanner{           
@@ -402,6 +418,10 @@ position: relative;
         #contenido2 .producto1 img {
             height: 32rem;
             max-height: 35rem;
+        }
+        .imagenRegalo{
+            top:1.5rem;
+            left:1.5rem;
         }
         
         .descripcion{ 

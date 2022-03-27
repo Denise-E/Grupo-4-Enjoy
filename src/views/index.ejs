@@ -28,17 +28,15 @@
             </picture>
         </div>
         </section>
-        <section class="navegacionPrincipal" id="recomendados">
+        <section class="navegacionPrincipal oculto" id="recomendados">
             <nav class="nPrincipal">
-                <div class="navegacion regala">
                     <picture>
-                        <img src="/images/image 1.png" id="imagenNavegacion" alt="regala">
+                        <img src="/images/image 1.png" class="imagenRegalo" id="imagenNavegacion" alt="regala">
                     </picture>
-                <a href="#nuevo" id="tituloNavegacion">¡Regalá!</a>
-                </div>
-                <div class="navegacion recomendados">
-                <a href="#nuevo" id="tituloNavegacion">Recomendados</a>
-                </div>
+                    <input type="button" class="navegacion regala" id="tituloNavegacion" onclick="mostrar('paraRegalo') & ocultar('vendidosNuevos')" value="Regalá">
+                    
+                    <input type="button" class="navegacion recomendados" id="tituloNavegacion" onclick="mostrar('vendidosNuevos') & ocultar('paraRegalo')"  value="Recomendados">
+                
                 <div class=" navegacion motivos">
                     <picture>
                         <img src="/images/image 2.png" id="imagenNavegacion" alt="motivos">
@@ -49,81 +47,145 @@
                     <picture class= "lampara">
                         <img src="/images/image 3.png" id="imagenNavegacion" alt="ideas">
                     </picture>
-                <a href="/products" id="tituloNavegacion">Mirá todas las experiencias</a>
+                <a href="/products" id="tituloNavegacion">Todas las experiencias</a>
                 </div>
             </nav>
        
         </section>
      
-        <section class="navegacionSecundaria navSecundaria" id="vendidosNuevos">          
-            
-                <input type="button" class="masVendidos" onclick="mostrar('contenido1') & ocultar('contenido2')" value="Más vendidos"> 
-                
-                
-                <input type="button" class="masNuevos" onclick="mostrar('contenido2') & ocultar('contenido1')"  value="¡Nuevos!">
-              
-           
-           
-        </section>
         
-        <section class="productos oculto" id="contenido1">
-            <% products.forEach(element => { %>
-                <%if (element.id <4 ) { %>
-            <section class="prod" >     
-            <a href="/products/<%= element.id %>">
-            <article class= "producto1">
-            <div class="imagenIconos">
-            <picture class= "imagenProducto">
-            <img src="/uploads/<%= element.File.url %>" alt="spa">
-            </picture>
-            <h3 class="tituloImagen"><%= element.name %></h3>
-            <div class="iconosImagen">
-            <i class="far fa-heart corazon"></i>
-            <i class="far fa-user usuario"></i>
-            </div>
-            </div>
-            <div class="caracteristicas">
-            <h4 class= "tituloProducto"> <%= element.name %></h4>
-            <p class="descripcion"> <%= element.description %></p>
-            <p class="precio"> $ <%= element.price %></p>
-            </div>    
-          
-            </article>
-            </a>
-            </section>
-            <% } %>
-            <% }) %>
+        <article class="oculto"id="vendidosNuevos">
+        <section class="navegacionSecundaria navSecundaria" >
+            <input type="button" class="masVendidos" onclick="mostrar('contenido1') & ocultar('contenido2')" value="Más vendidos"> 
+
+            <input type="button" class="masNuevos" onclick="mostrar('contenido2') & ocultar('contenido1')"  value="¡Productos Nuevos!">
+
         </section>
-        <section class="oculto" id="contenido2" >
-            
-            <% products.forEach(element => { %>
-                <%if (element.id == 10 || element.id == 8 || element.id == 4) { %>
-            <section class="prod" >    
-            <a href="/products/<%= element.id %>">
-            <article class= "producto1">
-            <div class="imagenIconos">
-            <picture class= "imagenProducto">
-            <img src="/uploads/<%= element.File.url %>" alt="spa">
-            </picture>
-            <h3 class="tituloImagen"><%= element.name %></h3>
-            <div class="iconosImagen">
-            <i class="far fa-heart corazon"></i>
-            <i class="far fa-user usuario"></i>
-            </div>
-            </div>
-            <div class="caracteristicas">
-            <h4 class= "tituloProducto"> <%= element.name %></h4>
-            <p class="descripcion"> <%= element.description %></p>
-            <p class="precio">$ <%= element.price %></p>
-            </div>    
-          
-            </article>
-            </a>
-            </section>
-            <% } %>
-            <% }) %>
+    
+    <section class="productos oculto" id="contenido1">
+        <% products.forEach(element => { %>
+            <%if (element.id <4 ) { %>
+        <section class="prod" >     
+        <a href="/products/<%= element.id %>">
+        <article class= "producto1">
+        <div class="imagenIconos">
+        <picture class= "imagenProducto">
+        <img src="/uploads/<%= element.File.url %>" alt="spa">
+        </picture>
+        <h3 class="tituloImagen"><%= element.name %></h3>
+        <div class="iconosImagen">
+        <i class="far fa-heart corazon"></i>
+        <i class="far fa-user usuario"></i>
+        </div>
+        </div>
+        <div class="caracteristicas">
+        <h4 class= "tituloProducto"> <%= element.name %></h4>
+        <p class="descripcion"> <%= element.description %></p>
+        <p class="precio"> $ <%= element.price %></p>
+        </div>    
+      
+        </article>
+        </a>
         </section>
+        <% } %>
+        <% }) %>
     </section>
+    <section class="oculto" id="contenido2" >
+        
+        <% products.forEach(element => { %>
+            <%if (element.id == 10 || element.id == 8 || element.id == 4) { %>
+        <section class="prod" >    
+        <a href="/products/<%= element.id %>">
+        <article class= "producto1">
+        <div class="imagenIconos">
+        <picture class= "imagenProducto">
+        <img src="/uploads/<%= element.File.url %>" alt="spa">
+        </picture>
+        <h3 class="tituloImagen"><%= element.name %></h3>
+        <div class="iconosImagen">
+        <i class="far fa-heart corazon"></i>
+        <i class="far fa-user usuario"></i>
+        </div>
+        </div>
+        <div class="caracteristicas">
+        <h4 class= "tituloProducto"> <%= element.name %></h4>
+        <p class="descripcion"> <%= element.description %></p>
+        <p class="precio">$ <%= element.price %></p>
+        </div>    
+      
+        </article>
+        </a>
+        </section>
+        <% } %>
+        <% }) %>
+    </section>
+    </article>
+    <article class="oculto"id="paraRegalo">
+    <section class="navegacionSecundaria navSecundaria" >
+        <input type="button" class="masVendidos" onclick="mostrar('contenido3') & ocultar('contenido4')" value="Más regalados"> 
+
+        <input type="button" class="masNuevos" onclick="mostrar('contenido4') & ocultar('contenido3')"  value="Regalá y regalate">
+
+</section>
+
+<section class="productos oculto" id="contenido3">
+    <% products.forEach(element => { %>
+        <%if (element.id == 11 || element.id == 3 || element.id == 9) { %>
+    <section class="prod" >     
+    <a href="/products/<%= element.id %>">
+    <article class= "producto1">
+    <div class="imagenIconos">
+    <picture class= "imagenProducto">
+    <img src="/uploads/<%= element.File.url %>" alt="spa">
+    </picture>
+    <h3 class="tituloImagen"><%= element.name %></h3>
+    <div class="iconosImagen">
+    <i class="far fa-heart corazon"></i>
+    <i class="far fa-user usuario"></i>
+    </div>
+    </div>
+    <div class="caracteristicas">
+    <h4 class= "tituloProducto"> <%= element.name %></h4>
+    <p class="descripcion"> <%= element.description %></p>
+    <p class="precio"> $ <%= element.price %></p>
+    </div>    
+  
+    </article>
+    </a>
+    </section>
+    <% } %>
+    <% }) %>
+</section>
+<section class="oculto" id="contenido4" >
+    
+    <% products.forEach(element => { %>
+        <%if (element.id == 12 || element.id == 16 || element.id == 14) { %>
+    <section class="prod" >    
+    <a href="/products/<%= element.id %>">
+    <article class= "producto1">
+    <div class="imagenIconos">
+    <picture class= "imagenProducto">
+    <img src="/uploads/<%= element.File.url %>" alt="spa">
+    </picture>
+    <h3 class="tituloImagen"><%= element.name %></h3>
+    <div class="iconosImagen">
+    <i class="far fa-heart corazon"></i>
+    <i class="far fa-user usuario"></i>
+    </div>
+    </div>
+    <div class="caracteristicas">
+    <h4 class= "tituloProducto"> <%= element.name %></h4>
+    <p class="descripcion"> <%= element.description %></p>
+    <p class="precio">$ <%= element.price %></p>
+    </div>    
+  
+    </article>
+    </a>
+    </section>
+    <% } %>
+    <% }) %>
+</section>
+</article>
     
     <section class="banner">
         <i class="fas fa-gift regaloGrande"></i>
