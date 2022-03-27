@@ -18,6 +18,7 @@
         <button type="submit" id="headerButtonLeft"><a href ="/users/login">Log in </a> </button>  
         <button type="submit" id="headerButtonRight"><a href="/users/register">Registrate </a> </button> 
         <% } else if (user && user.isAdmin){ %>
+            <button type="submit" id="headerButtonLeft"><a href="/users/<%= user.id %>">Perfil </a> </button>
             <button type="submit" id="headerButtonLeft"><a href ="/users/list"> Todos los Usuarios </a> </button>
            <form action="/users/logout"  method="post"><button type="submit" id="botonlogout" >Logout</button> </form>
             
