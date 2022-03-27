@@ -91,14 +91,16 @@ module.exports = {
         } ).catch(err => res.send(err)),
 
        
-        db.File.create({url:req.file.filename,type:"users"})
+      
+        db.File.create({url:req.body.file ,type:"users"}) //? req.body.file.filename : "default.png"
         .then((archivo)=>{ 
         db.User.create({ 
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
-            idFiles: archivo.id
+            idFiles: archivo.id,
+            isAdmin: String(req.body.email).includes("@enjoy.com") ? 1 : 0
         })
         .then(() => res.redirect("/users/login"))
         .catch(err => res.send(err))
@@ -142,10 +144,14 @@ module.exports = {
         //let updated = model.editarUsuario (req.params.id,req.body)
         //return res.redirect("/users/"+updated.id)
         db.User.update({
-            ...req.body,
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.email,
+            password: bcrypt.hashSync(req.body.password, 10),
+            //idFiles: archivo.id,
+            isAdmin: String(req.body.email).includes("@enjoy.com") ? 1 : 0
         }, {where: {id: req.params.id}})
-   
-        .then(() => res.redirect("/users/"))
+        .then(() => res.redirect("/users/list"))
         .catch(err => res.send(err))
     },
 }

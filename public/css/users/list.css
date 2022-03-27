@@ -81,10 +81,13 @@ margin: auto;
     cursor: no-drop;
 }
 
-.fa-trash{
+.fa-trash, .fa-pen{
     font-size: 1.5rem;
     color: #5A2083;
     margin: 2px;
+}
+.deleteButton{
+    background-color: white;
 }
 
 @media screen and (min-width: 361px)  { 

@@ -32,7 +32,6 @@ module.exports= (Sequelize,Datatypes) => {
     type: Datatypes.INTEGER,
   },
   idFiles :{
-      
       type: Datatypes.INTEGER,
   },
 
