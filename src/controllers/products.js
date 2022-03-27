@@ -58,7 +58,6 @@ module.exports = {
  },
     modify: (req,res) => {
         let errors = validator.validationResult(req).mapped();
-        
         let product = db.Product.findByPk(req.params.id)
         Promise.all([product]).then((product) => {
         if (errors){

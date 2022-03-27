@@ -19,7 +19,9 @@ module.exports = {
         let categories = db.Category.findAll();
         if (errors){
             Promise.all([categories]).then(([categories])=>{
-                return res.render("admin/crearProducto",{errors, categories,
+                return res.render("admin/crearProducto",{
+                    errors, 
+                    categories,
                     style: "admin/crearProducto"})
             })
             
