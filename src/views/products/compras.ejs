@@ -5,24 +5,17 @@
     <%- include('../partials/header') %>
    
 <main>
-        <h2 class="titulo">Mis Compras:</h2>
+                 <h1 class="titulo">Mis Compras:</h1>
         
         <% product.forEach(element => { %>
     <section class="cuadrado" id="mainOne">
-        <article>
-    <section class="divUno">      
-        <picture class= "imagenProducto"></picture>
+        <picture>
             <img class ="img" src= "/uploads/<%=element.File.url %>">
         </picture>
-    <section>    
-        <h3 class="name"> <%= element.name%> </h3>
-        <!-- <h3 class="precio"> $ <%= element.price %> </h3> -->
-     </section>    
- </section>   
-    <section class="parteBoton">
-        <button class="boton" type="submit">Repetir Experiencia</button>
-    </section>
-        </article>
+        <section>
+            <h3 class="name"> <%= element.name%> </h3>
+        </section>
+            <button class="boton" type="submit">Repetir Experiencia</button>   
     </section>  
     <% }) %>
 </main>
