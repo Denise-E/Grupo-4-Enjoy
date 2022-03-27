@@ -121,7 +121,7 @@ body{
 
     color:white;
     background-color: #5A2083;
-    font-size: 1rem;
+    
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
@@ -136,7 +136,7 @@ body{
     width: 49%;
     color:black;
     background-color: white;
-    font-size: 1rem;
+    
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
@@ -326,12 +326,11 @@ position: relative;
     
     display: block;
     }
-    .masNuevos{
+    .masNuevos, .masVendidos{
         padding: 1rem 2.2rem;
+        font-size: 1rem;
     }
-    .masVendidos{
-        padding: 1rem 2.2rem;
-    }
+   
       
     .banner{
         margin: 4rem 4.6rem;
