@@ -24,6 +24,7 @@ h1 {
     margin: 1.5rem;
   }
 
+
  .subtitulo{
    font-weight: bold;
    
@@ -32,7 +33,7 @@ h1 {
  }
 
  .linea{
-  width: 60px;
+    width: 60px;
     height: 5px;
     background-color: #a0a0a0;
     margin: 1rem auto;
@@ -52,4 +53,15 @@ h1 {
   color:#D9BBF9;
   font-size: 2rem;
   margin: 0.5rem;
+}
+
+#pasoTres{
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 555px){
+  #ultimoPaso{
+    margin-bottom: 3rem;
+  }
+  
 }

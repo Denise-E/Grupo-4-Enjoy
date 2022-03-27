@@ -37,6 +37,7 @@ h1 {
   }
   h3{
     margin-bottom: 2rem;
+
   }
 
   h2{
@@ -100,13 +101,16 @@ h1 {
   margin-top: 10px;
 }
 
-
+.email, .nombrecompleto{
+  border: solid 2px red;
+  margin-top: 1rem;
+}
 
   .cuadroFormulario{
     text-align: center;
     border-radius: 20px;
     margin-bottom: 5px;
-    padding: 35px 35px;
+    padding: 0 35px 35px 35px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -161,6 +165,17 @@ h5{
     border-radius: 50px;
 
   }
+
+  #horarios{
+    margin-bottom: 1.5rem;
+  }
+.corporativosInfo{
+  margin: 10px 0;
+}
+
+.frecuentes{
+  margin-top: 5px;
+}
 
 @media screen and (min-width: 558px) {
   .enviar{
