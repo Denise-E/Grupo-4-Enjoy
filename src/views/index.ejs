@@ -55,18 +55,15 @@
        
         </section>
      
-        <section class="navegacionSecundaria" id="vendidosNuevos">
+        <section class="navegacionSecundaria navSecundaria" id="vendidosNuevos">          
             
-            <nav class="navSecundaria">
-            
-                <div class="masVendidos">
-                <input type="button"  onclick="mostrar('contenido1') & ocultar('contenido2')" value="Más vendidos"> 
-                </div>
-                <div class="masNuevos">
-                <input type="button" onclick="mostrar('contenido2') & ocultar('contenido1')"  value="¡Nuevos!">
-                </div>
-            </a>
-            </nav>
+                <input type="button" class="masVendidos" onclick="mostrar('contenido1') & ocultar('contenido2')" value="Más vendidos"> 
+                
+                
+                <input type="button" class="masNuevos" onclick="mostrar('contenido2') & ocultar('contenido1')"  value="¡Nuevos!">
+              
+           
+           
         </section>
         
         <section class="productos oculto" id="contenido1">
@@ -88,7 +85,7 @@
             <div class="caracteristicas">
             <h4 class= "tituloProducto"> <%= element.name %></h4>
             <p class="descripcion"> <%= element.description %></p>
-            <p class="precio"> <%= element.price %></p>
+            <p class="precio"> $ <%= element.price %></p>
             </div>    
           
             </article>
@@ -117,7 +114,7 @@
             <div class="caracteristicas">
             <h4 class= "tituloProducto"> <%= element.name %></h4>
             <p class="descripcion"> <%= element.description %></p>
-            <p class="precio"> <%= element.price %></p>
+            <p class="precio">$ <%= element.price %></p>
             </div>    
           
             </article>
