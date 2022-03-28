@@ -8,7 +8,7 @@
     <main>
 
     <section class="agregarProd">
-        <form action="/admins/guardar" enctype="multipart/form-data" method="post" id="createProductForm">  
+        <form action="/admins/guardar" method="post" enctype="multipart/form-data"  id="createProductForm">  
 
             <fieldset class="form">
             <div class="nuevoProducto">
@@ -67,7 +67,7 @@
                 <br>
                 
                 <label for="">Imagen:</label>
-                <input type="file"  name="file" id="file" multiple>
+                <input type="file"  name="file" id="file" >
                 <p class="fileFeed"></p>
                 <% if (locals.errors && errors.file) { %>
                   <p><%= errors.file.msg %> </p>

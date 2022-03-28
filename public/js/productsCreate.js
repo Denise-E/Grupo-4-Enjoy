@@ -38,7 +38,6 @@ fieldName.addEventListener('blur', (e) => {
     }
  })
 
-
 fieldFile.addEventListener('blur', (e) => {
     let feedback = document.querySelector('.fileFeed');
     let value = e.target.value
@@ -50,4 +49,4 @@ fieldFile.addEventListener('blur', (e) => {
         feedback.innerHTML = ''
     }
 
-})
+}) 

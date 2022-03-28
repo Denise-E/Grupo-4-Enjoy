@@ -14,10 +14,9 @@ router.get("/", products.index);
 
 router.get("/cart", products.cart);
 router.get("/crearComentario", products.crearComentario);
-router.get("/editarProducto/:id", products.editarProducto);
 router.get("/compras", products.compras);
 router.get("/:id", products.productDetail);
-
+router.get("/editarProducto/:id", products.editarProducto);
 
 router.put("/:id",[validate], products.modify);
 router.delete("/", products.delete);

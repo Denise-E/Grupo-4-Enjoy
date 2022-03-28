@@ -57,13 +57,15 @@ module.exports = {
 }).catch(err => res.send(err))
  },
     modify: (req,res) => {
-        let errors = validator.validationResult(req).mapped();
+        let errors = validator.validationResult(req);
         let product = db.Product.findByPk(req.params.id)
         Promise.all([product]).then((product) => {
         if (errors){
             return res.render("admin/editarProducto",{errors,
                 product: product,
-                style: "admin/editarProducto"})
+                style: "admin/editarProducto",
+                errors: errors.mapped()
+            })
         }
         db.Product.update({
             ...req.body,
