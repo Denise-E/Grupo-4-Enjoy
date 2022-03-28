@@ -29,7 +29,7 @@ body{
 }
 
 .datos{
-    display: inline-block;
+     display: inline-block;
     /* border: 1px solid coral; */
 }
 .name{
@@ -55,7 +55,7 @@ body{
     .name{
     margin-inline-start: auto;
     width: 30%;
-    
+    margin-bottom: 5px;
     margin-left: 100px;
     }
     .boton{
@@ -63,8 +63,21 @@ body{
     }
 }
 @media screen and (min-width: 769px) {
-    .img{
-        width: 
+    .name{
+        
+        margin-bottom: 35px;
+    }
+    .cuadrado{
+        width: 80%;
+        height: 25%;
+        margin-left: 75px;
+    }
+    
+    .datos{
+    position: absolute;
+    left: 35%;
+    margin-top: 45px;    
+        
     }
 }
 @media screen and (min-width: 1200px) {
