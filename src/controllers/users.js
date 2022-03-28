@@ -94,23 +94,21 @@ module.exports = {
       
          req.session.user= exist
          return res.redirect ("/")
-        } ).catch(err => res.send(err)),
-
-       
+        } ).catch(err => res.send(err))
       
-        db.File.create({url:req.body.file ,type:"users"}) //? req.body.file.filename : "default.png"
-        .then((archivo)=>{ 
+        let file = db.File.create({type:"users", url: req.body.filename ? req.body.filename : "default.png"}) 
+        .then((file)=>{ 
         db.User.create({ 
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
-            idFiles: archivo.id,
+            idFiles: file.id,
             isAdmin: String(req.body.email).includes("@enjoy.com") ? 1 : 0
         })
         .then(() => res.redirect("/users/login"))
         .catch(err => res.send(err))
-    }).catch(err => res.send(err))
+    })
     },
  
     logout: (req,res) => {

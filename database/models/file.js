@@ -32,6 +32,11 @@ module.exports= (Sequelize,Datatypes) => {
         foreignKey:"idFiles"
     }
       )
+      File.hasMany(models.User, {
+        as:"user",
+        foreignKey:"idFiles"
+    }
+      )
   }
   return File
   }
