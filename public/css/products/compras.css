@@ -24,21 +24,18 @@ body{
     margin: 20px;
 }
 .img{
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     flex-direction: column;
 }
-.boton{ 
-    border: 1px solid rgb(9, 109, 79);
-    
-}
+
 .datos{
     display: inline-block;
-    border: 1px solid coral;
+    /* border: 1px solid coral; */
 }
 .name{
     text-align: center;
     display: inline-block;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-right: 60%;
 }
 
@@ -53,7 +50,7 @@ body{
         }
     .img{
      width: 20%;
-
+    /* border: 1px solid red; */
     }
     .name{
     margin-inline-start: auto;
