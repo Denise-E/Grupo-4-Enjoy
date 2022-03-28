@@ -16,26 +16,64 @@ body{
 }
 
 .cuadrado{
-    border: 1px solid rgb(7, 11, 243);
+    
+    border: 1px solid #b47cde;
+    background-color: #d9bbf9;
     margin-bottom: 10px;
+    border-radius: 5px;
+    margin: 20px;
 }
-
-.boton{
+.img{
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.boton{ 
     border: 1px solid rgb(9, 109, 79);
     
 }
-
+.datos{
+    display: inline-block;
+    border: 1px solid coral;
+}
 .name{
-    border: 1px solid red;
     text-align: center;
+    display: inline-block;
+    border: 1px solid red;
+    margin-right: 60%;
 }
 
 @media screen and (min-width: 361px) {
- .img{
-     width: 15%;
- }
+    .cuadrado{
+        padding: 10px;
+    }
+    .datos{
+        position: absolute;
+        left: 15%;
+        margin-top: 20px;
+        }
+    .img{
+     width: 20%;
 
+    }
+    .name{
+    margin-inline-start: auto;
+    width: 30%;
+    
+    margin-left: 100px;
+    }
+    .boton{
+        margin-left: 100px;
+    }
 }
+@media screen and (min-width: 769px) {
+    .img{
+        width: 
+    }
+}
+@media screen and (min-width: 1200px) {
+    .img{
+        width: 
+    }
 
 
 
