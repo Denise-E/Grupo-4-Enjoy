@@ -10,23 +10,23 @@
                 <fieldset class="formreg">
                     <h1 class="crearCuenta">Crear cuenta</h1> 
                     <label for>Nombre :</label>
-                    <input type="text" name="firstName" minlength="3" required>
+                    <input type="text" name="firstName" minlength="3" >
                     <span class="feedback"></span>
                     <% if (locals.errors && errors.name) { %>
                         <p><%= errors.name.msg %> </p>
                       <% } %>
                     <label for>Apellido :</label>
-                    <input type="text" name="lastName" minlength="3" id required>
+                    <input type="text" name="lastName" minlength="3" id >
                     <% if (locals.errors && errors.name) { %>
                         <p><%= errors.name.msg %> </p>
                       <% } %>
                     <label for>Correo electronico :</label>
-                    <input type="email" name="email" id required>
+                    <input type="email" name="email" id >
                     <% if (locals.errors && errors.email) { %>
                         <p><%= errors.email.msg %> </p>
                       <% } %>
                     <label for>Contraseña :</label>
-                    <input type="password" name="password" minlength="8" placeholder="*****" required>
+                    <input type="password" name="password" minlength="8" placeholder="*****" >
                     <% if (locals.errors && errors.password) { %>
                         <p><%= errors.password.msg %> </p>
                       <% } %>
@@ -34,7 +34,7 @@
                     <input type="file" id="file" name="image">
                 </fieldset>
                 <div class="ultimaSeccionMain">
-                <label for="terminos y condiciones" class="terms"><input type="checkbox" name="te condiciones" value="terminos y condiciones" required> He leido y acepto los terminos y condiciones del sitio </label>
+                <label for="terminos y condiciones" class="terms"><input type="checkbox" name="te condiciones" value="terminos y condiciones" > He leido y acepto los terminos y condiciones del sitio </label>
                 <button type="submit">Registrarme</button> 
             </div>
             </form>

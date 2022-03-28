@@ -1,9 +1,15 @@
-const validator = require('express-validator');
+
 const bcrypt = require('bcrypt');
 const model = require("../models/user");
+
 const db = require('../../database/models');
 const sequelize = require("sequelize");
 const op = sequelize.Op;
+
+const validator = require('express-validator');
+const validate = require('../validations/users.js');
+
+
 
 module.exports = {
     login: (req,res) => res.render("users/login",{
