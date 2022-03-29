@@ -28,8 +28,8 @@ router.post("/access", [validate, upload.single()],users.access);
 router.post ("/logout", users.logout);
 
 router.put("/:id", users.modify);
-router.put("/:id",[validate], users.login);
-router.put("/:id",[validate], users.register);
+router.put("/:id",[validates], users.access);
+router.put("/:id",[validates], users.save);
 router.delete("/delete", users.delete);
 
 module.exports = router;
