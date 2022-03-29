@@ -1,16 +1,44 @@
 <link rel="stylesheet" href="/css/header.css">
 <header> 
-    <section class="dflex" id="barraSuperior"> 
-        <section class="dflex nav1">
+    <script>
+        
+        const menuIcon = document.querySelector("barras")
+        const menuAbierto = document.querySelector("")
+         
+        </script>
+    <section class="dflexn" id="barraSuperior"> 
+        <section class="dflexn nav1">
             
                 <ul class="menu">
-                <li><a href="#"><i class="fas fa-bars"></i></a>
+                <li><a href="#"><i class="fas fa-bars menuIcon"></i></a>
                 
                 <ul class="submenu">
+                    <i class="hide fa fa-times" aria-hidden="true"></i>
+                    <% if (!user){ %>
+                     
                     <li><a href="/users/login">Login</a></li>
                     <li><a href="/users/register">Registrarse</a></li>
                     <li><a href="/categories">Todas las Categorias</a></li>
                     <li><a href="/products">Todos los Productos</a></li>
+                    <% } else if (user && user.isAdmin){ %>
+                    
+                    <li><a href="/users/login">Mi Perfil</a></li>
+                    <li><a href="/users/register">Logout</a></li>
+                    <li><a href="/products/compras">Carrito</a></li>
+                    <li><a href="/products/cart">Mis compras realizadas</a></li>
+                    <li><a href="/categories">Todas las Categorias</a></li>
+                    <li><a href="/products">Todos los Productos</a></li>
+                    <li><a href="/products">Crear producto</a></li>
+                    <li><a href="/list">Lista de usuarios</a></li>
+                    <% } else { %>
+                    
+                    <li><a href="/users/<%= user.id %>">Mi Perfil</a></li>
+                    <li><a href="/users/register">Logout</a></li>
+                    <li><a href="/products/compras">Carrito</a></li>
+                    <li><a href="/products/cart">Mis compras realizadas</a></li>
+                    <li><a href="/categories">Todas las Categorias</a></li>
+                    <li><a href="/products">Todos los Productos</a></li>
+                    <% } %>                    
                 </ul>
                 </ul>
                 </li>
@@ -30,12 +58,11 @@
         <button type="submit" id="headerButtonLeft"><a href ="/users/login">Log in </a> </button>  
         <button type="submit" id="headerButtonRight"><a href="/users/register">Registrate </a> </button> 
         <% } else if (user && user.isAdmin){ %>
-            <button type="submit" id="headerButtonLeft"><a href="/users/<%= user.id %>">Perfil </a> </button>
-            <button type="submit" id="headerButtonLeft"><a href ="/users/list"> Todos los Usuarios </a> </button>
+            <button type="submit" id="headerButtonLeft"><a href="/users/<%= user.id %>">¡Hola <%= user.firstName %>! </a> </button>
            <form action="/users/logout"  method="post"><button type="submit" id="botonlogout" >Logout</button> </form>
             
         <% } else { %>
-                <button type="submit" id="headerButtonLeft"><a href="/users/<%= user.id %>">Perfil </a> </button>
+                <button type="submit" id="headerButtonLeft"><a href="/users/<%= user.id %>">¡Hola <%= user.firstName %>!  </a> </button>
                 <form action="/users/logout"  method="post"><button id="botonlogout" type="submit">Logout</button> </form>
         <% } %>
         

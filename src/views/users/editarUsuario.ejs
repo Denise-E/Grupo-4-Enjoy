@@ -17,6 +17,7 @@
                 <label for=""></label>
                 <input type="text" placeholder="Escribí acá el nuevo nombre" name="firstName" id="firstName" value:" <%= user.firstName %> " >
                 <span class="feedback"></span>
+                
 
                 <h3>Apellido: </h3>
                 <p><%= user.lastName %> </p>
@@ -30,6 +31,9 @@
                  <input type="text" placeholder="Escribí acá el nuevo email" name="email" id=""  value:" <%= user.email %> ">
                  <span class="feedback"></span>
                  <label for=""></label> 
+                 <% if (locals.errors && errors.email) { %>
+                    <p><%= errors.email.msg %> </p>
+                  <% } %>
 
                  <h3>Nueva Contraseña:</h3>
                  
@@ -37,7 +41,9 @@
                  <input type="password" placeholder="Escribí acá la nueva contraseña" name="password" required  value:" <%= user.password %> ">
                  <span class="feedback"></span>
                  <label for=""></label> 
-
+                 <% if (locals.errors && errors.password) { %>
+                    <p><%= errors.password.msg %> </p>
+                  <% } %>
                  
                 
 

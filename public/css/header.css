@@ -3,6 +3,11 @@
     flex-wrap: wrap;
     margin: none;
 }
+.dflexn{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: none;
+}
 
 #barraSuperior{
     flex-direction: row;
@@ -60,6 +65,7 @@ nav.dflex p{
 }
 .nav1 ul{
 	list-style: none;
+    margin-left: -2rem;
 }
 .menu > li{
 	position: relative;
@@ -68,40 +74,36 @@ nav.dflex p{
 
 .menu > li > a{
 	display: block;
-	
 	color: black;
 	text-decoration: none;
 }
 .submenu{
-   z-index:1; 
-        position: absolute;
+   z-index:2; 
+    position: absolute;
     border-radius:3px;
 	border: 1px solid rgb(180, 124, 222);
-    opacity: 99%;
-	color:black;
+    color:black;
 	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
 }
 
 .submenu li a{
+    z-index: 2;
 	display: block;
 	color:black;
 	text-decoration: none;
     font-weight: bold;
-    font-size:1.5rem;
-    margin:0.5rem;
+    font-size:0.9rem;
+    padding: 0.5rem 2rem ;
 }
 .submenu li a:hover{
-    background-color:#371452;
+    z-index: 2;
+    background-color:rgb(55,20,82);
     color:white;
      }
 
 .menu li:hover .submenu{
+    z-index: 2;
 	visibility: visible;
-	opacity: 1;
-    width: 20rem;
-    padding: 2rem;
     background-color: #ebebebec;
 }
 
@@ -227,10 +229,14 @@ header img{
        display: block;
     
     }
+}
     
 
 
 @media screen and (min-width: 1200px) {  
+    .hide {
+        display:none;
+    }
     #barraSuperior nav{
         margin-right: 0;
         width: 40%;
@@ -296,7 +302,11 @@ header img{
     color: #5A2083;
     margin: 5px;
 }
-
+.menu li:hover .submenu{
+        width:22rem
 } 
+.submenu li a{
+font-size:1.5rem;    
 }
+ } 
 }

@@ -62,7 +62,6 @@ module.exports = {
 },
     save: (req,res) => {
         let errors = validator.validationResult(req)
-
        if (!errors.isEmpty()) {
             return res.render("users/register",{
                 style: "register",
@@ -96,7 +95,7 @@ module.exports = {
          return res.redirect ("/")
         } ).catch(err => res.send(err))
       
-        let file = db.File.create({type:"users", url: req.body.filename ? req.body.filename : "default.png"}) 
+        let file = db.File.create({type:"users", url: req.body.filename ? req.body.filename: "default.png"}) 
         .then((file)=>{ 
         db.User.create({ 
             firstName: req.body.firstName,
@@ -109,6 +108,9 @@ module.exports = {
         .then(() => res.redirect("/users/login"))
         .catch(err => res.send(err))
     })
+    .then(() => res.redirect("/users/login"))
+        .catch(err => res.send(err))
+
     },
  
     logout: (req,res) => {
