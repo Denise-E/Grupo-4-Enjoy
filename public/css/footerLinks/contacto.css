@@ -10,7 +10,9 @@ body{
 
 }
 
+
 main{
+  text-align: center;
   margin: 0.25rem;
   font-weight: bold;
   display: flex;

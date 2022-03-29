@@ -7,6 +7,9 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+main{
+    text-align: center;
+  }
 
 article{
    text-align: center;
