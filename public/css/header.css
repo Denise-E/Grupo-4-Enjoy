@@ -65,12 +65,10 @@ nav.dflex p{
 }
 .nav1 ul{
 	list-style: none;
+    margin-left: -1.7rem;
  
 }
-.nav1{
-    position: relative;
-    
-}
+
 .menu > li{
 	position: relative;
 	display: inline-block;
