@@ -86,6 +86,8 @@ nav.dflex p{
 	border: 1px solid rgb(180, 124, 222);
     color:black;
 	visibility: hidden;
+    box-shadow: 0 0 7px rgb(0 0 0 / 24%);
+    width: 300px;
 }
 
 .submenu li a{
@@ -96,11 +98,13 @@ nav.dflex p{
     font-weight: bold;
     font-size:0.9rem;
     padding: 0.5rem 2rem ;
+    
 }
 .submenu li a:hover{
     z-index: 2;
     background-color:rgb(55,20,82);
     color:white;
+    box-shadow: 0 0 7px rgb(0 0 0 / 24%);
      }
 
 .menu li:hover .submenu{
@@ -108,7 +112,13 @@ nav.dflex p{
 	visibility: visible;
     background-color: #ebebebec;
 }
-
+.menuDivider{ 
+background-color: #e1e1e1;
+    padding: 0!important;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 header img{
     width: 50%;
 }
@@ -231,6 +241,9 @@ header img{
        display: block;
     
     }
+    .submenu{
+        width: 20rem;
+    }
 }
     
 
@@ -307,6 +320,7 @@ header img{
 .menu li:hover .submenu{
         width:22rem
 } 
+
 .submenu li a{
     font-size: 16px;
     letter-spacing: .5px;   
