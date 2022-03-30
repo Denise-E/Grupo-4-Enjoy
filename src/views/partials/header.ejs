@@ -1,19 +1,32 @@
 <link rel="stylesheet" href="/css/header.css">
 <header> 
     <script>
+        function mostrar() {
+            document.getElementById("abrir").style.display = "none";
+    document.getElementById("cerrar").style.display = "inline";
+           
+}
         
-        const menuIcon = document.querySelector("barras")
-        const menuAbierto = document.querySelector("")
+        function ocultar() {
+            document.getElementById("abrir").style.display = "inline";
+    document.getElementById("cerrar").style.display = "none";
+}
          
         </script>
     <section class="dflexn" id="barraSuperior"> 
         <section class="dflexn nav1">
             
                 <ul class="menu">
-                <li><a href="#"><i class="fas fa-bars menuIcon"></i></a>
+                    <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">
+                        <li><i class="fas fa-bars menuIcon"id="abrir"></i>
+                    </a>
                 
-                <ul class="submenu">
-                    <i class="hide fa fa-times" aria-hidden="true"></i>
+                
+                <ul id="cerrar" class="submenu">
+                    <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="ocultar()">
+                        <i class="hide fa fa-times" aria-hidden="true"></i>
+                    </a>
+                    
                     <% if (!user){ %>
                      
                     <li><a href="/users/login">Login</a></li>
