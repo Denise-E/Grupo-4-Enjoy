@@ -49,9 +49,36 @@ h3{
 .lista{
     margin: 10px;
     padding: 10px;
-    overflow:hidden;
+    list-style:none;
+}
+
+.lista li{
+    margin-top: 0.5rem;
 }
 
 #lastArticleCompras{
     margin-bottom: 2rem;
+}
+
+.efectivo{
+    margin-top: 1rem;
+}
+
+a{
+    color: #5A2083;
+}
+
+
+@media screen and (min-width: 492px) {
+    h3{
+        max-width: 70%;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 789px) {
+    h3{
+        max-width: 90%;
+        margin-top: 3rem;
+    }
 }
