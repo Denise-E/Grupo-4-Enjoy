@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-    text-align: center;
+    
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
@@ -36,6 +36,9 @@ h4{
   margin: 0.5rem;
   color:#5A2083 ;
    
+}
+main{
+  text-align: center;
 }
 
 .subtitulo{
