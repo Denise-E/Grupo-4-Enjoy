@@ -31,5 +31,6 @@ app.use("/users",require("./routes/users"));
 app.use("/admins", require("./routes/admin"));
 app.use("/categories", require("./routes/categories"));
 
-
+app.use('/api/users', require('./routes/api/usersApi'))
+app.use('/api/products', require('./routes/api/productsApi'))
 
