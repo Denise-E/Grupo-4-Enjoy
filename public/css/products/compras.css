@@ -46,6 +46,7 @@ main section{
     display: flex-center;
     /* border: 1px solid red; */
     margin-right: 60%;
+    color: #371452;
 }
 
 @media screen and (min-width: 361px) {
@@ -97,11 +98,29 @@ main section{
 }
 @media screen and (min-width: 1200px) {
     .img{
-        width: 
+        width: 12%;
     }
-
-
-
+.cuadrado{
+    width: 80%;
+    margin-left: 10%;
+    }
+    .name{
+    width: 90%;
+    font-size: 180%;
+    text-align: center;
+    }
+    .boton{
+    /* margin-left: 150px; */
+    margin-left: 120px; 
+    align-content: center;
+    
+    }
+    .datos{
+    position: absolute;
+    left: 35%;
+    margin-top: 50px;
+    }
+}
 
 
 
