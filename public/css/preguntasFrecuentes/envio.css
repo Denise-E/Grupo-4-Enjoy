@@ -28,7 +28,6 @@ h1{
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color:rgb(217, 187, 249, 0.4);
     width: 95%;
  
          
@@ -39,12 +38,13 @@ h3{
     font-style: italic;
     border-radius: 0.5rem;
     text-align: center;
-    max-width: 60%;
+    max-width: 100%;
     margin: 15px auto;
     margin-bottom: 20px;
 }
  .agasajados{
-    max-width: 100%;
+    width: 100%;
+    padding: 0.5rem;
  }
 .p{
     margin: 15px;
@@ -52,9 +52,28 @@ h3{
 
 }
 h5{
-    margin-top: 15px;
+    margin: 15px 0 1rem 0;
     font-style: italic;
 }
 .h5-2{
     font-style: italic;
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 492px) {
+    h3{
+        max-width: 85%;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 789px) {
+    h3{
+        max-width: 60%;
+        margin-top: 3rem;
+    }
+    h5{
+        margin: 15px 0 0 0;
+    }
 }

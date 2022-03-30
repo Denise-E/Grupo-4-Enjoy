@@ -19,169 +19,28 @@ main{
     justify-content: center;
   }
 
+.corporativasArticle{
+  text-align: center;
+}
  
 
-  h1 {
+.titulo{
     font-size: 1.5rem;
     text-align: center;
     font-weight: bolder;
     background-color: #D9BBF9 ;
     border-radius: 0.5rem;
     margin: 2.5rem auto;
-    max-width: 90%;
-
+    width: 90%;
   }
 
-  .trabajemosJuntos{
-    text-indent: center;
-    font-weight: bold;
-    margin:10px;
+  .corporativasArticle p{
+    margin: 1rem;
   }
 
-  .promedioRespuesta{
-    font-weight: bold;
-    margin:10px;  
-}
-
-.nombreCompleto{
-    margin-bottom: 1rem;
-    margin-top: 10px;
-  }
-
-.Email{
-  margin-bottom: 1rem;
-  margin-top: 10px;
-}
-
-.telefono{
-    margin-bottom: 1rem;
-    margin-top: 10px;
-}
-
-.empresa{
-    margin-bottom: 1rem;
-    margin-top: 10px;
-}
-
-.consulta{
-  
-    margin-bottom: 1rem;
-    margin-top: 10px;
-}
-
-.cuadradoFormulario{
-    text-align: center;
-    border-radius: 20px;
-    margin-bottom: 5px;
-    padding: 35px 35px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-  }
-
-  .cuadradoFormulario input{
-    align-items: center;
-    border: none;
+@media screen and (min-width: 678px) {
+  .titulo{
     width: 100%;
-    height: 40px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    font-size:15px;
-    border: solid 1px #b47cde;
-    transition: box-shadow 200ms;
-
+    padding: 0.5rem;
+  }
 }
-
-.fieldsetMain{
-  display: block;
-  width: 90%;
-  height: 60%;
-  padding: 0.6rem;
-  box-shadow: 0px 0px 5px #b47cde;
-  border-radius: 20px;
-  transition: all 200ms;
-  margin: 1rem;
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 0.25rem;
-  justify-content: center;
-}
-
-  .fieldsetMain:hover{
-    box-shadow: 0px 0px 10px #5A2083;
-  }
-
-  .Contactanos{
-    text-align: center;
-    border-radius: 20px;
-    padding: 5px 5px;
-   
-    font-size: 15px;
-    background-color: #c089e7;
-    
-  }
-
-  .formContactanos{
-    text-align: center;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    background-color: #d2b8e4;
-  }
-
- .formContactanos h1{
-  font-weight: bold;
-  margin: 10px;
- }
-
- .tituloEmail{
-  font-weight: bold;
-  margin:5px;
- }
-
- .telefonoCelular{
-  font-weight: bold;
-  margin:5px;
- }
-
- .ventasCorporativas{
-  font-weight: bold;
-  margin:5px
- }
-
- .horarios{
-  font-weight: bold;
-  margin:5px
- }
-
- .fondoCorporativas{
-  background-image: url(/images/fondoCorporativas.jpg);
-  background-position: center bottom;
-}
-
-
-
-  @media screen and (min-width: 769px){
-    .cuadradoFormulario{
-      margin: auto;
-     width: 60%;
-     margin-top: 10px;
-     margin-bottom: 15px;
-     
-  }
-
-  @media screen and (min-width: 558px) {
-    .Contactanos{
-        width: 8rem;
-    }
-  }
-
-  .fieldsetMain{
-    width: 80%;
-  }
-  }

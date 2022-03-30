@@ -95,7 +95,7 @@ module.exports = {
          return res.redirect ("/")
         } ).catch(err => res.send(err))
       
-        let file = db.File.create({type:"users", url: req.body.filename ? req.body.filename: "default.png"}) 
+        let file = db.File.create({type:"users", url: req.file.filename })//? req.body.filename: "default.png" 
         .then((file)=>{ 
         db.User.create({ 
             firstName: req.body.firstName,
