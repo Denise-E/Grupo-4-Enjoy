@@ -20,10 +20,7 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color:rgb(217, 187, 249, 0.4);
     width: 90%;
- 
-         
 }
 
 h1{
@@ -39,7 +36,7 @@ h3{
     font-style: italic;
     border-radius: 0.5rem;
     text-align: center;
-    max-width: 70%;
+    width: 100%;
     margin: 15px auto;
     margin-bottom: 20px;
 }
@@ -53,4 +50,8 @@ h3{
     margin: 10px;
     padding: 10px;
     overflow:hidden;
+}
+
+#lastArticleCompras{
+    margin-bottom: 2rem;
 }
