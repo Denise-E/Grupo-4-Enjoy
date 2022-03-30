@@ -68,6 +68,12 @@ nav.dflex p{
     margin-left: -1.7rem;
  
 }
+#cruz{
+    position: absolute;
+    top: -32px;
+    left: 34px;
+    font-size: 28px;  
+}
 
 .menu > li{
 	position: relative;

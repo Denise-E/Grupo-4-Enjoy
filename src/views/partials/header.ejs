@@ -2,13 +2,16 @@
 <header> 
     <script>
         function mostrar() {
-            document.getElementById("abrir").style.display = "none";
+           
+    document.getElementById("abrir").style.display = "none";
     document.getElementById("cerrar").style.display = "inline";
            
 }
         
         function ocultar() {
-            document.getElementById("abrir").style.display = "inline";
+    
+   
+    document.getElementById("abrir").style.display = "inline";
     document.getElementById("cerrar").style.display = "none";
 }
          
@@ -18,13 +21,13 @@
             
                 <ul class="menu">
                     <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">
-                        <li><i class="fas fa-bars menuIcon"id="abrir"></i>
+                        <li><i class="fas fa-bars menuIcon" id="barras"></i>
                     </a>
                 
                 
                 <ul id="cerrar" class="submenu">
                     <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="ocultar()">
-                        <i class="hide fa fa-times" aria-hidden="true"></i>
+                        <i class="hide fa fa-times" aria-hidden="true" id="cruz"></i>
                     </a>
                     
                     <% if (!user){ %>
