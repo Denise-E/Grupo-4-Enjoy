@@ -30,7 +30,7 @@ p{
 }
 
 ul, li {
-    padding: 0;
+    
     list-style: none;
 }
 
@@ -42,7 +42,7 @@ img{
 a:link, a:visited, a:active {
     text-decoration:none;
 }
-ul {
+.categori {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -81,7 +81,7 @@ h5 a{
 
 
 @media screen and (min-width: 430px) {
-    ul{
+   .categori{
         margin-top: 2rem;
         max-width:70%;
 
@@ -102,7 +102,7 @@ li img:hover{
 
 
  @media screen and (min-width: 1200px)  { 
-    ul{
+    .categori{
         flex-wrap: nowrap;
         flex-direction: row;
         max-width: 90%;
