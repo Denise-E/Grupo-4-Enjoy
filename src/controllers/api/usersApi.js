@@ -19,10 +19,11 @@ module.exports = {
                     id: user.id,
                     name: user.firstName +" "+  user.lastName,
                     email: user.email,
-                    detailURL: "http://localhost:3000" + `/api/users/${user.id}`
+                    detailURL: "http://localhost:3000/api/users/" + user.id
                 })
             })
            return res.json(result)
+            
         })
         .catch(err => {
             let result ={
@@ -40,15 +41,25 @@ module.exports = {
     show: (req,res) => {
         db.User.findByPk(req.params.id, {include:["File"]})
         .then(user => {
+
+            
+            if(user){
+
             let result ={
                     id: user.id,
                     firstName: user.firstName,
                     lastName: user.lastName,
                     email: user.email,
-                    imageURL: "http://localhost:300/uploads/" + user.File
+                    imageURL: "http://localhost:300/uploads/" + user.File.url 
+                   
             }
 
             res.json(result)
+        }else{
+            return res.status(404).json( {
+              error: 'No existe el usuario buscado'
+            });
+        }
         })
         .catch(err => {
             let result = {
