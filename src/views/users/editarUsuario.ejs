@@ -13,22 +13,19 @@
                 <h2 class="tituloPrincipal">Actualizar tus datos</h2>
 
                 <h3>Nombre: </h3>
-                <p><%= user.firstName %> </p>
                 <label for=""></label>
-                <input type="text" placeholder="Escribí acá el nuevo nombre" name="firstName" id="firstName" value:" <%= user.firstName %> " >
+                <input type="text" placeholder="Escribí acá el nuevo nombre" name="firstName" id="firstName" value=" <%= user.firstName %> " >
                 <span class="feedback"></span>
                 
 
                 <h3>Apellido: </h3>
-                <p><%= user.lastName %> </p>
                 <label for=""></label>
-                <input type="text" placeholder="Escribí acá el apellido" name="lastName" id=lastName"  value:" <%= user.lastName %> ">
+                <input type="text" placeholder="Escribí acá el apellido" name="lastName" id="lastName"  value=" <%= user.lastName %> ">
                 <span class="feedback"></span>
 
                 <h3>Email: </h3>
-                  <p> <%= user.email %> </p>
                  <label for=""></label> 
-                 <input type="text" placeholder="Escribí acá el nuevo email" name="email" id=""  value:" <%= user.email %> ">
+                 <input type="text" placeholder="Escribí acá el nuevo email" name="email" id=""  value=" <%= user.email %> ">
                  <span class="feedback"></span>
                  <label for=""></label> 
                  <% if (locals.errors && errors.email) { %>
