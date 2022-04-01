@@ -5,16 +5,24 @@ const op = sequelize.Op;
 module.exports = {
     list: (req,res) => {
         db.User.findAll()
-        .then(users => {
+        .then(allUsers => {
             let result ={
-                data: users,
+                count:  allUsers.length,
+                users: [],
                 meta: {
                     status: 200,
-                    total: users.length,
                     url: 'api/users'
-                }
+                },
             }
-            res.json(result)
+            allUsers.forEach(user =>{
+                result.users.push({
+                    id: user.id,
+                    name: user.firstName +" "+  user.lastName,
+                    email: user.email,
+                    detailURL: "http://localhost:3000" + `/api/users/${user.id}`
+                })
+            })
+           return res.json(result)
         })
         .catch(err => {
             let result ={
@@ -27,17 +35,19 @@ module.exports = {
             res.json(result)
         })
     },
+
+
     show: (req,res) => {
-        db.User.findByPk(req.params.id)
+        db.User.findByPk(req.params.id, {include:["File"]})
         .then(user => {
             let result ={
-                data: user,
-                meta: {
-                    status: 200,
-                    total: user.length,
-                    url: 'api/users/:id'
-                }
+                    id: user.id,
+                    firstName: user.firstName,
+                    lastName: user.lastName,
+                    email: user.email,
+                    imageURL: "http://localhost:300/uploads/" + user.File
             }
+
             res.json(result)
         })
         .catch(err => {
