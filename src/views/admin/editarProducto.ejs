@@ -15,7 +15,7 @@
                 <h3>Nombre: </h3>
                 <p><%= product.name %> </p>
                 <label for=""></label>
-                <input type="text" placeholder="Escribí acá el nuevo nombre" name="name" id="name" value:" <%= product.name %> " >
+                <input type="text" placeholder="Escribí acá el nuevo nombre" name="name" id="name" value =" <%= product.name %> " >
                 <p class="nameFeed"></p>
                 <% if (locals.errors && errors.name) { %>
                   <p><%= errors.name.msg %> </p>
@@ -25,7 +25,7 @@
                 <h3>Descripcion: </h3>
                 <p><%= product.description %> </p>
                 <label for=""></label>
-                <input type="text" placeholder="Escribí acá la nueva decripción" name="description" id="description"  value:" <%= product.description %> ">
+                <input type="text" placeholder="Escribí acá la nueva decripción" name="description" id="description"  value=" <%= product.description %> ">
                 <p class="descriptionFeed"></p>
                 <% if (locals.errors && errors.description) { %>
                   <p><%= errors.description.msg %> </p>

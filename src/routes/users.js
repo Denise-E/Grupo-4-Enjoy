@@ -22,14 +22,12 @@ router.get("/editarUsuario/:id",[access], users.editarUsuario);
 router.get("/:id",[access], users.show); 
 
 
-router.post("/",[upload.single("image")], users.save);
+router.post("/",[upload.single("image")], users.save); //, validates.register
 
-router.post("/access", [validate, upload.single()],users.access);
+router.post("/access", [validates.login],users.access);
 router.post ("/logout", users.logout);
 
 router.put("/:id", users.modify);
-router.put("/:id",[validates], users.access);
-router.put("/:id",[validates], users.save);
 router.delete("/delete", users.delete);
 
 module.exports = router;

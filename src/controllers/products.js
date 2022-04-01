@@ -48,13 +48,13 @@ module.exports = {
     },
     editarProducto: (req,res) =>{
     let categories = db.Category.findAll();
-    Promise.all(categories).then((categories) =>{
-     db.Product.findByPk(req.params.id).then((result, categories) => res.render("admin/editarProducto",{  
-         product: result,
+    let product = db.Product.findByPk(req.params.id)
+    Promise.all([categories, product])
+    .then(([categories, product]) => res.render("admin/editarProducto",{  
+         product: product,
          categories: categories,
          style: "admin/editarProducto"
     })).catch(err => res.send(err))
-}).catch(err => res.send(err))
  },
     modify: (req,res) => {
         let errors = validator.validationResult(req);

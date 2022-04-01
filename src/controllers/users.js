@@ -61,13 +61,16 @@ module.exports = {
         
 },
     save: (req,res) => {
+       
         let errors = validator.validationResult(req)
+         
        if (!errors.isEmpty()) {
             return res.render("users/register",{
                 style: "register",
                 errors: errors.mapped()
             })
         }
+       
         db.User.findOne({where: {email:req.body.email}}).then(exist => {
             if (exist) {
                 return res.render("users/register",{
@@ -78,24 +81,9 @@ module.exports = {
                          }
                      }
                  })
-             }
-             if (!bcrypt.compareSync(req.body.password, exist.password)) {
-                 return res.render("users/register",{
-                  style: "register",
-                     errors:{
-                          password:{
-                              msg: "La contraseña Deberá tener al menos 8 caracteres",
-                          }
-                      }
-                  })
-              }
-             
-      
-         req.session.user= exist
-         return res.redirect ("/")
-        } ).catch(err => res.send(err))
-      
-        let file = db.File.create({type:"users", url: req.file.filename })//? req.body.filename: "default.png" 
+             } 
+
+        db.File.create({type:"users", url: req.file ? req.file.filename : "default.png" })
         .then((file)=>{ 
         db.User.create({ 
             firstName: req.body.firstName,
@@ -108,8 +96,8 @@ module.exports = {
         .then(() => res.redirect("/users/login"))
         .catch(err => res.send(err))
     })
-    .then(() => res.redirect("/users/login"))
-        .catch(err => res.send(err))
+        } ).catch(err => res.send(err))
+      
 
     },
  
