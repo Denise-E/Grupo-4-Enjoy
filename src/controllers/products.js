@@ -58,21 +58,26 @@ module.exports = {
  },
     modify: (req,res) => {
         let errors = validator.validationResult(req);
-        let product = db.Product.findByPk(req.params.id)
-        Promise.all([product]).then((product) => {
+        db.Product.findByPk(req.params.id).then((errors, result) =>{
+            /** 
         if (errors){
             return res.render("admin/editarProducto",{errors,
-                product: product,
+                product: result,
                 style: "admin/editarProducto",
                 errors: errors.mapped()
             })
-        }
+        }*/
+       //return res.send(req.body)
+        db.File.update({type:"products", url: req.file.filename}) 
+        
+        .then((file)=>{ 
         db.Product.update({
             ...req.body,
         }, {where: {id: req.params.id}}) 
+       
         .then(() => res.redirect("/products/"+req.params.id))
         .catch(err => res.send(err))
-    }).catch(err => res.send(err))
+    })}).catch(err => res.send(err))
         
     },
      compras: (req, res) =>{
