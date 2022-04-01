@@ -15,23 +15,21 @@ module.exports = {
 },
 
     save: (req,res) => {
+        /** 
         let errors = validator.validationResult(req).mapped();
-        let categories = db.Category.findAll();
         if (errors){
-            Promise.all([categories]).then(([categories])=>{
+            db.Category.findAll().then(categories=>{
                 return res.render("admin/crearProducto",{
                     errors, 
                     categories,
                     style: "admin/crearProducto"})
-            })
-            
-        } 
-        //req.body.file = req.files && req.files.length > 0 ? req.files[0].filename:"default.png";
-        let category = db.Category.findOne ({where:{category:req.body.category}})
-        let file = db.File.create({url:req.files && req.files.length > 0 ? req.files[0].filename:"default.png" ,type:"products"})
-        //let result = model.create(req.body); //Se cambia por la base de datos 
-        Promise.all([category,file,categories]).then(([category,file,categories])=>{
-            db.Product.create({ 
+            }) .catch(err => res.send(err))
+        }  */
+        db.Category.findOne ({where:{category:req.body.category}}).then( category => {
+          db.File.create({url: req.file.filename,type:"products"})
+        // return res.send(req.body)
+            .then( ([file, category]) => { 
+                db.Product.create({ 
                 name: req.body.name,
                 price: parseInt(req.body.price),
                 idFile: file.id,
@@ -45,6 +43,8 @@ module.exports = {
             })
             .then(() => res.redirect("/products/" ))
             .catch(err => res.send(err))
+        })
+        //let result = model.create(req.body); //Se cambia por la base de datos 
         }).catch(err => res.send(err))
         
     }
