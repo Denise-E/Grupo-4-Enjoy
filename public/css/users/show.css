@@ -8,93 +8,67 @@ body{
     font-family: 'Montserrat', sans-serif;
     
 }
- .div{
-   
-    border-radius: 50px;
-    border: 2.5px black solid;
-    border-collapse: separate;
-    border-spacing: 20px; 
-    border-color: #B47CDE; /*color forde tarjeta*/
-    background-color: #ffffff; /*color fondo del nombre*/
-  
-} 
 
-.nombres{
-    border-radius: 100px;
-    border: 2.5px solid #B47CDE; /*color del nombre*/
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5rem;
-     margin: 2.5rem auto;
-     background-color: #D9BBF9; /*color fondo del nombre*/
-     margin-top: 20px;
-     padding: 10px;
-     border-radius: 3.5rem;
-}
-.email{
-    text-align: center;
-}
-div img{
-    width: 18rem;
-}
-.actividad{
-   justify-content: center;
-}
-.titulo{
-    font-size: 2.5rem;
-    text-align: center;
-    color: #9847ee ; /* color del titulo*/
-    border-radius: 0.5rem;
-    margin: 2.5rem auto;
-    max-width: 90%;
+img{
+    width: 50%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
+.usuario{
+    font-size: rem;
+    text-align: center;
+    color: #9847ee ;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
 
 #paragrah{
     font-weight: bold;
-    max-width: 85%;
-    margin: auto;
 }
-
- .fa-pen{
-    font-size: 1.5rem;
-    color: #5A2083;
-    margin: 2px;    transition: color 150ms;
-}
-
-  @media screen and (min-width: 361px) { /* movil */
-   
-      div{
-        justify-content: center;
-        border-radius: 20px;
-       
-      }
-      h1{
-        font-size: 30px;
-      }
-      div img{
-         width: 80px;
-        
-      }
-
-    
-    .actividad{
-        justify-content: center;
+ div{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       box-shadow: 0px 0px 6px #b47cde;
+       border-radius: 30px;
+       width: 90%;
+       padding: 35px 35px;
+       transition: box-shadow 200ms;
+       text-align: center;
+       margin-left: 1.2rem;
+       margin-bottom: 1rem;
     }
-    .datos{
-        justify-content: center;
+    .div:hover{
+        box-shadow: 0px 0px 10px #5A2083;
     }
-    .fas fa-pen{
-        font-size: 1.5rem;
+    .nombres {
+        margin-bottom: 10px;
+    }
+    .fa-trash, .fa-pen{
+        font-size: 1rem;
         color: #5A2083;
-        margin: 2px;
+        margin-top: 1rem;
     }
-}
+  
 @media screen and (min-width: 769px){
     
- 
+    div{
+    max-width:60%;
+    margin:auto;
+    margin-bottom: 1rem;
+     
 }
 @media screen and (min-width: 1200px){
-    
-    
-}
+    div{
+        max-width:50%;
+        margin:auto;
+        margin-bottom: 1rem;
+         
+    }
+    img{
+        width: 40%;
+    }
+}}
