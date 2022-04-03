@@ -138,10 +138,10 @@ module.exports = {
     modify: (req,res) => {
         //let updated = model.editarUsuario (req.params.id,req.body)
         //return res.redirect("/users/"+updated.id)
-        db.File.update({
+        db.File.create({
             type:"users", 
             url: req.file ? req.file.filename : "default.png" 
-        }, {where: {id: req.params.id}})
+        })
         .then((file)=>{ 
         db.User.update({
             firstName: req.body.firstName,
@@ -151,7 +151,7 @@ module.exports = {
             idFiles: file.id,
             isAdmin: String(req.body.email).includes("@enjoy.com") ? 1 : 0
         }, {where: {id: req.params.id}})
-        .then(() => res.redirect("/users/list"))
+        .then(() => res.redirect("/users/"+req.params.id))
         .catch(err => res.send(err))
     })
     .catch(err => res.send(err))

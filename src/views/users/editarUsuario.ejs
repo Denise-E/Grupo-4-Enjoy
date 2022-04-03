@@ -7,7 +7,7 @@
 
     <main>
     <section class="modificarUsuario">
-        <form action="/users/<%= user.id %>?m=PUT" method="post">            
+        <form action="/users/<%= user.id %>?m=PUT" enctype="multipart/form-data" method="post">            
             <fieldset class="form">
                 <div class="editarUsuario">
                 <h2 class="tituloPrincipal">Actualizar tus datos</h2>

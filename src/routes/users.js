@@ -27,7 +27,7 @@ router.post("/",[upload.single("image")], users.save); //, validates.register
 router.post("/access", [validates.login],users.access);
 router.post ("/logout", users.logout);
 
-router.put("/:id", users.modify);
+router.put("/:id",[upload.single("image")], users.modify);
 router.delete("/delete", users.delete);
 
 module.exports = router;
