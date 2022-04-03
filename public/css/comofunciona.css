@@ -19,16 +19,16 @@ h1 {
     max-width: 90%;
   }
 
-h2{
+#secondTitle{
   font-size: 1.5rem;
   margin: 2.5rem auto;
+  padding: 1rem;
 }
 h3{
   font-size: 1.5rem;
   margin: 2.5rem auto 0.2rem auto;
   font-weight: bold;
   color:#371452;
-  text-shadow: 1px 1px #371452;
 }
 h4{
   text-shadow: 1px 1px #5A2083 ;
@@ -83,6 +83,10 @@ main{
 }
 
 @media screen and (min-width: 769px) {
+  .linea{
+    margin: 2.5rem auto;
+  }
+  
   .pasosAseguir{
     display: flex;
     max-width: 98%;
