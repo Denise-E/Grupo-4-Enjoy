@@ -75,14 +75,15 @@ module.exports = {
             url: req.file ? req.file.filename : "default.png" }) 
         .then((file)=>{ 
         db.Product.update({
+                name: req.body.name,
+                description: req.body.description,
                 price: parseInt(req.body.price),
-                idFile: file.id,
+                resume: req.body.resume,
+                idFiles: file.id,
                 persons: req.body.persons,
                 location: req.body.location,
                 title: req.body.title,
-                resume: req.body.resume,
                 description: req.body.description,
-                //idCategories: category.id,
         }, {where: {id: req.params.id}})})
 
         .then(() => res.redirect("/products/"+req.params.id))

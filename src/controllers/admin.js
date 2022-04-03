@@ -37,9 +37,7 @@ module.exports = {
                 location: req.body.location,
                 title: req.body.title,
                 resume: req.body.resume,
-                description: req.body.description,
-                idCategories: category.id,
-
+                description: req.body.description
             })
             .then(() => res.redirect("/products/" ))
             .catch(err => res.send(err))
