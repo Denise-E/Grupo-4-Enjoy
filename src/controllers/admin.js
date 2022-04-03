@@ -25,10 +25,10 @@ module.exports = {
                     style: "admin/crearProducto"})
             }) .catch(err => res.send(err))
         }  */
-        db.Category.findOne ({where:{category:req.body.category}}).then( category => {
+        db.Category.findOne ({where:{category:req.body.category}}).then(category => {
           db.File.create({url: req.file.filename,type:"products"})
         // return res.send(req.body)
-            .then(([file, category]) => { 
+            .then((file, category) => { 
                 db.Product.create({ 
                 name: req.body.name,
                 price: parseInt(req.body.price),
