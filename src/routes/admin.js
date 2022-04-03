@@ -13,7 +13,7 @@ const validate = require("../validations/product.js")
 
 router.get("/crearProducto", admin.create); //[auth],
 
-router.post("/guardar",[upload.single("file"), validate.create], admin.save);
+router.post("/guardar",[validate.create, upload.single("file")], admin.save);
 
 
 

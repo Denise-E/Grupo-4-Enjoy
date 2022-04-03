@@ -13,8 +13,6 @@ const upload = multer ({storage: multer.diskStorage({
 const validates = require("../validations/users.js")
 
 
-
-
 router.get("/login", users.login);
 router.get("/register", users.register);
 router.get("/list",[auth], users.list); 

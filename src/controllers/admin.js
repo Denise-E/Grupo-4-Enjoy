@@ -27,14 +27,14 @@ module.exports = {
         }  */
         
           db.File.create({ 
-              url : req.file ? req.file.filename : "default.png" ,
+              url : req.file ? req.file.filename : "default.png",
               type:"products"
             })
             .then((file) => { 
                 db.Product.create({ 
                     name: req.body.name,
                     price: parseInt(req.body.price),
-                    idFile: file.id,
+                    idFiles: file.id,
                     persons: req.body.persons,
                     location: req.body.location,
                     title: req.body.title,
