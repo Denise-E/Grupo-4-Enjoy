@@ -19,7 +19,7 @@ router.get("/compras", products.compras);
 router.get("/editarProducto/:id", products.editarProducto);
 router.get("/:id", products.productDetail);
 
-router.put("/:id",[validate], products.modify);
+router.put("/:id",[validate.edit], products.modify);
 router.delete("/", products.delete);
 
 
