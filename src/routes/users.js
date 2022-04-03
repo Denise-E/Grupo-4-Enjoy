@@ -18,7 +18,7 @@ const validates = require("../validations/users.js")
 router.get("/login", users.login);
 router.get("/register", users.register);
 router.get("/list", users.list); //,[auth]
-router.get("/editarUsuario/:id",[access], users.editarUsuario);
+router.get("/editarUsuario/:id", users.editarUsuario);//,[access]
 router.get("/:id",[access], users.show); 
 
 

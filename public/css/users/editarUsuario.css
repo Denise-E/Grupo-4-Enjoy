@@ -61,11 +61,10 @@ main button{
     font-size: 19px;
     color: white;
     transition: all 200ms;
-    
     text-align: center;
     border-radius: 8px;
-    width: 37%;
-    padding: 5px;
+    width: 50%;
+    padding: 7px;
     margin-top: 15px;
 }
 
@@ -100,20 +99,29 @@ main button a:hover{
         
         text-align: center;
         border-radius: 8px;
-        width: 22%;
-        padding: 5px;
+        width: 50%;
+        padding: 7px;
         margin-top: 15px;
     }
      
+}
+
+@media screen and (min-width:437px) {
+    main button {
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 769px){
     .editarUsuario {
         width: 80%;
         padding: 40px;
-        margin-bottom: 5px;
-        
+        margin-bottom: 5px;   
     }
+    main button {
+        width: 40%;
+    }
+}
 
 @media screen and (min-width: 1200px){
     
@@ -121,8 +129,8 @@ main button a:hover{
         
         border-radius: 9px;
         background-color: #b47cde;
-        width: 22%;
-        padding: 5px;
+        width: 30%;
+        padding: 7px;
         margin-top: 15px;
         color: white;
         transition: blackground-color 200ms;

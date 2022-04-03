@@ -32,10 +32,10 @@
                     <p><%= errors.email.msg %> </p>
                   <% } %>
 
-                 <h3>Nueva Contraseña:</h3>
+                 <h3>Nueva contraseña:</h3>
                  
                  <label for=""></label> 
-                 <input type="password" placeholder="Escribí acá la nueva contraseña" name="password" required  value:" <%= user.password %> ">
+                 <input type="password" placeholder="Escribí acá la nueva contraseña" name="password" required>
                  <span class="feedback"></span>
                  <label for=""></label> 
                  <% if (locals.errors && errors.password) { %>
@@ -53,7 +53,7 @@
                 </select>
              </p>
 
-         <button type="submit" href="/">Guardar cambios</button>   
+         <button type="submit" href="/" id="submitButton">Guardar</button>   
 
 
       </div> 
