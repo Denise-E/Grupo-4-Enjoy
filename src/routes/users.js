@@ -19,7 +19,7 @@ router.get("/login", users.login);
 router.get("/register", users.register);
 router.get("/list", users.list); //,[auth]
 router.get("/editarUsuario/:id", users.editarUsuario);//,[access]
-router.get("/:id",[access], users.show); 
+router.get("/:id", users.show); //,[access]
 
 
 router.post("/",[upload.single("image")], users.save); //, validates.register
