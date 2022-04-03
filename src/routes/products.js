@@ -16,7 +16,7 @@ router.get("/cart", products.cart);
 router.get("/crearComentario", products.crearComentario);
 router.get("/compras", products.compras);
 
-router.get("/editarProducto/:id", products.editarProducto);
+router.get("/editarProducto/:id",[upload.single("image")], products.editarProducto);
 router.get("/:id", products.productDetail);
 
 router.put("/:id",[validate.edit], products.modify);

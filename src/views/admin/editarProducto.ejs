@@ -7,7 +7,7 @@
 
     <main>
     <section class="modificarProd">
-        <form action="/products/<%= product.id %>?m=PUT" method="post" id="editProductForm">            
+        <form action="/products/<%= product.id %>?m=PUT" enctype="multipart/form-data" method="post" id="editProductForm" >            
             <fieldset class="form">
                 <div class="editarProducto">
                 <h2 class="tituloPrincipal">Editar producto</h2>

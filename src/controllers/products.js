@@ -74,11 +74,10 @@ module.exports = {
         db.Product.update({
             ...req.body,
         }, {where: {id: req.params.id}}) 
-       
+
         .then(() => res.redirect("/products/"+req.params.id))
         .catch(err => res.send(err))
     })}).catch(err => res.send(err))
-        
     },
      compras: (req, res) =>{
         db.Product.findAll({include:["File"]}).then(result => res.render("products/compras", {  
