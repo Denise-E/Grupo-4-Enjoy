@@ -28,7 +28,7 @@ body{
 
 #mainOne h2{
     color: #5a2083;
-    margin-right: 2px;
+    margin: 0 2px 0.5rem 0;
 }
 
 
@@ -231,7 +231,7 @@ img{
     margin-top:0.5rem;
 }
 
-@media screen and (min-width: 361px) {  
+@media screen and (min-width: 440px) {  
     #mainOne p{
         font-size: 1rem;
         margin-top: 5px;
@@ -268,9 +268,11 @@ img{
         padding: 9px;
     }
     .buttonLeft{
+        width: 10rem;
         padding:1rem;
     }
     .buttonRight{
+        width: 10rem;
         padding:1rem;
     }
 
