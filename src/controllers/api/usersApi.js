@@ -41,23 +41,22 @@ module.exports = {
     show: (req,res) => {
         db.User.findByPk(req.params.id, {include:["File"]})
         .then(user => {
-
+            
             
             if(user){
-
             let result ={
                     id: user.id,
                     firstName: user.firstName,
                     lastName: user.lastName,
                     email: user.email,
-                    imageURL: "http://localhost:300/uploads/" + user.File.url 
+                    imageURL: "http://localhost:300/uploads/"+  user.File.url 
                    
             }
 
             res.json(result)
         }else{
             return res.status(404).json( {
-              error: 'No existe el usuario buscado'
+              error: 'El usuario buscado no existe'
             });
         }
         })
