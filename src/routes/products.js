@@ -19,8 +19,9 @@ router.get("/compras", products.compras);
 router.get("/editarProducto/:id", products.editarProducto);
 router.get("/:id", products.productDetail);
 
-router.put("/:id",[validate], products.modify);
 router.delete("/", products.delete);
+router.put("/edit/:id",[validate.edit,upload.single("image")], products.modify);
+
 
 
 

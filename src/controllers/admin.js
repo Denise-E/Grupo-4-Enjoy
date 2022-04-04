@@ -25,27 +25,27 @@ module.exports = {
                     style: "admin/crearProducto"})
             }) .catch(err => res.send(err))
         }  */
-        db.Category.findOne ({where:{category:req.body.category}}).then( category => {
-          db.File.create({url: req.file.filename,type:"products"})
-        // return res.send(req.body)
-            .then( ([file, category]) => { 
+        
+          db.File.create({ 
+              url : req.file ? req.file.filename : "default.png",
+              type:"products"
+            })
+            .then((file) => { 
                 db.Product.create({ 
-                name: req.body.name,
-                price: parseInt(req.body.price),
-                idFile: file.id,
-                persons: req.body.persons,
-                location: req.body.location,
-                title: req.body.title,
-                resume: req.body.resume,
-                description: req.body.description,
-                idCategories: category.id,
-
+                    name: req.body.name,
+                    price: parseInt(req.body.price),
+                    idFiles: file.id,
+                    persons: req.body.persons,
+                    location: req.body.location,
+                    title: req.body.title,
+                    resume: req.body.resume,
+                    description: req.body.description,
+                    idCategories: req.body.category
             })
             .then(() => res.redirect("/products/" ))
             .catch(err => res.send(err))
         })
         //let result = model.create(req.body); //Se cambia por la base de datos 
-        }).catch(err => res.send(err))
         
     }
 

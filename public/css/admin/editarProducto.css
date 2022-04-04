@@ -61,7 +61,7 @@ main{
 }
 
 main button{
-    margin-left: 33%;
+    margin-left: 26%;
     background-color: #b47cde;
     font-size: 19px;
     color: white;
@@ -69,7 +69,7 @@ main button{
     display: flex;
     text-align: center;
     border-radius: 8px;
-    width: 37%;
+    width: 50%;
     padding: 5px;
     margin-top: 15px;
 }
@@ -97,17 +97,16 @@ main button a:hover{
 
 @media screen and (min-width: 361px){
     main button{
-        margin-left: 38%;
-        background-color: #b47cde;
-        font-size: 19px;
-        color: white;
-        transition: all 200ms;
-        display: flex;
-        text-align: center;
-        border-radius: 8px;
-        width: 22%;
+        margin-left: 26%;
+        width: 50%;
         padding: 5px;
-        margin-top: 15px;
+    }
+     
+}
+@media screen and (min-width: 398px){
+    main button{
+        width: 150px;
+        padding: 0.5rem;
     }
      
 }
@@ -119,6 +118,7 @@ main button a:hover{
         margin-bottom: 5px;
         
     }
+}
 
 @media screen and (min-width: 1200px){
     
@@ -139,5 +139,4 @@ main button a:hover{
         margin-bottom: 5px;
     }
    
-}
 }

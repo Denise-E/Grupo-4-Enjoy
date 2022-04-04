@@ -7,7 +7,7 @@
 
     <main>
     <section class="modificarProd">
-        <form action="/products/<%= product.id %>?m=PUT" method="post" id="editProductForm">            
+        <form action="/products/edit/<%= product.id %>?m=PUT" enctype="multipart/form-data" method="post" id="editProductForm" >            
             <fieldset class="form">
                 <div class="editarProducto">
                 <h2 class="tituloPrincipal">Editar producto</h2>
@@ -21,7 +21,7 @@
                 <% } %>
                 <br>
 
-                <h3>Descripcion: </h3>
+                <h3>Descripción: </h3>
                 <label for=""></label>
                 <input type="text" placeholder="Escribí acá la nueva decripción" name="description" id="description"  value=" <%= product.description %> ">
                 <p class="descriptionFeed"></p>
@@ -46,7 +46,7 @@
                 <% } %>
                 <br>
 
-                 <h3>Título: </h3>
+                 <h3>Titulo: </h3>
                  <label for=""></label> 
                  <input type="text" placeholder="Escribí acá el título de tu producto" name="title" id="title"  value=" <%= product.title %> ">
                  <% if (locals.errors && errors.title) { %>
@@ -77,14 +77,6 @@
                   <p><%= errors.file.msg %> </p>
                 <% } %>
                 <br>
-
-               
-                <label for="products">Categoría:</label> 
-                    <select value= "category" name="category" id="category">
-                     <% categories.forEach(element => { %>
-                         <option value="<%= element.id %>"><%= element.category %> </option>
-                     <% }) %>
-                    </select>
 
                 </select>
              </p>

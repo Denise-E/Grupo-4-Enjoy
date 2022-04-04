@@ -41,7 +41,7 @@ module.exports = {
    
     delete: (req,res)=> {
         db.Product.destroy({
-            where:{id: req.params.id}
+            where:{id: req.body.id}
         })
         .then(() => res.redirect("/products"))
         .catch(err => res.send(err))
@@ -56,10 +56,12 @@ module.exports = {
          style: "admin/editarProducto"
     })).catch(err => res.send(err))
  },
-    modify: (req,res) => {
-        let errors = validator.validationResult(req);
+    modify: (req,res) => { 
+        /** 
+        let errors = validator.validationResult(req); 
+       
         db.Product.findByPk(req.params.id).then((errors, result) =>{
-            /** 
+           
         if (errors){
             return res.render("admin/editarProducto",{errors,
                 product: result,
@@ -67,18 +69,25 @@ module.exports = {
                 errors: errors.mapped()
             })
         }*/
-       //return res.send(req.body)
-        db.File.update({type:"products", url: req.file.filename}) 
-        
+      
+        db.File.create({
+            type:"products", 
+            url: req.file ? req.file.filename : "default.png" }) 
         .then((file)=>{ 
         db.Product.update({
-            ...req.body,
-        }, {where: {id: req.params.id}}) 
-       
+                name: req.body.name,
+                description: req.body.description,
+                price: parseInt(req.body.price),
+                resume: req.body.resume,
+                idFiles: file.id,
+                persons: req.body.persons,
+                location: req.body.location,
+                title: req.body.title,
+                description: req.body.description,
+        }, {where: {id: req.params.id}})})
+
         .then(() => res.redirect("/products/"+req.params.id))
         .catch(err => res.send(err))
-    })}).catch(err => res.send(err))
-        
     },
      compras: (req, res) =>{
         db.Product.findAll({include:["File"]}).then(result => res.render("products/compras", {  
