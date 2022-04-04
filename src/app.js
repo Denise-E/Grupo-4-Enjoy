@@ -4,7 +4,10 @@ const path = require("path");
 const method = require("method-override");
 const cookie = require("cookie-parser");
 const session = require("express-session");
+var cors = require('cors')
 
+
+app.use(cors())
 app.set("port", process.env.PORT || 3000);
 app.set ("views", path.resolve (__dirname, "views"));
 app.set ("view engine", "ejs");
