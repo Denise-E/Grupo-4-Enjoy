@@ -41,7 +41,7 @@ module.exports = {
    
     delete: (req,res)=> {
         db.Product.destroy({
-            where:{id: req.params.id}
+            where:{id: req.body.id}
         })
         .then(() => res.redirect("/products"))
         .catch(err => res.send(err))
