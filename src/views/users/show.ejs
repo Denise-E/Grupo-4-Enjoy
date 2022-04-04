@@ -29,7 +29,12 @@
     
     <p class="datos" id="paragrah">Actualizá tus datos:</p>
     <a href="/users/editarusuario/<%= user.id %>"><i class="fas fa-pen"></i></a>
+    <form action="/users/delete/?m=DELETE" method="post" >
+        <input type="hidden" name="id" value="<%= user.id %>">
+        <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
+    </form>
     </div>
+
    </article>
 </main>
 
