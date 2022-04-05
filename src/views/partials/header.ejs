@@ -1,32 +1,33 @@
 <link rel="stylesheet" href="/css/header.css">
 <header> 
     <script>
-        function mostrar() {
+        function show() {
            
     document.getElementById("abrir").style.display = "none";
     document.getElementById("cerrar").style.display = "inline";
            
 }
         
-        function ocultar() {
+        function noShow() {
     
    
     document.getElementById("abrir").style.display = "inline";
     document.getElementById("cerrar").style.display = "none";
 }
+
          
         </script>
     <section class="dflexn" id="barraSuperior"> 
         <section class="dflexn nav1">
             
                 <ul class="menu">
-                    <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">
+                    <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="show()">
                         <li><i class="fas fa-bars menuIcon" id="barras"></i>
                     </a>
                 
                 
                 <ul id="cerrar" class="submenu">
-                    <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="ocultar()">
+                    <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="noShow()">
                         <i class="hide fa fa-times" aria-hidden="true" id="cruz"></i>
                     </a>
                     
