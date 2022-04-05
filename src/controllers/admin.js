@@ -15,16 +15,16 @@ module.exports = {
 },
 
     save: (req,res) => {
-        /** 
-        let errors = validator.validationResult(req).mapped();
-        if (errors){
+        let errors = validator.validationResult(req);
+        if (!errors.isEmpty()){
             db.Category.findAll().then(categories=>{
-                return res.render("admin/crearProducto",{
-                    errors, 
+                return res.render("admin/crearProducto",{ 
                     categories,
-                    style: "admin/crearProducto"})
+                    style: "admin/crearProducto",
+                    errors: errors.mapped()
+                })
             }) .catch(err => res.send(err))
-        }  */
+        }else{
         
           db.File.create({ 
               url : req.file ? req.file.filename : "default.png",
@@ -47,7 +47,7 @@ module.exports = {
         })
         //let result = model.create(req.body); //Se cambia por la base de datos 
         
-    }
+    }}
 
 }
 
