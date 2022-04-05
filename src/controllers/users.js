@@ -22,14 +22,14 @@ module.exports = {
         style: "register"
     }),
     access: (req,res)=> {
-        let errors = validator.validationResult(req).mapped()
+        let errors = validator.validationResult(req);
 
-        if(errors.length >0) {
+        if(!errors.isEmpty()) {
             return res.render("users/login",{
                 style: "login",
-                errors
+                errors: errors.mapped()
             })
-        }
+        }else{
         
         db.User.findOne({where: {email:req.body.email}}).then(exist => {
             if (!exist) {
@@ -59,6 +59,7 @@ module.exports = {
          req.session.user= exist
          return res.redirect ("/")
         } ).catch(err => res.send(err))
+    }
         
 },
     save: (req,res) => {
@@ -70,7 +71,7 @@ module.exports = {
                 style: "register",
                 errors: errors.mapped()
             })
-        }
+        }else{
        
         db.User.findOne({where: {email:req.body.email}}).then(exist => {
             if (exist) {
@@ -99,7 +100,7 @@ module.exports = {
     })
         } ).catch(err => res.send(err))
       
-
+        }
     },
  
     logout: (req,res) => {
