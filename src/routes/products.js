@@ -20,7 +20,7 @@ router.get("/editarProducto/:id", products.editarProducto);
 router.get("/:id", products.productDetail);
 
 router.delete("/", products.delete);
-router.put("/edit/:id",[validate.edit,upload.single("image")], products.modify);
+router.put("/edit/:id",[upload.single("image")],[validate.edit], products.modify);
 
 
 

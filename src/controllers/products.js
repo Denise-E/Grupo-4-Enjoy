@@ -7,7 +7,6 @@ const sequelize = require("sequelize");
 const op = sequelize.Op;
 
 const validator = require('express-validator');
-const validate = require('../validations/product.js')
 
 
 module.exports = {
@@ -57,18 +56,18 @@ module.exports = {
     })).catch(err => res.send(err))
  },
     modify: (req,res) => { 
-        /** 
         let errors = validator.validationResult(req); 
-       
-        db.Product.findByPk(req.params.id).then((errors, result) =>{
-           
-        if (errors){
-            return res.render("admin/editarProducto",{errors,
+        if (!errors.isEmpty()){
+            db.Product.findByPk(req.params.id)
+            .then(function(result) {
+                 return res.render("admin/editarProducto",{
                 product: result,
                 style: "admin/editarProducto",
                 errors: errors.mapped()
             })
-        }*/
+            })
+           
+        }else{
       
         db.File.create({
             type:"products", 
@@ -85,9 +84,10 @@ module.exports = {
                 title: req.body.title,
                 description: req.body.description,
         }, {where: {id: req.params.id}})})
-
+        
         .then(() => res.redirect("/products/"+req.params.id))
         .catch(err => res.send(err))
+        }
     },
      compras: (req, res) =>{
         db.Product.findAll({include:["File"]}).then(result => res.render("products/compras", {  
