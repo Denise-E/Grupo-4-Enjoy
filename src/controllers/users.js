@@ -61,27 +61,26 @@ module.exports = {
         
 },
     save: (req,res) => {
-       
-        let errors = validator.validationResult(req)
-         
+       let errors = validator.validationResult(req)
        if (!errors.isEmpty()) {
             return res.render("users/register",{
                 style: "register",
                 errors: errors.mapped()
             })
-        }else{
+        }
        
-        db.User.findOne({where: {email:req.body.email}}).then(exist => {
+        db.User.findOne({where: {email:req.body.email}})
+        .then(exist => {
             if (exist) {
                 return res.render("users/register",{
                  style: "register",
                     errors:{
                          email:{
-                             msg: "Este correo ya está registrado",
+                             msg: "Este email ya está registrado",
                          }
                      }
                  })
-             } 
+             } else {
 
         db.File.create({type:"users", url: req.file ? req.file.filename : "default.png" })
         .then((file)=>{ 
@@ -93,12 +92,11 @@ module.exports = {
             idFiles: file.id,
             isAdmin: String(req.body.email).includes("@enjoy.com") ? 1 : 0
         })
+        })
+        }})
         .then(() => res.redirect("/users/login"))
         .catch(err => res.send(err))
-    })
-        } ).catch(err => res.send(err))
-      
-        }
+    
     },
  
     logout: (req,res) => {

@@ -12,13 +12,13 @@
                     <label for>Nombre :</label>
                     <input type="text" name="firstName" minlength="3" >
                     <span class="feedback"></span>
-                    <% if (locals.errors && errors.name) { %>
-                        <p><%= errors.name.msg %> </p>
+                    <% if (locals.errors && errors.firstName) { %>
+                        <p><%= errors.firstName.msg %> </p>
                       <% } %>
                     <label for>Apellido :</label>
                     <input type="text" name="lastName" minlength="3" id >
-                    <% if (locals.errors && errors.name) { %>
-                        <p><%= errors.name.msg %> </p>
+                    <% if (locals.errors && errors.lastName) { %>
+                        <p><%= errors.lastName.msg %> </p>
                       <% } %>
                     <label for>Correo electronico :</label>
                     <input type="email" name="email" id >
@@ -32,6 +32,9 @@
                       <% } %>
                     <label for="">Foto de usuario :</label> 
                     <input type="file" id="file" name="image">
+                    <% if (locals.errors && errors.image) { %>
+                        <p><%= errors.image.msg %> </p>
+                      <% } %>
                 </fieldset>
                 <div class="ultimaSeccionMain">
                 <label for="terminos y condiciones" class="terms"><input type="checkbox" name="te condiciones" value="terminos y condiciones" > He leido y acepto los terminos y condiciones del sitio </label>
