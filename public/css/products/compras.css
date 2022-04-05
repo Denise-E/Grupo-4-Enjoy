@@ -88,6 +88,10 @@ main section{
         height: 25%;
         margin-left: 75px;
     }
+    .img{
+        width: 20%;
+
+    }
     
     .datos{
     position: absolute;
