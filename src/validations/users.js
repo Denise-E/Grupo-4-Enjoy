@@ -2,9 +2,8 @@ const validator = require('express-validator');
 
 module.exports ={
     login: [
-        validator.body("name").notEmpty().withMessage("Este campo es obligatorio"),
- validator.body("password").notEmpty().withMessage("Este campo es obligatorio"),
- validator.body("email").notEmpty().withMessage("Este campo es obligatorio"),
+        validator.body("password").notEmpty().withMessage("Este campo es obligatorio"),
+        validator.body("email").notEmpty().withMessage("Este campo es obligatorio"),
     ],
     register: [
         validator.body("name").notEmpty().withMessage("Debe tener como mínimo 2 caracteres").isLength({min:2}),
