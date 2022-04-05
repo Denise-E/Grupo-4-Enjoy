@@ -73,8 +73,8 @@
                  <label for="">Imagen:</label>
                  <input type="file"  name="image" id="file" multiple>
                  <p class="fileFeed"></p>
-                 <% if (locals.errors && errors.file) { %>
-                  <p><%= errors.file.msg %> </p>
+                 <% if (locals.errors && errors.image) { %>
+                  <p><%= errors.image.msg %> </p>
                 <% } %>
                 <br>
 
@@ -89,8 +89,7 @@
   </fieldset>
         </form>
   </section>         
-  <!--
-  <script src="/js/productsEdit.js"></script>-->
+  <script src="/js/productsEdit.js"></script>
 </main>
 <%- include('../partials/footer') %> 
 </body>

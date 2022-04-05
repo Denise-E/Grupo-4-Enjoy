@@ -10,18 +10,18 @@ module.exports ={
         validator.body("location").notEmpty().withMessage("Este campo es obligatorio"),
         validator.body("price").notEmpty().withMessage("Este campo es obligatorio"),
         validator.body("persons").notEmpty().withMessage("Este campo es obligatorio"),
-        /*validator.body('file').custom((value,{req})=>{
-            if (!req.file) {throw new Error("Este campo es obligatorio.")}
+        validator.body('file').custom((value,{req})=>{
+            if (!req.file) {throw new Error("La imagen es obligatoria.")}
             else {
                 let allowedExtensions = ['.jpeg','.jpg','.gif','.png'];
                 let file = req.file
-                let fileExtension = path.extname(file.originalname)
+                let fileExtension = path.extname(file.filename)
                 if(!allowedExtensions.includes(fileExtension)){
-                    throw new Error("El fromato de la imagen debe ser jpg, jpeg, png o gif")
+                    throw new Error("Solo se admiten archivos .jpeg .jpg .png .gif")
             }
         }
         return true
-    })*/
+    })
     ],
     edit:[
         validator.body("name").notEmpty().withMessage("Debe tener como mínimo 5 caracteres").isLength({min:5}),
@@ -31,7 +31,17 @@ module.exports ={
         validator.body("location").notEmpty().withMessage("Este campo es obligatorio"),
         validator.body("price").notEmpty().withMessage("Este campo es obligatorio"),
         validator.body("persons").notEmpty().withMessage("Este campo es obligatorio"),
-        //validator.body("image").notEmpty().withMessage("El fromato de la imagen debe ser jpg, jpeg, png o gif").contains(['.jgp', '.jpeg', '.png', '.gif']),
-
+        validator.body('image').custom((value,{req})=>{
+            if (!req.file) {throw new Error("La imagen es obligatoria.")}
+            else {
+                let allowedExtensions = ['.jpeg','.jpg','.gif','.png'];
+                let file = req.file
+                let fileExtension = path.extname(file.filename)
+                if(!allowedExtensions.includes(fileExtension)){
+                    throw new Error("Solo se admiten archivos .jpeg .jpg .png .gif")
+            }
+        }
+        return true
+    })
     ]
 }

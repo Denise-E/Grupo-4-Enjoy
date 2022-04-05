@@ -22,6 +22,7 @@ module.exports = {
         style: "register"
     }),
     access: (req,res)=> {
+        /** 
         let errors = validator.validationResult(req);
 
         if(!errors.isEmpty()) {
@@ -29,7 +30,7 @@ module.exports = {
                 style: "login",
                 errors: errors.mapped()
             })
-        }else{
+        }else{*/
         
         db.User.findOne({where: {email:req.body.email}}).then(exist => {
             if (!exist) {
@@ -59,7 +60,6 @@ module.exports = {
          req.session.user= exist
          return res.redirect ("/")
         } ).catch(err => res.send(err))
-    }
         
 },
     save: (req,res) => {
