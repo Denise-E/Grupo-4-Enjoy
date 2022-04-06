@@ -4,7 +4,7 @@ const path = require("path");
 const method = require("method-override");
 const cookie = require("cookie-parser");
 const session = require("express-session");
-var cors = require('cors')
+const cors = require('cors')
 
 
 app.use(cors())
