@@ -1,5 +1,8 @@
 import React ,{Component} from "react";
+import Encabezado from './components/header';
 import './App.css';
+
+
 class App extends Component{
   constructor(props){
     super(props);
@@ -29,6 +32,10 @@ class App extends Component{
   render (){
     console.log ('users', this.state.users)
     return (<>
+    <div className="container">
+      <Encabezado />
+      
+    </div>
     <ul>
       {this.state.users && this.state.users.map(users => (
         <li key ={users.id}>
