@@ -10,9 +10,9 @@ function Encabezado(){
             <nav id="opciones">
                 <ul>
                     <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#Nosotras">Nosotras</a></li>
+                    <li><a href="#Nosotras">Categorías</a></li>
                     <li><a href="#productos">Productos</a></li>
-                    <li><a href="#contacto">Usarios</a></li>
+                    <li><a href="#usuarios">Usarios</a></li>
                 </ul>
             </nav>
         </header>

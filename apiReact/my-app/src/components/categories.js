@@ -1,26 +1,26 @@
-import {useState,useEffect} from 'react'
+/*import {useState,useEffect} from 'react'
 
 
 function Categories ({title}){
   
-  const [categories,category] = useState([]); 
+  const [category] = useState([]); 
    
     useEffect(() => {
         fetch('http://localhost:3001/api/products/')
         .then(res => res.json())
-        .then( results => category(results.data))        
+        .then( countByCategory => category(countByCategory.data))        
         console.log('Inicia')
     },[])
 
     useEffect(() => {
         fetch('http://localhost:3001/api/products/')
         .then(res => res.json())
-        .then(results => category(results.data))        
+        .then(countByCategory => category(countByCategory.data))        
         console.log('Actualiza')
     },[])
 
-    let gastronomia = categories.filter(categories => categories.category === "Gastronomia").length
-    let aventura = categories.filter(categories => categories.category === "Aventura").length
+    let gastronomia = this.state.countByCategory
+    let aventura = this.state.countByCategory
     
 
     return (
@@ -48,4 +48,4 @@ function Categories ({title}){
        
 
 
-export default Categories;
+export default Categories; */

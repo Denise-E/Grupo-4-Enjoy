@@ -9,7 +9,6 @@ class Products extends Component{
     }
     componentDidMount(){
       fetch (`http://localhost:3000/api/products/`)
-      
       .then (res=>res.json())
       .then (data => {
           this.setState({products: data.products})
@@ -36,8 +35,6 @@ class Products extends Component{
             <p>{products.description} </p>
             <p>{products.category} </p>
             
-            
-            <img src={products.imageURL} alt={products.name}/>
   
           </li>
         ))}
