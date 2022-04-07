@@ -2,6 +2,8 @@ import React ,{Component} from "react";
 import Encabezado from './components/header';
 import Products from './components/products';
 import Users from './components/users';
+import Totalusers from './components/totalUsers';
+import Totalproducts from './components/totalProducts';
 
 
 import './App.css';
@@ -23,7 +25,10 @@ class App extends Component{
     <div className="container">
       <Encabezado />
       <Products />
+      <Totalproducts/> 
       <Users /> 
+      <Totalusers/> 
+
         
     </div>
     

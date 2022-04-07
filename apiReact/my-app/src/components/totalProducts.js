@@ -1,6 +1,6 @@
 import React, {Component } from 'react';
 
-class Totalusers extends Component {
+class Totalproducts extends Component {
    
         constructor(props){
             super(props);
@@ -10,7 +10,7 @@ class Totalusers extends Component {
             }
           }
           componentDidMount(){
-            fetch (`http://localhost:3000/api/users/`)
+            fetch (`http://localhost:3000/api/products/`)
             .then (res=>res.json())
             .then (data => {
                 this.setState({count: data.count})
@@ -19,7 +19,7 @@ class Totalusers extends Component {
           }
         
           componentDidUpdate(){
-            fetch (`http://localhost:3000/api/users/`)
+            fetch (`http://localhost:3000/api/products/`)
             .then (res=>res.json())
             .then (data => {
                 this.setState({count: data.count})
@@ -30,7 +30,7 @@ class Totalusers extends Component {
         render (){
           console.log ('users', this.state.count)
           return (<>
-          <h3> Cantidad total de usuarios:</h3>
+          <h3> Cantidad total de productos:</h3>
           <p>{this.state.count}</p>  
             
          
@@ -41,4 +41,4 @@ class Totalusers extends Component {
         }
       }
       
-      export default Totalusers;
+      export default Totalproducts;
