@@ -1,26 +1,26 @@
 
 <%- include('../partials/head') %>
- 
+<link rel="stylesheet" href="/css/<%=style%>.css">
 <body>
     <%- include('../partials/header') %>
    
-<main>
+<main class="main">
                  <h1 class="titulo">Mis Compras:</h1>
-        
-        <% product.forEach(element => { %>
-    <section class="cuadrado" id="mainOne">
-            <picture>
-                <img class ="img" src= "/uploads/<%=element.File.url %>">
-            </picture>
-        <section class="datos">
-            <section>
-                <h3 class="name"> <%= element.name%> </h3>
-            </section>
-    
-            <button class="boton" type="submit">Repetir Experiencia</button>  
-        </section>     
-    </section>  
-    <% }) %>
+
+                 <picture class="icono">
+                    <i class="fa-duotone fa-star-exclamation"></i>
+                </picture>
+
+    <section class="contenedor">
+
+        <p class="subTitul">Todavia no compraste ningun producto!!</p>
+
+        <p class="nuestasExpe">Encontra todas nuestras experiencias aca...</p>
+
+        <a href="/categories" class="enlace">ver categorias</a>
+
+    </section>    
+
 </main>
    
  
