@@ -1,5 +1,9 @@
 import React ,{Component} from "react";
 import Encabezado from './components/header';
+import Products from './components/products';
+import Users from './components/users';
+
+
 import './App.css';
 
 
@@ -8,25 +12,9 @@ class App extends Component{
     super(props);
     this.state ={
      users: null,
+     products:null,
      
     }
-  }
-  componentDidMount(){
-    fetch (`http://localhost:3000/api/users/`)
-    .then (res=>res.json())
-    .then (data => {
-        this.setState({users: data.users})
-    })
-    .catch(err => console.log(err))
-  }
-
-  componentDidUpdate(){
-    fetch (`http://localhost:3000/api/users/`)
-    .then (res=>res.json())
-    .then (data => {
-        this.setState({users: data.users})
-    })
-    .catch(err => console.log(err))
   }
 
   render (){
@@ -34,18 +22,12 @@ class App extends Component{
     return (<>
     <div className="container">
       <Encabezado />
-      
+      <Products />
+      <Users /> 
+        
     </div>
-    <ul>
-      {this.state.users && this.state.users.map(users => (
-        <li key ={users.id}>
-          <h3>{users.name} </h3>
-          <p>{users.email}</p>
-          <img src={users.detailURL} alt={users.name}/>
-
-        </li>
-      ))}
-    </ul>
+    
+  
     </>
     
 
