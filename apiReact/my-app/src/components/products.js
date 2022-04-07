@@ -9,6 +9,7 @@ class Products extends Component{
     }
     componentDidMount(){
       fetch (`http://localhost:3000/api/products/`)
+      
       .then (res=>res.json())
       .then (data => {
           this.setState({products: data.products})
@@ -32,8 +33,11 @@ class Products extends Component{
         {this.state.products && this.state.products.map(products => (
           <li key ={products.id}>
             <h3>{products.name} </h3>
+            <p>{products.description} </p>
+            <p>{products.category} </p>
             
-            <img src={products.detailURL} alt={products.name}/>
+            
+            <img src={products.imageURL} alt={products.name}/>
   
           </li>
         ))}
