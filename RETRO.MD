@@ -70,5 +70,6 @@ Hubo buena predisposición del equipo para ayudarse entre sí, pero faltó comun
 
 # Retro - Sprint 8
 ___
-✔ Se terminó a tiempo la validación de Backend de la creación y modificación de productos y del Frontend del login y creación y modificación de producto. Se creó el menú desplegable y se hicieron mejoras necesarias en todas las páginas en el CSS.
+✔ Se terminó a tiempo la validación de Backend de la creación y modificación de productos y del Frontend del login, creación y modificación de producto. 
+Se creó el menú desplegable y se hicieron mejoras necesarias en todas las páginas en el CSS.
 Parte del equipo no pudo cumplir con su trabajo en el tiempo pactado
