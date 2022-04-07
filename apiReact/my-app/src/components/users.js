@@ -33,7 +33,7 @@ class Users extends Component{
           <li key ={users.id}>
           <h3>{users.name} </h3>
           <p>{users.email}</p>
-  
+          <img src={users.detailURL} width= {150} alt={users.name} />
           </li>
         ))}
         

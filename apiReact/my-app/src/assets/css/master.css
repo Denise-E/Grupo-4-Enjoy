@@ -1,0 +1,9 @@
+.encabezado{
+    overflow: hidden;
+    background-color: #E6E7E8;
+    height: 50vh;
+}
+#logo{
+    width: 100%;
+    text-align: center;   
+}
