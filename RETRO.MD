@@ -67,3 +67,9 @@ ___
 ✔Los integrantes del grupo no hicieron su trabajo en el plazo indicado, lo cual llevó a retrasar todo el trabajo del grupo y no pudimos terminar a tiempo.
 
 Hubo buena predisposición del equipo para ayudarse entre sí, pero faltó comunicación con conciencia de que otros compañeros dependían de una parte finalizada para poder comenzar y finalizar todo el sprint a tiempo.
+
+# Retro - Sprint 8vo
+___
+✔ Se terminó a tiempo la validación de Backend de la creación y modificación de productos y del Frontend del login, creación y modificación de producto. 
+Se creó el menú desplegable y se hicieron mejoras necesarias en todas las páginas en el CSS.
+Parte del equipo no pudo cumplir con su trabajo en el tiempo pactado
