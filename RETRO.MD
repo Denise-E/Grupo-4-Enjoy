@@ -68,7 +68,7 @@ ___
 
 Hubo buena predisposición del equipo para ayudarse entre sí, pero faltó comunicación con conciencia de que otros compañeros dependían de una parte finalizada para poder comenzar y finalizar todo el sprint a tiempo.
 
-# Retro - Sprint 8
+# Retro - Sprint 8mo
 ___
 ✔ Se terminó a tiempo la validación de Backend de la creación y modificación de productos y del Frontend del login, creación y modificación de producto. 
 Se creó el menú desplegable y se hicieron mejoras necesarias en todas las páginas en el CSS.
