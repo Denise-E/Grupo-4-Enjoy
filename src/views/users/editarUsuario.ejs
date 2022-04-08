@@ -6,7 +6,7 @@
     
 
     <main>
-    <section class="modificarUsuario">
+    <section class="modificarUsuario" id="editUserForm">
         <form action="/users/<%= user.id %>?m=PUT" enctype="multipart/form-data" method="post">            
             <fieldset class="form">
                 <div class="editarUsuario">
@@ -55,7 +55,7 @@
 
          <button type="submit" href="/" id="submitButton">Guardar</button>   
       </div> 
-    
+    <script src="/js/editUser.js"></script>
   </fieldset>
         </form>
   </section>         
