@@ -10,7 +10,8 @@ module.exports ={
         validator.body("firstName").notEmpty().withMessage("Debe tener como mínimo 2 caracteres").isLength({min:2}),
         validator.body("lastName").notEmpty().withMessage("Debe tener como mínimo 2 caracteres").isLength({min:2}),
     
-        validator.body("email").notEmpty().withMessage("Ingrese un formato de email valido").isEmail(),
+        validator.body("email").notEmpty().withMessage("Debe tener como mínimo 2 caracteres").isEmail(),
+        
         validator.body("password").notEmpty().withMessage("Debe tener como mínimo 8 caracteres").isLength({min:8}),
         validator.body('image').custom((value,{req})=>{
             if (req.file) {

@@ -32,9 +32,22 @@
         <% } %>
 
         <section class="iconos">
+        
+            <script>
+                // Confirmacion eliminación ususarios
+                function confirmDelete() {
+                  let confirmDelete = confirm("Seguro que quiere eliminar este usuario ?");
+                  if (confirmDelete) {
+                    alert("Usuario eliminado");
+                  } else {
+                    event.preventDefault();
+                  }
+                }
+            </script>
+
         <form action="/users/delete/?m=DELETE" method="post">
             <input type="hidden" name="id" value="<%= element.id %>">
-            <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
+            <button type="submit" class="deleteButton" onclick="confirmDelete()"><i class="fas fa-trash"></i></button>
         </form>
         <a href="/users/editarUsuario/<%= element.id %>"><i class="fas fa-pen"></i></a>
     </section>

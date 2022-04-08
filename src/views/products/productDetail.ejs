@@ -48,9 +48,22 @@
             <section class="adminsIcons"> 
                 <% if (user && user.isAdmin){ %>
                 <a href="/products/editarProducto/<%= product.id %>"><i class="fas fa-pen"></i></a>
+                
+                <script>
+                    // Confirmacion eliminación productos
+                    function confirmDelete() {
+                      let confirmDelete = confirm("Seguro que quiere eliminar este producto ?");
+                      if (confirmDelete) {
+                        alert("Producto eliminado");
+                      } else {
+                        event.preventDefault();
+                      }
+                    }
+                </script>
+
                 <form action="/products/?m=DELETE" method="post">
                   <input type="hidden" name="id" value="<%= product.id %>">
-                  <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
+                  <button type="submit" class="deleteButton" onclick="confirmDelete()"><i class="fas fa-trash"></i></button>
                   
               </form>
         
