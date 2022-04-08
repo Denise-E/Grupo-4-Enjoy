@@ -1,51 +1,54 @@
-/*import {useState,useEffect} from 'react'
+import React, {Component } from 'react';
 
-
-function Categories ({title}){
-  
-  const [category] = useState([]); 
+class Categories extends Component {
    
-    useEffect(() => {
-        fetch('http://localhost:3001/api/products/')
-        .then(res => res.json())
-        .then( countByCategory => category(countByCategory.data))        
-        console.log('Inicia')
-    },[])
-
-    useEffect(() => {
-        fetch('http://localhost:3001/api/products/')
-        .then(res => res.json())
-        .then(countByCategory => category(countByCategory.data))        
-        console.log('Actualiza')
-    },[])
-
-    let gastronomia = this.state.countByCategory
-    let aventura = this.state.countByCategory
-    
-
-    return (
-       
-     <section>
-         <h2>Categorías</h2>
-        
-        <ul>
-        <li>Gastronomia: {gastronomia}</li>
-        <li>Aventura: {aventura}</li> 
-         
-              
-           
-       </ul> 
-     </section>
-
-        
+        constructor(props){
+            super(props);
+            this.state ={
+              countByCategory: null,
              
-       
-    
+            }
+          }
+          componentDidMount(){
+            fetch (`http://localhost:3000/api/products/`)
+            .then (res=>res.json())
+            .then (data => {
+                this.setState({countByCategory: data.countByCategory})
+            })
+            .catch(err => console.log(err))
+          }
+        
+          componentDidUpdate(){
+            fetch (`http://localhost:3000/api/products/`)
+            .then (res=>res.json())
+            .then (data => {
+                this.setState({countByCategory: data.countByCategory})
+            })
+            .catch(err => console.log(err))
+          }
+      
+          render (){
+            console.log ('countByCategory', this.state.countByCategory)
+            return (<>
+            <ul>
+            {this.state.countByCategory && this.state.countByCategory.map(countByCategory => (
+        <li >
+        <h3>{countByCategory.category} </h3>
+        <p>{countByCategory.count}</p>
+                  
+        
+                </li>
+              ))}
+              
+            </ul>
+            </>
+            
+        
+            );
+          }
+        }
+      
+      
+      export default Categories;
 
-    )
- }
-
-       
-
-
-export default Categories; */
+      
