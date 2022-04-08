@@ -15,7 +15,7 @@
         <p class="email"> <%= element.email %> </p>
 
         <% if (element.isAdmin == true) { %>
-            <p class="administrador">este usuario es administrador</p>
+            <p class="administrador"> es administrador</p>
            <% } %> 
 
         <% if (element.isActive == true) { %>
@@ -23,21 +23,21 @@
            <% } %>
            <% if (element.File != null) { %>
            <picture class= "imagenUsuario"></picture>
-               <img src= "/uploads/<%=element.File.url %>">
+               <img class= "foto" src= "/uploads/<%=element.File.url %>">
            </picture>
            <% } else { %> 
             <picture class= "imagenUsuario"></picture>
-            <img src= "/uploads/default.png">
+            <img class= "foto"src= "/uploads/default.png">
         </picture>
         <% } %>
 
-        
+        <section class="iconos">
         <form action="/users/delete/?m=DELETE" method="post">
             <input type="hidden" name="id" value="<%= element.id %>">
             <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
         </form>
         <a href="/users/editarUsuario/<%= element.id %>"><i class="fas fa-pen"></i></a>
-        
+    </section>
     </div> 
     <% }) %>
  

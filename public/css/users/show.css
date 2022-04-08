@@ -6,73 +6,67 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
     
 }
 
-img{
-    width: 50%;
-
+.div{
+width: 85%;
+margin: 2rem 2rem;
+text-align: center;
+padding: 35px 35px;
+margin-left: 2rem;
+box-shadow: 0px 0px 5px #b47cde;
+border-radius: 10px;
+}
+.div:hover{
+    transition: box-shadow 200ms #5A2083;
 }
 
-.usuario{
-    font-size: rem;
-    text-align: center;
-    color: #9847ee ;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-
+.foto{
+    
+        height: 60%;
+        width: 60%;
+        object-fit: cover;
+}
+.fa-trash, .fa-pen{
+    font-size: 1rem;
+    color: #5A2083;
+}
+.iconos{
+    display: flex;
+    justify-content:center;
+}
+.deleteButton{
+    background-color: white;
 }
 
 #paragrah{
     font-weight: bold;
+    margin-bottom:0.5rem;
 }
- div{
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       align-items: center;
-       box-shadow: 0px 0px 6px #b47cde;
-       border-radius: 30px;
-       width: 90%;
-       padding: 35px 35px;
-       transition: box-shadow 200ms;
-       text-align: center;
-       margin-left: 1.2rem;
-       margin-bottom: 1rem;
-    }
-    .div:hover{
-        box-shadow: 0px 0px 10px #5A2083;
-    }
-    .nombres {
-        margin-bottom: 10px;
-    }
-    .fa-trash, .fa-pen{
-        font-size: 1rem;
-        color: #5A2083;
-        margin-top: 1rem;
-    }
-  .deleteButton{
-    background-color: white;
+.nombres{
+    color:#5A2083;
+    font-weight: bold;
+    font-size:35px;
 }
-@media screen and (min-width: 769px){
-    
-    div{
-    max-width:60%;
-    margin:auto;
-    margin-bottom: 1rem;
-     
+.email{
+    margin-bottom:1rem;
 }
-.cadaUsuario{
-    width: 25rem;
-}
-@media screen and (min-width: 1200px){
-    div{
-        max-width:30%;
-        margin:auto;
-        margin-bottom: 1rem;
-         
-    }
-    .cadaUsuario{
-        width: 20rem;
-    }
-}}
+ .datos{
+     align-items:flex-end;
+ }
+
+ @media screen and (min-width: 1200px){
+
+    .div{
+        width: 90%;
+        padding:35px;
+        }
+   
+
+ }
+

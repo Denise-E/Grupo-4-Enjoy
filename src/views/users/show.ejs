@@ -8,14 +8,13 @@
         <div class="div">
         <h2 class="nombres"><%= user.firstName %> <%= user.lastName %> </h2>
         <p class="email" id="paragrah"><%= user.email %> </p>
-         
         <% if (user.File != null) { %>
             <picture class= "imagenUsuario"></picture>
-                <img src= "/uploads/<%=user.File.url %>">
+                <img class= foto src= "/uploads/<%=user.File.url %>">
             </picture>
             <% } else { %> 
              <picture class= "imagenUsuario"></picture>
-             <img src= "/uploads/default.png">
+             <img class= foto src= "/uploads/default.png">
          </picture>
          <% } %>
         
@@ -28,10 +27,12 @@
        <% } %> 
     
     <p class="datos" id="paragrah">Actualizá tus datos:</p>
+    <section class="iconos">
     <a href="/users/editarusuario/<%= user.id %>"><i class="fas fa-pen"></i></a>
     <form action="/users/delete/?m=DELETE" method="post" >
         <input type="hidden" name="id" value="<%= user.id %>">
         <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
+    </section>
     </form>
     </div>
 
