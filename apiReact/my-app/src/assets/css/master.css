@@ -1,9 +1,32 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a:link, a:visited,  a:hover, a:active{
+    color: #000000;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    text-align: center; 
+}
 .encabezado{
     overflow: hidden;
     background-color: #E6E7E8;
-    height: 50vh;
+    height: 30vh;
 }
 #logo{
-    width: 100%;
-    text-align: center;   
+    width: 50%;
+      
 }
