@@ -1,0 +1,36 @@
+
+<%- include('../partials/head') %>
+<link rel="stylesheet" href="/css/<%=style%>.css">
+<body>
+    <%- include('../partials/header') %>
+
+    <main>
+        <section>
+            
+            <% if (results[0]) { %>
+                <article>Mostrando <%= results.length %> resultado/s</article>
+                <section>    
+                    <% results.forEach(element => { %>
+                        <a href="/products/<%= element.id %>">
+                        <article>
+                            <img src="/uploads/<%= element.File.url %>" >
+                            <p> <%= element.name %></p>
+                            <p> <%= element.description %></p>
+                            <p> $ <%= element.price %></p>
+                        </article>
+                    <% }) %>
+                </section>
+            <% } else { %>
+                <p>No hay resultados para su búsqueda</p>
+                <% }%>
+            
+            
+
+        </section>
+    </main>
+
+    
+    <%- include('../partials/footer') %>
+ 
+</body>
+</html>
