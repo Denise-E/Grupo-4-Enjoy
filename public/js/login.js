@@ -1,5 +1,6 @@
 const formEmail = document.querySelector('#email');
 const formPassword = document.querySelector('#password');
+const form= document.querySelector('#loginForm');
 
 
 formEmail.addEventListener('blur', (e) => { 
@@ -19,3 +20,11 @@ formPassword.addEventListener('blur', (e) => {
         feedback.innerHTML = 'La contraseña es obligatoria'
     }
 })
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    Swal.fire({title: "Bienvenido a Enjoy!", icon: 'success'})
+    .then(() => e.target.submit())
+    })
+
