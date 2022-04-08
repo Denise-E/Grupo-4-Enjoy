@@ -10,34 +10,51 @@
                 <fieldset class="formreg">
                     <h1 class="crearCuenta">Crear cuenta</h1> 
                     <label for>Nombre :</label>
-                    <input type="text" name="firstName" minlength="3" >
-                    <span class="feedback"></span>
+                    <input type="text" name="firstName" minlength="3" id="firstName">
+                    <br>
+                    <span class="firstNameFeed"></span>
                     <% if (locals.errors && errors.firstName) { %>
                         <p><%= errors.firstName.msg %> </p>
                       <% } %>
+                      <br>
+
                     <label for>Apellido :</label>
-                    <input type="text" name="lastName" minlength="3" id >
+                    <input type="text" name="lastName" minlength="3" id="lastName" >
+                    <br>
+                    <span class="lastNameFeed"></span>
                     <% if (locals.errors && errors.lastName) { %>
                         <p><%= errors.lastName.msg %> </p>
                       <% } %>
+                      <br>
+
                     <label for>Correo electronico :</label>
-                    <input type="email" name="email" id >
+                    <input type="email" name="email" id="email" >
+                    <br>
+                    <span class="emailFeed"></span>
                     <% if (locals.errors && errors.email) { %>
                         <p><%= errors.email.msg %> </p>
                       <% } %>
+                      <br>
+
                     <label for>Contraseña :</label>
-                    <input type="password" name="password" minlength="8" placeholder="*****" >
+                    <input type="password" name="password" minlength="8" placeholder="*****" id="password">
+                    <br>
+                    <span class="passwordFeed"></span>
                     <% if (locals.errors && errors.password) { %>
                         <p><%= errors.password.msg %> </p>
                       <% } %>
+                      <br>
+
                     <label for="">Foto de usuario :</label> 
                     <input type="file" id="file" name="image">
+                    <br>
+                    <span class="fileFeed"></span>
                     <% if (locals.errors && errors.image) { %>
                         <p><%= errors.image.msg %> </p>
                       <% } %>
                 </fieldset>
                 <div class="ultimaSeccionMain">
-                <label for="terminos y condiciones" class="terms"><input type="checkbox" name="te condiciones" value="terminos y condiciones" > He leido y acepto los terminos y condiciones del sitio </label>
+                <label for="terminos y condiciones" class="terms" required><input type="checkbox" name="te condiciones" value="terminos y condiciones" > He leido y acepto los terminos y condiciones del sitio </label>
                 <button type="submit">Registrarme</button> 
             </div>
             </form>
@@ -52,6 +69,7 @@
             </button>
         </section> 
     </main>
+    <script src="/js/register.js"></script>
     <%- include('../partials/footer') %> 
     
 </body>
