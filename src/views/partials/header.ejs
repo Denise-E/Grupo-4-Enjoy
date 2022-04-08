@@ -70,7 +70,12 @@
             <a href="/"><img src= "\images\ENJOY.png" alt="Logo"> </a>
         </section>
         <nav class="dflex">
-            <a href="/categories">  <i class="fas fa-search"></i></a>
+            <form action="/products/search" method="post">
+                <fieldset>
+                    <input type="search" name="search" id="search" placeholder="Busca acá tus experiencias">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset>
+            </form>
             <a href="/abriTuExperiencia"> <i class="fas fa-gift"></i> <p>¡Abrí tu experiencia!</p> </a>
             <a href="/products/cart"> <i class="fas fa-shopping-cart"></i> </a>
             <a href="/favoritos">  <i class="far fa-heart"></i> </a>

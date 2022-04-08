@@ -95,6 +95,21 @@ module.exports = {
             style: ["products/compras"],
         }))
         .catch(err => res.send(err))
-    }
+    },
+    search: (req,res) =>{
+        db.Product.findAll({
+            where: { name: { //productName
+                [op.like] : "%" + req.body.search + "%"
+            }},
+            include: ["File"]
+        })
+        .then(results => {
+            return res.render ('products/searchs',{
+                results: results,
+                style: ["search"],
+                title: 'Resultado de búsqueda'
+            })
+        })
+    },
     
 }

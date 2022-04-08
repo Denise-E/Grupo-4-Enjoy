@@ -29,9 +29,22 @@
     <p class="datos" id="paragrah">Actualizá tus datos:</p>
     <section class="iconos">
     <a href="/users/editarusuario/<%= user.id %>"><i class="fas fa-pen"></i></a>
+
+    <script>
+        // Confirmacion eliminación ususarios
+        function confirmDelete() {
+          let confirmDelete = confirm("Seguro que quiere eliminar este usuario ?");
+          if (confirmDelete) {
+            alert("Usuario eliminado");
+          } else {
+            event.preventDefault();
+          }
+        }
+    </script>
+
     <form action="/users/delete/?m=DELETE" method="post" >
         <input type="hidden" name="id" value="<%= user.id %>">
-        <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
+        <button type="submit" class="deleteButton" onclick="confirmDelete()"><i class="fas fa-trash"></i></button>
     </section>
     </form>
     </div>
