@@ -1,4 +1,5 @@
 const validator = require('express-validator');
+const path = require('path');
 
 module.exports ={
     login: [
