@@ -13,6 +13,11 @@ main{
     text-align: center;
     margin: 15px;
     font-weight: bold;
+    background-image: url("../images/loogin.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .tituloLogin{
@@ -23,7 +28,7 @@ main{
 
 .inicioSesion {
     text-align: center;
-    box-shadow: 0px 0px 5px #b47cde;
+    /* box-shadow: 0px 0px 5px #b47cde; */
     border-radius: 20px;
     width: 100%;
     margin-bottom: 5px;
@@ -31,6 +36,7 @@ main{
     justify-content: center;
     align-items: center;
     transition: box-shadow 200ms;
+    
 }
 
 .inicioSesion:hover{
@@ -80,7 +86,7 @@ main button{
 }
 
 main button:hover{ 
-    color: #5A2083;
+    color: #5A2083; 
     background-color: #d9bbf9;
 }
 
@@ -97,6 +103,7 @@ main button a{
 .olvide-password a{
     text-decoration: none;
     color: #5A2083;
+    
 }
 
 a:link, a:visited, a:active{
@@ -113,12 +120,14 @@ a:link, a:visited, a:active{
 .redes a {
     margin: 10px;
    font-size: 30px;
-   color: #5A2083;
+    color: #5A2083;
    transition: color 200ms;
 }
 
 .redes a:hover{
-   color: #b47cde;
+   color: #b47cde; 
+   
+   
 }
 
 
