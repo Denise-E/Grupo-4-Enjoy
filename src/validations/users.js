@@ -13,8 +13,7 @@ module.exports ={
         validator.body("email").notEmpty().withMessage("Ingrese un formato de email valido").isEmail(),
         validator.body("password").notEmpty().withMessage("Debe tener como mínimo 8 caracteres").isLength({min:8}),
         validator.body('image').custom((value,{req})=>{
-            if (!req.file) {throw new Error("La imagen es obligatoria.")}
-            else {
+            if (req.file) {
                 let allowedExtensions = ['.jpeg','.jpg','.gif','.png'];
                 let file = req.file
                 let fileExtension = path.extname(file.filename)
