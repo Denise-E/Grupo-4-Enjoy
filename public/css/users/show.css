@@ -7,10 +7,10 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-main{
+
+.flexU{
     display: flex;
     justify-content: center;
-    
 }
 
 .div{
