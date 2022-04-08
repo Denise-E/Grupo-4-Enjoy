@@ -2,7 +2,8 @@ const formFirstName = document.querySelector('#firstName');
 const formLastName = document.querySelector('#lastName');
 const formEmail = document.querySelector('#email');
 const formPassword = document.querySelector('#password');
-const formFile = document.querySelector('#file'); // VALIDO TIPO DE ARCHIVO ?
+const formFile = document.querySelector('#file');
+const form= document.querySelector('.formularioRegistro');
 
 formFirstName.addEventListener('blur', (e) => { 
     let feedback = document.querySelector('.firstNameFeed');
@@ -84,5 +85,11 @@ formFile.addEventListener('blur', (e) => {
     if(regex.test(value)){
         feedback.innerHTML = ''
     }
-
 }) 
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    Swal.fire({title: "¡Felicidades, tu usuario ya fue creado!", icon: 'success'})
+    .then(() => e.target.submit())
+    })
