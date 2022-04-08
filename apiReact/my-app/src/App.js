@@ -4,7 +4,7 @@ import Products from './components/products';
 import Users from './components/users';
 import Totalusers from './components/totalUsers';
 import Totalproducts from './components/totalProducts';
-import Categories from './components/categories';
+
 
 
 import './App.css';
@@ -25,7 +25,7 @@ class App extends Component{
     return (<>
     <div className="container">
       <Encabezado />
-      <Categories /> 
+  
       <Products />
       <Totalproducts/> 
       <Users /> 
