@@ -30,10 +30,11 @@ class Productlast extends Component {
         render (){
           console.log ('product', this.state.product)
           return (<>
-          <h3> Último producto cargado:</h3>
+          <div class='card'>
+          <h3> Último producto cargado</h3>
           <p>{this.state.id}</p>  
             
-         
+          </div>
           </>
           
       
