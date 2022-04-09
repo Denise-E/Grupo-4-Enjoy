@@ -1,11 +1,12 @@
 import React ,{Component} from "react";
 import Encabezado from './components/header';
-import Products from './components/products';
-import Users from './components/users';
+import Productstable from './components/tableProducts';
+
 import Totalusers from './components/totalUsers';
 import Totalproducts from './components/totalProducts';
 import Productlast from './components/productLast';
 import Userlast from './components/userLast';
+import StickyHeadTable from './components/table';
 
 
 
@@ -30,12 +31,15 @@ class App extends Component{
       <div className="firstRow">
       <Totalproducts/> 
       <Totalusers/>
-      </div> 
+      </div>
+
       <Productlast/>
       <Userlast/>
-      <Products />
+      <h2 className="margen"> Detalle de todos los productos </h2>
+      <Productstable />
+      <h2 className="margen"> Detalle de todos los usuarios </h2>
+      <StickyHeadTable />
       
-      <Users /> 
       
 
         

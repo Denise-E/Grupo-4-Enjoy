@@ -22,19 +22,19 @@ function UserLatest ({title}){
       return (
          
            <Fragment>
-  
-          <h2>Último usuario creado</h2>
-  
+           <div class='card'>    
+          <h2>Último usuario registrado</h2>
+            
          <ul>
-                         
+            
                <p> {latest.id} </p>
                <p> {latest.name} </p>
                <p> {latest.email} </p>
-                             
+         
                
             
         </ul> 
-               
+              </div> 
           </Fragment> 
       
   
