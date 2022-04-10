@@ -1,4 +1,5 @@
 import React, {Component } from 'react';
+import { FaStoreAlt } from 'react-icons/fa';
 
 class Totalproducts extends Component {
    
@@ -30,10 +31,13 @@ class Totalproducts extends Component {
         render (){
           console.log ('users', this.state.count)
           return (<>
-          <h3> Cantidad total de productos:</h3>
-          <p>{this.state.count}</p>  
-            
-         
+          <div class='card'>
+          <p class='icono'><FaStoreAlt /> </p>
+          <h2 class= 'tituloC'> Cantidad total de productos</h2>
+          <p class='numero'>{this.state.count}</p> 
+          
+          </div>
+          
           </>
           
       

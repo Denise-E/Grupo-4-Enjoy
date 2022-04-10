@@ -7,7 +7,7 @@ const upload = multer ({storage: multer.diskStorage({
     destination: (req, file, cb) => cb(null, path.resolve (__dirname, "../../uploads")),
       filename: (req, file, cb) => cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname)),
 })})
-const validate = require("../validations/product.js")
+const validate = require("../validations/product.js");
 
 
 router.get("/", products.index);
@@ -22,6 +22,9 @@ router.get("/:id", products.productDetail);
 router.delete("/", products.delete);
 router.post('/search', products.search);
 router.put("/edit/:id",[upload.single("image")],[validate.edit], products.modify);
+
+//carrito
+//router.post("/agregar", addCart)
 
 
 

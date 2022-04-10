@@ -1,5 +1,9 @@
 import React, {Component } from 'react';
 
+import { FaRegUserCircle } from 'react-icons/fa';
+
+
+
 class Totalusers extends Component {
    
         constructor(props){
@@ -29,10 +33,16 @@ class Totalusers extends Component {
       
         render (){
           console.log ('users', this.state.count)
-          return (<>
-          <h3> Cantidad total de usuarios:</h3>
-          <p>{this.state.count}</p>  
+          return (
             
+          <>
+          <div class='card'>
+          <p class='icono'><FaRegUserCircle /></p>
+          <h2 class= 'tituloC'> Cantidad total de usuarios</h2>
+          <p class='numero'>{this.state.count}</p> 
+          
+          
+          </div>
          
           </>
           

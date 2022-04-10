@@ -51,6 +51,8 @@
                     <li><a href="/admins/crearproducto">Crear producto</a></li>
                     <li data-v-668d4b1a="" class="menuDivider"></li>
                     <li><a href="/users/list">Lista de usuarios</a></li>
+                    <li data-v-668d4b1a="" class="menuDivider"></li>
+                    <li><a  href="http://localhost:3001/" target="_blank"> Dashboard </a> </li>
                     <% } else { %>
                     
                     <li><a href="/users/<%= user.id %>">Mi Perfil</a></li>
@@ -87,7 +89,7 @@
         <button type="submit" id="headerButtonLeft"><a href ="/users/login">Log in </a> </button>  
         <button type="submit" id="headerButtonRight"><a href="/users/register">Registrate </a> </button> 
         <% } else if (user && user.isAdmin){ %>
-            <button type="submit" id="headerButtonLeft"><a href="/users/<%= user.id %>">¡Hola <%= user.firstName %>! </a> </button>
+            <button type="submit" id="headerButtonLeft"><a href="/users/<%= user.id %>"> Mi Perfil </a> </button>
            <form action="/users/logout"  method="post"><button type="submit" id="botonlogout" >Logout</button> </form>
             
         <% } else { %>

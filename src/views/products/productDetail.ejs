@@ -74,10 +74,13 @@
         <% }%>
         </section>
         <section class="dflex" id="mainThree">
+            <form action ="/agregar" method="post">
+            <input type = "hidden" name="id" value="<%= product.id %>">
+            <input type = "number" min="1" name="quantity">   
             <button type="submit">
-                <input type="checkbox">
-                <label><strong>Agregar al carrito</strong></label>
+                Agregar al carrito
             </button>
+        </form>
             <a href="/abrituexperiencia" class="marginTop">¿Te hicieron este regalo?</a>
         </section>
         <section>

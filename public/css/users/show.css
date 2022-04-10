@@ -7,7 +7,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-main{
+
+.flexU{
     display: flex;
     justify-content: center;
     
@@ -63,9 +64,11 @@ border-radius: 10px;
  @media screen and (min-width: 1200px){
 
     .div{
-        width: 90%;
+        width: 40%;
         padding:35px;
         }
+
+    
    
 
  }

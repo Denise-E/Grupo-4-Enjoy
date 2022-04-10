@@ -5,8 +5,8 @@ function Encabezado(){
     return (
         <header className="encabezado">
             
-            <nav id="opciones" class="flexRow">
-                <ul>
+            <nav id="opciones" >
+                <ul class="flexRow">
                     
                     
                     <li><a href="#productos">Productos</a></li>
