@@ -1,6 +1,7 @@
 const formEmail = document.querySelector('#email');
 const formPassword = document.querySelector('#password');
 const form= document.querySelector('#loginForm');
+const emailError = document.querySelector('#emailErrorP');
 
 
 formEmail.addEventListener('blur', (e) => { 
@@ -23,8 +24,21 @@ formPassword.addEventListener('blur', (e) => {
 
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    Swal.fire({title: "Bienvenido a Enjoy!", icon: 'success'})
-    .then(() => e.target.submit())
+    let error = false;
+    //&& emailError != null
+    if(formEmail.value.length <9){
+        error = true;
+        return error;
+    }else if(formPassword.value.length == 0){
+        error = true;
+        return error;
+    }
+
+    if(error == true) {
+        e.preventDefault();
+    }else{
+        Swal.fire({title: "Bienvenido a Enjoy!", icon: 'success'})
+        .then(() => e.target.submit())
+        }
     })
 
