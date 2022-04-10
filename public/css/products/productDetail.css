@@ -230,6 +230,12 @@ img{
 .marginTop{
     margin-top:0.5rem;
 }
+.num {
+    border: 2px solid #B47CDE;
+    border-radius: 5px;
+    max-width: 2rem;
+    height: 1.6rem;
+} 
 
 @media screen and (min-width: 440px) {  
     #mainOne p{
@@ -379,7 +385,13 @@ img{
         width: 40%;
         padding: 12px;
         margin-top: 5px;
-    }
+        }
+    .num {
+        
+        max-width: 3rem;
+        height: 2.5rem;
+    } 
+}
     @media screen and (min-width: 1200px){
         .buttonLeft{
             padding:1.2rem 2.2rem;
@@ -393,4 +405,3 @@ img{
             margin-bottom: 2rem;
         }
     }
-}
