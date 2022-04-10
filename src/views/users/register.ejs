@@ -11,7 +11,7 @@
                 <fieldset class="formreg">
                     <h1 class="crearCuenta">Crear cuenta</h1> 
                     <label for>Nombre :</label>
-                    <input type="text" name="firstName" minlength="2" id="firstName">
+                    <input type="text" name="firstName" id="firstName">
                     <br>
                     <span class="firstNameFeed"></span>
                     <% if (locals.errors && errors.firstName) { %>
@@ -20,7 +20,7 @@
                       <br>
 
                     <label for>Apellido :</label>
-                    <input type="text" name="lastName" minlength="2" id="lastName" >
+                    <input type="text" name="lastName" id="lastName" >
                     <br>
                     <span class="lastNameFeed"></span>
                     <% if (locals.errors && errors.lastName) { %>
@@ -38,7 +38,7 @@
                       <br>
 
                     <label for>Contraseña :</label>
-                    <input type="password" name="password" minlength="8" placeholder="*****" id="password">
+                    <input type="password" name="password" placeholder="*****" id="password">
                     <br>
                     <span class="passwordFeed"></span>
                     <% if (locals.errors && errors.password) { %>

@@ -25,8 +25,8 @@ formPassword.addEventListener('blur', (e) => {
 
 form.addEventListener('submit', (e) => {
     let error = false;
-    //&& emailError != null
-    if(formEmail.value.length <9){
+
+    if(formEmail.value.length < 11){
         error = true;
         return error;
     }else if(formPassword.value.length == 0){

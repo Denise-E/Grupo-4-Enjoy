@@ -89,7 +89,31 @@ formFile.addEventListener('blur', (e) => {
 
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    Swal.fire({title: "¡Felicidades, tu usuario ya fue creado!", icon: 'success'})
-    .then(() => e.target.submit())
-    })
+    let error = false;
+    if(formFirstName.value.length < 2){
+        error = true;
+        return error;
+    }else if(formLastName.value.length < 2){
+        error = true;
+        return error;
+    }else if(formEmail.value.length < 11){
+        error = true;
+        return error;
+    }else if(formPassword.value.length < 9){
+        error = true;
+        return error;
+    }if(!regex.test(formFile.value)){
+        error = true;
+        return error;
+    }
+
+    
+
+    if(error == true) {
+        e.preventDefault();
+    }else{
+        e.preventDefault();
+        Swal.fire({title: "¡Felicidades, tu usuario ya fue creado!", icon: 'success'})
+        .then(() => e.target.submit())
+    }
+})
