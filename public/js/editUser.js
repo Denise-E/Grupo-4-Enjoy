@@ -4,9 +4,9 @@ const formLastName = document.querySelector('#lastName');
 const formEmail = document.querySelector('#email');
 const formPassword = document.querySelector('#password');
 const formFile = document.querySelector('#file');
-
+ /*
 form.addEventListener('submit', (e) => {
-   /*
+  
     let error = false;
     if(formFirstName.value.length < 2){
         error = true;
@@ -27,9 +27,9 @@ form.addEventListener('submit', (e) => {
 
     if(error == true) {
         e.preventDefault();
-    }else{ */
+    }else{ 
         e.preventDefault();
         Swal.fire({title: "Sus cambios fueron guardados", icon: 'success'})
         .then(() => e.target.submit())
     }
-// })
+ })*/

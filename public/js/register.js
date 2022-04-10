@@ -74,7 +74,7 @@ formPassword.addEventListener('keyup', (e) =>{
     }
  })
 
- 
+
 formFile.addEventListener('blur', (e) => {
     let feedback = document.querySelector('.fileFeed');
     let value = e.target.value
@@ -87,9 +87,9 @@ formFile.addEventListener('blur', (e) => {
     }
 }) 
 
-
+ /*
 form.addEventListener('submit', (e) => {
-    /*
+   
     let error = false;
     if(formFirstName.value.length < 2){
         error = true;
@@ -112,9 +112,9 @@ form.addEventListener('submit', (e) => {
 
     if(error == true) {
         e.preventDefault();
-    }else{ */
+    }else{
         e.preventDefault();
         Swal.fire({title: "¡Felicidades, tu usuario ya fue creado!", icon: 'success'})
         .then(() => e.target.submit())
     }
-// })
+}) */

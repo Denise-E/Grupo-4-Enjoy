@@ -22,9 +22,9 @@ formPassword.addEventListener('blur', (e) => {
     }
 })
 
-
+/*
 form.addEventListener('submit', (e) => {
-    /*
+    
     let error = false;
     if(formEmail.value.length < 11){
         error = true;
@@ -37,9 +37,9 @@ form.addEventListener('submit', (e) => {
     if(error == true) {
         e.preventDefault();
     }else{
-        */
+        
         Swal.fire({title: "Bienvenido a Enjoy!", icon: 'success'})
         .then(() => e.target.submit())
         }
-   // })
+ })*/
 
