@@ -111,5 +111,35 @@ module.exports = {
             })
         })
     },
+    //carrito
+    addCart: async (req, res) =>{
+        try{
+            const {id, quantity} = req.body;
+            const product = await Productlast.findbyPk (id);
+            if(!req.session.cart){
+                req.session.cart = [];
+            }
+            const cart = req.session.cart;
+            const productExist = cart.find (item => item.id === id);
+            if (productExist){
+                productExist.quantity += quantity;
+                productExist.subtottal = productExist.quantity * product.price;
+                }else{
+                    req.session.cart.push({
+                        id:product.id,
+                        name: product.name,
+                        price: product.price,
+                        quantity: quantity,
+                        subtottal: product.price * quantity
+        
+                    });
+
+                }
+            res.redirect("/");
+
+        } catch (error) {
+            res.send(error);
+        }
+    }
     
 }

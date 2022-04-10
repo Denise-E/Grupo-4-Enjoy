@@ -10,6 +10,7 @@ const upload = multer ({storage: multer.diskStorage({
 const validate = require("../validations/product.js");
 
 
+
 router.get("/", products.index);
 
 router.get("/cart", products.cart);
@@ -24,7 +25,7 @@ router.post('/search', products.search);
 router.put("/edit/:id",[upload.single("image")],[validate.edit], products.modify);
 
 //carrito
-//router.post("/agregar", addCart)
+router.post("/agregar", products.addCart)
 
 
 

@@ -1,14 +1,4 @@
-<%- include('../partials/head') %> 
-<link rel="stylesheet" href="/css/<%=style%>.css">
-
-<body>
-    <%- include('../partials/header') %> 
-    
-    <main> 
-        <section id="mainOne">
-            <h2><i class="fas fa-arrow-left"></i><strong>Tu Carrito</strong></h2>
-        </section>
-        <section class="dflex" id="mainTwo">
+       <!--  <section class="dflex" id="mainTwo">
             <h2>Gastronomía</h2>
                 <img src="/images/gastronomia.jpeg" alt="">
             <h5>Gastronomía</h5>
@@ -36,9 +26,41 @@
         </section>
         <section class="dflex" id="mainFive">
             <button type="button"><strong>C o n t i n u a r</strong></button>
+        </section> -->
+        <%- include('../partials/head') %> 
+<link rel="stylesheet" href="/css/<%=style%>.css">
+
+<body>
+    <%- include('../partials/header') %> 
+    
+    <main> 
+        <section id="mainOne">
+            <h2><i class="fas fa-arrow-left"></i><strong>Tu Carrito</strong></h2>
         </section>
+       
+        
+                <% if (cart.length != 0 ) { %>
+                    <ul>
+                    <% cart.forEach(element => { %>
+                    <li>
+                        <%= element.name %> | <%= element.quantity %> | $ <%= element.subtotal %>
+                                    <form action="/eliminar" method="post">
+                                        <input type="hidden" name="id" value="<%= element.id %>">
+                                        <button type="submit"> Eliminar</button>
+                                    </form>
+                    </li>
+                    <% });%>
+        
+            </ul>
+        
+            <% } else {%>
+                <p>No hay productos en el carrito</p> 
+                
+            <% };%>
+        
     </main>
     <%- include('../partials/footer') %> 
     
 </body>
 </html>
+   

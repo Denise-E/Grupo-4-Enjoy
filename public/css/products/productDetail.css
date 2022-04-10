@@ -260,9 +260,7 @@ img{
     }
 
     
-    #mainThree{
-        padding-left: 50%;
-    }
+    
 
     #mainThree button{
         padding: 9px;
@@ -388,6 +386,11 @@ img{
         }
         .buttonRight{
             padding:1.2rem 2.2rem;
-        }       
+        } 
+        
+        .pregunta{
+            margin-left: 11rem;
+            margin-bottom: 2rem;
+        }
     }
 }
