@@ -1,45 +1,55 @@
 import React, {Component } from 'react';
-
+import {TiPlus } from 'react-icons/ti';
 class Productlast extends Component {
    
-        constructor(props){
-            super(props);
-            this.state ={
-            product: null,
-             
-            }
-          }
-          componentDidMount(){
-            fetch (`http://localhost:3000/last/product`)
-            .then (res=>res.json())
-            .then (data => {
-                this.setState({product: data.last})
-            })
-            .catch(err => console.log(err))
-          }
+  constructor(props){
+    super(props);
+    this.state ={
+        id: null,
         
-          componentDidUpdate(){
-            fetch (`http://localhost:3000/api/last/product`)
-            .then (res=>res.json())
-            .then (data => {
-                this.setState({product: data.last})
-            })
-            .catch(err => console.log(err))
-          }
-      
-        render (){
-          console.log ('product', this.state.product)
-          return (<>
-          <div class='card'>
-          <h3> Último producto cargado</h3>
-          <p>{this.state.id}</p>  
+    }
+  }
+
+ 
+componentDidMount(){
+      fetch('http://localhost:3000/api/last/product/')
+      .then(res => res.json())
+      .then(data => {
+          this.setState({id: data.id})
+        })     
+      .catch(err => console.log(err))
+      console.log('Inicia', this.state.id)
+  }
+
+componentDidUpdate(){
+      fetch('http://localhost:3000/api/last/product/')
+      .then(res => res.json())
+      .then(data => {
+          this.setState({id: data.id})
+        })        
+      .catch(err => console.log(err))
+      console.log('Actualiza', this.state.id)
+  }
+  render (){
+    console.log ('id', this.state.id)
+  return (
+       <>
+       <div className='card'>
+       <p className='icono'><TiPlus/> </p>    
+       <h2 className= 'tituloC'>Último producto cargado</h2>
+        
+     <ul>
+        <li> 
+            <p>{this.state.id}</p>
             
-          </div>
-          </>
-          
-      
-          );
-        }
+            
+        </li>
+        
+    </ul> 
+          </div> 
+      </> 
+    )
+}
       }
       
       export default Productlast;

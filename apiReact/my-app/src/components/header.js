@@ -6,7 +6,7 @@ function Encabezado(){
         <header className="encabezado">
             
             <nav id="opciones" >
-                <ul class="flexRow">
+                <ul className="flexRow">
                     
                     
                     <li><a href="#productos">Productos</a></li>

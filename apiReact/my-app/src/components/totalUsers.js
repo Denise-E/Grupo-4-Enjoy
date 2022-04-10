@@ -36,10 +36,10 @@ class Totalusers extends Component {
           return (
             
           <>
-          <div class='card'>
-          <p class='icono'><FaRegUserCircle /></p>
-          <h2 class= 'tituloC'> Cantidad total de usuarios</h2>
-          <p class='numero'>{this.state.count}</p> 
+          <div className='card'>
+          <p className='icono'><FaRegUserCircle /></p>
+          <h2 className= 'tituloC'> Cantidad total de usuarios</h2>
+          <p className='numero'>{this.state.count}</p> 
           
           
           </div>

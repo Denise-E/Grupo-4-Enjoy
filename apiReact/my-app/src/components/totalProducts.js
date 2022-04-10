@@ -31,10 +31,10 @@ class Totalproducts extends Component {
         render (){
           console.log ('users', this.state.count)
           return (<>
-          <div class='card'>
-          <p class='icono'><FaStoreAlt /> </p>
-          <h2 class= 'tituloC'> Cantidad total de productos</h2>
-          <p class='numero'>{this.state.count}</p> 
+          <div className='card'>
+          <p className='icono'><FaStoreAlt /> </p>
+          <h2 className= 'tituloC'> Cantidad total de productos</h2>
+          <p className='numero'>{this.state.count}</p> 
           
           </div>
           

@@ -1,11 +1,15 @@
 import React, {Component } from 'react';
+import {TiPlusOutline } from 'react-icons/ti';
 
 class userLast extends Component {
    
     constructor(props){
         super(props);
         this.state ={
-            last: null,
+            id: null,
+            firstName: null,
+            lastName: null,
+            email:null
         }
       }
 
@@ -14,31 +18,36 @@ class userLast extends Component {
           fetch('http://localhost:3000/api/last/user/')
           .then(res => res.json())
           .then(data => {
-              this.setState({last: data.last})
+              this.setState({id: data.id})
             })     
           .catch(err => console.log(err))
-          console.log('Inicia', this.state.last)
+          console.log('Inicia', this.state.id)
       }
   
     componentDidUpdate(){
           fetch('http://localhost:3000/api/last/user/')
           .then(res => res.json())
           .then(data => {
-              this.setState({last: data.last})
+              this.setState({id: data.id})
             })        
           .catch(err => console.log(err))
-          console.log('Actualiza', this.state.last)
+          console.log('Actualiza', this.state.id)
       }
       render (){
-        console.log ('user', this.state.last)
+        console.log ('id', this.state.id)
       return (
            <>
-           <div className='card'>    
-          <h2>Último usuario registrado</h2>
+           <div className='card'>
+           <p className='icono'><TiPlusOutline/> </p>
+           
+           <h2 className= 'tituloC'>Último usuario registrado</h2>
             
          <ul>
-            <li>
-                <p>{this.state.last}</p>
+            <li> 
+              
+                <p>{this.state.id}</p>
+                <p>{this.state.firstName}</p>
+                
             </li>
             
         </ul> 
