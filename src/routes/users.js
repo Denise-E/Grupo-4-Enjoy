@@ -20,7 +20,7 @@ router.get("/editarUsuario/:id",[access], users.editarUsuario);
 router.get("/:id",[access], users.show); 
 
 
-router.post("/",[upload.single("image")],[validates.register], users.save);
+router.post("/",[validates.register],[upload.single("image")], users.save);
 
 router.post("/access", [validates.login],users.access);
 router.post ("/logout", users.logout);

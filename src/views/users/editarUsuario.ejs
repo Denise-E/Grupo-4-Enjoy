@@ -25,7 +25,7 @@
 
                 <h3>Email: </h3>
                  <label for=""></label> 
-                 <input type="text" placeholder="Escribí acá el nuevo email" name="email" id=""  value=" <%= user.email %> ">
+                 <input type="text" placeholder="Escribí acá el nuevo email" name="email" id="email"  value=" <%= user.email %> ">
                  <span class="feedback"></span>
                  <label for=""></label> 
                  <% if (locals.errors && errors.email) { %>
@@ -35,7 +35,7 @@
                  <h3>Nueva contraseña:</h3>
                  
                  <label for=""></label> 
-                 <input type="password" placeholder="Escribí acá la nueva contraseña" name="password" required>
+                 <input type="password" placeholder="Escribí acá la nueva contraseña" name="password" id="password">
                  <span class="feedback"></span>
                  <label for=""></label> 
                  <% if (locals.errors && errors.password) { %>
