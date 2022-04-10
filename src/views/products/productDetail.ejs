@@ -19,6 +19,7 @@
 
     <main>
         <section class="dflex" id="mainOne">
+            <% if (product.length =! 0 ) { %>
             <h2> <%= product.name %>  <h4><i class="far fa-star"></i><strong><%= product.starsAvg %> </strong></h4></h2> 
             
             <p> <%= product.resume %> </p>
@@ -74,15 +75,15 @@
         <% }%>
         </section>
         <section class="dflex" id="mainThree">
-            <% if (product.length =! 0 ) { %>
+            
                 <div> 
                 
-            <form action ="/agregar" method="post">
+            <form action ="/products/agregar" method="post">
             <input type = "hidden" name="id" value="<%= product.id %>">
             <input type = "number" class="num" min="1" value="1" name="quantity">   
             <button type="submit">Agregar al carrito</button>
             </form>
-        </div>
+            </div>
         <% } else { %>
         <p> No hay stock </p>
         <%  } %>

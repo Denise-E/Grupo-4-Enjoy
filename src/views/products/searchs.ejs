@@ -8,20 +8,24 @@
         <section>
             
             <% if (results[0]) { %>
-                <article>Mostrando <%= results.length %> resultado/s</article>
-                <section>    
+                <article class="duflex">Mostrando <%= results.length %> resultado/s</article>
+                <section class="product" >    
                     <% results.forEach(element => { %>
+                        <article class="duuflex">
                         <a href="/products/<%= element.id %>">
-                        <article>
+                        <article class="detalle">
                             <img src="/uploads/<%= element.File.url %>" >
                             <p> <%= element.name %></p>
                             <p> <%= element.description %></p>
                             <p> $ <%= element.price %></p>
+
+                        </article>
+                        </a>
                         </article>
                     <% }) %>
                 </section>
             <% } else { %>
-                <p>No hay resultados para su búsqueda</p>
+                <p class="noHay">No hay resultados para su búsqueda</p>
                 <% }%>
             
             

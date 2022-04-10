@@ -106,7 +106,7 @@ module.exports = {
         .then(results => {
             return res.render ('products/searchs',{
                 results: results,
-                style: ["search"],
+                style: ["products/searchs"],
                 title: 'Resultado de búsqueda'
             })
         })
@@ -115,30 +115,35 @@ module.exports = {
     addCart: async (req, res) =>{
         try{
             const {id, quantity} = req.body;
-            const product = await Productlast.findbyPk (id);
+            const product = await Product.findbyPk (id);
             if(!req.session.cart){
                 req.session.cart = [];
             }
             const cart = req.session.cart;
             const productExist = cart.find (item => item.id === id);
             if (productExist){
-                productExist.quantity += quantity;
-                productExist.subtottal = productExist.quantity * product.price;
+                req.session.cart = cart.map(item => {
+                    if(item.id === id){
+                        item.quantity += quantity;
+                        item.subtotal= product.price * item.quantity;
+                    }
+                    return item;
+                });
                 }else{
                     req.session.cart.push({
                         id:product.id,
                         name: product.name,
                         price: product.price,
                         quantity: quantity,
-                        subtottal: product.price * quantity
+                        subtotal: product.price * quantity
         
                     });
 
                 }
-            res.redirect("/");
+            res.redirect("/products/cart");
 
-        } catch (error) {
-            res.send(error);
+        } catch (err) {
+            res.send(err);
         }
     }
     

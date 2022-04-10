@@ -39,13 +39,13 @@
         </section>
        
         
-                <% if (cart.length != 0 ) { %>
+                <% if (cart.length > 0 ) { %>
                     <ul>
-                    <% cart.forEach(element => { %>
+                    <% cart.forEach(product => { %>
                     <li>
-                        <%= element.name %> | <%= element.quantity %> | $ <%= element.subtotal %>
+                        <%= product.name %> | <%= product.quantity %> | $ <%= product.subtotal %>
                                     <form action="/eliminar" method="post">
-                                        <input type="hidden" name="id" value="<%= element.id %>">
+                                        <input type="hidden" name="id" value="<%= product.id %>">
                                         <button type="submit"> Eliminar</button>
                                     </form>
                     </li>
