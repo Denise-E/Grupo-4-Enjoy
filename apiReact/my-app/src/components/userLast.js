@@ -1,48 +1,55 @@
-import {useState,useEffect,Fragment} from 'react'
+import React, {Component } from 'react';
 
+class userLast extends Component {
+   
+    constructor(props){
+        super(props);
+        this.state ={
+            last: null,
+        }
+      }
 
-function UserLatest ({title}){
-  
-    const [latest,setLatest] = useState([]);
      
-      useEffect(() => {
-          fetch('http://localhost:3001/api/last/user/')
+    componentDidMount(){
+          fetch('http://localhost:3000/api/last/user/')
           .then(res => res.json())
-          .then(data => setLatest(data.last))        
-          console.log('Inicia')
-      },[latest])
+          .then(data => {
+              this.setState({last: data.last})
+            })     
+          .catch(err => console.log(err))
+          console.log('Inicia', this.state.last)
+      }
   
-      useEffect(() => {
-          fetch('http://localhost:3001/api/last/user/')
+    componentDidUpdate(){
+          fetch('http://localhost:3000/api/last/user/')
           .then(res => res.json())
-          .then(data => setLatest(data.last))        
-          console.log('Actualiza')
-      },[])
-  
+          .then(data => {
+              this.setState({last: data.last})
+            })        
+          .catch(err => console.log(err))
+          console.log('Actualiza', this.state.last)
+      }
+      render (){
+        console.log ('user', this.state.last)
       return (
-         
-           <Fragment>
-           <div class='card'>    
+           <>
+           <div className='card'>    
           <h2>Último usuario registrado</h2>
             
          <ul>
-            
-               <p> {latest.id} </p>
-               <p> {latest.name} </p>
-               <p> {latest.email} </p>
-         
-               
+            <li>
+                <p>{this.state.last}</p>
+            </li>
             
         </ul> 
               </div> 
-          </Fragment> 
-      
-  
-      )
+          </> 
+        )
+    }
    }
   
          
   
   
-  export default UserLatest;
+  export default userLast;
 
