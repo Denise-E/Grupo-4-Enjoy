@@ -7,6 +7,7 @@
       
       font-family: 'Montserrat', sans-serif;
       font-size: 15px;
+      font-weight:bold;
   }
 
 .main{
@@ -45,14 +46,16 @@
 .contenedor{
     
     border-bottom: 20px;
+    margin-bottom: 3rem;
   
 }
 
-  .enlace{
-    margin: 2.5rem auto 0.2rem auto;
-    padding: 10px;
-  }
+a:link, a:visited,  a:hover, a:active{
+  color: #5A2083;
+  text-decoration: none;
+   }
 
+  
 
 
 

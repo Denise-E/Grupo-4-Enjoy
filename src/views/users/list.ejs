@@ -13,14 +13,15 @@
             <h3 class="nombres"><%= element.firstName %> <%= element.lastName  %></h3>
         </a>
         <p class="email"> <%= element.email %> </p>
-
         <% if (element.isAdmin == true) { %>
             <p class="administrador"> es administrador</p>
            <% } %> 
-
-        <% if (element.isActive == true) { %>
+        <% if (element.isActive == true && element.isAdmin == false) { %>
             <p class="actividad">este usuario esta activo</p>
            <% } %>
+        
+
+        
            <% if (element.File != null) { %>
            <picture class= "imagenUsuario"></picture>
                <img class= "foto" src= "/uploads/<%=element.File.url %>">
@@ -30,6 +31,7 @@
             <img class= "foto"src= "/uploads/default.png">
         </picture>
         <% } %>
+        
 
         <section class="iconos">
         

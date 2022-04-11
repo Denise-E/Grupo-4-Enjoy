@@ -12,6 +12,9 @@ body{
 main{
   text-align: center;
 }
+ul li{
+  list-style: none;
+}
 
 h1 {
     font-size: 2.5rem;

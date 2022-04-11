@@ -73,6 +73,7 @@ main button{
     width: 37%;
     padding: 5px;
     margin-top: 15px;
+    justify-content: center;
 }
 
 main button:hover{ 
