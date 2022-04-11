@@ -265,7 +265,9 @@ header img{
     }
     .submenu{
         width: 20rem;
-    }
+    } 
+}
+@media screen and (min-width: 816px) { 
     .oculto{
         display:flex;
     }
