@@ -148,6 +148,7 @@ header img{
 #barraSuperior nav a{
     color: black;
     text-decoration: none;
+    align-items: center;
 }
 
 #barraInferior{
@@ -191,6 +192,9 @@ header img{
 #headerButtonLeft a{
     color: #371452
 }
+.oculto{
+    display:none;
+}
 
 @media screen and (min-width: 361px) {  
     header{
@@ -203,15 +207,15 @@ header img{
         height: 40%;
     }
 
-    #barraSuperior nav{
-        width: 45%;
-    }
+    
 
     
     #mainFive button{
         width: 250px;
         margin-right: 10%;
     } 
+
+    
   
     
 
@@ -232,7 +236,9 @@ header img{
     }
     #barraSuperior nav p{
         display: block;
-        display: contents;
+        margin-left: 0.8rem;
+        margin-right: -0.8rem;
+        
       }
    
     #mainFive button{
@@ -245,11 +251,20 @@ header img{
        color: #371452;
        font-weight: bold;
        display: block;
+       width: 15rem;
     
     }
     .submenu{
         width: 20rem;
     }
+    .oculto{
+        display:flex;
+    }
+    .busqueda{
+        flex-direction: row;
+        display: flex;
+    }
+    
 }
     
 
@@ -258,14 +273,7 @@ header img{
     .hide {
         display:none;
     }
-    #barraSuperior nav{
-        margin-right: 0;
-        width: 40%;
-    }
-    #barraSuperior nav a{
-        font-size: 2rem;
-        margin-right: 1rem;
-    }
+    
 
     header{
         padding: 2px;
@@ -285,14 +293,8 @@ header img{
         justify-content: right;
     }
     
-    #barraSuperior nav{
-        width: 45%;
-        
-    }
+    
 
-    #barraSuperior nav p{
-    display: flex;
-  }
   nav.dflex a{
       font-size: 23px;
       margin: 3px;
@@ -301,6 +303,7 @@ header img{
     font-size: 23px;
    color: #371452;
    font-weight: bold;
+   width: 15rem;
 
 }
     #barraInferior button{
