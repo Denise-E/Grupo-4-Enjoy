@@ -223,7 +223,7 @@ header img{
     }
     
     
-
+} 
     
   
     
@@ -270,10 +270,12 @@ header img{
 @media screen and (min-width: 816px) { 
     .ocult{
         display:flex;
+        margin-top:3px;
     }
     .busqueda{
         flex-direction: row;
         display: flex;
+        height: 2.6rem;
         
     }
     #search{
@@ -282,6 +284,7 @@ header img{
         position: absolute;
         left: -14rem;
         width: 15rem;
+        font-size:1.2rem;
     }
     .relative{
         flex-direction: row;
@@ -303,6 +306,16 @@ header img{
 @media screen and (min-width: 1200px) {  
     .hide {
         display:none;
+    } 
+    
+    #barraSuperior nav {
+        
+        justify-content: right;
+        gap: 16px;
+        
+        display: flex;
+        flex-direction: row;
+        margin-right: 2rem;
     }
     
 
@@ -367,4 +380,4 @@ header img{
 }
  } 
  
-}
+
