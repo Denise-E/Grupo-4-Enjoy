@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+a:link, a:visited,  a:hover, a:active{
+    color: #5A2083;
+    text-decoration: none;
+}
 
 .dflex{
     display: flex;
@@ -132,17 +136,17 @@ main img{
 #mainFive{
     justify-content: flex-end;
 }
+.noHay{
+    margin: 3rem;
+    font-size: 1.5rem;
+}
 
 
 @media screen and (min-width: 361px) {  
     
-    header i{
-        font-size: 20px;
-    }
+   
 
-    main{
-        margin-left: 10%;
-    }
+    
 
     #mainTwo{
         width: 80%;

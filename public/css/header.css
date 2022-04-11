@@ -278,7 +278,7 @@ header img{
     }
     #search{
         border: 1px solid #371452;
-        border-radius: 2px;
+        border-radius: 5px;
         position: absolute;
         left: -14rem;
         width: 15rem;
