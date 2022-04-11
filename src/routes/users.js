@@ -10,13 +10,14 @@ const upload = multer ({storage: multer.diskStorage({
     destination: (req, file, cb) => cb(null, path.resolve (__dirname, "../../uploads")),
       filename: (req, file, cb) => cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname)),
 })});
-const validates = require("../validations/users.js")
+const validates = require("../validations/users.js");
+const {edit} = require("../validations/userEdit.js");
 
 
 router.get("/login", users.login);
 router.get("/register", users.register);
 router.get("/list",[auth], users.list); 
-router.get("/editarUsuario/:id",[access], users.editarUsuario);
+router.get("/editarUsuario/:id", users.editarUsuario);//,[access]
 router.get("/:id",[access], users.show); 
 
 
@@ -25,8 +26,7 @@ router.post("/",[upload.single("image"), validates.register], users.save);
 router.post("/access", [validates.login],users.access);
 router.post ("/logout", users.logout);
 
-router.put("/:id",[upload.single("image"), validates.edit], users.
-modify); 
+router.put("/:id",[upload.single("image"), edit], users.modify); 
 router.delete("/delete", users.delete);
 
 module.exports = router;

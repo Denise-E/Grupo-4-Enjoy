@@ -24,8 +24,8 @@ module.exports ={
     })
     ],
     edit:[
-        validator.body("name").notEmpty().withMessage("Debe tener como mínimo 5 caracteres").isLength({min:5}),
-        validator.body("description").notEmpty().withMessage("Debe tener como mínimo 20 caracteres").isLength({min:20}),
+        validator.body("name").notEmpty().isLength({min:5}).withMessage("Debe tener como mínimo 5 caracteres"),
+        validator.body("description").notEmpty().isLength({min:20}).withMessage("Debe tener como mínimo 20 caracteres"),
         validator.body("resume").notEmpty().withMessage("Este campo es obligatorio"),
         validator.body("title").notEmpty().withMessage("Este campo es obligatorio"),
         validator.body("location").notEmpty().withMessage("Este campo es obligatorio"),

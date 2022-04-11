@@ -135,6 +135,16 @@ module.exports = {
     modify: (req,res) => {
         //let updated = model.editarUsuario (req.params.id,req.body)
         //return res.redirect("/users/"+updated.id)
+        let errors = validator.validationResult(req)
+        if (!errors.isEmpty()) {
+
+            db.User.findByPk(req.params.id).then(result => res.render("users/editarUsuario",{  
+                user: result,
+                style: ["users/editarUsuario"],
+                errors: errors.mapped()
+             })).catch(err => res.send(err))
+
+         }else{
         db.File.create({
             type:"users", 
             url: req.file ? req.file.filename : "default.png" 
@@ -152,5 +162,6 @@ module.exports = {
         .catch(err => res.send(err))
     })
     .catch(err => res.send(err))
+        }   
     }
 }

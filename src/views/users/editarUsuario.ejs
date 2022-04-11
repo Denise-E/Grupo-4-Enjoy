@@ -31,7 +31,7 @@
 
                 <h3>Email: </h3>
                  <label for=""></label> 
-                 <input type="text" placeholder="Escribí acá el nuevo email" name="email" id="email"  value=" <%= user.email %> ">
+                 <input type="email" placeholder="Escribí acá el nuevo email" name="email" id="email"  value=" <%= user.email %> ">
                  <span class="feedback"></span>
                  <label for=""></label> 
                  <% if (locals.errors && errors.email) { %>
@@ -62,7 +62,7 @@
                 </select>
              </p>
 
-         <button type="submit" href="/" id="submitButton">Guardar</button>   
+         <button type="submit" href="/users/<%= user.id %> " id="submitButton">Guardar</button>   
       </div> 
     <script src="/js/editUser.js"></script>
   </fieldset>
