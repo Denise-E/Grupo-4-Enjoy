@@ -56,7 +56,7 @@ module.exports = {
                     fees: product.fees,
                     starsAvg: product.starsAvg,
                     category: product.category.category,
-                    imageURL: "http://localhost:300/uploads/" + product.File.url
+                    imageURL: "http://localhost:3000/uploads/" + product.File.url
             }
 
             res.json(result)

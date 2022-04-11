@@ -49,7 +49,7 @@ module.exports = {
                     firstName: user.firstName,
                     lastName: user.lastName,
                     email: user.email,
-                    imageURL: "http://localhost:300/uploads/"+  user.File.url 
+                    imageURL: "http://localhost:3000/uploads/"+  user.File.url 
             }
 
             res.json(result)

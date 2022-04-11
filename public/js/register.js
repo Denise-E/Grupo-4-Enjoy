@@ -87,7 +87,7 @@ formFile.addEventListener('blur', (e) => {
     }
 }) 
 
- /*
+/*
 form.addEventListener('submit', (e) => {
    
     let error = false;
@@ -103,16 +103,13 @@ form.addEventListener('submit', (e) => {
     }else if(formPassword.value.length < 9){
         error = true;
         return error;
-    }if(!regex.test(formFile.value)){
+    }
+    if(!regex.test(formFile.value)){
         error = true;
         return error;
-    }
+    } 
 
-    
-
-    if(error == true) {
-        e.preventDefault();
-    }else{
+    if(error != true) {
         e.preventDefault();
         Swal.fire({title: "¡Felicidades, tu usuario ya fue creado!", icon: 'success'})
         .then(() => e.target.submit())
