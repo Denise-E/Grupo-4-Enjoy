@@ -279,11 +279,11 @@ header img{
         
     }
     #search{
-        border: 1px solid #371452;
+        border: 0.5px solid #371452;
         border-radius: 5px;
         position: absolute;
-        left: -14rem;
-        width: 15.6rem;
+        left: -15rem;
+        width: 16rem;
         font-size:1.2rem;
     }
     .relative{
@@ -292,10 +292,14 @@ header img{
         position:relative;
     } 
     .lupa{
-        position: absolut;
-        border: 1px solid #371452;
-        border-radius: 3px;
+        position: absolute;
         z-index: 1;
+        padding: 0px;
+    opacity: 2;
+    background-color: white;
+    height: 20px;
+    margin-top: 2px;
+    
     }
     
     
