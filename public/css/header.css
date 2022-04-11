@@ -199,7 +199,7 @@ header img{
 #headerButtonLeft a{
     color: #371452
 }
-.oculto{
+.ocult{
     display:none;
 }
 
@@ -268,7 +268,7 @@ header img{
     } 
 }
 @media screen and (min-width: 816px) { 
-    .oculto{
+    .ocult{
         display:flex;
     }
     .busqueda{

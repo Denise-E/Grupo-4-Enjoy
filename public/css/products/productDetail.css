@@ -215,6 +215,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .deleteButton{
@@ -222,7 +223,7 @@ img{
     width: 40px;   
 }
 
-.fa-trash, .fa-pen, .fa-heart{
+.fa-trash, .fa-pen, .corazon{
     font-size: 1.5rem;
     color: #5A2083;
     margin: 2px;
@@ -274,6 +275,7 @@ img{
     .buttonLeft{
         width: 10rem;
         padding:1rem;
+        margin-bottom: 1rem;
     }
     .buttonRight{
         width: 10rem;
@@ -361,9 +363,7 @@ img{
         max-height: 50%;
         margin-left: 20%;
     }
-    .botones{
-        flex-direction: row;
-    }
+    
     .buttonLeft{
         padding:1rem 0.4rem;
     }
@@ -391,17 +391,30 @@ img{
         max-width: 3rem;
         height: 2.5rem;
     } 
+    
 }
     @media screen and (min-width: 1200px){
         .buttonLeft{
             padding:1.2rem 2.2rem;
+            margin-bottom:0;
         }
         .buttonRight{
             padding:1.2rem 2.2rem;
         } 
+        .botones{
+            flex-direction: row;
+        }
         
         .pregunta{
-            margin-left: 11rem;
-            margin-bottom: 2rem;
+            
+            margin-bottom: 1.5rem;
         }
+        .adminsIcons{
+            position: absolute;
+    left: 25.5rem;
+        }
+        .corazon{
+            font-size: 2.5rem;
+             }
+        
     }
