@@ -15,7 +15,7 @@
                 <h3>Nombre: </h3>
                 <label for=""></label>
                 <input type="text" placeholder="Escribí acá el nuevo nombre" name="firstName" id="firstName" value=" <%= user.firstName %> " >
-                <span class="feedback"></span>
+                <span class="firstNameFeed"></span>
                 <% if (locals.errors && errors.firstName) { %>
                   <p><%= errors.firstName.msg %> </p>
                 <% } %>
@@ -24,7 +24,7 @@
                 <h3>Apellido: </h3>
                 <label for=""></label>
                 <input type="text" placeholder="Escribí acá el apellido" name="lastName" id="lastName"  value=" <%= user.lastName %> ">
-                <span class="feedback"></span>
+                <span class="lastNameFeed"></span>
                 <% if (locals.errors && errors.lastName) { %>
                   <p><%= errors.lastName.msg %> </p>
                 <% } %>
@@ -32,7 +32,7 @@
                 <h3>Email: </h3>
                  <label for=""></label> 
                  <input type="email" placeholder="Escribí acá el nuevo email" name="email" id="email"  value=" <%= user.email %> ">
-                 <span class="feedback"></span>
+                 <span class="emailFeed"></span>
                  <label for=""></label> 
                  <% if (locals.errors && errors.email) { %>
                     <p><%= errors.email.msg %> </p>
@@ -42,7 +42,7 @@
                  
                  <label for=""></label> 
                  <input type="password" placeholder="Escribí acá la nueva contraseña" name="password" id="password">
-                 <span class="feedback"></span>
+                 <span class="passwordFeed"></span>
                  <label for=""></label> 
                  <% if (locals.errors && errors.password) { %>
                     <p><%= errors.password.msg %> </p>
@@ -52,7 +52,7 @@
 
                  <label for="">Imagen:</label>
                  <input type="file"  name="image" id="file">
-                 <span class="feedback"></span>
+                 <span class="fileFeed"></span>
                  <label for=""></label>
                  <% if (locals.errors && errors.image) { %>
                   <p><%= errors.image.msg %> </p>

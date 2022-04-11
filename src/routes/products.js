@@ -8,16 +8,18 @@ const upload = multer ({storage: multer.diskStorage({
       filename: (req, file, cb) => cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname)),
 })})
 const validate = require("../validations/product.js");
+const access = require ("../middlewares/access");
+const auth = require ("../middlewares/auth");
 
 
 
 router.get("/", products.index);
 
-router.get("/cart", products.cart);
-router.get("/crearComentario", products.crearComentario);
-router.get("/compras", products.compras);
+router.get("/cart",[access], products.cart);
+router.get("/crearComentario",[access], products.crearComentario);
+router.get("/compras",[access], products.compras);
 
-router.get("/editarProducto/:id", products.editarProducto);
+router.get("/editarProducto/:id",[auth], products.editarProducto);
 router.get("/:id", products.productDetail);
 
 router.delete("/", products.delete);
