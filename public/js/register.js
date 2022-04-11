@@ -87,7 +87,6 @@ formFile.addEventListener('blur', (e) => {
     }
 }) 
 
-/*
 form.addEventListener('submit', (e) => {
    
     let error = false;
@@ -114,4 +113,4 @@ form.addEventListener('submit', (e) => {
         Swal.fire({title: "¡Felicidades, tu usuario ya fue creado!", icon: 'success'})
         .then(() => e.target.submit())
     }
-}) */
+}) 
