@@ -177,7 +177,7 @@ img{
 
 .fa-star, .fa-arrow-down{
     color: #371452;
-}
+ }
 
 #mainFour div p{
     font-size: 10px;
@@ -226,7 +226,7 @@ img{
 .fa-trash, .fa-pen, .corazon{
     font-size: 1.5rem;
     color: #5A2083;
-    margin: 2px;
+    margin-left: -5rem;
 }
 .marginTop{
     margin-top:0.5rem;
@@ -237,7 +237,11 @@ img{
     max-width: 2rem;
     height: 1.6rem;
 } 
-
+.diconflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 @media screen and (min-width: 440px) {  
     #mainOne p{
         font-size: 1rem;
@@ -410,8 +414,8 @@ img{
             margin-bottom: 1.5rem;
         }
         .adminsIcons{
-            position: absolute;
-    left: 25.5rem;
+            margin-left: -6.5rem;
+            
         }
         .corazon{
             font-size: 2.5rem;

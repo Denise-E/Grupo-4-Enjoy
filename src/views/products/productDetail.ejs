@@ -45,7 +45,7 @@
                   
         </section>             
         </article>  
-            
+            <div class="diconflex">
             <section class="adminsIcons"> 
                 <% if (user && user.isAdmin){ %>
                 <a href="/products/editarProducto/<%= product.id %>"><i class="fas fa-pen"></i></a>
@@ -87,8 +87,10 @@
         <% } else { %>
         <p> No hay stock </p>
         <%  } %>
+
             <a href="/abrituexperiencia" class="marginTop pregunta">¿Te hicieron este regalo?</a>
         </section>
+    </div>
         <section>
             <img src="/images/metodosDePago.png" alt="">
         </section>
