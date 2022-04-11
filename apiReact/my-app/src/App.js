@@ -10,6 +10,8 @@ import StickyHeadTable from './components/table';
 
 
 
+
+
 import './App.css';
 
 
@@ -38,7 +40,9 @@ class App extends Component{
       <h2 className="margen"> Detalle de todos los productos </h2>
       <Productstable />
       <h2 className="margen"> Detalle de todos los usuarios </h2>
-      <StickyHeadTable />
+      <StickyHeadTable />      
+      <div className= "margen"></div>
+   
       
       
 

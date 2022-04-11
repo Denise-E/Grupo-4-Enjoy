@@ -47,18 +47,18 @@ class userLast extends Component {
         console.log ('id', this.state.id)
       return (
            <>
-           <div className='card'>
+           <div className='cardLast'>
            <p className='icono'><TiPlusOutline/> </p>
            
-           <h2 className= 'tituloC'>Último usuario registrado</h2>
+           <h2 className= 'tituloD'>Último usuario registrado</h2>
             
          <ul>
             <li> 
               
-                <p>{this.state.id}</p>
-                <p>{this.state.firstName}</p>
-                <p>{this.state.lastName}</p>
-                <p>{this.state.email}</p>
+                <p className="marg">ID: {this.state.id}</p>
+                <p className="marg">Nombre: {this.state.firstName}</p>
+                <p className="marg">Apellido: {this.state.lastName}</p>
+                <p className="marg">Correo electrónico: {this.state.email}</p>
                 
             </li>
             

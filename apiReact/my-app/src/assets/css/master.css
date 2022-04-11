@@ -48,7 +48,26 @@ ul li{
     margin: 2rem auto;
     box-shadow: 0px 0px 5px #b47cde;
 }
-
+.cardLast{
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    height: 26vh;
+    width: 49%;
+    
+    margin: 2.5rem auto;
+    box-shadow: 0px 0px 5px #b47cde;
+}
+.cardLastP{
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    height: 45vh;
+    width: 49%;
+    
+    margin: 2.5rem auto;
+    box-shadow: 0px 0px 5px #b47cde;
+}
 .firstRow{
     display: flex;
     flex-direction: row;
@@ -58,6 +77,14 @@ ul li{
 }
 
 .tituloC{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    justify-content: right;
+    display: flex;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+.tituloD{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     justify-content: right;
@@ -92,4 +119,9 @@ ul li{
 .margen{
 
     margin-top: 5rem;
+    
+}
+
+.marg{
+    margin-top: 9px;
 }

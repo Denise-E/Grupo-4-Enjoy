@@ -34,10 +34,8 @@ componentDidMount(){
             location: data.location,
             persons: data.persons,
             price: data.price,
-            fees: data.fees,
-            starsAvg: data.startsAvg,
             category: data.category,
-            imageURL: data.imageUrl,
+            
           })
         })     
       .catch(err => console.log(err))
@@ -70,24 +68,21 @@ componentDidUpdate(){
     console.log ('id', this.state.id)
   return (
        <>
-       <div className='card'>
+       <div className='cardLastP'>
        <p className='icono'><TiPlus/> </p>    
-       <h2 className= 'tituloC'>Último producto cargado</h2>
+       <h2 className= 'tituloD'>Último producto cargado</h2>
         
      <ul>
         <li> 
-            <p>{this.state.id}</p>
-            <p>{this.state.name}</p>
-            <p>{this.state.title}</p>
-            <p>{this.state.description}</p>
-            <p>{this.state.resume}</p>
-            <p>{this.state.location}</p>
-            <p>{this.state.persons}</p>
-            <p>{this.state.price}</p>
-            <p>{this.state.fees}</p>
-            <p>{this.state.startsAvg}</p>
-            <p>{this.state.category}</p>
-            <p>{this.state.imageURL}</p>
+            <p className="marg">ID: {this.state.id}</p>
+            <p className="marg"> Nombre del producto: {this.state.name}</p>
+            <p className="marg"> Título del producto: {this.state.title}</p>
+            <p className="marg"> Resumen: {this.state.resume}</p>
+            <p className="marg">Locación: {this.state.location}</p>
+            <p className="marg">Cantidad de personas: {this.state.persons}</p>
+            <p className="marg" >Precio: {this.state.price}</p>
+            <p className="marg">Categoría: {this.state.category}</p>
+            
             
             
         </li>
