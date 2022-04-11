@@ -18,7 +18,12 @@ class userLast extends Component {
           fetch('http://localhost:3000/api/last/user/')
           .then(res => res.json())
           .then(data => {
-              this.setState({id: data.id})
+              this.setState({
+                id: data.id,
+                firstName: data.firstName,
+                lastName: data.lastName,
+                email:data.email
+              })
             })     
           .catch(err => console.log(err))
           console.log('Inicia', this.state.id)
@@ -28,7 +33,12 @@ class userLast extends Component {
           fetch('http://localhost:3000/api/last/user/')
           .then(res => res.json())
           .then(data => {
-              this.setState({id: data.id})
+              this.setState({
+                id: data.id,
+                firstName: data.firstName,
+                lastName: data.lastName,
+                email:data.email
+              })
             })        
           .catch(err => console.log(err))
           console.log('Actualiza', this.state.id)
@@ -47,6 +57,8 @@ class userLast extends Component {
               
                 <p>{this.state.id}</p>
                 <p>{this.state.firstName}</p>
+                <p>{this.state.lastName}</p>
+                <p>{this.state.email}</p>
                 
             </li>
             
