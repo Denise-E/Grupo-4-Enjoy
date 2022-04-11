@@ -263,6 +263,16 @@ header img{
     .busqueda{
         flex-direction: row;
         display: flex;
+        position: relative
+    }
+    #search{
+        border: 1px solid #371452;
+        border-radius: 2px;
+    }
+    .lupa{
+        position: absolut;
+        border: 1px solid #371452;
+        border-radius: 3px;
     }
     
 }
