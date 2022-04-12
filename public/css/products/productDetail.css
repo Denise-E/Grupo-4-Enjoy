@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 a:link, a:visited, a:active {
     text-decoration:none;
     color: black;
@@ -16,7 +17,6 @@ a:link, a:visited, a:active {
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }
 
 #mainOne{
