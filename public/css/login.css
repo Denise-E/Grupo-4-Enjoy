@@ -24,12 +24,15 @@ main{
    
 }
 
-
+main label{
+    text-shadow: 2px 2px 2px white;
+}
 
 .tituloLogin{
     margin-bottom:25px;
     font-size: 30px;
-    color:#5A2083;  
+    color:#5A2083;
+    text-shadow: 1px 1px 2px white;  
 }
 
 .inicioSesion {
@@ -109,6 +112,7 @@ main button a{
 .olvide-password{
     right: 100px;
     font-weight: 600;
+    text-shadow: 2px 2px 2px white;
 }
 
 .olvide-password a{
@@ -127,6 +131,8 @@ a:link, a:visited, a:active{
     margin-right: 300px;
     margin: 30px;
     margin-top: -30px;
+    text-shadow: 2px 2px 2px white;
+    
 }
 .redes a {
     margin: 10px;
@@ -142,6 +148,10 @@ a:link, a:visited, a:active{
 }
 .todavia{
     font-weight: 600;
+}
+
+.crear-cuenta{
+    text-shadow: 2px 2px 2px white;
 }
 
 @media screen and (min-width: 361px) {  

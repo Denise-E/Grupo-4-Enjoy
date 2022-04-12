@@ -25,6 +25,14 @@ a:link, a:visited, a:active {
     text-decoration:none;
     
 }
+main label{
+    text-shadow: 2px 2px 2px white;
+}
+h1{
+    text-shadow: 1px 1px 2px white;
+    
+
+}
 
 .crearCuenta{
     text-align: center;
@@ -96,6 +104,7 @@ main button a:hover{
 }
 .cuenta{
     font-weight: bold;
+    text-shadow: 2px 2px 2px white;
 }
 .terms{
     margin: 2px;
