@@ -39,9 +39,9 @@ main{
     
 }
 
-.inicioSesion:hover{
+/* .inicioSesion:hover{
     box-shadow: 0px 0px 10px #5A2083;
-}
+} */
 
 .inicioSesion input{
         align-items: center;
