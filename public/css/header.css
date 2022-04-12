@@ -279,7 +279,8 @@ header img{
         
     }
     #search{
-        border: 0.5px solid #371452;
+        border: 0.5px solid #cfcdcdad;
+        box-shadow: 0px 2px 2px #88888880;
         border-radius: 5px;
         position: absolute;
         left: -15rem;
