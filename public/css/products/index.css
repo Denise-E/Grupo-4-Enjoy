@@ -19,13 +19,13 @@ main{
     justify-content: center;
 }
 h1{
-    font-weight: bolder;
+    font-weight: 300;
     font-size: 2.3rem;
     text-align: center;
 }
 
 p{
-    font-weight: 700;
+    font-weight: 300;
 }
 .lista{
     display: flex;
@@ -69,6 +69,7 @@ li img{
     margin-top: 0.7rem;
     letter-spacing: 0.1rem;
     text-shadow: 0 0 black;
+    font-weight: 600;
 }
 @media screen and (min-width: 676px) {
     .lista{

@@ -12,9 +12,9 @@
         <form action="/users/access" method="post" id="loginForm">            
             <section class="form">
                 <div class="inicioSesion">
-                <h1 class="tituloLogin">Ingresa a tu cuenta</h1>
+                <h1 class="tituloLogin">Ingresá a tu cuenta</h1>
                 
-                <label for=""> Correo electronico :</label>
+                <label for=""> Correo electrónico :</label>
                 <input type="text"  name="email" id="email" >
                 <span class="emailFeed"></span>
                 <% if (locals.errors && errors.email) { %>
@@ -34,12 +34,12 @@
            <nav class="olvide-password">
                <a href= "#">¿Olvidaste tu contraseña?</a>
            </nav>
-           <button type="submit" id="loginBtn">iniciar sesion</button>
+           <button type="submit" id="loginBtn">Iniciar sesión</button>
            
         </section>
         </form>
      <section class="redes">
-         <h2>Continua con:</h2>
+         <h2>Continuá con:</h2>
         <nav>
             <a href="https://www.facebook.com/"> <i class="fab fa-facebook"></i> </a>
             <a href="https://www.google.com/"> <i class="fab fa-google"></i> </a>
@@ -48,7 +48,7 @@
         <section class= "crear-cuenta">
             
             <nav>
-                <p>¿Todavía no tenes cuenta? <a href="/users/register"> Crear cuenta</a>  </p>
+                <p class="todavia">¿Todavía no tenes cuenta? <a href="/users/register"> Crear cuenta</a>  </p>
             </nav>
         </section>
      </section> 

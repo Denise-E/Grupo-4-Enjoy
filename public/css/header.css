@@ -2,6 +2,10 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+main{
+    font-weight: 300;
 }
 
 
@@ -202,9 +206,9 @@ header img{
     display:none;
 }
 
-F
 
-@media screen and (min-width: 361px) {  
+
+@media screen and (min-width: 361px){  
     header{
         padding: 2px;
         margin: 5px;
@@ -348,7 +352,7 @@ F
       margin: 3px;
   }
   nav.dflex p{
-    font-size: 23px;
+    
    color: #371452;
    width: 15rem;
 

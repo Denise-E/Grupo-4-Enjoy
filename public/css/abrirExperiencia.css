@@ -10,7 +10,7 @@ body{
 
 main{
     margin: 0.25rem;
-    font-weight: bold;
+    font-weight: 300;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

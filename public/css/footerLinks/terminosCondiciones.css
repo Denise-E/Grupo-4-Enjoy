@@ -21,7 +21,7 @@ article{
 h1 {
     font-size: 2.5rem;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 300;
     background-color: #D9BBF9 ;
     border-radius: 0.5rem;
     margin: 2.5rem auto;
@@ -34,20 +34,20 @@ h1 {
   }
 
   .subtitulo{
-    font-weight: bold;
+    font-weight: 300;
     max-width: 85%;
     margin-bottom: 40px;
   }
 
   .items{
-    font-weight: bold;
+    font-weight:300;
     max-width: 85%;
     margin: 1rem;
     text-align: left;
   }
 
   .texto{
-    font-weight: bold;
+    font-weight: 300;
     max-width: 85%;
     margin: 1rem;
   }
@@ -57,7 +57,7 @@ h1 {
 }
 
 .politica{
-  font-weight: bold;
+  font-weight: 300;
   max-width: 85%;
    margin-top: 3rem;
 }

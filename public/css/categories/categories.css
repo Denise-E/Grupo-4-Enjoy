@@ -17,15 +17,15 @@ main{
 }
 h1{
     text-align: center;
-    font-weight: bolder;
+    font-weight: 300;
     background-color: #D9BBF9 ;
     border-radius: 0.5rem;
     margin: auto;
-    max-width: 90%;
+    max-width: 80%;
 }
 
 p{
-    font-weight: 700;
+    font-weight: 300;
 }
 
 ul, li {

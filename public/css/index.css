@@ -120,7 +120,7 @@ body{
     color:white;
     background-color: #5A2083;    
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .masNuevos:focus, .masNuevos:hover, .masVendidos:focus, .masVendidos:hover, .regala:focus, .regala:hover, .recomendados:hover, .recomendados:focus, .motivos:hover, .ideas:hover{
@@ -132,7 +132,7 @@ body{
     color:black;
     background-color: white;    
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 
@@ -188,7 +188,7 @@ body{
 .tituloImagen{
     position:absolute;
     color: #ffffff;
-    font-weight:bolder;
+    font-weight:600;
     top: 25vh;
     left: 0;
     right: 0;
@@ -206,7 +206,7 @@ body{
     
 }
 .descripcion{
-    font-weight: bold;
+    font-weight: 300;
     margin-top: 8px 0;
 }
 .tituloProducto{

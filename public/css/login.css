@@ -6,13 +6,14 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 /** login **/
 main{
     text-align: center;
     margin: 15px;
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 20px;
 
     background-image: url("../images/loogin.jpg");
@@ -41,7 +42,7 @@ main{
     justify-content: center;
     align-items: center;
     transition: box-shadow 200ms;
-    
+    font-weight: 600;
 }
 
 /* .inicioSesion:hover{
@@ -58,6 +59,7 @@ main{
         font-size:15px;
         border: solid 1px #b47cde;
         transition: box-shadow 200ms;
+
     
 }
 
@@ -70,6 +72,7 @@ main{
     padding-left: 10px;
     justify-content: center;
     border: thistle;
+    font-weight: 600;
 }
 
 .form input{
@@ -87,12 +90,15 @@ main button{
     color: white;
     border-radius: 5%;
     transition: all 200ms;
+    font-weight: 600;
 }
 
 main button:hover{ 
     color: #5A2083; 
     background-color: #d9bbf9;
 }
+
+
 
 main button a{
     border: 0;
@@ -102,6 +108,7 @@ main button a{
 
 .olvide-password{
     right: 100px;
+    font-weight: 600;
 }
 
 .olvide-password a{
@@ -132,6 +139,9 @@ a:link, a:visited, a:active{
    color: #b47cde; 
    
    
+}
+.todavia{
+    font-weight: 600;
 }
 
 @media screen and (min-width: 361px) {  
