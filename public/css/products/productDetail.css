@@ -298,40 +298,6 @@ img{
     font-size: 13px;
     }
 
-    footer{
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 0;
-    }
-
-    #footerOne{
-        max-width: 26%;
-        text-align: left;
-        flex-grow: 1;
-    }
-
-    #footerTwo{
-        max-width: 26%;
-        text-align: left;
-        flex-grow: 1;
-    }
-
-    #footerThree{
-        display: inline-flex;
-        max-width: 45%;
-        flex-grow: 1;
-        align-items: flex-start;
-        padding: 0;
-    }
-    
-    #footerThree h2{
-        margin-top: 1rem;
-    }
-
-    .newsletter{
-        width: 100%;
-    }
-
     #mainFive article{
         margin-left: 2rem;
     }

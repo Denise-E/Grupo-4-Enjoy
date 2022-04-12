@@ -16,9 +16,9 @@ main{
    background-position: center center;
    background-attachment: fixed;
    background-size: cover;
-   font-weight: bold;
+   font-weight: bolder;
+   font-size: 20px;
   
-   font-weight: 300;
 }
 
 a:link, a:visited, a:active {
