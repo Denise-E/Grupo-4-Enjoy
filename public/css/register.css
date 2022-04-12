@@ -11,12 +11,14 @@ body{
 main{
     text-align: center;
     /* color: #ffffff; */
-   background-image: url("../images/aaventura.jpg");
+   background-image: url("../images/reegistrate.jpg");
    background-repeat: no-repeat;
    background-position: center center;
    background-attachment: fixed;
    background-size: cover;
    font-weight: bold;
+  
+   font-weight: 300;
 }
 
 a:link, a:visited, a:active {

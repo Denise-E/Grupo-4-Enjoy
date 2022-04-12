@@ -13,12 +13,16 @@ main{
     text-align: center;
     margin: 15px;
     font-weight: bold;
+   
     background-image: url("../images/loogin.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+   
 }
+
+
 
 .tituloLogin{
     margin-bottom:25px;
