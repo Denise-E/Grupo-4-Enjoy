@@ -44,7 +44,7 @@
                     <% cart.forEach(product => { %>
                     <li>
                         <%= product.name %> | <%= product.quantity %> | $ <%= product.subtotal %>
-                                    <form action="/eliminar" method="post">
+                                    <form action="/products/eliminar" method="post">
                                         <input type="hidden" name="id" value="<%= product.id %>">
                                         <button type="submit"> Eliminar</button>
                                     </form>

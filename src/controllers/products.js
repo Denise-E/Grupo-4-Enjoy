@@ -123,11 +123,11 @@ module.exports = {
             const productExist = cart.find(item => item.id == id);
             
             if (productExist){
-                //res.send(cart)
+                //res.send(productExist)
                 req.session.cart = cart.map(item => {
-                    if(item.id === id){
-                        item.quantity += parseInt(quantity);
-                        item.subtotal= product.price * item.parseInt(quantity);
+                    if(item.id == id){
+                        item.quantity = item.quantity += parseInt(quantity);
+                        item.subtotal= product.price * item.quantity;
                     }
                     return item;
                 });
@@ -136,8 +136,8 @@ module.exports = {
                         id:product.id,
                         name: product.name,
                         price: product.price,
-                        quantity: quantity,
-                        subtotal: product.subtotal * parseInt(quantity)
+                        quantity: parseInt(quantity),
+                        subtotal: product.price * parseInt(quantity)
         
                     });
 
@@ -145,6 +145,29 @@ module.exports = {
             res.redirect("/products/cart");
 
         } catch (err) {
+            res.send(err);
+        }
+    },
+    eliminar: async (req, res) => {
+        try {
+            const {id} = req.body;
+            const cart = req.session.cart;
+            const productExist = cart.find(item => item.id == id);
+            if(productExist && productExist.quantity > 1){
+                req.session.cart = cart.map(item => {
+                    //res.send(item)
+                    if(item.id == id){
+                        item.quantity = item.quantity -= 1;
+                        item.subtotal = productExist.price * item.quantity;
+                    }
+                        return item;
+                })
+            }else {
+               // El carrito es igual a todos menos el id en el que estoy.
+                req.session.cart = cart.filter(item => item.id != id);
+                res.redirect('/products/cart') 
+            }
+        }catch (err) {
             res.send(err);
         }
     }

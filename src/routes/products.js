@@ -29,6 +29,8 @@ router.put("/edit/:id",[upload.single("image")],[validate.edit], products.modify
 //carrito
 router.post("/agregar", products.addCart)
 
+router.post("/eliminar", products.eliminar)
+
 
 
 
