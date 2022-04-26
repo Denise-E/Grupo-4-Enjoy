@@ -15,7 +15,7 @@ const auth = require ("../middlewares/auth");
 
 router.get("/", products.index);
 
-router.get("/cart",[access], products.cart);
+router.get("/cart", products.cart);//,[access]
 router.get("/crearComentario",[access], products.crearComentario);
 router.get("/compras",[access], products.compras);
 

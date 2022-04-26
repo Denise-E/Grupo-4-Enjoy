@@ -115,17 +115,19 @@ module.exports = {
     addCart: async (req, res) =>{
         try{
             const {id, quantity} = req.body;
-            const product = await Product.findbyPk (id);
+            const product = await db.Product.findByPk(id);
             if(!req.session.cart){
                 req.session.cart = [];
             }
             const cart = req.session.cart;
-            const productExist = cart.find (item => item.id === id);
+            const productExist = cart.find(item => item.id == id);
+            
             if (productExist){
+                //res.send(cart)
                 req.session.cart = cart.map(item => {
                     if(item.id === id){
-                        item.quantity += quantity;
-                        item.subtotal= product.price * item.quantity;
+                        item.quantity += parseInt(quantity);
+                        item.subtotal= product.price * item.parseInt(quantity);
                     }
                     return item;
                 });
@@ -135,7 +137,7 @@ module.exports = {
                         name: product.name,
                         price: product.price,
                         quantity: quantity,
-                        subtotal: product.price * quantity
+                        subtotal: product.subtotal * parseInt(quantity)
         
                     });
 

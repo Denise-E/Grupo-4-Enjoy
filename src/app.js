@@ -24,15 +24,16 @@ app.use(session({
     saveUninitialized: true,
     resave: false,
 }));
+/*
 app.use(session({
     secret:"Shopping Cart",
     saveUninitialized: true,
     resave: false,
-}))
+})) */
 
 app.use(require("./middlewares/user"))
 //cart
-app.use (require('./middlewares/cart'));
+app.use(require('./middlewares/cart'));
 
 
 app.use(require("./routes/main"));
