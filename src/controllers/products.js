@@ -117,11 +117,6 @@ module.exports = {
             style: "favoritos"
         })).catch(err => res.send(err))
     },
-    eliminarFavs: (req,res) => {
-            const fav = req.session.fav;
-            req.session.fav = fav.filter(item => item.id != req.body.id);
-            res.redirect('/products/favoritos')
-    },
     addFav: async (req,res) => {
         try {
                 const {id} = req.body
@@ -138,13 +133,18 @@ module.exports = {
                         name: product.name,
                         price: product.price,
                     })
-                    res.redirect("/products/favoritos");
+                    res.redirect("/products/"+product.id);
                 }
             }catch (err) {
                 res.send(err);
             }
           
     },
+    eliminarFavs: (req,res) => {
+        const fav = req.session.fav;
+        req.session.fav = fav.filter(item => item.id != req.body.id);
+        res.redirect('/products/favoritos')
+},
     //carrito
     addCart: async (req, res) =>{
         try{
