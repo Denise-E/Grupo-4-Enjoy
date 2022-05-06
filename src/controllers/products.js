@@ -152,21 +152,8 @@ module.exports = {
         try {
             const {id} = req.body;
             const cart = req.session.cart;
-            const productExist = cart.find(item => item.id == id);
-            if(productExist && productExist.quantity > 1){
-                req.session.cart = cart.map(item => {
-                    //res.send(item)
-                    if(item.id == id){
-                        item.quantity = item.quantity -= 1;
-                        item.subtotal = productExist.price * item.quantity;
-                    }
-                        return item;
-                })
-            }else {
-               // El carrito es igual a todos menos el id en el que estoy.
-                req.session.cart = cart.filter(item => item.id != id);
-                res.redirect('/products/cart') 
-            }
+            req.session.cart = cart.filter(item => item.id != id);
+            res.redirect('/products/cart') 
         }catch (err) {
             res.send(err);
         }

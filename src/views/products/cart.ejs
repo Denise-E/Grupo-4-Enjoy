@@ -43,9 +43,10 @@
                     <ul>
                     <% cart.forEach(product => { %>
                     <li>
-                        <%= product.name %> | <%= product.quantity %> | $ <%= product.subtotal %>
+                        <%= product.name %> | $ <%= product.subtotal %> |
+                        <input type="number" name="quantity" id="quantity" value="<%= product.quantity %>"> <i class="fas fa-plus"></i> <i class="fas fa-minus"></i>
                                     <form action="/products/eliminar" method="post">
-                                        <input type="hidden" name="id" value="<%= product.id %>">
+                                        <input type="hidden" name="id" value="<%= product.id %>"> 
                                         <button type="submit"> Eliminar</button>
                                     </form>
                     </li>
@@ -59,6 +60,7 @@
             <% };%>
         
     </main>
+    <script src="/js/cart.js"></script>
     <%- include('../partials/footer') %> 
     
 </body>
