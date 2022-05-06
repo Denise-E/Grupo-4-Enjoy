@@ -6,26 +6,20 @@
 
     <main>
         <h1>Tus favoritos</h1>
+        <% if (fav.length > 0 ) { %>
+            <ul>
+            <% fav.forEach(product => { %>
+            <li>
+                <%= product.name %> 
+            </li>
+            <% });%>
+
+    </ul>
+
+    <% } else {%>
         <h3 class="subtitulo">Guardá en esta sección las experiencias que más te gustaron !</h3>
-
-        <ul class= "listadoProductos">
-                
-            <% products.forEach(element => { %>
-                <li class= "imagenDescripcion">
-                    <a href="/products/<%= element.id %>">
-                    <picture class= "imagenProducto">
-                        <img src= "/uploads/<%= element.File.url %>" class="imagenProducto">
-                    </picture>
-                    <h2 class= "tituloImagen"> <%= element.name %> </h2>
-                    
-                    <p> <%= element.description %> </p>
-                    <p class= "personaPrecio"> Para <%= element.persons %> personas | $ <%= element.price %> </p>
-                   
-                </a>
-                </li>
-            <% }) %>
-
-        </ul>
+        
+    <% };%>
     </main>
 
     <%- include('./partials/footer') %> 

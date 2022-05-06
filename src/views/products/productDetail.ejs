@@ -69,9 +69,10 @@
               </form>
         
         <% } else { %>   
-
-        <a href="/favoritos"> <i class="fas fa-heart corazon"></i> </a>
-
+            <form action="/products/agregar_fav" method="post">
+                <input type = "hidden" name="id" value="<%= product.id %>">
+                <button type="submit"><i class="fas fa-heart corazon"></i> </button>
+            </form>
         <% }%>
         </section>
         <section class="dflex" id="mainThree">

@@ -117,6 +117,29 @@ module.exports = {
             style: "favoritos"
         })).catch(err => res.send(err))
         },
+    addFav: async (req,res) => {
+        try {
+                const {id} = req.body
+                const product = await db.Product.findByPk(id);
+                if(!req.session.fav){
+                    req.session.fav = [];
+                    }
+                const fav = req.session.fav;
+                const productFav = fav.find(item => item.id == id);
+                //res.send(req.body)
+                if(!productFav){
+                    req.session.fav.push({
+                        id:product.id,
+                        name: product.name,
+                        price: product.price,
+                    })
+                    res.redirect("/products/favoritos");
+                }
+            }catch (err) {
+                res.send(err);
+            }
+          
+    },
     //carrito
     addCart: async (req, res) =>{
         try{

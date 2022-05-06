@@ -34,6 +34,8 @@ app.use(session({
 app.use(require("./middlewares/user"))
 //cart
 app.use(require('./middlewares/cart'));
+//Favs
+app.use(require('./middlewares/favs'));
 
 
 app.use(require("./routes/main"));

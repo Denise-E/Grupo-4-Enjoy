@@ -20,8 +20,8 @@ router.get("/crearComentario",[access], products.crearComentario);
 router.get("/compras",[access], products.compras);
 
 router.get("/editarProducto/:id",[auth], products.editarProducto);
-router.get("/:id", products.productDetail);
 router.get("/favoritos",products.favoritos);//[access],
+router.get("/:id", products.productDetail);
 
 router.delete("/", products.delete);
 router.post('/search', products.search);
@@ -29,6 +29,7 @@ router.put("/edit/:id",[upload.single("image")],[validate.edit], products.modify
 
 //carrito
 router.post("/agregar", products.addCart)
+router.post('/agregar_fav', products.addFav)
 
 router.post("/eliminar", products.eliminar)
 
