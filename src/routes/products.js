@@ -32,6 +32,7 @@ router.post("/agregar", products.addCart)
 router.post('/agregar_fav', products.addFav)
 
 router.post("/eliminar", products.eliminar)
+router.post("/eliminar_favs", products.eliminarFavs)
 
 
 

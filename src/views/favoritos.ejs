@@ -9,10 +9,19 @@
         <% if (fav.length > 0 ) { %>
             <ul>
             <% fav.forEach(product => { %>
-            <li>
-                <%= product.name %> 
-            </li>
+            
+                <li>
+                    <a href="/products/<%= product.id %>">
+                        <%= product.name %>  
+                `   </a>
+                    <form action="/products/eliminar_favs" method="post">
+                        <input type="hidden" name="id" value='<%= product.id %> '>
+                        <button type="submit"><i class="far fa-heart"></i></button>
+                    </form>
+                </li>
+          
             <% });%>
+            
 
     </ul>
 

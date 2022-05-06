@@ -116,7 +116,12 @@ module.exports = {
             products: result,
             style: "favoritos"
         })).catch(err => res.send(err))
-        },
+    },
+    eliminarFavs: (req,res) => {
+            const fav = req.session.fav;
+            req.session.fav = fav.filter(item => item.id != req.body.id);
+            res.redirect('/products/favoritos')
+    },
     addFav: async (req,res) => {
         try {
                 const {id} = req.body
