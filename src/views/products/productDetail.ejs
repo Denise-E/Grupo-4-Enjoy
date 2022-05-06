@@ -71,7 +71,7 @@
         <% } else { %>   
             <form action="/products/agregar_fav" method="post">
                 <input type = "hidden" name="id" value="<%= product.id %>">
-                <button type="submit"><i class="fas fa-heart corazon"></i> </button>
+                <button type="submit" i ='heartBtn'><i class="far fa-heart corazon"></i> </button>
             </form>
         <% }%>
         </section>
@@ -125,6 +125,7 @@
                  <% } %>
         </section>
     </main>
+    <script src="/js/favs.js"></script>
     <%- include('../partials/footer') %>     
 </body>
 </html>
