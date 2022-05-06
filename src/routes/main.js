@@ -17,7 +17,6 @@ router.get("/devoluciones", main.devoluciones);
 router.get("/politicas&garantias", main.politicasGarantias);
 router.get("/terminos&condiciones", main.terminosCondiciones);
 router.get("/abriTuExperiencia", main.experienciaUser);
-router.get("/favoritos",[access],main.favoritos);
 router.get("/comofunciona", main.comofunciona);
 router.get("/corporativas", main.corporativas);
 

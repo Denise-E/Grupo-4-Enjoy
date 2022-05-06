@@ -35,13 +35,6 @@ module.exports = {
      
         style: "footerLinks/tuExperiencia"
     }),
-    favoritos:  (req,res) => {
-    db.Product.findAll({include:["File"]}).then(result =>res.render("favoritos" ,{
-        products: result,
-        style: "favoritos"
-    })).catch(err => res.send(err))
-    },
-
     comoComprar: (req,res) => res.render("footerLinks/comoComprar",{
      
         style: "footerLinks/comoComprar"

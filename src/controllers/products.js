@@ -111,6 +111,12 @@ module.exports = {
             })
         })
     },
+    favoritos:  (req,res) => {
+        db.Product.findAll({include:["File"]}).then(result =>res.render("favoritos" ,{
+            products: result,
+            style: "favoritos"
+        })).catch(err => res.send(err))
+        },
     //carrito
     addCart: async (req, res) =>{
         try{
